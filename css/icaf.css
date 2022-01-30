@@ -1,0 +1,165 @@
+header .no-hpad {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.svg-container {
+    z-index: 10;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 18.1%;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nav-bottom {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    top: 52%;
+    left: 0;
+}
+
+.hide {
+    display: none;
+}
+
+#videoContainer {
+    position: relative;
+    top: -140px;
+}
+
+#wcfVideo {
+    width: 100%;
+}
+
+.video-bottom {
+    position: relative;
+    height: 110px;
+    top: -220px;
+    background: #D9EBFB;
+}
+
+.video-bottom>span {
+    width: 75%;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FF7603;
+    text-align: center;
+}
+
+nav {
+    z-index: 20;
+    position: absolute;
+    top: 3%;
+    width: 100%;
+    height: 113px;
+    /* background: aqua; */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding-inline-start: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav .row a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.logo {
+    /* background: url('../resource/Logos/ICAF_logo_transparent-background.png') no-repeat fixed center;     */
+    height: 113px;
+    position: relative;
+    left: -5px;
+}
+
+.logo img {
+    width: 300px;
+    position: relative;
+    top: -68px;
+}
+
+.page-links ul li {
+    padding: 0 18px;
+}
+
+.donate {
+    margin-left: -45px;
+}
+
+.donate div {
+    width: 187px;
+    height: 46px;
+    background: #FEA900;
+    border-radius: 25px;
+}
+
+.flex-align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Responsive stuff */
+
+@media (min-width: 576px) {
+    header {
+        height: 300px;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        height: 433px;
+    }
+}
+
+@media (min-width: 992px) {
+    header {
+        height: 611px;
+    }
+}
+
+@media (min-width: 1200px) {
+    header {
+        height: 745px;
+    }
+}
+
+
+/*
+@media (min-width: 1200px)
+743.578125
+@media (min-width: 992px)
+609.75
+@media (min-width: 768px)
+431.3125
+@media (min-width: 576px)
+297.484375
+*/

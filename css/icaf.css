@@ -3,61 +3,7 @@ header .no-hpad {
     padding-right: 0;
 }
 
-.svg-container {
-    z-index: 10;
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    padding-bottom: 18.1%;
-    vertical-align: middle;
-    overflow: hidden;
-}
-
-.svg-content {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.nav-bottom {
-    display: inline-block;
-    position: absolute;
-    width: 100%;
-    top: 52%;
-    left: 0;
-}
-
-.hide {
-    display: none;
-}
-
-#videoContainer {
-    position: relative;
-    top: -140px;
-}
-
-#wcfVideo {
-    width: 100%;
-}
-
-.video-bottom {
-    position: relative;
-    height: 110px;
-    top: -220px;
-    background: #D9EBFB;
-}
-
-.video-bottom>span {
-    width: 75%;
-    font-family: Josefin Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 24px;
-    color: #FF7603;
-    text-align: center;
-}
+/* Nav */
 
 nav {
     z-index: 20;
@@ -118,6 +64,77 @@ nav .row a {
     background: #FEA900;
     border-radius: 25px;
 }
+
+
+.svg-container {
+    z-index: 10;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 18.1%;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nav-bottom {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    top: 52%;
+    left: 0;
+}
+
+.hide {
+    display: none;
+}
+
+/* Top Panel */
+
+#videoContainer {
+    position: relative;
+    top: -140px;
+}
+
+#wcfVideo {
+    width: 100%;
+}
+
+#volumeControl {
+    z-index: 10;
+    position: absolute;
+    top: 58%;
+    right: 3%;    
+}
+
+#volumeControl input {
+    width: 60px;
+}
+
+.video-bottom {
+    position: relative;
+    height: 110px;
+    top: -220px;
+    background: #D9EBFB;
+}
+
+.video-bottom>span {
+    width: 75%;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FF7603;
+    text-align: center;
+}
+
 
 .flex-align-center {
     display: flex;

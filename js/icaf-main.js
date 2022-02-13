@@ -1,11 +1,4 @@
 $(document).ready(function() {
-    // window.wcf = $('video')[0];
-    // wcf.pause();
-    // wcf.currentTime = 185;
-    /*
-        currentTime
-        playbackRate
-     */
     let videoElm = $('video')[0];
     videoElm.volume = 0.2;
     let $volumeDiv = $('#volumeControl');
@@ -16,7 +9,7 @@ $(document).ready(function() {
     });
 
 
-
+    buildCarousel();
     let $carousel = $('#youngArtists').carousel({
         interval: 3000
     });
@@ -32,3 +25,59 @@ $(document).ready(function() {
         setTimeout(_ => $carousel.carousel('pause'), 10);
     }, 50);
 });
+
+function buildCarousel() {
+    let cData = [{
+            artwork: 'resource/image/artwork/New Zealand (Ella Gordon-Latty, 12).png',
+            locationLogo: 'resource/image/logos/New-Zealand.png',
+            name: 'Ella Gordon-Latty, age 12',
+            location: 'New Zealand',
+            quote: '“To paraphrase Ralph Waldo Emerson, the Earth understands civilization. Well used, it brings joy. When adored, doubles the joy. But if ill-used, it will destroy.”',
+        },
+        {
+            artwork: 'resource/image/artwork/UK (Deanna Hodgson, 12).png',
+            locationLogo: 'resource/image/logos/uk2.png',
+            name: 'Deanna Hodgson, age 12',
+            location: 'United Kingdon',
+            quote: '“To paraphrase Ralph Waldo Emerson, the Earth understands civilization. Well used, it brings joy. When adored, doubles the joy. But if ill-used, it will destroy.”',
+        },
+        {
+            artwork: 'resource/image/artwork/Texas (April Heaney, 14).png',
+            locationLogo: 'resource/image/logos/usa2.png',
+            name: 'April Heaney, age 14',
+            location: 'United States',
+            quote: '“To paraphrase Ralph Waldo Emerson, the Earth understands civilization. Well used, it brings joy. When adored, doubles the joy. But if ill-used, it will destroy.”',
+        }
+    ];
+    cData.forEach((data, idx) => addCarouselItem(data, idx));
+}
+
+function addCarouselItem(data, idx) {
+    $('.carousel-inner').append(
+        `<div class="carousel-item ${idx===0?'active':''}">
+            <div class="item-wrapper">
+                <div class="col-sm-6 artwork">
+                    <img src="${data.artwork}" alt="Slide ${idx}">
+                </div>
+                <div class="col-sm-6 description">
+                    <div class="name flex-align-center">
+                        <div>
+                            <div class="flex-align-center">
+                                <img src="${data.locationLogo}">
+                            </div>
+                            <div>
+                                <div>${data.name}</div>
+                                <div class="country">${data.location}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quote">
+                        <div>
+                            ${data.quote}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>`
+    );
+}

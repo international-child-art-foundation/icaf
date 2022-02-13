@@ -3,10 +3,13 @@
 
 <head>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/icaf.css" />
+    <link rel="stylesheet" href="css/icaf-main.css" />
+    <!-- <link rel="stylesheet" href="css/icaf-main.css.map" /> -->
     <script src="js/jquery-3.3.1.slim.min.js" defer></script>
     <script src="js/popper.min.js" defer></script>
-    <script src="js/bootstrap.min.js" defer></script>
+    <!-- <script src="js/bootstrap.min.js" defer></script> -->
+    <script src="js/bootstrap.js" defer></script>
+    <!-- <script src="js/bootstrap.bundle.min.js" defer></script> -->
     <script src="js/icaf-main.js" defer></script>
 </head>
 
@@ -104,10 +107,111 @@
                 </div>
             </div>
         </div>
+
+        <div class="icaf-header">
+            <div class="flex-align-center">
+                Young Artists' Stories
+            </div>
+            <div class="flex-align-center">
+                <div class="header-underline"></div>
+            </div>
+        </div>
+        <div class="row carousel-wrapper">
+            <div class="flex-align-center">
+                <svg width="76" height="76" viewBox="0 0 76 76" fill="none" id="slidePrev">
+                    <circle cx="38" cy="38" r="38" fill="#E5E5E5"/>
+                    <path d="M36.0834 24.5833L22.6667 38L36.0834 51.4167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22.6667 38H53.3334" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="col-sm-10">
+                <div id="youngArtists" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#youngArtists" data-slide-to="0" class="active"></li>
+                        <li data-target="#youngArtists" data-slide-to="1"></li>
+                        <li data-target="#youngArtists" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="item-wrapper">
+                                <div class="col-sm-6 artwork">
+                                    <img src="resource/image/artwork/New Zealand (Ella Gordon-Latty, 12).png" alt="First slide">
+                                </div>
+                                <div class="col-sm-6 description">
+                                    <div class="name flex-align-center">
+                                        <div>
+                                            <div class="flex-align-center">
+                                                <img src="resource/image/logos/New-Zealand.png">
+                                            </div>
+                                            <div>
+                                                <div>Ella Gordon-Latty, age 12</div>
+                                                <div class="country">New Zealand</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="quote">
+                                        <div>
+                                            “To paraphrase Ralph Waldo Emerson, the Earth understands civilization. Well used, it brings joy. When adored, doubles the joy. But if ill-used, it will destroy.”
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="item-wrapper">
+                                <div class="col-sm-6 artwork">
+                                    <img src="resource/image/artwork/UK (Deanna Hodgson, 12).png" alt="Second slide">
+                                </div>
+                                <div class="col-sm-6 description">
+                                    <div class="name flex-align-center">
+                                        <div>Ella Gordon</div>
+                                    </div>
+                                    <div class="quote">
+                                        <div>
+                                            “To paraphrase Ralph Waldo Emerson, the Earth understands civilization. Well used, it brings joy. When adored, doubles the joy. But if ill-used, it will destroy.”
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="item-wrapper">
+                                <div class="col-sm-6 artwork">
+                                    <img src="resource/image/artwork/Texas (April Heaney, 14).png" alt="Third slide">
+                                </div>
+                                <div class="col-sm-6 description">
+                                    <div class="name flex-align-center">
+                                        <div>Ella Gordon</div>
+                                    </div>
+                                    <div class="quote">
+                                        <div>
+                                            “To paraphrase Ralph Waldo Emerson, the Earth understands civilization. Well used, it brings joy. When adored, doubles the joy. But if ill-used, it will destroy.”
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <a class="carousel-control-prev" href="#youngArtists" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#youngArtists" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a> -->
+                </div>
+            </div>
+            <div class="flex-align-center">
+                <svg width="76" height="76" viewBox="0 0 76 76" fill="none" id="slideNext">
+                    <circle cx="38" cy="38" r="38" fill="#E5E5E5"/>
+                    <path d="M22.8333 38.5H54.1667" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M40.4584 24.7917L54.1667 38.5L40.4584 52.2083" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+
     </div>
-
-
-
 </body>
 
 </html>

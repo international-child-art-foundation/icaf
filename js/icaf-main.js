@@ -1,11 +1,5 @@
 $(document).ready(function() {
-    // window.wcf = $('video')[0];
-    // wcf.pause();
-    // wcf.currentTime = 185;
     /*
-        currentTime
-        playbackRate
-     */
     let videoElm = $('video')[0];
     videoElm.volume = 0.2;
     let $volumeDiv = $('#volumeControl');
@@ -31,4 +25,5 @@ $(document).ready(function() {
         $(document).scrollTop($(document).height());
         setTimeout(_ => $carousel.carousel('pause'), 10);
     }, 50);
+    */
 });

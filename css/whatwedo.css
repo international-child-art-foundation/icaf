@@ -1,0 +1,20 @@
+.card {
+    width: 299px;
+    height: 474px;
+}
+
+#InteractiveExhibitions {
+    background-image: url(../resource/Image/whatwedo/InteractiveExhibitions.png);
+    background-size: contain;
+}
+
+.card-img {
+    width: 299px;
+    height: 474px;
+}
+
+.card-img-bottom {
+    width: 179.01px;
+    height: 66.65px;
+
+}

@@ -1,8 +1,19 @@
 .card {
     width: 299px;
     height: 474px;
+    position:relative;
 }
-
+.card-img-overlay {
+    width: 179.01px;
+    height: 66.65px;
+    margin:auto;
+    position:absolute;/*设定水平和垂直偏移父元素的50%，
+再根据实际长度将子元素上左挪回一半大小*/
+    left:50%;
+    top:80%;
+    margin-left: -100px;
+    margin-top:-15px;
+}
 #InteractiveExhibitions {
     background-image: url(../resource/Image/whatwedo/InteractiveExhibitions.png);
     background-size: contain;

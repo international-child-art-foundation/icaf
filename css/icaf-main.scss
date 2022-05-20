@@ -12,3 +12,68 @@
 .full-height {
     height: 100%;
 }
+
+body>.container {
+    max-width: 1440px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#whatWeDo {
+    margin-left: 80px;
+    margin-right: 80px;
+    .card {
+        // width: 270px;
+        // height: 474px;
+        position: relative;
+        // border-radius: 20px;
+        .card-img {
+            width: 300px;
+            height: 475px;
+            border-radius: 9px;
+        }
+        .card-link-wrapper {
+            position: absolute;
+            left: calc(50% - 90px);
+            top: 80%;
+            a {
+                &:hover {
+                    text-decoration: none;
+                }
+                div {
+                    width: 180px;
+                    height: 67px;
+                    background: #FFD743;
+                    border-radius: 37px;
+                    span {
+                        font-family: 'Nunito';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #134380;
+                        max-width: 130px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .card-img-overlay {
+        // width: 179.01px;
+        // height: 66.65px;
+        // margin: auto;
+        position: absolute;
+        /*设定水平和垂直偏移父元素的50%，
+    再根据实际长度将子元素上左挪回一半大小*/
+        left: 50%;
+        top: 80%;
+        // margin-left: -100px;
+        // margin-top: -15px;
+    }
+    /* #InteractiveExhibitions {
+        background-image: url(../resource/Image/whatwedo/InteractiveExhibitions.png);
+        background-size: contain;
+    } */
+    .card-img-bottom {}
+}

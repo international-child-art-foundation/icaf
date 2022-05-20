@@ -1,7 +1,8 @@
 .card {
-    width: 299px;
+    width: 270px;
     height: 474px;
     position:relative;
+    border-radius: 20px;
 }
 .card-img-overlay {
     width: 179.01px;
@@ -14,14 +15,16 @@
     margin-left: -100px;
     margin-top:-15px;
 }
-#InteractiveExhibitions {
+/* #InteractiveExhibitions {
     background-image: url(../resource/Image/whatwedo/InteractiveExhibitions.png);
     background-size: contain;
-}
+} */
 
 .card-img {
-    width: 299px;
+    width: 270px;
     height: 474px;
+    border-radius: 20px;
+    
 }
 
 .card-img-bottom {

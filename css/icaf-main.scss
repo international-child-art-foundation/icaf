@@ -12,3 +12,48 @@
 .full-height {
     height: 100%;
 }
+
+body>.container {
+    max-width: 1440px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#whatWeDo {
+    margin-left: 80px;
+    margin-right: 80px;
+    .card {
+        position: relative;
+        .card-img {
+            width: 300px;
+            height: 475px;
+            border-radius: 9px;
+        }
+        .card-link-wrapper {
+            position: absolute;
+            left: calc(50% - 90px);
+            top: 80%;
+            a {
+                &:hover {
+                    text-decoration: none;
+                }
+                div {
+                    width: 180px;
+                    height: 67px;
+                    background: #FFD743;
+                    border-radius: 37px;
+                    span {
+                        font-family: 'Nunito';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #134380;
+                        max-width: 130px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -57,3 +57,133 @@ body>.container {
         }
     }
 }
+
+/*Carousel*/
+// .carousel-wrapper {
+//     display:flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin: 5% 0;
+    
+//     section {
+//         position: relative;
+//         width: 1358px;
+//         height: 695px;
+
+//         .goLeft, .goRight{
+//             position: absolute;
+//             top:45%;
+//             height:75px;
+//             width:75px;
+//             opacity:0.4;
+//             z-index:1;
+//             display:flex;
+//             justify-content:center;
+//             align-items: center;
+//         }
+//         .goLeft{
+//             left: 0;
+//             img{
+//                 width:20px;
+//             }
+//             &:hover, &:active{
+//                 border-top-right-radius: 1em;
+//                 border-bottom-right-radius: 1em;
+//                 background: rgba(255,255,255,0.9);
+//                 transition: background 0.2s ease-in-out;
+//                 img{
+//                     filter: brightness(0);
+//                     transition: filter 0.2s ease-in-out;
+//                 }
+//             } 
+//         }
+//         .goRight{
+//             right: 0;
+//             img{
+//                 width:20px;
+//             }
+//             &:hover, &:active{
+//                 border-top-left-radius: 1em;
+//                 border-bottom-left-radius: 1em;
+//                 background: rgba(255,255,255,0.9);
+//                 transition: background 0.2s ease-in-out;
+//                 img{
+//                     filter: brightness(0);
+//                     transition: filter 0.2s ease-in-out;
+//                 }
+//             }
+//         }
+//         .slide{
+//             height:100%;
+//             width:100%;
+//             font-size: 18px;
+//             background: #373535;
+//             border-radius: 10px;
+//             position: relative;
+//             overflow: hidden;
+//         }
+//         .painting, .paintingAlone{
+//             position: absolute;
+//             height: 100%;
+//             left: 50%;
+//             transform: translateX(-50%);
+//         }
+//         .description{
+//             position:absolute;
+//             right:0;
+//             height:100%;
+//             width:569px;
+//             padding: 8% 6%;
+//             display:flex;
+//             flex-direction: column;
+//             justify-content: flex-start;
+//             align-items: center;
+//             font-size: 18px;
+//             color:white;
+//             background: #134380;
+//             opacity:0;
+
+//             .artist{
+//                 width:140px;
+//                 display:block;
+//                 margin-bottom:10%;
+//             }
+//             h3{
+//                 font-size: 18px;
+//                 font-weight: black;
+//                 padding: 2% 0;
+//                 align-self: flex-start;
+//             }
+//             .flag{
+//                 width:33px;
+//                 /* position:relative;
+//                 top: 8px; */
+//                 margin-right:1.5em;
+//             }
+//             p{
+//                 font-size: 18px;
+//                 font-weight: 300;
+//                 line-height:25px;
+//             }
+//         }
+//     }
+// }
+
+// .fadeIn{
+//     animation: fadeIn 1s forwards;
+// }
+// .slideLeft{
+//     animation: slideLeft 0.5s forwards;
+// }
+// .slideRight{
+//     animation: slideLeft 0.5s reverse forwards;
+// }
+// @keyframes fadeIn{
+//     0% { opacity : 0; }
+//     100% { opacity : 1; }
+// }
+
+// @keyframes slideLeft{
+//     0% { transform : translateX(-50%); }
+//     100% { transform: translateX(-86%); }
+// }

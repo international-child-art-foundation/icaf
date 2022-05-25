@@ -22,9 +22,27 @@ function slideLeft(){
     if(current === 0){
         current = sliderImages.length;
     }
-    // document.querySelector('.paintingAlone').classList.add = 'slideRight';
+    
     sliderImages[current -1].style.display = 'block';
     current--;
+    document.querySelector('.paintingAlone').animate([
+        // keyframes
+        { transform: 'translateX(-86px)' },
+        { transform: 'translateY(-50px)' }
+      ], {
+        // timing options
+        duration: 500,
+        fill: forwards
+      });
+      document.querySelector('.painting').animate([
+        // keyframes
+        { opacity: 0 },
+        { opacity: 1 }
+      ], {
+        // timing options
+        duration: 1000,
+        fill: forwards
+      });
 }
 //show Next
 function slideRight(){

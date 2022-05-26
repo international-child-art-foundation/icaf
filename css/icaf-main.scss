@@ -22,26 +22,75 @@ body>.container {
 #whatWeDo {
     margin-left: 80px;
     margin-right: 80px;
+    font-family: 'Nunito';
+    font-style: normal;
+    color: #134380;
+
+    .text {
+        align-items: center;
+        text-align: center;
+        h {
+            width: 250px;
+            height: 58px;
+            left: 539px;
+            top: 3369px;
+            margin: 0;
+            /* ICAF_H0(Hero) */
+
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 55px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        p {
+            width: 801px;
+            height: 145px;
+            left: 339px;
+            top: 3427px;
+
+            /* ICAF_H4(Text Body) */
+
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
     .card {
         position: relative;
+
         .card-img {
             width: 300px;
             height: 475px;
             border-radius: 9px;
         }
+
         .card-link-wrapper {
             position: absolute;
             left: calc(50% - 90px);
             top: 80%;
+
             a {
                 &:hover {
                     text-decoration: none;
                 }
+
                 div {
                     width: 180px;
                     height: 67px;
                     background: #FFD743;
                     border-radius: 37px;
+
                     span {
                         font-family: 'Nunito';
                         font-style: normal;

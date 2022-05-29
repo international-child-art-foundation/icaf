@@ -42,14 +42,14 @@ body>.container {
     text-align: center;
     width: 100%;
     margin-bottom: 65px;
+    span {
+        width: 800px;
+    }
 }
 
 #whatWeDo {
     width: 1290px;
     margin: 0 auto;
-    .description {
-        width: 800px;
-    }
     ul {
         list-style-type: none;
         padding: 0;

@@ -1,3 +1,5 @@
+/* General */
+
 .no-hpad {
     padding-left: 0;
     padding-right: 0;
@@ -44,6 +46,30 @@ body>.container {
     margin-bottom: 65px;
     span {
         width: 800px;
+    }
+}
+
+
+/* Section Specific */
+
+#videoContainer {
+    display: flex;
+    justify-content: center;
+    video {
+        width: 100%;
+    }
+    #volumeControl {
+        z-index: 10;
+        position: absolute;
+        bottom: -36%;
+        right: 8%;
+        display: none;
+        img {
+            width: 45px;
+            &:first-of-type {
+                display: none;
+            }
+        }
     }
 }
 

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/icaf-main.css" />
     <!-- <link rel="stylesheet" href="css/icaf-main.css.map" /> -->
-    <script src="js/jquery-3.3.1.slim.min.js" defer></script>
+    <script src="js/jquery-3.3.1.min.js" defer></script>
     <script src="js/popper.min.js" defer></script>
     <!-- <script src="js/bootstrap.min.js" defer></script> -->
     <script src="js/bootstrap.min.js" defer></script>
@@ -40,6 +40,16 @@
 
         <!-- WCF video -->
         <div class="section-title">World Children's Festival</div>
+        <div id="videoContainer">
+            <video loop muted autoplay playsinline>
+                <source src="resource/video/wcf-full.mp4" type="video/mp4">
+                <source src="resource/video/wcf-1m.mp4" type="video/mp4">
+            </video>
+            <div id="volumeControl">
+                <img src="resource/image/vol-icon.png">
+                <img src="resource/image/vol-muted-icon.png">
+            </div>
+        </div>
 
         <!-- What We Do -->
         <div class="section-title">What We Do</div>

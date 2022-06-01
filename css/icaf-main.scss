@@ -55,14 +55,15 @@ body>.container {
 #videoContainer {
     display: flex;
     justify-content: center;
+    position: relative;
     video {
         width: 100%;
     }
     #volumeControl {
         z-index: 10;
         position: absolute;
-        bottom: -36%;
-        right: 8%;
+        bottom: 8%;
+        right: 5%;
         display: none;
         img {
             width: 45px;

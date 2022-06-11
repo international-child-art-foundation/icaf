@@ -50,7 +50,169 @@ body>.container {
 }
 
 
+/* Cross-Fade */
+
+$welcomeCrossFadeDuration: 10s;
+$ctwCrossFadeDuration: 6s;
+.cross-fade {
+    position: relative;
+    // margin: auto;
+    >img,
+    >div {
+        position: absolute;
+        animation-iteration-count: infinite;
+    }
+}
+
+
+/* This animation, meant for two elements, will fade-in after half the time (10% for the fade) */
+
+@keyframes welcome-fade {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
 /* Section Specific */
+
+.welcome {
+    width: 1358px;
+    margin: 0 auto;
+    margin-top: 147px;
+    ul {
+        list-style-type: none;
+        padding: 0;
+        li {
+            float: left;
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+            img {
+                border-radius: 9px;
+            }
+            /* Cross fade timing*/
+            &.cf-group1 {
+                >img,
+                >div {
+                    animation-name: welcome-fade;
+                    animation-duration: $welcomeCrossFadeDuration;
+                    &:nth-child(1) {
+                        animation-delay: (-1*($welcomeCrossFadeDuration / 2));
+                    }
+                }
+            }
+            &.cf-group2 {
+                >img,
+                >div {
+                    animation-name: welcome-fade;
+                    animation-duration: $welcomeCrossFadeDuration;
+                    &:nth-child(1) {
+                        animation-delay: (-3*($welcomeCrossFadeDuration / 4));
+                    }
+                    &:nth-child(2) {
+                        animation-delay: (-1*($welcomeCrossFadeDuration / 4));
+                    }
+                }
+            }
+        }
+    }
+    .upper {
+        margin-bottom: 30px;
+        .welcome-box {
+            width: 341px;
+            height: 285px;
+            background: #134380;
+            border-radius: 9px;
+            p:first-of-type {
+                font-weight: 800;
+                font-size: 24px;
+                line-height: 33px;
+                /* ICAF_Yellow */
+                color: #FFD743;
+                text-transform: uppercase;
+            }
+            p:last-of-type {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                color: #FFFFFF;
+            }
+            .main-welcome {
+                padding: 28px 39px 0px 44px;
+            }
+            .alt-welcome {
+                padding: 28px 32px 24px 44px;
+                p:last-of-type {
+                    font-size: 20px;
+                    line-height: 27px;
+                }
+                a {
+                    position: absolute;
+                    right: 45px;
+                    bottom: 0;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                    div {
+                        width: 133px;
+                        height: 46px;
+                        /* ICAF_Yellow */
+                        background: #FFD743;
+                        border-radius: 37px;
+                        span {
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 19px;
+                            letter-spacing: 0.1em;
+                            color: #134380;
+                            // max-width: 130px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .img1 {
+            width: 351px;
+            height: 285px;
+        }
+        .img2 {
+            width: 339px;
+            height: 285px;
+        }
+        .img3 {
+            width: 267px;
+            height: 285px;
+        }
+    }
+    .lower {
+        .img4 {
+            width: 341px;
+            height: 405px;
+        }
+        .img5 {
+            width: 563px;
+            height: 405px;
+        }
+        .img6 {
+            width: 414px;
+            height: 405px;
+        }
+    }
+}
 
 #videoContainer {
     display: flex;

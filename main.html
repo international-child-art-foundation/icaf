@@ -9,7 +9,6 @@
     <!-- <link rel="stylesheet" href="css/icaf-main.css.map" /> -->
     <script src="js/jquery-3.3.1.min.js" defer></script>
     <script src="js/popper.min.js" defer></script>
-    <!-- <script src="js/bootstrap.min.js" defer></script> -->
     <script src="js/bootstrap.min.js" defer></script>
     <!-- <script src="js/bootstrap.bundle.min.js" defer></script> -->
     <script src="js/icaf-main.js" defer></script>
@@ -23,8 +22,62 @@
             <ul class="row"></ul>
         </nav>
 
+        <!-- DEBUG UI -->
+        <div id="cfMetadata" style="display:none">
+            <p>Time: <span id="time"></span></p>
+            <p>
+                (1-1) <span id="t1"></span> &nbsp;&nbsp;&nbsp;&nbsp; (2-1) <span id="t3"></span>
+                <br/> (1-2) <span id="t2"></span> &nbsp;&nbsp;&nbsp;&nbsp; (2-2) <span id="t4"></span>
+            </p>
+        </div>
+        <!-- END DEBUG UI -->
+
         <!-- Welcome to ICAF -->
-        <div class="row welcome"></div>
+        <div class="welcome row">
+            <ul class="upper">
+                <li class="welcome-box cross-fade cf-group1">
+                    <div class="main-welcome">
+                        <p>Welcome To ICAF</p>
+                        <p>We serve American children as their national arts organization that cultivates their creativity and grows mutual empathy among them and their peers worldwide through the universal language of art. </p>
+                    </div>
+                    <div class="alt-welcome">
+                        <p>Welcome To ICAF</p>
+                        <p>For a prosperous and peaceful future, join us to cultivate children's creativity and grow mutual empathy universally.</p>
+                        <a href="#">
+                            <div class="flex-align-center">
+                                <span>Learn More</span>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="img1 cross-fade cf-group1">
+                    <img class="img1" src="resource/image/welcome/hands.png" id="debug1" />
+                    <img class="img1" src="resource/image/welcome/fox-interview.png" id="debug2" />
+                </li>
+                <li class="img2 cross-fade cf-group2">
+                    <img class="img2" src="resource/image/welcome/prodigy.png" id="debug3" />
+                    <img class="img2" src="resource/image/welcome/feather-hat.png" id="debug4" />
+                </li>
+                <li class="img3 cross-fade cf-group1">
+                    <img class="img3" src="resource/image/welcome/happy-hat.png" />
+                    <img class="img3" src="resource/image/welcome/us-pride.png" />
+                </li>
+            </ul>
+            <ul class="lower">
+                <li class="img4 cross-fade cf-group2">
+                    <img class="img4" src="resource/image/welcome/painting-peace.png" />
+                    <img class="img4" src="resource/image/welcome/glitter-art.png" />
+                </li>
+                <li class="img5 cross-fade cf-group1">
+                    <img class="img5" src="resource/image/welcome/three-kids.png" />
+                    <img class="img5" src="resource/image/welcome/proud-displaying.png" />
+                </li>
+                <li class="img6 cross-fade cf-group2">
+                    <img class="img6" src="resource/image/welcome/tiki-punch.png" />
+                    <img class="img6" src="resource/image/welcome/capitol.png" />
+                </li>
+            </ul>
+        </div>
 
         <!--Let's Change the World -->
         <div class="row us-mural"></div>

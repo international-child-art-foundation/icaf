@@ -1,3 +1,7 @@
+$ICAF_BLUE: #134380;
+$ICAF_YELLOW: #ffd743;
+$ICAF_WHITE: #ffffff;
+
 /* General */
 
 .no-hpad {
@@ -24,7 +28,7 @@ body > .container {
 }
 
 .section-title {
-  color: #134380;
+  color: $ICAF_BLUE;
   font-weight: 800;
   font-size: 40px;
   line-height: 55px;
@@ -35,7 +39,7 @@ body > .container {
 }
 
 .section-description {
-  color: #134380;
+  color: $ICAF_BLUE;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
@@ -147,21 +151,20 @@ $muralCrossFadeDuration: 6s;
     .welcome-box {
       width: 341px;
       height: 285px;
-      background: #134380;
+      background: $ICAF_BLUE;
       border-radius: 9px;
       p:first-of-type {
         font-weight: 800;
         font-size: 24px;
         line-height: 33px;
-        /* ICAF_Yellow */
-        color: #ffd743;
+        color: $ICAF_YELLOW;
         text-transform: uppercase;
       }
       p:last-of-type {
         font-weight: 400;
         font-size: 18px;
         line-height: 25px;
-        color: #ffffff;
+        color: $ICAF_WHITE;
       }
       .main-welcome {
         padding: 28px 39px 0px 44px;
@@ -182,15 +185,14 @@ $muralCrossFadeDuration: 6s;
           div {
             width: 133px;
             height: 46px;
-            /* ICAF_Yellow */
-            background: #ffd743;
+            background: $ICAF_YELLOW;
             border-radius: 37px;
             span {
               font-weight: 700;
               font-size: 14px;
               line-height: 19px;
               letter-spacing: 0.1em;
-              color: #134380;
+              color: $ICAF_BLUE;
               // max-width: 130px;
               text-align: center;
             }
@@ -248,14 +250,14 @@ $muralCrossFadeDuration: 6s;
   }
   .mural-text {
     width: 514px;
-    background-color: #134380;
-    color: #ffffff;
+    background-color: $ICAF_BLUE;
+    color: $ICAF_WHITE;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 0px 9px 9px 0px;
     .mural-title {
-      color: #ffd743;
+      color: $ICAF_YELLOW;
       margin-top: 45px;
       font-weight: 800;
       font-size: 20px;
@@ -329,13 +331,13 @@ $muralCrossFadeDuration: 6s;
           div {
             width: 180px;
             height: 67px;
-            background: #ffd743;
+            background: $ICAF_YELLOW;
             border-radius: 37px;
             span {
               font-weight: 700;
               font-size: 16px;
               line-height: 22px;
-              color: #134380;
+              color: $ICAF_BLUE;
               max-width: 130px;
               text-align: center;
             }
@@ -347,8 +349,8 @@ $muralCrossFadeDuration: 6s;
 }
 
 footer {
-  background-color: #134380;
-  color: #ffffff;
+  background-color: $ICAF_BLUE;
+  color: $ICAF_WHITE;
   .icaf-plug {
     padding-top: 40px;
     font-weight: 800;
@@ -378,8 +380,8 @@ footer {
       button {
         font-weight: 700;
         font-size: 12px;
-        color: #134380;
-        background: #ffd743;
+        color: $ICAF_BLUE;
+        background: $ICAF_YELLOW;
         border-radius: 0px 9px 9px 0px;
         width: 56px;
         height: 37px;

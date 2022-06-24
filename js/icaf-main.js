@@ -1,3 +1,5 @@
+import ICAFCarousel from './ICAFCarousel.js';
+
 $(document).ready(function() {
     let videoElm = $('video')[0];
     videoElm.volume = 0.4;
@@ -11,7 +13,8 @@ $(document).ready(function() {
         videoElm.muted = !videoElm.muted
     });
 
-
+    let carousel = new ICAFCarousel('.carousel-wrapper');
+        window.c = carousel;
 });
 
 //DEBUG

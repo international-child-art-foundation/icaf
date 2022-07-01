@@ -7,6 +7,7 @@ $slideDuration: 0.5s;
   align-items: center;
   max-width: 1358px;
   margin: 0 auto;
+  margin-bottom: 100px;
 
   section {
     position: relative;
@@ -65,13 +66,13 @@ $slideDuration: 0.5s;
     position: relative;
     overflow: hidden;
 
-    .painting {
-      position: absolute;
-      height: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      max-width: 80%;
+    &.active {
+      display: block;
     }
+    &:not(.active) {
+      display: none;
+    }
+
     /* Regular */
     &.dir-right {
       &.partial {

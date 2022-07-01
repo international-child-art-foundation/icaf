@@ -22,13 +22,13 @@ class ICAFCarousel {
     }
 
     init() {        
-        this.$sliderImages.hide()
-            .eq(this.slideIdx).show().addClass('dir-right');
+        this.$sliderImages.eq(this.slideIdx)
+                .addClass('active dir-right');
     }
 
-    restartAutoSlide() {
-        return this.pause().play();
-    }
+    // restartAutoSlide() {
+    //     return this.pause().play();
+    // }
 
     pause() {
         this.paused = true;
@@ -46,9 +46,8 @@ class ICAFCarousel {
         if (this.sliding) return this;
         let classes = ['dir-left','dir-right'];
         this.slideIdx = (this.slideIdx+dx)%this.$sliderImages.length;
-        this.$sliderImages.hide().eq(this.slideIdx).show()
-            .removeClass(classes[(-dx/2)+0.5])   //  1=>0, -1=>1
-            .addClass(classes[(dx/2)+0.5]);      //  1=>1, -1=>0
+        this.$sliderImages.removeClass(classes.concat('active'))
+            .eq(this.slideIdx).addClass(['active',classes[(dx/2)+0.5]]);
         this.sliding = true;
         setTimeout(()=>this.sliding=false,slideInvulnerability);
         return this;

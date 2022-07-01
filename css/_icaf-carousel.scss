@@ -1,5 +1,5 @@
 $fadeDuration: 0.5s;
-$slideDuration: 1s;
+$slideDuration: 0.5s;
 
 .carousel-wrapper {
   display: flex;
@@ -60,15 +60,60 @@ $slideDuration: 1s;
   .slide {
     height: 100%;
     width: 100%;
-    font-size: 18px;
     background: #373535;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+
+    .painting {
+      position: absolute;
+      height: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 80%;
+    }
+    /* Regular */
+    &.dir-right {
+      &.partial {
+        .painting {
+          animation: fadeIn $fadeDuration forwards;
+        }
+        .description {
+          display: none;
+        }
+      }
+      &.full {
+        .painting {
+          animation: slideLeft $slideDuration forwards;
+        }
+        .description {
+          animation: fadeIn $fadeDuration forwards;
+        }
+      }
+    }
+    /* Reverse */
+    &.dir-left {
+      &.partial {
+        .painting {
+          animation: slideRight $slideDuration forwards;
+        }
+        .description {
+          animation: fadeOut $fadeDuration forwards;
+        }
+      }
+      &.full {
+        .painting {
+          transform: translateX(-86%);
+          animation: fadeIn $fadeDuration forwards;
+        }
+        .description {
+          animation: fadeIn $fadeDuration forwards;
+        }
+      }
+    }
   }
 
-  .painting,
-  .paintingAlone {
+  .painting {
     position: absolute;
     height: 100%;
     left: 50%;
@@ -89,7 +134,6 @@ $slideDuration: 1s;
     font-size: 18px;
     color: white;
     background: #134380;
-    opacity: 0;
 
     > h3 {
       font-size: 18px;
@@ -116,16 +160,6 @@ $slideDuration: 1s;
     font-size: 18px;
     font-weight: 300;
     line-height: 25px;
-  }
-
-  .fadeIn {
-    animation: fadeIn $fadeDuration forwards;
-  }
-  .slideLeft {
-    animation: slideLeft $slideDuration forwards;
-  }
-  .slideRight {
-    animation: slideLeft $slideDuration reverse forwards;
   }
 }
 

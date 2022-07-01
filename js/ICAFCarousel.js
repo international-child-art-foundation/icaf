@@ -1,20 +1,19 @@
 const defaultAutoSlideInterval = 5000;
-const maxSlideTransition = 1000;
+const slideInvulnerability = 100;
 
 class ICAFCarousel {
     constructor($element){
         if ($element.constructor.name === 'String') $element = $($element);
-
-        // this.$element = $element;
-
-
         this.$sliderImages = $element.find('.slide');
-        $element.find('.goLeft').click(() => this.slideLeft().restartAutoSlide());
-        $element.find('.goRight').click(() => this.slideRight().restartAutoSlide());        
+
+        // Pause on hover
+        $element.mouseover(() => this.pause())
+                .mouseout(() => this.play());
+        $element.find('.goLeft').click(() => this.slideLeft());
+        $element.find('.goRight').click(() => this.slideRight());        
         this.autoSlideInterval = defaultAutoSlideInterval;
         this.intervalId = null;
 
-        // this._activeElement = null;
         this.slideIdx = 0;
         this.paused = false;
         this.sliding = false;
@@ -24,7 +23,7 @@ class ICAFCarousel {
 
     init() {        
         this.$sliderImages.hide()
-            .eq(this.slideIdx).show();
+            .eq(this.slideIdx).show().addClass('dir-right');
     }
 
     restartAutoSlide() {
@@ -43,20 +42,24 @@ class ICAFCarousel {
         return this;    // For Chaining
     }
 
-    slideLeft() {
+    slide(dx) {
         if (this.sliding) return this;
-        this.slideIdx = (this.slideIdx-1)%this.$sliderImages.length;
-        this.$sliderImages.hide().eq(this.slideIdx).show();
+        let classes = ['dir-left','dir-right'];
+        this.slideIdx = (this.slideIdx+dx)%this.$sliderImages.length;
+        this.$sliderImages.hide().eq(this.slideIdx).show()
+            .removeClass(classes[(-dx/2)+0.5])   //  1=>0, -1=>1
+            .addClass(classes[(dx/2)+0.5]);      //  1=>1, -1=>0
+        this.sliding = true;
+        setTimeout(()=>this.sliding=false,slideInvulnerability);
         return this;
     }
 
+    slideLeft() {
+        return this.slide(-1);
+    }
+
     slideRight() {
-        if (this.sliding) { console.log("can't slide!"); return this; }
-        this.slideIdx = (this.slideIdx+1)%this.$sliderImages.length;
-        this.$sliderImages.hide().eq(this.slideIdx).show();
-        this.sliding = true;
-        setTimeout(()=>this.sliding=false,maxSlideTransition);        
-        return this;
+        return this.slide(1);        
     }
 
 }

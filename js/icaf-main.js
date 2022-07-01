@@ -14,7 +14,7 @@ $(document).ready(function() {
     });
 
     let carousel = new ICAFCarousel('.carousel-wrapper');
-        window.c = carousel;
+    carousel.play();
 });
 
 //DEBUG

@@ -1,8 +1,11 @@
+@use "sass:math";
+
 @use "./_icaf-carousel.scss";
 
-$ICAF_BLUE: #134380; 
+$ICAF_BLUE: #134380;
 $ICAF_YELLOW: #ffd743;
 $ICAF_WHITE: #ffffff;
+$ICAF_GRAY: #586b83;
 
 /* General */
 
@@ -133,7 +136,7 @@ $muralCrossFadeDuration: 6s;
           animation-name: welcome-fade;
           animation-duration: $welcomeCrossFadeDuration;
           &:nth-child(1) {
-            animation-delay: (-1 * calc($welcomeCrossFadeDuration / 2));
+            animation-delay: (-1 * math.div($welcomeCrossFadeDuration, 2));
           }
         }
       }
@@ -143,10 +146,10 @@ $muralCrossFadeDuration: 6s;
           animation-name: welcome-fade;
           animation-duration: $welcomeCrossFadeDuration;
           &:nth-child(1) {
-            animation-delay: (-3 * calc($welcomeCrossFadeDuration / 4));
+            animation-delay: (-3 * math.div($welcomeCrossFadeDuration, 4));
           }
           &:nth-child(2) {
-            animation-delay: (-1 * calc($welcomeCrossFadeDuration / 4));
+            animation-delay: (-1 * math.div($welcomeCrossFadeDuration, 4));
           }
         }
       }
@@ -250,7 +253,7 @@ $muralCrossFadeDuration: 6s;
       animation-name: mural-fade;
       animation-duration: $muralCrossFadeDuration;
       &:nth-child(1) {
-        animation-delay: (-1 * calc($muralCrossFadeDuration / 2));
+        animation-delay: (-1 * math.div($muralCrossFadeDuration, 2));
       }
     }
   }

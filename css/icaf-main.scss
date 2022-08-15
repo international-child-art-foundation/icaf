@@ -1,11 +1,9 @@
 @use "sass:math";
 
 @use "./_icaf-carousel.scss";
+@use "./_icaf-footer.scss";
 
-$ICAF_BLUE: #134380;
-$ICAF_YELLOW: #ffd743;
-$ICAF_WHITE: #ffffff;
-$ICAF_GRAY: #586b83;
+@import "./_icaf-colors.scss";
 
 /* General */
 
@@ -40,7 +38,8 @@ body > .container {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin: 14px 0;
+  // padding-top: 38px;
+  padding: 35px 0;
 }
 
 .section-description {
@@ -54,7 +53,26 @@ body > .container {
   width: 100%;
   margin-bottom: 65px;
   span {
-    width: 800px;
+    width: 830px;
+  }
+}
+
+a.icaf-button {
+  text-decoration: none;
+  div {
+    background: $ICAF_YELLOW;
+    border-radius: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      color: $ICAF_BLUE;
+      max-width: 130px;
+      text-align: center;
+    }
   }
 }
 
@@ -162,50 +180,20 @@ $muralCrossFadeDuration: 6s;
       height: 285px;
       background: $ICAF_BLUE;
       border-radius: 9px;
-      p:first-of-type {
-        font-weight: 800;
-        font-size: 24px;
-        line-height: 33px;
-        color: $ICAF_YELLOW;
-        text-transform: uppercase;
-      }
-      p:last-of-type {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 25px;
-        color: $ICAF_WHITE;
-      }
-      .main-welcome {
-        padding: 28px 39px 0px 44px;
-      }
-      .alt-welcome {
-        padding: 28px 32px 24px 44px;
-        p:last-of-type {
-          font-size: 20px;
-          line-height: 27px;
+      > div {
+        padding: 38px;
+        p:first-of-type {
+          font-weight: 800;
+          font-size: 24px;
+          line-height: 33px;
+          color: $ICAF_YELLOW;
+          text-transform: uppercase;
         }
-        a {
-          position: absolute;
-          right: 45px;
-          bottom: 0;
-          &:hover {
-            text-decoration: none;
-          }
-          div {
-            width: 133px;
-            height: 46px;
-            background: $ICAF_YELLOW;
-            border-radius: 37px;
-            span {
-              font-weight: 700;
-              font-size: 14px;
-              line-height: 19px;
-              letter-spacing: 0.1em;
-              color: $ICAF_BLUE;
-              // max-width: 130px;
-              text-align: center;
-            }
-          }
+        p:last-of-type {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 25px;
+          color: $ICAF_WHITE;
         }
       }
     }
@@ -238,74 +226,105 @@ $muralCrossFadeDuration: 6s;
   }
 }
 
-.mural-wrapper {
-  width: 1358px;
-  margin: 29px auto 68px;
-
-  .murals {
-    &,
-    img {
-      width: 844px;
-      height: 618px;
-    }
-    img {
-      border-radius: 9px 0px 0px 9px;
-      animation-name: mural-fade;
-      animation-duration: $muralCrossFadeDuration;
-      &:nth-child(1) {
-        animation-delay: (-1 * math.div($muralCrossFadeDuration, 2));
+.mural-wrapper-background {
+  background-color: $ICAF_GRAY2;
+  height: 713px;
+  margin-top: 49px;
+  padding: 54px 44px;
+  .mural-wrapper {
+    display: flex;
+    width: 1358px;
+    .murals {
+      &,
+      img {
+        width: 825px;
+        height: 605px;
+      }
+      img {
+        border-radius: 9px 0px 0px 9px;
+        animation-name: mural-fade;
+        animation-duration: $muralCrossFadeDuration;
+        &:nth-child(1) {
+          animation-delay: (-1 * math.div($muralCrossFadeDuration, 2));
+        }
       }
     }
-  }
-  .mural-text {
-    width: 514px;
-    background-color: $ICAF_BLUE;
-    color: $ICAF_WHITE;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 0px 9px 9px 0px;
-    .mural-title {
-      color: $ICAF_YELLOW;
-      margin-top: 45px;
-      font-weight: 800;
-      font-size: 20px;
-      line-height: 27px;
-      text-align: center;
-      max-width: 415px;
-    }
-    ul {
-      margin: 42px 0;
-      font-size: 18px;
-      line-height: 25px;
-      max-width: 446px;
+    .mural-text {
+      width: 535px;
+      background-color: $ICAF_BLUE;
+      color: $ICAF_WHITE;
       display: flex;
       flex-direction: column;
-      gap: 12px;
-    }
-    span {
-      text-align: center;
+      align-items: center;
+      border-radius: 0px 9px 9px 0px;
+      .mural-title {
+        color: $ICAF_YELLOW;
+        margin-top: 45px;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        max-width: 488px;
+      }
+      .main-text {
+        margin-top: 36px;
+        margin-left: 25px;
+      }
+
+      ul {
+        font-size: 18px;
+        line-height: 25px;
+        max-width: 446px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding-left: 17px;
+        margin: 10px 0 40px;
+      }
+      span {
+        text-align: center;
+        &.text1 {
+          font-weight: 700;
+        }
+        &.text2 {
+        }
+      }
+      a.icaf-button {
+        margin-top: 15px;
+        div {
+          width: 138px;
+          height: 50px;
+        }
+      }
     }
   }
 }
 
-#videoContainer {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  video {
-    width: 100%;
-  }
-  #volumeControl {
-    z-index: 10;
-    position: absolute;
-    bottom: 8%;
-    right: 5%;
-    display: none;
-    img {
-      width: 45px;
-      &:first-of-type {
-        display: none;
+.videoContainer-background {
+  background-color: $ICAF_GRAY2;
+  height: 830px;
+  #videoContainer {
+    background-color: $ICAF_BLUE;
+    margin: 0 41px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    video {
+      width: 1169px;
+      height: 653px;
+    }
+    #volumeControl {
+      z-index: 10;
+      position: absolute;
+      bottom: 47%;
+      right: 2%;
+      display: none;
+      img {
+        width: 45px;
+        &:first-of-type {
+          display: none;
+        }
       }
     }
   }
@@ -317,114 +336,41 @@ $muralCrossFadeDuration: 6s;
   ul {
     list-style-type: none;
     padding: 0;
-    margin-bottom: 60px;
+    margin-bottom: 47px;
     li {
       float: left;
       position: relative;
       &:not(:last-child) {
         margin-right: 30px;
       }
-      .card-img {
-        width: 300px;
-        height: 475px;
-        border-radius: 9px;
-      }
-      .card-link-wrapper {
-        position: absolute;
-        left: calc(50% - 90px);
-        top: 80%;
-        a {
-          &:hover {
-            text-decoration: none;
-          }
-          div {
-            width: 180px;
-            height: 67px;
-            background: $ICAF_YELLOW;
-            border-radius: 37px;
-            span {
-              font-weight: 700;
-              font-size: 16px;
-              line-height: 22px;
-              color: $ICAF_BLUE;
-              max-width: 130px;
-              text-align: center;
+      .wwd-card {
+        position: relative;
+        .card-img {
+          width: 300px;
+          height: 475px;
+          border-radius: 9px;
+        }
+        .card-link-wrapper {
+          position: absolute;
+          left: calc(50% - 90px);
+          top: 80%;
+          a.icaf-button {
+            div {
+              width: 180px;
+              height: 67px;
             }
           }
         }
       }
-    }
-  }
-}
-
-footer {
-  background-color: $ICAF_BLUE;
-  color: $ICAF_WHITE;
-  .icaf-plug {
-    padding-top: 40px;
-    font-weight: 800;
-    font-size: 24px;
-    text-align: center;
-  }
-  .crypto-wrapper {
-    margin-left: 30px;
-    margin-top: 35px;
-    margin-bottom: 31px;
-  }
-  .newsletter {
-    text-align: end;
-    margin-top: 28px;
-    margin-right: 23px;
-    .sign-up {
-      font-size: 18px;
-      line-height: 25px;
-    }
-    .email-input {
-      margin-top: 22px;
-      input {
-        border-radius: 9px 0px 0px 9px;
-        width: 380px;
-        height: 37px;
-      }
-      button {
-        font-weight: 700;
-        font-size: 12px;
+      .wwd-description {
         color: $ICAF_BLUE;
-        background: $ICAF_YELLOW;
-        border-radius: 0px 9px 9px 0px;
-        width: 56px;
-        height: 37px;
-        margin-left: -5px;
-      }
-    }
-  }
-  .footer-bottom {
-    height: 66px;
-    padding-left: 30px;
-    padding-right: 23px;
-    .deets {
-      text-align: end;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 19px;
-      margin-top: 5px;
-      a {
-        color: inherit;
-      }
-    }
-    .copyright {
-      text-align: end;
-      font-size: 12px;
-      line-height: 16px;
-      margin-top: 15px;
-    }
-    *:not(.social-media) {
-      span ~ span::before,
-      span ~ a::before,
-      a ~ a::before {
-        content: "|";
-        margin-left: 0.5em;
-        margin-right: 0.7em;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        max-width: 252px;
+        margin-left: 24px;
+        height: 146px;
+        margin-top: 56px;
       }
     }
   }

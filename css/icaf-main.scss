@@ -269,24 +269,15 @@ $muralCrossFadeDuration: 6s;
       .main-text {
         margin-top: 36px;
         margin-left: 25px;
-      }
-
-      ul {
-        font-size: 18px;
-        line-height: 25px;
-        max-width: 446px;
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        padding-left: 17px;
-        margin: 10px 0 40px;
-      }
-      span {
-        text-align: center;
-        &.text1 {
-          font-weight: 700;
-        }
-        &.text2 {
+        ul {
+          font-size: 18px;
+          line-height: 25px;
+          max-width: 446px;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          padding-left: 17px;
+          margin: 10px 0 40px;
         }
       }
       a.icaf-button {

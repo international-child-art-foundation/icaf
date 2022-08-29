@@ -2,15 +2,15 @@ const defaultAutoSlideInterval = 5000;
 const slideInvulnerability = 100;
 
 class ICAFCarousel {
-    constructor($element){
+    constructor($element) {
         if ($element.constructor.name === 'String') $element = $($element);
         this.$sliderImages = $element.find('.slide');
 
         // Pause on hover
         $element.mouseover(() => this.pause())
-                .mouseout(() => this.play());
+            .mouseout(() => this.play());
         $element.find('.goLeft').click(() => this.slideLeft());
-        $element.find('.goRight').click(() => this.slideRight());        
+        $element.find('.goRight').click(() => this.slideRight());
         this.autoSlideInterval = defaultAutoSlideInterval;
         this.intervalId = null;
 
@@ -21,9 +21,9 @@ class ICAFCarousel {
         this.init();
     }
 
-    init() {        
+    init() {
         this.$sliderImages.eq(this.slideIdx)
-                .addClass('active dir-right');
+            .addClass('active');
     }
 
     // restartAutoSlide() {
@@ -44,12 +44,11 @@ class ICAFCarousel {
 
     slide(dx) {
         if (this.sliding) return this;
-        let classes = ['dir-left','dir-right'];
-        this.slideIdx = (this.slideIdx+dx)%this.$sliderImages.length;
-        this.$sliderImages.removeClass(classes.concat('active'))
-            .eq(this.slideIdx).addClass(['active',classes[(dx/2)+0.5]]);
+        this.slideIdx = (this.slideIdx + dx) % this.$sliderImages.length;
+        this.$sliderImages.removeClass(['active', 'reverse'])
+            .eq(this.slideIdx).addClass(['active', (dx < 0 ? 'reverse' : null)]);
         this.sliding = true;
-        setTimeout(()=>this.sliding=false,slideInvulnerability);
+        setTimeout(() => this.sliding = false, slideInvulnerability);
         return this;
     }
 
@@ -58,7 +57,7 @@ class ICAFCarousel {
     }
 
     slideRight() {
-        return this.slide(1);        
+        return this.slide(1);
     }
 
 }

@@ -74,7 +74,7 @@ $slideDuration: 0.5s;
     }
 
     /* Regular */
-    &.dir-right {
+    &:not(.reverse) {
       &.partial {
         .painting {
           animation: fadeIn $fadeDuration forwards;
@@ -93,7 +93,7 @@ $slideDuration: 0.5s;
       }
     }
     /* Reverse */
-    &.dir-left {
+    &.reverse {
       &.partial {
         .painting {
           animation: slideRight $slideDuration forwards;

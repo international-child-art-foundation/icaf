@@ -1,0 +1,104 @@
+@import "./_icaf-colors.scss";
+
+footer {
+  background-color: $ICAF_BLUE;
+  color: $ICAF_WHITE;
+  .icaf-plug {
+    padding-top: 25px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+  .footer-middle {
+    margin-top: 30px;
+    margin-bottom: 22px;
+    padding-left: 30px;
+    padding-right: 23px;
+    align-items: center;
+  }
+  .donate-wrapper {
+    div {
+      width: 176px;
+      height: 48px;
+      background: $ICAF_YELLOW;
+      border-radius: 37px;
+      span {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: $ICAF_BLUE;
+        max-width: 130px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .newsletter {
+    padding-top: 14px;
+    text-align: end;
+    .sign-up {
+      font-size: 18px;
+      line-height: 25px;
+      margin-right: 15px;
+    }
+    .email-input {
+      margin-top: 22px;
+      input {
+        border-radius: 9px 0px 0px 9px;
+        width: 304px;
+        height: 37px;
+      }
+      button {
+        font-weight: 700;
+        font-size: 12px;
+        color: $ICAF_BLUE;
+        background: $ICAF_YELLOW;
+        border-radius: 0px 9px 9px 0px;
+        width: 56px;
+        height: 37px;
+        margin-left: -5px;
+      }
+    }
+  }
+  .footer-bottom {
+    height: 66px;
+    padding-left: 30px;
+    padding-right: 23px;
+    a {
+      color: inherit;
+    }
+    .deets {
+      text-align: end;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      margin-top: 5px;
+    }
+    .copyright {
+      text-align: end;
+      font-size: 12px;
+      line-height: 16px;
+      margin-top: 5px;
+    }
+    .social-media {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    *:not(.social-media) {
+      span ~ span::before,
+      span ~ a::before,
+      a ~ a::before {
+        content: "|";
+        margin-left: 0.5em;
+        margin-right: 0.7em;
+      }
+    }
+  }
+}

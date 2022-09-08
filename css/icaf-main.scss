@@ -1,5 +1,6 @@
 @use "sass:math";
 
+@use "./_icaf-nav.scss";
 @use "./_icaf-carousel.scss";
 @use "./_icaf-footer.scss";
 
@@ -139,6 +140,9 @@ $muralCrossFadeDuration: 6s;
   ul {
     list-style-type: none;
     padding: 0;
+    li:not(:last-child) {
+      margin-right: 20px;
+    }
     li {
       float: left;
       &:not(:last-child) {
@@ -241,7 +245,7 @@ $muralCrossFadeDuration: 6s;
         height: 605px;
       }
       img {
-        border-radius: 9px 0px 0px 9px;
+        border-radius: 9px 0 0 9px;
         animation-name: mural-fade;
         animation-duration: $muralCrossFadeDuration;
         &:nth-child(1) {
@@ -256,7 +260,7 @@ $muralCrossFadeDuration: 6s;
       display: flex;
       flex-direction: column;
       align-items: center;
-      border-radius: 0px 9px 9px 0px;
+      border-radius: 0 9px 9px 0;
       .mural-title {
         color: $ICAF_YELLOW;
         margin-top: 45px;

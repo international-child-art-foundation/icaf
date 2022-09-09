@@ -1,0 +1,70 @@
+@use "icaf-colors" as *;
+
+.no-hpad {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-height {
+  height: 100%;
+}
+
+body > .container {
+  max-width: 1440px;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: "Nunito";
+  font-style: normal;
+}
+
+.section-title {
+  color: $ICAF_BLUE;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 55px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  // padding-top: 38px;
+  padding: 35px 0;
+}
+
+.section-description {
+  color: $ICAF_BLUE;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 65px;
+  span {
+    width: 830px;
+  }
+}
+
+a.icaf-button {
+  text-decoration: none;
+  div {
+    background: $ICAF_YELLOW;
+    border-radius: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      color: $ICAF_BLUE;
+      max-width: 130px;
+      text-align: center;
+    }
+  }
+}

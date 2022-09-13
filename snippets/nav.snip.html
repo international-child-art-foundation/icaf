@@ -1,49 +1,162 @@
-<nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-        <a class="logo" href="/">
-            <div>
-                <img class="bottom" src="/resource/image/logos/logo-alt.png" alt="ICAF Logo" />
-                <img class="top" src="/resource/image/logos/logo-main.png" alt="ICAF Logo" />
+<div class="nav-wrapper">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="logo" href="/">
+                <div>
+                    <img class="bottom" src="/resource/image/logos/logo-alt.png" alt="ICAF Logo" />
+                    <img class="top" src="/resource/image/logos/logo-main.png" alt="ICAF Logo" />
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-text="About">
+                            <span>
+                                About
+                                <svg width="18" height="19" viewBox="0 0 18 19" fill="#6D6D6D">
+                                    <path
+                                        d="M5.93934 13.4393C5.35355 14.0251 5.35355 14.9749 5.93934 15.5607C6.52513 16.1464 7.47487 16.1464 8.06066 15.5607L5.93934 13.4393ZM12 9.5L13.0607 10.5607C13.6464 9.97487 13.6464 9.02513 13.0607 8.43934L12 9.5ZM8.06066 3.43934C7.47487 2.85355 6.52513 2.85355 5.93934 3.43934C5.35355 4.02513 5.35355 4.97487 5.93934 5.56066L8.06066 3.43934ZM8.06066 15.5607L13.0607 10.5607L10.9393 8.43934L5.93934 13.4393L8.06066 15.5607ZM13.0607 8.43934L8.06066 3.43934L5.93934 5.56066L10.9393 10.5607L13.0607 8.43934Z" />
+                                </svg>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu" id="aboutMenu">
+                            <li><a href="#" data-menu-item="aboutUs" data-text="About Us">About Us</a></li>
+                            <li><a href="#" data-menu-item="whyIcaf" data-text="Why ICAF">Why ICAF</a></li>
+                            <li><a href="#" data-menu-item="leadership" data-text="Leadership">Leadership</a></li>
+                            <li><a href="#" data-menu-item="teamMembers" data-text="Team Members">Team Members</a></li>
+                            <li><a href="/about/funding.html" data-menu-item="funding" data-text="Funding">Funding</a>
+                            </li>
+                            <li><a href="/about/partnership.html" data-menu-item="partners"
+                                    data-text="Partners">Partners</a></li>
+                            <li><a href="#" data-menu-item="contactUs" data-text="Contact Us">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-text="Programs">
+                            <span>
+                                Programs
+                                <svg width="18" height="19" viewBox="0 0 18 19" fill="#6D6D6D">
+                                    <path
+                                        d="M5.93934 13.4393C5.35355 14.0251 5.35355 14.9749 5.93934 15.5607C6.52513 16.1464 7.47487 16.1464 8.06066 15.5607L5.93934 13.4393ZM12 9.5L13.0607 10.5607C13.6464 9.97487 13.6464 9.02513 13.0607 8.43934L12 9.5ZM8.06066 3.43934C7.47487 2.85355 6.52513 2.85355 5.93934 3.43934C5.35355 4.02513 5.35355 4.97487 5.93934 5.56066L8.06066 3.43934ZM8.06066 15.5607L13.0607 10.5607L10.9393 8.43934L5.93934 13.4393L8.06066 15.5607ZM13.0607 8.43934L8.06066 3.43934L5.93934 5.56066L10.9393 10.5607L13.0607 8.43934Z" />
+                                </svg>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu" id="programsMenu">
+                            <li><a href="#" data-menu-item="artsOlympiad" data-text="The Arts Olympiad">The Arts
+                                    Olympiad</a></li>
+                            <li><a href="#" data-menu-item="childArtMagazine" data-text="ChildArt Magazine">ChildArt
+                                    Magazine</a></li>
+                            <li><a href="#" data-menu-item="WorldChildrenFestival"
+                                    data-text="World Children's Festival">World Children's Festival</a></li>
+                            <li><a href="#" data-menu-item="peaceThroughArt" data-text="Peace Through Art">Peace Through
+                                    Art</a></li>
+                            <li><a href="#" data-menu-item="healingArtsProgram" data-text="Healing Arts Program">Healing
+                                    Arts Program</a></li>
+                            <li><a href="#" data-menu-item="climateChange" data-text="Climate Change">Climate Change</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-text="Impact">
+                            <span>
+                                Impact
+                                <svg width="18" height="19" viewBox="0 0 18 19" fill="#6D6D6D">
+                                    <path
+                                        d="M5.93934 13.4393C5.35355 14.0251 5.35355 14.9749 5.93934 15.5607C6.52513 16.1464 7.47487 16.1464 8.06066 15.5607L5.93934 13.4393ZM12 9.5L13.0607 10.5607C13.6464 9.97487 13.6464 9.02513 13.0607 8.43934L12 9.5ZM8.06066 3.43934C7.47487 2.85355 6.52513 2.85355 5.93934 3.43934C5.35355 4.02513 5.35355 4.97487 5.93934 5.56066L8.06066 3.43934ZM8.06066 15.5607L13.0607 10.5607L10.9393 8.43934L5.93934 13.4393L8.06066 15.5607ZM13.0607 8.43934L8.06066 3.43934L5.93934 5.56066L10.9393 10.5607L13.0607 8.43934Z" />
+                                </svg>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-menu-item="results" data-text="Results">Results</a></li>
+                            <li><a href="#" data-menu-item="worldChildrensAward"
+                                    data-text="World Children's Award">World
+                                    Children's Award</a></li>
+                            <li><a href="#" data-menu-item="childrensPanel" data-text="World Children's Panel">World
+                                    Children's Panel</a></li>
+                            <li><a href="#" data-menu-item="Exhibitions" data-text="Exhibitions">Exhibitions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-text="Resources">
+                            <span>
+                                Resources
+                                <svg width="18" height="19" viewBox="0 0 18 19" fill="#6D6D6D">
+                                    <path
+                                        d="M5.93934 13.4393C5.35355 14.0251 5.35355 14.9749 5.93934 15.5607C6.52513 16.1464 7.47487 16.1464 8.06066 15.5607L5.93934 13.4393ZM12 9.5L13.0607 10.5607C13.6464 9.97487 13.6464 9.02513 13.0607 8.43934L12 9.5ZM8.06066 3.43934C7.47487 2.85355 6.52513 2.85355 5.93934 3.43934C5.35355 4.02513 5.35355 4.97487 5.93934 5.56066L8.06066 3.43934ZM8.06066 15.5607L13.0607 10.5607L10.9393 8.43934L5.93934 13.4393L8.06066 15.5607ZM13.0607 8.43934L8.06066 3.43934L5.93934 5.56066L10.9393 10.5607L13.0607 8.43934Z" />
+                                </svg>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-menu-item="childArtMagazine" data-text="ChildArt Magazine">ChildArt
+                                    Magazine</a></li>
+                            <li><a href="#" data-menu-item="publications" data-text="Publications">Publications</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-text="News">
+                            <span>
+                                News
+                                <svg width="18" height="19" viewBox="0 0 18 19" fill="#6D6D6D">
+                                    <path
+                                        d="M5.93934 13.4393C5.35355 14.0251 5.35355 14.9749 5.93934 15.5607C6.52513 16.1464 7.47487 16.1464 8.06066 15.5607L5.93934 13.4393ZM12 9.5L13.0607 10.5607C13.6464 9.97487 13.6464 9.02513 13.0607 8.43934L12 9.5ZM8.06066 3.43934C7.47487 2.85355 6.52513 2.85355 5.93934 3.43934C5.35355 4.02513 5.35355 4.97487 5.93934 5.56066L8.06066 3.43934ZM8.06066 15.5607L13.0607 10.5607L10.9393 8.43934L5.93934 13.4393L8.06066 15.5607ZM13.0607 8.43934L8.06066 3.43934L5.93934 5.56066L10.9393 10.5607L13.0607 8.43934Z" />
+                                </svg>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-menu-item="latestNews" data-text="Latest News">Latest News</a></li>
+                            <li><a href="#" data-menu-item="pressReleases" data-text="Press Releases">Press Releases</a>
+                            </li>
+                            <li><a href="#" data-menu-item="pressCoverage" data-text="Press Coverage">Press Coverage</a>
+                            </li>
+                            <li><a href="#" data-menu-item="pressKit" data-text="Press Kit">Press Kit</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-text="Join Us">
+                            <span>
+                                Join Us
+                                <svg width="18" height="19" viewBox="0 0 18 19" fill="#6D6D6D">
+                                    <path
+                                        d="M5.93934 13.4393C5.35355 14.0251 5.35355 14.9749 5.93934 15.5607C6.52513 16.1464 7.47487 16.1464 8.06066 15.5607L5.93934 13.4393ZM12 9.5L13.0607 10.5607C13.6464 9.97487 13.6464 9.02513 13.0607 8.43934L12 9.5ZM8.06066 3.43934C7.47487 2.85355 6.52513 2.85355 5.93934 3.43934C5.35355 4.02513 5.35355 4.97487 5.93934 5.56066L8.06066 3.43934ZM8.06066 15.5607L13.0607 10.5607L10.9393 8.43934L5.93934 13.4393L8.06066 15.5607ZM13.0607 8.43934L8.06066 3.43934L5.93934 5.56066L10.9393 10.5607L13.0607 8.43934Z" />
+                                </svg>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-menu-item="student" data-text="Student">Student</a></li>
+                            <li><a href="#" data-menu-item="professional" data-text="Professional">Professional</a></li>
+                            <li><a href="#" data-menu-item="business" data-text="Business">Business</a></li>
+                            <li><a href="#" data-menu-item="volunteer" data-text="Volunteer">Volunteer</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" data-menu-item="gallery" id="gallery" data-text="Gallery">Gallery</a>
+                    </li>
+                    <li class="nav-button">
+                        <a class="icaf-button" href="#">
+                            <div>
+                                <span>Donate</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-button">
+                        <a class="icaf-button alt" href="#">
+                            <div>
+                                <span>Shop</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item dropdown">
-                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        About
-                        <svg width="18" height="19" viewBox="0 0 18 19" fill="#6D6D6D">
-                            <path
-                                d="M5.93934 13.4393C5.35355 14.0251 5.35355 14.9749 5.93934 15.5607C6.52513 16.1464 7.47487 16.1464 8.06066 15.5607L5.93934 13.4393ZM12 9.5L13.0607 10.5607C13.6464 9.97487 13.6464 9.02513 13.0607 8.43934L12 9.5ZM8.06066 3.43934C7.47487 2.85355 6.52513 2.85355 5.93934 3.43934C5.35355 4.02513 5.35355 4.97487 5.93934 5.56066L8.06066 3.43934ZM8.06066 15.5607L13.0607 10.5607L10.9393 8.43934L5.93934 13.4393L8.06066 15.5607ZM13.0607 8.43934L8.06066 3.43934L5.93934 5.56066L10.9393 10.5607L13.0607 8.43934Z" />
-                        </svg>
-                    </a>
-                    <ul class="dropdown-menu" id="aboutMenu">
-                        <li><a class="dropdown-item" href="#" data-menu-item="aboutUs">About Us</a></li>
-                        <li><a class="dropdown-item" href="#" data-menu-item="whyIcaf">Why ICAF</a></li>
-                        <li><a class="dropdown-item" href="#" data-menu-item="funding">Funding</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Programs
-                        <svg width="18" height="19" viewBox="0 0 18 19" fill="#6D6D6D">
-                            <path
-                                d="M5.93934 13.4393C5.35355 14.0251 5.35355 14.9749 5.93934 15.5607C6.52513 16.1464 7.47487 16.1464 8.06066 15.5607L5.93934 13.4393ZM12 9.5L13.0607 10.5607C13.6464 9.97487 13.6464 9.02513 13.0607 8.43934L12 9.5ZM8.06066 3.43934C7.47487 2.85355 6.52513 2.85355 5.93934 3.43934C5.35355 4.02513 5.35355 4.97487 5.93934 5.56066L8.06066 3.43934ZM8.06066 15.5607L13.0607 10.5607L10.9393 8.43934L5.93934 13.4393L8.06066 15.5607ZM13.0607 8.43934L8.06066 3.43934L5.93934 5.56066L10.9393 10.5607L13.0607 8.43934Z" />
-                        </svg>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">The Arts Olympiad</a></li>
-                        <li><a class="dropdown-item" href="#">ChildArt Magazine</a></li>
-                    </ul>
-                </li>
-            </ul>
         </div>
-    </div>
-</nav>
+    </nav>
+</div>

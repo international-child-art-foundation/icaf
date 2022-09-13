@@ -62,10 +62,18 @@ $muralCrossFadeDuration: 6s;
 
 /* Section Specific */
 
+/* Nav isn't fixed on main page */
+body > .container {
+  padding-top: unset;
+}
+.nav-wrapper {
+  position: unset;
+}
+
 .welcome {
   width: 1358px;
   margin: 0 auto;
-  margin-top: 147px;
+  margin-top: 47px;
 
   ul {
     list-style-type: none;
@@ -194,7 +202,7 @@ $muralCrossFadeDuration: 6s;
       .mural-title {
         color: $ICAF_YELLOW;
         margin-top: 45px;
-        font-weight: 800;
+        font-weight: 700;
         font-size: 20px;
         line-height: 27px;
         text-align: center;
@@ -209,9 +217,9 @@ $muralCrossFadeDuration: 6s;
           max-width: 446px;
           display: flex;
           flex-direction: column;
-          gap: 12px;
+          gap: 10px;
           padding-left: 17px;
-          margin: 10px 0 40px;
+          margin: 10px 0 39px;
         }
       }
       a.icaf-button {

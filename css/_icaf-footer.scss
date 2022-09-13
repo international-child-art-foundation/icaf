@@ -1,4 +1,4 @@
-@import "./_icaf-colors.scss";
+@use "icaf-colors" as *;
 
 footer {
   background-color: $ICAF_BLUE;
@@ -20,51 +20,45 @@ footer {
     padding-left: 30px;
     padding-right: 23px;
     align-items: center;
-  }
-  .donate-wrapper {
-    div {
-      width: 176px;
-      height: 48px;
-      background: $ICAF_YELLOW;
-      border-radius: 37px;
-      span {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 22px;
-        color: $ICAF_BLUE;
-        max-width: 130px;
-        text-align: center;
-        text-transform: uppercase;
+    .donate-wrapper {
+      div {
+        width: 176px;
+        height: 48px;
+
+        &:hover span {
+          color: $ICAF_WHITE;
+        }
+      }
+    }
+    .newsletter {
+      padding-top: 14px;
+      text-align: end;
+      .sign-up {
+        font-size: 18px;
+        line-height: 25px;
+        margin-right: 15px;
+      }
+      .email-input {
+        margin-top: 22px;
+        input {
+          border-radius: 9px 0px 0px 9px;
+          width: 304px;
+          height: 37px;
+        }
+        button {
+          font-weight: 700;
+          font-size: 12px;
+          color: $ICAF_BLUE;
+          background: $ICAF_YELLOW;
+          border-radius: 0px 9px 9px 0px;
+          width: 56px;
+          height: 37px;
+          margin-left: -5px;
+        }
       }
     }
   }
-  .newsletter {
-    padding-top: 14px;
-    text-align: end;
-    .sign-up {
-      font-size: 18px;
-      line-height: 25px;
-      margin-right: 15px;
-    }
-    .email-input {
-      margin-top: 22px;
-      input {
-        border-radius: 9px 0px 0px 9px;
-        width: 304px;
-        height: 37px;
-      }
-      button {
-        font-weight: 700;
-        font-size: 12px;
-        color: $ICAF_BLUE;
-        background: $ICAF_YELLOW;
-        border-radius: 0px 9px 9px 0px;
-        width: 56px;
-        height: 37px;
-        margin-left: -5px;
-      }
-    }
-  }
+
   .footer-bottom {
     height: 66px;
     padding-left: 30px;

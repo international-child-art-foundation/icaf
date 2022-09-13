@@ -20,6 +20,7 @@ body > .container {
   max-width: 1440px;
   padding-left: 0;
   padding-right: 0;
+  padding-top: 100px; /* For Fixed Nav */
   font-family: "Nunito";
   font-style: normal;
 }
@@ -54,16 +55,16 @@ body > .container {
 a.icaf-button {
   text-decoration: none;
   div {
-    background: $ICAF_YELLOW;
+    background-color: $ICAF_YELLOW;
+    color: $ICAF_BLUE;
     border-radius: 37px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
     span {
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 22px;
-      color: $ICAF_BLUE;
       max-width: 130px;
       text-align: center;
     }

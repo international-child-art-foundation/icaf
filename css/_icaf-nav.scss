@@ -1,79 +1,155 @@
-@import "./_icaf-colors.scss";
-
-.navbar {
-  padding: 21px 40px 20px 47px;
-  background: white;
-  box-shadow: 0px 6px 4px rgba(198, 198, 198, 0.1);
-  div {
-    padding: 0;
-    .logo {
-      width: 138px;
-      height: 57px;
-      div {
-        position: relative;
-        img {
-          width: 138px;
-          position: absolute;
-          transition: opacity 300ms ease-in-out;
-          &.bottom {
-            opacity: 0;
-            top: 7px;
+@use "icaf-colors" as *;
+.nav-wrapper {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  .navbar {
+    padding: 21px 40px 20px 47px;
+    background: white;
+    box-shadow: 0px 6px 4px rgba(198, 198, 198, 0.1);
+    div {
+      padding: 0;
+      .logo {
+        width: 138px;
+        height: 57px;
+        div {
+          position: relative;
+          img {
+            width: 138px;
+            position: absolute;
+            transition: opacity 300ms ease-in-out;
+            &.bottom {
+              opacity: 0;
+              top: 7px;
+            }
+          }
+          &:hover {
+            img.bottom {
+              opacity: 1;
+            }
+            img.top {
+              opacity: 0;
+            }
           }
         }
-        &:hover {
-          img.bottom {
-            opacity: 1;
-          }
-          img.top {
-            opacity: 0;
-          }
-        }
       }
-    }
-    #navbarContent {
-      margin-left: 123px;
-    }
-    li.nav-item {
-      border-radius: 9px;
-      padding: 15px 12px;
-      margin-right: 14.5px;
-      text-transform: uppercase;
-      a {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 19px;
-        color: black;
-        text-decoration: none;
+      #navbarContent {
+        margin-left: 120px;
       }
-      svg {
-        // transform: rotate(0deg);
-        transition: transform 300ms;
-        margin-top: -2px;
-      }
-
-      &:hover {
-        background: $ICAF_BLUE;
-        transition: background 300ms;
+      li.nav-item {
+        border-radius: 9px;
+        // padding: 15px 12px;
+        margin-right: 10px;
+        text-transform: uppercase;
         > a {
-          font-weight: 900;
-          color: $ICAF_WHITE;
-          transition: all 300ms;
+          padding: 15px 12px;
+        }
+        a {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 19px;
+          letter-spacing: 0.1em;
+          color: black;
+          text-decoration: none;
+        }
+        svg {
+          // transform: rotate(0deg);
+          transition: transform 300ms;
+          margin-top: -2px;
         }
 
-        svg {
-          transform: rotate(90deg);
-          fill: $ICAF_WHITE;
-          transition: all 300ms;
+        &:hover {
+          background: $ICAF_BLUE;
+          transition: background 300ms;
+          > a {
+            font-weight: 900;
+            color: $ICAF_WHITE;
+            transition: all 300ms;
+          }
+
+          svg {
+            transform: rotate(90deg);
+            fill: $ICAF_WHITE;
+            transition: all 300ms;
+          }
+        }
+        .dropdown-toggle::after {
+          display: none;
+        }
+
+        .dropdown-menu {
+          padding: 20px 26px 26px 26px;
+          border: 0;
+          border-radius: 9px;
+          li {
+            &:not(:last-child) {
+              height: 38px;
+            }
+            a {
+              white-space: nowrap;
+              &[data-menu-item="childArtMagazine"] {
+                text-transform: none;
+              }
+              &:hover {
+                color: $ICAF_BLUE;
+                font-weight: 900;
+              }
+            }
+          }
         }
       }
-      .dropdown-toggle::after {
-        display: none;
-      }
-      .dropdown-menu {
-        margin: 0;
-        a {
+      li.nav-button {
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+        a.icaf-button {
+          div {
+            height: 50px;
+            width: 110px;
+            color: black;
+            font-size: 14px;
+            line-height: 19px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+          }
+          &.alt {
+            div {
+              background-color: $ICAF_BLUE;
+              color: $ICAF_YELLOW;
+            }
+          }
+          &:hover {
+            div {
+              background-color: $ICAF_BLUE;
+              color: $ICAF_WHITE;
+              font-weight: 900;
+            }
+            &.alt div {
+              background-color: $ICAF_YELLOW;
+              color: $ICAF_BLUE;
+              font-weight: 900;
+            }
+          }
         }
       }
+    }
+  }
+
+  /*
+  Clever way (see link below) to avoid nav layout shift
+  https://css-tricks.com/bold-on-hover-without-the-layout-shift/
+*/
+  [data-text] {
+    display: inline-flex;
+    flex-direction: column;
+    &::before {
+      content: attr(data-text) / "";
+      height: 0;
+      visibility: hidden;
+      font-weight: 900;
+    }
+    &.dropdown-toggle::before {
+      margin-left: 24px;
     }
   }
 }

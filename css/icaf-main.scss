@@ -67,7 +67,11 @@ body > .container {
   padding-top: unset;
 }
 .nav-wrapper {
-  position: unset;
+  // position: unset;
+
+  // https://stackoverflow.com/questions/52937708/why-does-applying-a-css-filter-on-the-parent-break-the-child-positioning#answer-52937920
+  // This is needed because of the .navbar filter.
+  position: relative;
 }
 
 .welcome {

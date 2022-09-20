@@ -7,6 +7,16 @@
     padding: 21px 40px 20px 47px;
     background: white;
     box-shadow: 0px 6px 4px rgba(198, 198, 198, 0.1);
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    white-space: nowrap;
+    &,
+    .dropdown-menu {
+      font-size: 14px;
+    }
+
     div {
       padding: 0;
       .logo {
@@ -35,20 +45,17 @@
       }
       #navbarContent {
         margin-left: 120px;
+        .navbar-nav {
+          column-gap: 7px;
+        }
       }
       li.nav-item {
         border-radius: 9px;
-        // padding: 15px 12px;
-        margin-right: 10px;
         text-transform: uppercase;
         > a {
           padding: 15px 12px;
         }
         a {
-          font-weight: 700;
-          font-size: 14px;
-          line-height: 19px;
-          letter-spacing: 0.1em;
           color: black;
           text-decoration: none;
         }
@@ -77,39 +84,74 @@
           display: none;
         }
 
-        .dropdown-menu {
+        .dropdown-menu:not(.programs) {
           padding: 20px 26px 26px 26px;
           border: 0;
           border-radius: 9px;
-          li {
+          > li {
             &:not(:last-child) {
               height: 38px;
             }
-            a {
-              white-space: nowrap;
-              &[data-menu-item="childArtMagazine"] {
-                text-transform: none;
+            a:hover {
+              color: $ICAF_BLUE;
+              font-weight: 900;
+            }
+          }
+        }
+
+        .dropdown-menu.programs {
+          padding: 20px 63px 26px 38px;
+          border: 0;
+          border-radius: 9px;
+          ul {
+            list-style: none;
+            padding: 0;
+          }
+          > ul {
+            display: grid;
+            row-gap: 20px;
+            li {
+              display: flex;
+              column-gap: 30px;
+              &.section1:hover .title {
+                color: #7b61ff;
               }
-              &:hover {
-                color: $ICAF_BLUE;
+              &.section2:hover .title {
+                color: #5faeda;
+              }
+              &.section3:hover .title {
+                color: #42a746;
+              }
+              .title {
+                min-width: 97px;
+                text-align: end;
                 font-weight: 900;
+                color: #b7b7bb;
+              }
+              ul {
+                display: grid;
+                row-gap: 20px;
+                a:hover {
+                  color: $ICAF_BLUE;
+                  font-weight: 900;
+                }
               }
             }
           }
         }
       }
+
       li.nav-button {
         &:not(:last-child) {
-          margin-right: 10px;
+          margin-right: 6px;
         }
         a.icaf-button {
           div {
+            font-size: 14px;
+            line-height: 19px;
             height: 50px;
             width: 110px;
             color: black;
-            font-size: 14px;
-            line-height: 19px;
-            letter-spacing: 0.1em;
             text-transform: uppercase;
           }
           &.alt {
@@ -135,15 +177,19 @@
     }
   }
 
+  [data-text="ChildArt MAGAZINE"] {
+    text-transform: none;
+  }
+
   /*
-  Clever way (see link below) to avoid nav layout shift
-  https://css-tricks.com/bold-on-hover-without-the-layout-shift/
-*/
+    Clever way (see link below) to avoid nav layout shift
+    https://css-tricks.com/bold-on-hover-without-the-layout-shift/
+  */
   [data-text] {
     display: inline-flex;
     flex-direction: column;
     &::before {
-      content: attr(data-text) / "";
+      content: attr(data-text);
       height: 0;
       visibility: hidden;
       font-weight: 900;

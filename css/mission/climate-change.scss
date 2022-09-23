@@ -1,0 +1,145 @@
+@use "../icaf-colors" as *;
+
+@use "../icaf-general";
+@use "../icaf-nav";
+@use "../icaf-footer";
+
+.tags {
+    margin-top: 80px;
+    margin-left: 105px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    color: #939393;
+}
+
+.title {
+    margin-top: 11px;
+    margin-left: 105px;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 55px;
+    color: $ICAF_BLUE;
+}
+
+.description {
+    margin-top: 40px;
+    margin-left: 105px;
+    margin-bottom: 77px;
+    width: 1227px;
+    height: 688px;
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 1227px;
+        height: 688px;
+    }
+
+    div {
+        position: absolute;
+        width: 585px;
+        height: 342px;
+        background: $ICAF_YELLOW;
+        opacity: 0.8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            max-width: 497px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33px;
+            color: $ICAF_BLUE;
+        }
+    }
+}
+
+.section1 {
+    margin-left: 104px;
+    margin-right: 114px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.imgs {
+    display: grid;
+    grid-template-columns: 452px 449px 274px;
+    grid-gap: 29px 28px;
+    margin-top: 56px;
+    margin-left: 105px;
+    margin-bottom: 44px;
+    height: 309px;
+
+    .img1 {
+        width: 452px;
+        height: 309px;
+    }
+
+    .img2 {
+        width: 449px;
+        height: 309px;
+    }
+
+    .img3 {
+        width: 274px;
+        height: 309px;
+    }
+}
+
+.section2 {
+    margin-left: 108px;
+    margin-right: 108px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.videos {
+    margin-top: 76px;
+    margin-left: 105px;
+    margin-bottom: 104px;
+
+    iframe {
+        &:not(:last-child) {
+            margin-right: 58px;
+        }
+
+        border-radius: 10px;
+    }
+}
+
+.email {
+    width: 1440px;
+    height: 309px;
+    background: rgba(19, 67, 128, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    p {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 49px;
+        color: $ICAF_BLUE;
+        margin-bottom: 13.62px;
+    }
+
+    img {
+        width: 54px;
+        height: 39px;
+    }
+
+    a {
+        margin-top: 20.63px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 33px;
+        text-decoration-line: underline;
+        color: $ICAF_BLUE;
+    }
+}

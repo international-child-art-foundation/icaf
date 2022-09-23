@@ -4,9 +4,9 @@
 @use "../icaf-nav";
 @use "../icaf-footer";
 
-.tags {
-    margin-top: 80px;
-    margin-left: 105px;
+.breadcrumb {
+    margin-top: 112px;
+    margin-left: 190px;
     font-weight: 700;
     font-size: 14px;
     line-height: 19px;
@@ -15,8 +15,8 @@
 }
 
 .title {
-    margin-top: 11px;
-    margin-left: 105px;
+    margin-top: 4px;
+    margin-left: 185px;
     font-weight: 800;
     font-size: 40px;
     line-height: 55px;
@@ -24,23 +24,24 @@
 }
 
 .description {
-    margin-top: 40px;
-    margin-left: 105px;
-    margin-bottom: 77px;
-    width: 1227px;
-    height: 688px;
+    margin-top: 55px;
+    margin-left: 189px;
+    margin-bottom: 93px;
+    width: 1061px;
+    height: 592px;
     display: flex;
-    align-items: center;
 
     img {
-        width: 1227px;
-        height: 688px;
+        width: 1061px;
+        height: 592px;
     }
 
     div {
         position: absolute;
         width: 585px;
         height: 342px;
+        margin-top: 168px;
+        margin-bottom: 82px;
         background: $ICAF_YELLOW;
         opacity: 0.8;
         display: flex;
@@ -58,8 +59,8 @@
 }
 
 .section1 {
-    margin-left: 104px;
-    margin-right: 114px;
+    margin-left: 194px;
+    max-width: 1056px;
     font-weight: 400;
     font-size: 24px;
     line-height: 33px;
@@ -67,48 +68,50 @@
 
 .imgs {
     display: grid;
-    grid-template-columns: 452px 449px 274px;
-    grid-gap: 29px 28px;
-    margin-top: 56px;
-    margin-left: 105px;
+    grid-template-columns: 387.43px 384.86px 234.86px;
+    grid-gap: 24.86px 24px;
+    grid-template-rows: 264.86px;
+    margin-top: 70.14px;
+    margin-left: 194px;
     margin-bottom: 44px;
-    height: 309px;
 
     .img1 {
-        width: 452px;
-        height: 309px;
+        width: 387.43px;
+        height: 264.86px;
     }
 
     .img2 {
-        width: 449px;
-        height: 309px;
+        width: 384.86px;
+        height: 264.86px;
     }
 
     .img3 {
-        width: 274px;
-        height: 309px;
+        width: 234.86px;
+        height: 264.86px;       
     }
 }
 
 .section2 {
-    margin-left: 108px;
-    margin-right: 108px;
+    margin-left: 192px;
+    max-width: 1060px;
     font-weight: 400;
     font-size: 24px;
     line-height: 33px;
 }
 
 .videos {
-    margin-top: 76px;
-    margin-left: 105px;
-    margin-bottom: 104px;
+    margin-top: 85px;
+    margin-left: 190px;
+    margin-bottom: 150px;
 
     iframe {
         &:not(:last-child) {
-            margin-right: 58px;
+            margin-right: 50px;
         }
 
-        border-radius: 10px;
+        width: 505px;
+        height: 284px;
+        border-radius: 20px;
     }
 }
 

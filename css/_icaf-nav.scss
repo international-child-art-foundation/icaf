@@ -113,16 +113,16 @@
             li {
               display: flex;
               column-gap: 30px;
-              &.section1:hover .title {
+              &.nav-section1:hover .nav-title {
                 color: #7b61ff;
               }
-              &.section2:hover .title {
+              &.nav-section2:hover .nav-title {
                 color: #5faeda;
               }
-              &.section3:hover .title {
+              &.nav-section3:hover .nav-title {
                 color: #42a746;
               }
-              .title {
+              .nav-title {
                 min-width: 97px;
                 text-align: end;
                 font-weight: 900;

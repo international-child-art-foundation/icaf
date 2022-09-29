@@ -1,0 +1,101 @@
+@use "../icaf-colors" as *;
+
+@use "../icaf-general";
+@use "../icaf-nav";
+@use "../icaf-footer";
+
+.tag {
+    width: 300px;
+    height: 19px;
+    margin-top: 69px;
+    margin-left: 191px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    color: #939393;
+}
+.title {
+    width: 326px;
+    height: 55px;
+    margin-top: 10px;
+    margin-left: 191px;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: #134380;
+}
+.description {
+    width: 1056px;
+    height: 152px;
+    margin-top: 55px;
+    margin-left: 197px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: #134380;
+}
+.members-imgs {
+    width: 900px;
+    height: 445.46px;
+    margin-top: 90px;
+    margin-left: 260px;
+    img {
+        position: absolute;
+        border-radius: 9px;
+        &:nth-child(2) {
+            margin-left: 338.82px;
+        }
+        &:last-child {
+            margin-top: 204.96px;
+        }  
+    }
+}
+.team-members {
+    width: 611px;
+    height: 1500px;
+    margin-top: 90px;
+    margin-left: 415px;
+    align-items: center;
+    text-align: center;
+    line-height: 60px;
+    color: #575756;
+    .members-title {
+        font-weight: 600;
+        font-size: 32px;
+    }
+    .members-name {
+        font-weight: 400;
+        font-size: 24px;
+    }
+}
+.loving-memory {
+    width: 652px;
+    height: 44px;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+    margin-left: 394px;
+    text-align: center;
+    color: #575756;
+}
+.shisha-mcKee-img {
+    width: 522px;
+    height: 311px;
+    margin-top: 55px;
+    margin-left: 456px;
+    border-radius: 10px;
+}
+.shisha-mcKee-description {
+    width: 528px;
+    height: 95px;
+    margin-top: 90px;
+    margin-left: 460px;
+    margin-bottom: 125.54px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #575756;
+}

@@ -4,7 +4,7 @@
 @use "../icaf-nav";
 @use "../icaf-footer";
 
-.tags {
+.tag {
     margin-top: 80px;
     margin-left: 105px;
     font-weight: 700;
@@ -113,10 +113,11 @@
         margin: 0 auto;
         background-color: #FFD743;
     }
-    .video {
+    video {
+        width: 808px;
+        height: 604px;
         padding-top: 50px;
         margin-left: 350px;
-      
     }
     .second-program {
         font-weight: 600;

@@ -465,7 +465,7 @@ footer .footer-bottom *:not(.social-media) a ~ a::before {
   margin-right: 0.7em;
 }
 
-.tags {
+.tag {
   margin-top: 80px;
   margin-left: 105px;
   font-weight: 700;
@@ -583,7 +583,9 @@ footer .footer-bottom *:not(.social-media) a ~ a::before {
   margin: 0 auto;
   background-color: #FFD743;
 }
-.program-gallery-main .video {
+.program-gallery-main video {
+  width: 808px;
+  height: 604px;
   padding-top: 50px;
   margin-left: 350px;
 }

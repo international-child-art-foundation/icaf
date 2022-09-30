@@ -80,8 +80,6 @@
     }
 
     .impact-txt {
-        // display: flex;
-        // justify-content: center;
         font-weight: 700;
         font-size: 18px;
         line-height: 25px;
@@ -99,15 +97,191 @@
 }
 
 .wave1 {
-    width: 1547px;
     height: 84px;
-    margin-left: -24px;
     margin-top: 73px;
 }
 
 .measurable-impact {
-    margin-top: 0px;
     width: 1452px;
     height: 895px;
     background: rgba(19, 67, 128, 0.1);
+    display: flex;
+    flex-direction: column;
+
+    .impact-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 49px;
+        color: $ICAF_BLUE;
+        margin-top: 23px;
+        margin-left: 116px;
+    }
+
+    .description {
+        margin-top: 53px;
+        margin-left: 114px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        max-width: 1224px;
+    }
+
+    .numbers {
+        margin-top: 73px;
+        margin-left: 114px;
+        width: 1228px;
+        height: 368px;
+        border: 2px solid $ICAF_BLUE;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+
+        .subtitle {
+            margin-top: 27px;
+            margin-bottom: 27px;
+            display: flex;
+            justify-content: center;
+            margin-left: 3px;
+
+            p {
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 44px;
+                color: $ICAF_BLUE;
+            }
+
+            ul {
+                display: grid;
+                grid-template-columns: 366px 366px 366px;
+                grid-gap: 31px 17px;
+                grid-template-rows: 124px 115px;
+                row-gap: 10px;
+            }
+        }
+    }
+
+}
+
+.wave2 {
+    height: 84px;
+    margin-top: 0px;
+}
+
+.sociocultural-title {
+    margin-top: 80px;
+    margin-left: 108px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: $ICAF_BLUE;
+}
+
+.section3 {
+    margin-top: 27px;
+    margin-left: 110px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 53px;
+    max-width: 1220px;
+}
+
+.yellow-underline1 {
+    width: 31px;
+    margin-left: 108px;
+}
+
+.sociocultural-subtitle {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: $ICAF_BLUE;
+    margin-top: 19px;
+    margin-left: 109px;
+}
+
+.section4 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    margin-top: 23px;
+    margin-left: 110px;
+    margin-bottom: 45px;
+    max-width: 1222px;
+
+    i {
+        color: $ICAF_BLUE;
+        text-decoration-line: underline;
+    }
+}
+
+.two-videos {
+    display: grid;
+    grid-template-columns: 579px 555px;
+    grid-gap: 62px;
+    grid-template-rows: 316px 32px;
+    row-gap: 16px;
+    margin-left: 110px;
+    margin-bottom: 31.76px;
+
+    .video-title {
+        display: flex;
+        justify-content: center;
+
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: $ICAF_GRAY;
+        }
+    }
+}
+
+.yellow-underline2 {
+    width: 31px;
+    margin-left: 112px;
+}
+
+.two-images {
+    display: grid;
+    grid-template-columns: 582px 581px;
+    grid-gap: 61px;
+    grid-template-rows: 318px 32px;
+    row-gap: 15px;
+    margin-left: 111px;
+    margin-bottom: 72px;
+
+    .img1 {
+        width: 582px;
+        height: 318px;
+    }
+
+    .img2 {
+        width: 581px;
+        height: 318px;
+    }
+
+    .image-title1 {
+        display: flex;
+        justify-content: center;
+
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: $ICAF_GRAY;
+        }
+    }
+
+    .image-title2 {
+        p {
+            width: 510px;
+            height: 32px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: $ICAF_GRAY;
+            text-align: center;
+        }
+    }
 }

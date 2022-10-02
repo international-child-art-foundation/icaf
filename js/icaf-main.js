@@ -1,8 +1,10 @@
 import ICAFCarousel from './ICAFCarousel.js';
 
-$(document).ready(function() {
+$(document).ready(function () {
+    const videoStart = 10.5;
     let videoElm = $('video')[0];
     videoElm.volume = 0.4;
+    videoElm.currentTime = videoStart;
     let $volumeDiv = $('#volumeControl');
     // $('#videoContainer')
     //     .mouseenter(() => $volumeDiv.fadeIn(200))
@@ -19,19 +21,19 @@ $(document).ready(function() {
 
 //DEBUG
 const DEBUG_MODE = false;
-$(document).ready(function() {
+$(document).ready(function () {
     if (DEBUG_MODE) $('#cfMetadata').show();
     let startTime = Date.now();
     const duration = 10;
 
-    let updateDisplay = function() {
+    let updateDisplay = function () {
         $('#time').text((((Date.now() - startTime) / 1000) % duration).toFixed(1));
         //console.log( Number($('#f3').css('opacity')).toFixed(2) )
         $('#t1').text(Number($('#debug1').css('opacity')).toFixed(2));
         $('#t2').text(Number($('#debug2').css('opacity')).toFixed(2));
         $('#t3').text(Number($('#debug3').css('opacity')).toFixed(2));
         $('#t4').text(Number($('#debug4').css('opacity')).toFixed(2));
-    }
+    };
 
     setInterval(updateDisplay, 100);
 });

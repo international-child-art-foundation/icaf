@@ -25,6 +25,25 @@ body > .container {
   font-style: normal;
 }
 
+.icaf-breadcrumb {
+  margin-top: 112px;
+  margin-left: 190px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  color: #939393;
+}
+
+.page-title {
+  margin-top: 4px;
+  margin-left: 185px;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 55px;
+  color: $ICAF_BLUE;
+}
+
 .section-title {
   color: $ICAF_BLUE;
   font-weight: 800;

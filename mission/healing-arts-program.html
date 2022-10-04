@@ -4,9 +4,11 @@
 <head>
     <title>Mission | Healing Arts Program</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/mission/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/mission/healing-arts-program.css" />
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/bootstrap.js" defer></script>
+    <script src="/JS/swiper-bundle.min.js"></script>
     <script>
         $(document).ready(function () {
             for (let el of $('[use-snippet]')) {
@@ -54,33 +56,13 @@
         </div>
 
         <!-- Program Images List  -->
-        <div class="row" id="program-imgs">
-            <ul>
-                <li>
-                    <div class="imgs">
-                        <img src="/resource/image/mission/Asian-Tsunami-INDIA.png" class="program-img" alt="Asian Tsunami INDIA">
-                    </div>
-                    <div class="program-description">
-                        Asian Tsunami INDIA
-                    </div>
-                </li>
-                <li>
-                    <div class="imgs">
-                        <img src="/resource/image/mission/Asian-Tsunami-SRI.png" class="program-img" alt="Asian Tsunami SRI">
-                    </div>
-                    <div class="program-description">
-                        Asian Tsunami SRI LANKA
-                    </div>
-                </li>
-                <li>
-                    <div class="imgs">
-                        <img src="/resource/image/mission/Chilean-Earthquake.png" class="program-img" alt="Chilean Earthquake">
-                    </div>
-                    <div class="program-description">
-                        Chilean Earthquake
-                    </div>
-                </li>
-            </ul>
+        <div class="imgs">
+            <img class="img1" src="/resource/image/mission/Asian-Tsunami-INDIA.png">
+            <img class="img2" src="/resource/image/mission/Asian-Tsunami-SRI.png">
+            <img class="img3" src="/resource/image/mission/Chilean-Earthquake.png">
+            <div class="program-description">Asian Tsunami INDIA</div>
+            <div class="program-description">Asian Tsunami SRI LANKA</div>
+            <div class="program-description">Chilean Earthquake</div>
         </div>
 
         <!-- Program Gallery -->
@@ -103,19 +85,38 @@
             <video controls>
                 <source src="/resource/video/building-resilience.mp4" type="video/mp4">         
             </video>
-            
-            <!-- <div class="video">
-                <iframe width="808" height="604" 
-                src="/resource/video/building-resilience.mp4"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-                </iframe>
-            </div> -->
 
             <!-- Second Program -->
             <div class="second-program">ASIAN TSUNAMI</div>
             <div class="second-underline"></div>
+
+            <!-- Image Gallery -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/resource/image/mission/2004 Asian Tsunami SRI LANKA 6.jpg" alt="2004 Asian Tsunami SRI LANKA" class="card-img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/resource/image/mission/2004 Asian Tsunami INDONESIA 2.jpg" alt="2004 Asian Tsunami INDONESIA" class="card-img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/resource/image/mission/2004 Asian Tsunami INDONESIA 1.jpg" alt="2004 Asian Tsunami INDONESIA" class="card-img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/resource/image/mission/2004 Asian Tsunami INDIA 2.jpg" alt="2004 Asian Tsunami INDIA" class="card-img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/resource/image/mission/2004 Asian Tsunami SRI LANKA 4.jpg" alt="2004 Asian Tsunami SRI LANKA" class="card-img">
+                  </div>
+                </div>
+          
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>    
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <!-- JavaScript -->
+            <script src="/JS/swiper.js"></script>
 
         </div>
 

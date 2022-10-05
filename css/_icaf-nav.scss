@@ -46,7 +46,7 @@
       #navbarContent {
         margin-left: 120px;
         .navbar-nav {
-          column-gap: 7px;
+          column-gap: 9px;
         }
       }
       li.nav-item {
@@ -142,8 +142,9 @@
       }
 
       li.nav-button {
-        &:not(:last-child) {
-          margin-right: 6px;
+        &:not(.nav-button ~ .nav-button) {
+          margin-left: 6px;
+          margin-right: 7px;
         }
         a.icaf-button {
           div {

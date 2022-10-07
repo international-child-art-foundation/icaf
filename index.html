@@ -6,26 +6,52 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/icaf-main.css" />
     <script src="/js/jquery-3.3.1.min.js"></script>
-    <script src="/js/bootstrap.js" defer></script>
+    <script src="/js/bootstrap.min.js" defer></script>
     <script src="/js/icaf-main.js" type="module" defer></script>
     <script>
-        $(document).ready(function () {
-            for (let el of $('[use-snippet]')) {
-                $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
+        let t = Date.now();
+        setTimeout(() => {
+            // console.log($('[use-snippet]'))
+            if ($('[use-snippet]').length) {
+                for (let el of $('[use-snippet]')) {
+                    // console.log($(el).attr('use-snippet'), Date.now() - t);
+                    $(el).load($(el).attr('use-snippet'));
+                    // console.log($(el).attr('use-snippet'), Date.now() - t);
+                }
             }
-        });        
+        }, 100);
+        // $(document).ready(function () {
+        //     console.log(Date.now() - t, $('[use-snippet]'));
+        //     for (let el of $('[use-snippet]')) {
+        //         $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
+        //     }
+        // });
     </script>
 </head>
 
 <body>
     <div class="container">
         <!-- Nav -->
-        <div use-snippet="/snippets/nav.snip.html"></div>
+        <div use-snippet="/snippets/nav.snip.html">
+            <!-- Dummy HTML to make the load look smoother -->
+            <div class="nav-wrapper">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="logo" href="/">
+                            <div>
+                                <img class="bottom" src="/resource/image/logos/logo-alt.png" alt="ICAF Logo" />
+                                <img class="top" src="/resource/image/logos/logo-main.png" alt="ICAF Logo" />
+                            </div>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
 
         <!-- Welcome to ICAF -->
         <div class="welcome row">
             <ul class="upper">
-                <li class="welcome-box cross-fade cf-group1">
+                <li class="welcome-box cross-fade cf-group3">
                     <div class="main-welcome">
                         <p>Mission</p>
                         <p>To seed children's imagination,
@@ -225,8 +251,9 @@
             <div class="section-title">World Children's Festival</div>
             <div id="videoContainer">
                 <video loop muted autoplay playsinline>
-                    <source src="/resource/video/wcf-full.mp4" type="video/mp4">
-                    <source src="/resource/video/wcf-1m.mp4" type="video/mp4">
+                    <source src="/resource/video/wcf-full-720p.mp4" type="video/mp4">
+                    <source src="/resource/video/wcf-full-360p.mp4" type="video/mp4">
+                    Something went wrong?
                 </video>
                 <div id="volumeControl">
                     <img src="/resource/image/vol-icon.png" alt="Volume On">

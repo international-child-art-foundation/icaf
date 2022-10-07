@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ICAF | Gallery</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/membership.css" />
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.min.js" defer></script>
+    <script>
+        $(document).ready(function () {
+            for (let el of $('[use-snippet]')) {
+                $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Nav -->
+        <div use-snippet="/snippets/nav.snip.html"></div>
+
+        <!-- Breadcrumb -->
+        <div class="icaf-breadcrumb">HOME > MEMBERSHIP</div>
+
+        <!-- Title -->
+        <div class="page-title">MEMBERSHIP</div>
+
+        <p style="margin: 100px 190px">
+            I am a new page.
+            <br>
+            Please build me.
+        </p>
+
+        <!-- Footer -->
+        <div use-snippet="/snippets/footer.snip.html"></div>
+    </div>
+</body>
+
+</html>

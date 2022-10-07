@@ -94,6 +94,15 @@ body > .container {
         border-radius: 9px;
       }
       /* Cross fade timing */
+      &.cf-group3 {
+        > div {
+          animation-name: welcome-fade;
+          animation-duration: 20s;
+          &:nth-child(1) {
+            animation-delay: -10s;
+          }
+        }
+      }
       &.cf-group1 {
         > img,
         > div {

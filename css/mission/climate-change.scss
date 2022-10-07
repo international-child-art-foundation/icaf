@@ -5,23 +5,27 @@
 @use "../icaf-footer";
 
 .description {
-  margin-top: 55px;
-  margin-left: 189px;
-  margin-bottom: 93px;
-  width: 1061px;
-  height: 592px;
+  margin-top: 90px;
+  margin-left: 260px;
+  margin-bottom: 125px;
+  width: 920px;
+  height: 513.33px;
   display: flex;
 
   img {
-    width: 1061px;
-    height: 592px;
+    width: 920px;
+    height: 513.33px;
+    border-radius: 20px;
   }
 
   div {
     position: absolute;
-    width: 585px;
-    height: 342px;
-    margin-top: 168px;
+  }
+
+  .climate-change {
+    width: 507.26px;
+    height: 296.55px;
+    margin-top: 145.54px;
     margin-bottom: 82px;
     background: $ICAF_YELLOW;
     opacity: 0.8;
@@ -30,18 +34,27 @@
     justify-content: center;
 
     p {
-      max-width: 497px;
+      max-width: 430.95px;
       font-weight: 700;
-      font-size: 24px;
-      line-height: 33px;
+      font-size: 18px;
+      line-height: 25px;
       color: $ICAF_BLUE;
     }
   }
+
+  .name {
+    margin-top: 475.18px;
+    margin-left: 502.05px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+  }
 }
 
-.section1 {
-  margin-left: 194px;
-  max-width: 1056px;
+.sections {
+  margin-left: 190px;
+  max-width: 1060px;
   font-weight: 400;
   font-size: 24px;
   line-height: 33px;
@@ -52,9 +65,9 @@
   grid-template-columns: 387.43px 384.86px 234.86px;
   grid-gap: 24.86px 24px;
   grid-template-rows: 264.86px;
-  margin-top: 70.14px;
-  margin-left: 194px;
-  margin-bottom: 44px;
+  margin-top: 40px;
+  margin-left: 190px;
+  margin-bottom: 60px;
 
   .img1 {
     width: 387.43px;
@@ -72,18 +85,10 @@
   }
 }
 
-.section2 {
-  margin-left: 192px;
-  max-width: 1060px;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 33px;
-}
-
 .videos {
-  margin-top: 85px;
+  margin-top: 59.82px;
   margin-left: 190px;
-  margin-bottom: 150px;
+  margin-bottom: 125px;
 
   iframe {
     &:not(:last-child) {

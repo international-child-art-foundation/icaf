@@ -5,42 +5,36 @@
 @use "../icaf-footer";
 
 .partnership-description {
-  color: #575756;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 33px;
-  margin-top: 55px;
-  margin-left: 190px;
-  max-width: 1060px;
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
 
-  span {
+  p {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: $ICAF_BLUE;
     max-width: 1060px;
   }
 }
 
 .img-container {
-  position: relative;
-  overflow: hidden;
-  height: 584px;
-  margin-top: 90px;
-  margin-left: 0%;
+  margin-top: 104px;
+  margin-left: 260px;
 
-  .img {
-    position: absolute;
-    top: -100%;
-    bottom: -100%;
-    left: -100%;
-    right: -100%;
-    margin: auto;
+  img {
+    width: 920px;
+    height: 373.11px;
+    border-radius: 20px;
   }
 }
 
 .description {
   color: $ICAF_BLUE;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  margin-top: 63px;
+  margin-top: 125px;
   margin-left: 202px;
 
   span {
@@ -49,8 +43,8 @@
 }
 
 .partners {
-  margin-top: 30px;
-  margin-bottom: 156px;
+  margin-top: 76.89px;
+  margin-bottom: 220px;
 
   ul {
     display: flex;

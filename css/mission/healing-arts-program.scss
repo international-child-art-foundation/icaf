@@ -30,32 +30,38 @@
         border-radius: 20px;
     }
 }
-.about {
-    width: 334px;
-    height: 49px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 49px;
-    margin-top: 109px;
-    margin-left: 191px;
-    color: $ICAF_BLUE;
+.section-titles {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  margin-left: 191px;
+  color: $ICAF_BLUE;
+  &-about {
+    margin-top: 125px;
+  }
+  &-program-gallery {
+    margin-top: 66px;
+  }
+  &-helpful {
+    margin-top: 60px;
+  }
 }
-.about-text {
-    width: 1060px;
-    height: 442px;
+.about-container {
+  .about-text {
+    margin: 0 auto;
+    max-width: 1060px;
     font-weight: 400;
     font-size: 24px;
     line-height: 33px;
-    margin-top: 45px;
-    margin-left: 191px;
-    color: #000000;
-}
-.imgs {
+    margin-top: 40px;
+    color: #000000; 
+  }
+  .imgs {
     display: grid;
     grid-template-columns: 344px 340px 342px;
     grid-gap: 18px 20px;
     grid-template-rows: 264.86px;
-    margin-top: 120px;
+    margin-top: 40px;
     margin-left: 190px;
     
     .img1 {
@@ -74,29 +80,18 @@
     }
 
     .program-description {
-        font-weight: 400;
         font-size: 18px;
         line-height: 25px;
         text-align: center;
         color: $ICAF_GRAY;
-        margin-left: 24px;
-        height: 24px;
     }
-  }
-
-.program-gallery {
-    width: 278px;
-    height: 49px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 49px;
-    margin-left: 190px;
-    margin-top: 86px;
-    color: $ICAF_BLUE;
 }
+}
+
+
 .program-gallery-top {
     width: 1464px;
-    height: 60px;
+    height: 55px;
     margin-top: 35px;
 }
 .program-gallery-main {
@@ -111,11 +106,16 @@
         text-align: center;
         color: $ICAF_BLUE;
     }
-    .first-underline {
+    .underline {
+      height: 5px;
+      margin: 0 auto;
+      background-color: $ICAF_YELLOW;
+      &-1 {
         width: 251px;
-        height: 5px;
-        margin: 0 auto;
-        background-color: $ICAF_YELLOW;
+      }
+      &-2 {
+        width: 190px;
+      }
     }
     video {
         width: 808px;
@@ -130,12 +130,6 @@
         padding-top: 70px;
         text-align: center;
         color: $ICAF_BLUE;
-    }
-    .second-underline {
-        width: 190px;
-        height: 5px;
-        margin: 0 auto;
-        background-color: $ICAF_YELLOW;
     }
     .swiper {
         margin-top: 50px;
@@ -203,22 +197,13 @@
     }   
 }
 
-.hm-title {
-    width: 292px;
-    height: 49px;
-    margin-left: 190px;
-    margin-top: 85.78px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 49px;
-    color: $ICAF_BLUE;
-}
+
 .hm-content {
     width: 1060px;
     height: 165px;
-    margin-left: 190px;
-    margin-top: 19px;
-    margin-bottom: 85px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 220px;
     font-weight: 400;
     font-size: 24px;
     line-height: 33px;

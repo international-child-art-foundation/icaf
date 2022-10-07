@@ -4,28 +4,6 @@
 @use "../icaf-nav";
 @use "../icaf-footer";
 
-.tag {
-    width: 300px;
-    height: 19px;
-    margin-top: 69px;
-    margin-left: 191px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 19px;
-    letter-spacing: 0.1em;
-    color: #939393;
-}
-.title {
-    width: 326px;
-    height: 55px;
-    margin-top: 10px;
-    margin-left: 191px;
-    font-weight: 800;
-    font-size: 40px;
-    line-height: 55px;
-    text-transform: uppercase;
-    color: $ICAF_BLUE;
-}
 .description {
     width: 1060px;
     height: 147px;
@@ -40,28 +18,28 @@
 .members-imgs {
     width: 900px;
     height: 445.46px;
-    margin-top: 139px;
+    margin-top: 90px;
     margin-left: 260px;
-    img {
-        position: absolute;
-        border-radius: 9px;
-        &:nth-child(2) {
-            margin-left: 338.82px;
-        }
-        &:last-child {
-            margin-top: 204.96px;
-        }  
+    display: grid;
+    grid-template-rows: repeat(3, 150px);
+    grid-template-columns: repeat(2, 1fr);
+    .img3 {
+        margin-top: 55px;
     }
 }
+
 .team-members {
-    width: 611px;
-    height: 1500px;
+    width: 650px;
+    height: 1318px;
     margin-top: 90px;
-    margin-left: 415px;
+    margin-left: 370px;
     align-items: center;
     text-align: center;
     line-height: 60px;
     color: #575756;
+    .members-container {
+        list-style-type: none;
+    }
     .members-title {
         font-weight: 600;
         font-size: 32px;
@@ -69,6 +47,11 @@
     .members-name {
         font-weight: 400;
         font-size: 24px;
+        li {
+            &:last-child {
+                margin-bottom: 40px;
+            }
+        }
     }
 }
 .loving-memory {
@@ -77,6 +60,7 @@
     font-weight: 800;
     font-size: 32px;
     line-height: 44px;
+    margin-top: 100px;
     margin-left: 394px;
     text-align: center;
     color: #575756;

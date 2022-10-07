@@ -3,3 +3,32 @@
 @use "../icaf-general";
 @use "../icaf-nav";
 @use "../icaf-footer";
+
+.img-container {
+    margin-top:104px;
+    margin-left:260px;
+  
+    img {
+      width: 920px;
+      height: 504.78px;
+      border-radius: 20px;
+    }
+  }
+
+  .description {
+    margin-top: 55px;
+    margin-bottom: 200px;
+    margin-left: 190px;
+    max-width: 1060px;
+  
+    span {
+      max-width: 1060px;
+    }
+
+    p {
+        color: #000000;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+    }
+  }

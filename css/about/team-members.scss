@@ -5,82 +5,83 @@
 @use "../icaf-footer";
 
 .description {
-    width: 1060px;
-    height: 147px;
-    margin-top: 55px;
-    margin-left: 190px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 49px;
-    text-align: center;
-    color: $ICAF_BLUE;
+  width: 1060px;
+  margin: 55px auto 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: $ICAF_BLUE;
 }
 .members-imgs {
-    width: 900px;
-    height: 445.46px;
-    margin-top: 90px;
-    margin-left: 260px;
-    display: grid;
-    grid-template-rows: repeat(3, 150px);
-    grid-template-columns: repeat(2, 1fr);
-    .img3 {
-        margin-top: 55px;
-    }
+  width: fit-content;
+  margin: 90px auto 0;
+  display: grid;
+  grid-template-rows: repeat(2, auto); /* Not needed, but adds clarity */
+  grid-template-columns: repeat(2, auto); /* Not needed, but adds clarity */
+  gap: 18px;
+
+  .img1 {
+    width: 328px;
+    height: 187px;
+  }
+  .img2 {
+    width: 574px;
+    height: 445px;
+    grid-column: 2; /* Only need to specify position for this image */
+    grid-row: 1 / span 2;
+  }
+  .img3 {
+    width: 328px;
+    height: 240px;
+  }
 }
 
 .team-members {
-    width: 650px;
-    height: 1318px;
-    margin-top: 90px;
-    margin-left: 370px;
-    align-items: center;
-    text-align: center;
-    line-height: 60px;
-    color: #575756;
-    .members-container {
-        list-style-type: none;
+  max-width: 611px;
+  margin: 90px auto 0;
+  text-align: center;
+
+  color: #575756;
+  ul {
+    padding: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+    font-size: 24px;
+    line-height: 200%;
+    li:first-child {
+      /* Title */
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 200%;
     }
-    .members-title {
-        font-weight: 600;
-        font-size: 32px;
+    &:not(:first-child) {
+      margin-top: 60px;
     }
-    .members-name {
-        font-weight: 400;
-        font-size: 24px;
-        li {
-            &:last-child {
-                margin-bottom: 40px;
-            }
-        }
-    }
+  }
 }
 .loving-memory {
-    width: 652px;
-    height: 44px;
-    font-weight: 800;
-    font-size: 32px;
-    line-height: 44px;
-    margin-top: 100px;
-    margin-left: 394px;
-    text-align: center;
-    color: #575756;
+  color: #575756;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  margin-top: 60px;
 }
 .shisha-mcKee-img {
+  width: fit-content;
+  margin: 40px auto 0;
+  img {
     width: 522px;
     height: 311px;
-    margin-top: 55px;
-    margin-left: 456px;
     border-radius: 10px;
+  }
 }
 .shisha-mcKee-description {
-    width: 528px;
-    height: 95px;
-    margin-top: 90px;
-    margin-left: 460px;
-    margin-bottom: 125.54px;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 33px;
-    text-align: center;
-    color: #575756;
+  color: #575756;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  max-width: 505px;
+  margin: 60px auto 220px;
 }

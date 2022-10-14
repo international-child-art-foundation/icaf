@@ -3,3 +3,81 @@
 @use "../icaf-general";
 @use "../icaf-nav";
 @use "../icaf-footer";
+
+.image-container {
+    margin-top: 56px;
+    margin-left: 190px;
+
+    img {
+        width: 46px;
+        height: 34px;
+    }
+}
+
+.quote {
+    margin-top: 14px;
+    margin-left: 190px;
+    max-width: 1061px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 55px;
+    color: $ICAF_GRAY;
+}
+
+.name {
+    margin-left: 972px;
+    margin-top: 38px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: $ICAF_BLUE;
+}
+
+.sections1 {
+    margin-left: 190px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    max-width: 1060px;
+}
+
+.sections2 {
+    margin-left: 190px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    max-width: 1060px;
+    color: #575756;
+
+    &.last {
+        margin-bottom: 121px;
+    }
+}
+
+.section-titles {
+    margin-top: 60px;
+    margin-left: 190px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: $ICAF_BLUE;
+
+    &.first {
+        margin-top: 91px;
+    }
+}
+
+.images {
+    margin-bottom: 220px;
+    margin-left: 193px;
+    display: grid;
+    grid-template-columns: 285px 285px 285px;
+    grid-gap: 99px 99px;
+
+    img {
+        height: 400px;
+        width: 285px;
+        border-radius: 9px;
+    }
+}

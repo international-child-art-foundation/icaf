@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About | Team Members</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/about/team-members.css" />
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.js" defer></script>
+    <script>
+        $(document).ready(function () {
+            for (let el of $('[use-snippet]')) {
+                $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Nav -->
+        <div use-snippet="/snippets/nav.snip.html"></div>
+
+        <!-- Tag -->
+        <div class="icaf-breadcrumb">ABOUT > TEAM MEMBERS</div>
+
+        <!-- Title -->
+        <div class="page-title">Team Members</div>
+
+        <!-- Description -->
+        <div class="description">
+            ICAF dedicated team of officers, volunteers, and interns organize the Arts Olympiad, plan and stage the
+            World Children&#8217;s Festival, and produce the ChildArt magazine:
+        </div>
+
+        <!-- Members Image -->
+        <div class="members-imgs">
+            <img class="img1" src="/resource/image/about/members-img-top.png" alt="">
+            <img class="img2" src="/resource/image/about/members-img-right.png" alt="">
+            <img class="img3" src="/resource/image/about/members-img-bottom.png" alt="">
+        </div>
+
+        <!-- Team Members -->
+        <div class="team-members">
+            <ul>
+                <li>Key Team Members:</li>
+                <li>Tracey Bien-Aimé, Creative Director</li>
+                <li>Sena Cokuysal, Legal Advisor and Program Manager</li>
+                <li>Elizabeth Van Gelder, Education Advisor</li>
+                <li>Katty Guerami, Director of Community Relations</li>
+                <li>Dr. Ashfaq Ishaq, Chairman and Publisher, ChildArt</li>
+                <li>Hannah Jian, Social Media and Assistant Editor, ChildArt</li>
+                <li>Oluwateniola &#8220;Teni&#8221; Odutan, Program Assistant</li>
+                <li>Cassandre Saint-Preux, Managing Editor, ChildArt</li>
+                <li>Dr. Aurora Sidney-Ando, Education Director</li>
+            </ul>
+            <ul>
+                <li>Graphic Artists & UX/UI Designers:</li>
+                <li>Yu Lei</li>
+                <li>Aubrey Min</li>
+                <li>Hong Qiu</li>
+            </ul>
+            <ul>
+                <li>Webmasters & Database Designers:</li>
+                <li>Dr. Khaled Albusays</li>
+                <li>Ziwei Chen</li>
+                <li>Chi-Lin Lin</li>
+                <li>Praveer Sharan</li>
+                <li>Vinay Singh</li>
+                <li>Qiaodan Zhao</li>
+            </ul>
+        </div>
+
+        <!-- Loving Memory -->
+        <div class="loving-memory">In Loving Memory: Patricia &#8220;Shisha&#8221; McKee</div>
+        <div class="shisha-mcKee-img"><img src="/resource/image/about/Shisha-McKee.png" alt="Shisha McKee"></div>
+        <div class="shisha-mcKee-description">
+            Patricia &#8220;Shisha&#8221; McKee worked at ICAF for nearly twenty years
+            and passed away in March 2022. We will always miss her dearly.
+        </div>
+
+        <!-- Footer -->
+        <div use-snippet="/snippets/footer.snip.html"></div>
+    </div>
+</body>
+
+</html>

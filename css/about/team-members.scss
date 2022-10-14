@@ -1,0 +1,87 @@
+@use "../icaf-colors" as *;
+
+@use "../icaf-general";
+@use "../icaf-nav";
+@use "../icaf-footer";
+
+.description {
+  width: 1060px;
+  margin: 55px auto 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: $ICAF_BLUE;
+}
+.members-imgs {
+  width: fit-content;
+  margin: 90px auto 0;
+  display: grid;
+  grid-template-rows: repeat(2, auto); /* Not needed, but adds clarity */
+  grid-template-columns: repeat(2, auto); /* Not needed, but adds clarity */
+  gap: 18px;
+
+  .img1 {
+    width: 328px;
+    height: 187px;
+  }
+  .img2 {
+    width: 574px;
+    height: 445px;
+    grid-column: 2; /* Only need to specify position for this image */
+    grid-row: 1 / span 2;
+  }
+  .img3 {
+    width: 328px;
+    height: 240px;
+  }
+}
+
+.team-members {
+  max-width: 611px;
+  margin: 90px auto 0;
+  text-align: center;
+
+  color: #575756;
+  ul {
+    padding: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+    font-size: 24px;
+    line-height: 200%;
+    li:first-child {
+      /* Title */
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 200%;
+    }
+    &:not(:first-child) {
+      margin-top: 60px;
+    }
+  }
+}
+.loving-memory {
+  color: #575756;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  margin-top: 60px;
+}
+.shisha-mcKee-img {
+  width: fit-content;
+  margin: 40px auto 0;
+  img {
+    width: 522px;
+    height: 311px;
+    border-radius: 10px;
+  }
+}
+.shisha-mcKee-description {
+  color: #575756;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  max-width: 505px;
+  margin: 60px auto 220px;
+}

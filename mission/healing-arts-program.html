@@ -2,16 +2,34 @@
 <html lang="en">
 
 <head>
-    <title>Mission | Healing Arts Program</title>
+    <title>Programs | Healing Arts Program</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/mission/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/mission/healing-arts-program.css" />
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/bootstrap.min.js" defer></script>
+    <script src="/JS/swiper-bundle.min.js"></script>
     <script>
         $(document).ready(function () {
             for (let el of $('[use-snippet]')) {
                 $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
             }
+
+            // For Asian Tsunami Gallery
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: "auto",
+                centeredSlides: true,
+                spaceBetween: 30,
+                initialSlide: 2,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
         });
     </script>
 </head>
@@ -21,11 +39,133 @@
         <!-- Nav -->
         <div use-snippet="/snippets/nav.snip.html"></div>
 
-        <p style="margin: 100px 0">
-            I am a new page.
-            <br>
-            Please build me.
-        </p>
+        <!-- Tag -->
+        <div class="icaf-breadcrumb">PROGRAMS > RESILENCE > HEALING ARTS PROGRAMS</div>
+
+        <!-- Title -->
+        <div class="page-title">Healing Arts Programs</div>
+
+        <!-- Mural Making Image -->
+        <div class="mural-making-image">
+            <img src="/resource/image/mission/mural-making.png" alt="Mural Making">
+        </div>
+
+        <div class="about-container">
+
+            <!-- About Program -->
+            <div class="section-titles  section-titles-about">About the Program</div>
+
+            <!-- Program Description  -->
+            <div class="about-text">
+                Our programs aim to revive faith in nature of child victims of natural disasters.
+                <br>
+                We believe that children who survive disasters must be allowed to be the central actors in rebuilding
+                their communities.
+                <br>
+                <br>
+                Our approach:
+                <ul>
+                    <li>We motivate the affected community to focus on its future needs and not just on restoring the
+                        past that is lost.</li>
+                    <li>We focus on family as the most important social unit and the school as the community center for
+                        post-recovery.</li>
+                    <li>We deepen children&#8217;s emotional bonds with the place where they grew up to offset the
+                        painful
+                        memories of the disaster.</li>
+                    <li>We aid and accelerate children&#8217;s emotional recovery so that their resilience and optimism
+                        can
+                        revitalize the community.</li>
+                </ul>
+            </div>
+
+            <!-- Program Images List  -->
+            <div class="imgs">
+                <img class="img1" src="/resource/image/mission/Asian-Tsunami-INDIA.png">
+                <img class="img2" src="/resource/image/mission/Asian-Tsunami-SRI.png">
+                <img class="img3" src="/resource/image/mission/Chilean-Earthquake.png">
+                <div class="program-description">Asian Tsunami INDIA</div>
+                <div class="program-description">Asian Tsunami SRI LANKA</div>
+                <div class="program-description">Chilean Earthquake</div>
+            </div>
+        </div>
+
+        <!-- Program Gallery -->
+        <div class="section-titles section-titles-program-gallery">Program Gallery</div>
+
+        <!-- Program Gallery Top Background -->
+        <div class="program-gallery-top">
+            <div class="background-image">
+                <img src="/resource/image/mission/healing-middle-top-background.svg" alt="Top Background">
+            </div>
+        </div>
+
+        <!-- Program Gallery Main Content -->
+        <div class="program-gallery-main">
+            <!-- First Program -->
+            <div class="first-program ">KATRINA HURRICANE</div>
+            <div class="underline underline-1"></div>
+
+            <!-- Video -->
+            <video controls>
+                <source src="/resource/video/building-resilience.mp4" type="video/mp4">
+            </video>
+
+            <!-- Second Program -->
+            <div class="second-program">ASIAN TSUNAMI</div>
+            <div class="underline underline-2"></div>
+
+            <!-- Image Gallery -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/resource/image/mission/2004_Asian_Tsunami_SRI_LANKA_6.jpg"
+                            alt="2004 Asian Tsunami SRI LANKA" class="card-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/resource/image/mission/2004_Asian_Tsunami_INDONESIA_2.jpg"
+                            alt="2004 Asian Tsunami INDONESIA" class="card-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/resource/image/mission/2004_Asian_Tsunami_INDONESIA_1.jpg"
+                            alt="2004 Asian Tsunami INDONESIA" class="card-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/resource/image/mission/2004_Asian_Tsunami_INDIA_2.jpg" alt="2004 Asian Tsunami INDIA"
+                            class="card-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/resource/image/mission/2004_Asian_Tsunami_SRI_LANKA_4.jpg"
+                            alt="2004 Asian Tsunami SRI LANKA" class="card-img">
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Program Gallery Bottom Gackground -->
+        <div class="program-gallery-bottom">
+            <img src="/resource/image/mission/healing-middle-bottom-background.svg" alt="Bottom Background">
+        </div>
+
+        <!-- Helpful Materials -->
+        <div class="section-titles section-titles-helpful">Helpful Materials</div>
+        <div class="hm-content">
+            <ul>
+                <li><a href="https://youtu.be/1yCoz8K99w8" target="_blank"><i>2010 Chilean Earthquake</i></a> (14:54
+                    min)</li>
+                <li><a href="https://www.icaf.org/pdfs/Thanksgiving%20in%20Palestine.ICAF.pdf"
+                        target="_blank"><i>Thanksgiving in Palestine</i></a> (629Kb pdf download)</li>
+                <li><a href="https://www.icaf.org/images/HA/Destruction,%20Reconstruction%20&%20Prevention.JPG"
+                        target="_blank"><i>Destruction, Reconstruction & Prevention</i></a> World Bank (511Kb jpeg
+                    download)</li>
+                <li><a href="https://www.icaf.org/pdfs/Expanding%20Awareness%20of%20Mental%20Health%20in%20Childhood%20and%20Adolescence.pdf"
+                        target="_blank"><i>Expanding Awareness of Mental Health in Childhood and Adolescence</i></a>
+                    World Health Organization (2Mb download)</li>
+            </ul>
+        </div>
 
         <!-- Footer -->
         <div use-snippet="/snippets/footer.snip.html"></div>

@@ -4,14 +4,32 @@
 <head>
     <title>Mission | Peace Through Art</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/mission/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/mission/peace-through-art.css" />
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/bootstrap.min.js" defer></script>
+    <script src="/JS/swiper-bundle.min.js"></script>
     <script>
         $(document).ready(function () {
             for (let el of $('[use-snippet]')) {
                 $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
             }
+
+            // Gallery
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: "auto",
+                centeredSlides: true,
+                spaceBetween: 30,
+                initialSlide: 1,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
         });
     </script>
 </head>
@@ -27,11 +45,146 @@
         <!-- Title -->
         <div class="page-title">Peace Through Art</div>
 
-        <p style="margin: 100px 190px">
-            I am a new page.
-            <br>
-            Please build me.
-        </p>
+        <!-- First Image -->
+        <div class="first-image">
+            <img src="/resource/image/mission/peace-through-art-first-img.png" alt="">
+        </div>
+
+        <!-- Mahatma Gandhi Quote -->
+        <div class="mg-quote">
+            <img src="/resource/image/mission/upper-quote.svg" alt="" class="upper-quote">
+            <p class="quote-text">If we are to reach real peace in this world… we shall have to begin with children.</p>
+            <img src="/resource/image/mission/lower-quote.svg" alt="" class="lower-quote">
+            <p class="section-title-and-name section-title-and-name-mg">Mahatma Gandhi</p>
+        </div>
+
+        <!-- About Program -->
+        <p class="section-title-and-name section-title-and-name-about-program">About the Program</p>
+        <div class="about-program">
+            <div class="program1">
+                <div class="section-line"></div>
+                <div class="program-section-title">HOPE FOR PEACE</div>
+                <div class="program-scetion-content">
+                    A failure to bring peace pales every other 
+                    success. Children ask why their world is 
+                    torn by conflict and violence, why countries 
+                    and cultures cannot co-exist on this 
+                    loneliest in the multiverse.<br><br>
+
+                    Strategists explicate the national security 
+                    interests, politicians the geopolitical 
+                    futures, business people the economic 
+                    necessity, and historians the antecedents 
+                    of the growing ethnic and religious intolerance.<br><br>
+                    
+                    Neurobiologists and neuroscientists are 
+                    making notable advances in understanding 
+                    how the anatomy and physiology of the 
+                    brain and nervous system determine human 
+                    proclivity for sadism and savagery. 
+                    Scientists in the field of neuroepigenetics 
+                    are studying how one's life experiences 
+                    lead to changes in the brain and how those 
+                    changes make humans diabolical, 
+                    inhumane, or apathetic, and even silent or 
+                    blind.<br><br>
+                    
+                    The hope for peace resides in children. 
+                    Just one generation can upstage the human 
+                    history of wars, occupations, and 
+                    appropriations.
+                </div>
+            </div>
+            <div class="program2">
+                <div class="section-line"></div>
+                <div class="program-section-title">SEEDING EMPATHY</div>
+                <div class="program-scetion-content">
+                    Over the past 25 years, ICAF has developed 
+                    exceptional expertise in seeding mutual 
+                    empathy in children. We do this at the 
+                    World Children's Festival, where young 
+                    artists from across the globe congregate for 
+                    three days at The National Mall in 
+                    Washington, D.C.
+                </div>
+            </div>
+            <div class="program3">
+                <div class="section-line"></div>
+                <div class="program-section-title">OVERARCHING GOAL</div>
+                <div class="program-scetion-content">
+                    ICAF organizes Peace through Art Programs 
+                    as interventions that tap into children's 
+                    innate creative resources so they can 
+                    imagine their enemy as human beings not so 
+                    different from themselves and begin to 
+                    visualize peaceful co-existence and 
+                    collaboration. Our overarching goal is to 
+                    curtail the transgenerational transmission of 
+                    trauma and hatred to free the children from 
+                    a harrowing past for a tranquil and mindful 
+                    future.<br><br>
+
+                    Please help us help the children to co-create 
+                    a peaceful world.
+                </div>
+            </div>  
+        </div>
+
+        <!-- Gallery -->
+
+        <!-- Upper Wave Background -->
+        <div class="program-gallery program-gallery-top">
+            <div class="background-image">
+                <img src="/resource/image/mission/top-wave-background.svg" alt="Top Background">
+            </div> 
+        </div>
+
+        
+        <div class="program-gallery program-gallery-main">
+            <div class="program-section-title program-section-title-gallery">GALLERY</div>
+            <div class="section-line section-line-gallery"></div>
+
+            <!-- Image Gallery -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/resource/image/mission/peace-through-art-gallery-1.png"
+                            alt="Amal Al Hajj (age 9) Yemen" class="card-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/resource/image/mission/peace-through-art-gallery-2.jpg"
+                            alt="Miryam Baadasa (age 11 ) Palestine" class="card-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/resource/image/mission/peace-through-art-gallery-3.png"
+                            alt="Tessa Rae Crisman (age 11) Colorado" class="card-img">
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+        <!-- Bottom Wave Background -->
+        <div class="program-gallery program-gallery-bottom">
+            <img src="/resource/image/mission/bottom-wave-background-2.svg" alt="Bottom Background">
+        </div>
+
+        <!-- Research and Resources -->
+        <div class="section-title-and-name section-title-and-name-research">Research and Resources</div>
+        <div class="rnr-content">
+            <ul>
+                <li>The Lancet. <a href="" target="_blank"><i>Development of Children's Creativity to 
+                    Foster Peace.</i></a></li>
+                <li> UNESCO Journal. <a href="" target="_blank"><i>Prosperity and Peace through 
+                    Art</i></a></li>
+                <li> SchoolArts. <a href="" target="_blank"><i>Peace through Art and Sport</i></a></li>
+            </ul>
+        </div>
+
 
         <!-- Footer -->
         <div use-snippet="/snippets/footer.snip.html"></div>

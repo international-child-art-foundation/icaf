@@ -3,3 +3,183 @@
 @use "../icaf-general";
 @use "../icaf-nav";
 @use "../icaf-footer";
+
+.first-image {
+  margin-top: 60px;
+  margin-left: 260px;
+}
+.section-title-and-name {
+  font-weight: 700;
+  font-size: 36px;
+  margin-left: 190px;
+  color: $ICAF_BLUE;
+  &-mg { // Mahatma Gandhi
+    margin-top: 50px;
+    margin-left: 717px;
+  }
+    &-about-program { // About the Program
+    margin-top: 60px
+  }
+    &-research { //Research and Resources
+    margin-top: 60px
+  }
+}
+.mg-quote {
+  max-width: 1060.25px;
+  margin: 0 auto;
+  .upper-quote {
+    margin-top: 125px;
+  }
+  .quote-text {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 55px;
+    margin-top: 24px;
+    font-style: italic;
+    color: $ICAF_GRAY;
+  }
+  .lower-quote {
+    margin-left: 1018.27px;
+  }
+}
+.about-program {
+  max-width: 1060px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+  "a"
+  "a";
+  margin: 40px auto 60px;
+  gap: 107px;
+  .program1 {
+    width: 473px;
+    grid-area: a;
+  }
+  .program3 {
+    margin-top: 69px;
+  }
+  .program-scetion-content {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    margin-top: 5px;
+    color: #000000;
+}
+}
+.section-line { // cross two div so put here not under .about-program
+  height: 5px;
+  width: 27px;
+  background-color: $ICAF_YELLOW;
+  &-gallery {
+    width: 107px;
+    margin: 0 auto;
+  }
+}
+.program-section-title {  // cross two div so put here not under .about-program
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  margin-top: 23px;
+  color: $ICAF_BLUE;
+  &-gallery {
+    margin-top: 0px;
+    padding-top: 31.78px;
+    text-align: center;
+  }
+}
+
+
+.program-gallery {
+  &-top {
+    height: 55px;
+  }
+  &-main {
+    height: 708px;
+    background-color: rgba(19, 67, 128, 0.1);
+  }
+  &-bottom {
+    margin-top: -1px;
+  }
+  .swiper {
+    margin-top: 50px;
+    width: 1440px;
+    height: 542px;
+    .swiper-slide {
+      width: 855px;
+      &:nth-child(2n) {
+        width: 392px;
+      }
+      &:nth-child(3n) {
+        width: 772px;
+      }
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .swiper-navBtn {
+      height: 64px;
+      width: 64px;
+      margin-top: 40px;
+      color: $ICAF_WHITE;
+      background-color: $ICAF_BLUE;
+      border-radius: 50%;
+      transition: color 0.3s ease;
+    }
+    .swiper-navBtn:hover {
+      color: $ICAF_WHITE;
+    }
+    .swiper-navBtn::before,
+    .swiper-navBtn::after {
+      font-size: 30px;
+    }
+    .swiper-button-next {
+      margin-right: 100px;
+      align-items: center;
+    }
+    .swiper-button-prev {
+      margin-left: 100px;
+      align-items: center;
+    }
+  }
+  .swiper-pagination {
+    position: relative;
+    margin-top: 33px;
+    .swiper-pagination-bullet {
+      width: 11px;
+      height: 11px;
+      margin: 10px;
+      background-color: $ICAF_GRAY;
+      opacity: 0.2;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: $ICAF_YELLOW;
+      opacity: 1;
+    }
+    @media screen and (max-width: 768px) {
+      .slide-content {
+        margin: 0 10px;
+      }
+      .swiper-navBtn {
+        display: none;
+      }
+    }
+  }
+}
+
+.rnr-content {
+  width: 1056px;
+  height: 81px;
+  margin: 19px auto 220px;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+  a {
+    font-size: 18px;
+    line-height: 24.55px;
+    color: $ICAF_BLUE;
+  }
+}

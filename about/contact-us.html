@@ -27,11 +27,39 @@
         <!-- Title -->
         <div class="page-title">CONTACT US</div>
 
-        <p style="margin: 100px 190px">
-            I am a new page.
-            <br>
-            Please build me.
-        </p>
+        <div class="main-background">
+            <div class="input-container">
+                <form action="action_page.php">
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" name="name">
+              
+                    <label for="email">Email*</label>
+                    <input type="text" id="email" name="email">
+                  
+                    <label for="lname">Affiliation*</label>
+                    <input type="text" id="lname" name="lastname"
+                           placeholder="  (i.e., school, organization, company)">
+              
+                    <label for="subject">Subject*</label>
+                    <input type="text" id="subject" name="subject">
+                  
+                    <label for="message">Message*</label>
+                    <textarea id="subject" name="message" 
+                              style="height:225px"></textarea>
+              
+                  <input type="submit" value="Send Message">
+                </form>
+            </div>
+
+            <div class="contact-us-image">
+                <img src="/resource/image/about/contact-us.png">
+                <p class="image-author">Jesse Lackey, age 10, Alabama</p>
+                <p class="address address-title">International Child Art Foundation</p>
+                <p class="address">2549 Virginia Avenue, NW Washington, DC 20037
+                    <br>USA
+                </p>
+            </div>
+        </div>
 
         <!-- Footer -->
         <div use-snippet="/snippets/footer.snip.html"></div>

@@ -3,3 +3,43 @@
 @use "../icaf-general";
 @use "../icaf-nav";
 @use "../icaf-footer";
+
+.section-slogan {
+  width: 741px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  margin: 90px auto;
+  color: $ICAF_BLUE;
+}
+.image-container {
+  width: 920px;
+  margin: 104px auto;
+}
+.content {
+  width: 1060px;
+  margin: 125px auto 220px;
+  .description {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+    &-list-title {
+      margin-top: 45px;
+      font-weight: 600;
+      font-size: 32px;
+      color: $ICAF_BLUE;
+    }
+  }
+  ul {
+    li:first-child {
+      margin-top: 50px;
+    }
+    li{
+      margin-top: 30px;
+      a {
+        color: #000000;
+      }
+    }
+  }
+}

@@ -3,3 +3,54 @@
 @use "../icaf-general";
 @use "../icaf-nav";
 @use "../icaf-footer";
+
+.illustion_text {
+    margin-top: 90px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    color: $ICAF_BLUE;
+}
+
+.photo {
+    margin-top: 104px;
+    margin-left: 260px;
+
+    img {
+        width: 920px;
+        border-radius: 20px;
+    }
+}
+
+.section1 {
+    margin-top: 125px;
+    margin-left: 190px;
+    max-width: 1060px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.section2-title {
+    margin-top: 60px;
+    margin-left: 190px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: $ICAF_BLUE;
+}
+
+.section2 {
+    margin-left: 190px;
+    margin-bottom: 220px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    max-width: 1060px;
+
+    a {
+        color: #000;
+    }
+}

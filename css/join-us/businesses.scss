@@ -3,3 +3,156 @@
 @use "../icaf-general";
 @use "../icaf-nav";
 @use "../icaf-footer";
+
+.illustration-text {
+    margin-top: 90px;
+    margin-left: 259px;
+    margin-bottom: 104px;
+    max-width: 1060px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: $ICAF_BLUE;
+}
+
+.images {
+    margin-left: 260px;
+    display: grid;
+    grid-template-columns: 327px 574px;
+    column-gap: 19px;
+    grid-template-rows: 253px 327px;
+    row-gap: 26px;
+
+    .image1 {
+        grid-column: 1;
+        grid-row: 1;
+
+        img {
+            width: 327px;
+            height: 253px;
+        }
+    }
+
+    .image2 {
+        grid-column: 1;
+        grid-row: 2;
+
+        img {
+            width: 327px;
+            height: 327px;
+        }
+    }
+
+    .image3 {
+        grid-column: 2;
+        grid-row: 1 / 3;
+
+        img {
+            width: 574px;
+            height: 606px;
+        }
+    }
+}
+
+.section1 {
+    margin-top: 125px;
+    margin-left: 190px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.section2 {
+    margin-top: 55px;
+    margin-left: 190px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.section-titles {
+    margin-top: 188px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    color: $ICAF_BLUE;
+}
+
+.blue-buttons {
+    margin-top: 114px;
+    margin-left: 279px;
+    display: grid;
+    grid-template-columns: 431px 431px;
+    grid-template-rows: 81px 81px;
+    column-gap: 20px;
+    row-gap: 84px;
+
+    a {
+        text-decoration: none;
+
+        .blue-button {
+            width: 431px;
+            height: 81px;
+            background: $ICAF_BLUE;
+            color: $ICAF_YELLOW;
+            border-radius: 10px;
+            font-weight: 900;
+            font-size: 16px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 0.1em;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+    
+            &:hover {
+                background: $ICAF_YELLOW;
+                color: $ICAF_BLUE;
+            }
+        }     
+    }
+}
+
+.subtitle {
+    margin-top: 51px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #575756;
+}
+
+.logos {
+    margin-top: 32px;
+    margin-left: 192px;
+    margin-bottom: 278.86px;
+    display: grid;
+    grid-template-rows: 120px 151px 128px;
+    row-gap: 44px;
+
+    .logo-line1 {
+        display: grid;
+        grid-template-columns: 107px 187px 123.4px 192px 139px 118.47px;
+        column-gap: 36px;
+    }
+
+    .logo-line2 {
+        display: grid;
+        grid-template-columns: 177.22px 159px 101px 133.88px 150.72px 159px;
+        column-gap: 36px;
+    }
+
+    .logo-line3 {
+        display: grid;
+        grid-template-columns: 127.14px 166px 157.23px 145.13px 136px;
+        column-gap: 84px;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+}

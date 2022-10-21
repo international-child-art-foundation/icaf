@@ -4,14 +4,32 @@
 <head>
     <title>Mission | ChildArt Magazine</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/mission/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/mission/childart-magazine.css" />
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/bootstrap.min.js" defer></script>
+    <script src="/JS/swiper-bundle.min.js"></script>
     <script>
         $(document).ready(function () {
             for (let el of $('[use-snippet]')) {
                 $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
             }
+
+            // Latest Issues Magazine Gallery
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: "auto",
+                centeredSlides: true,
+                spaceBetween: 30,
+                initialSlide: 0,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
         });
     </script>
 </head>
@@ -27,11 +45,236 @@
         <!-- Title -->
         <div class="page-title">ChildArt Magazine Art</div>
 
-        <p style="margin: 100px 190px">
-            I am a new page.
-            <br>
-            Please build me.
-        </p>
+        <!-- Quote Text -->
+        <div class="quote-text">
+            Evidence of the attributes, values, and skills that come from arts 
+            education, including social and emotional development, improvements 
+            in school engagement, as well as vital civic and social participation.
+        </div>
+        <div class="quote-from">
+            - The American Academy of Arts & Sciences 2021 Report: Art for Life’s 
+            Sake: The Case for Arts Education
+        </div>
+
+        <!-- Latest Issues Magazine -->
+        <div class="latest-issues-container">
+            <div class="latest-issues">LATEST ISSUES</div>
+            <div class="underline"></div>
+
+            <!-- Magazine Gallery List -->
+            <div class="magazine-container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="/resource/image/mission/childart-magazine/2022_q4.png"
+                                alt="2022-q4" class="card-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/resource/image/mission/childart-magazine/2022_q3.png"
+                                alt="2022-q3" class="card-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/resource/image/mission/childart-magazine/2022_q2.png"
+                                alt="2022_q2" class="card-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/resource/image/mission/childart-magazine/2022_q1.jpg"
+                                alt="2022_q1" class="card-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/resource/image/mission/childart-magazine/2021_q4.jpg"
+                                alt="2021-q4" class="card-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/resource/image/mission/childart-magazine/2021-q3.jpg"
+                                alt="2021-q3" class="card-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/resource/image/mission/childart-magazine/2021-q2.jpg"
+                                alt="2021-q2" class="card-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/resource/image/mission/childart-magazine/2021-q1_.jpg"
+                                alt="2021-q1" class="card-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/resource/image/mission/childart-magazine/2020-q3.jpg"
+                                alt="2020-q3" class="card-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/resource/image/mission/childart-magazine/2020-q2.jpeg"
+                                alt="2020-q2" class="card-img">
+                        </div>
+                    </div>
+    
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- Subscription Text -->
+            <div class="subscription">
+                <span class="subscription subscription-text">Subscription is $30 per year<br></span>
+                <span class="subscription subscription-note"> Please pay online to start 
+                    receiving emails each quarter with a link to the magazine.</span>
+            </div>
+
+            <!-- Subscription Button -->
+            <a class="sub-button" href="#">
+                <div class="subscribe">
+                    <span>Subscribe</span>
+                </div> 
+            </a>
+        </div>
+
+        <div class="back-issues">
+            <ul>
+                <li>Back issues of ChildArt</li>
+                <li>You can choose from a list of the quarterly 
+                    magazine’s past issues. Each magazine covers a relevant and timely 
+                    subject. The information is presented in an exciting, colorful way 
+                    for young readers to cherish. Please click on a magazine’s cover 
+                    for the table of contents.</li>
+                <li>To order, pay $10 and email us the title of the ChildArt issue you 
+                    ordered, so we can email it to you. All 15 issues, you can order for 
+                    $110—a saving of $40.00!</li>
+            </ul>
+        </div>
+
+        <!-- Upper Wave Background -->
+        <div class="back-issues-magazine back-issues-magazine-top">
+            <div class="background-image">
+                <img src="/resource/image/mission/top-wave-background.svg" alt="Top Background">
+            </div> 
+        </div>
+        
+        <div class="back-issues-magazine back-issues-magazine-main">
+            <section class="bim-container">
+                <div class="bim-1">
+                    <a href="https://www.icaf.org/childart/pdf/1.pdf" target="_blank">
+                        <img src="/resource/image/mission/childart-magazine/back-issues-1.png">
+                    </a>
+                </div>
+                <div class="bim-2">
+                    <a href="https://www.icaf.org/childart/pdf/2.pdf" target="_blank">
+                        <img src="/resource/image/mission/childart-magazine/back-issues-2.png">
+                    </a>
+                </div>
+                <div class="bim-3">
+                    <a href="https://www.icaf.org/childart/pdf/3.pdf" target="_blank">
+                        <img src="/resource/image/mission/childart-magazine/back-issues-3.png">
+                    </a>
+                </div>
+                <div class="bim-4">
+                    <a href="https://www.icaf.org/childart/pdf/4.pdf" target="_blank">
+                        <img src="/resource/image/mission/childart-magazine/back-issues-4.png">
+                    </a>
+                </div>
+                <div class="bim-5">
+                    <a href="https://www.icaf.org/childart/pdf/5.pdf" target="_blank">
+                        <img src="/resource/image/mission/childart-magazine/back-issues-5.png">
+                    </a>
+                </div>
+                <div class="bim-6">
+                    <a href="https://www.icaf.org/childart/pdf/6.pdf" target="_blank">
+                        <img src="/resource/image/mission/childart-magazine/back-issues-6.png">
+                    </a>
+                </div>
+                <div class="bim-7">
+                    <a href="https://www.icaf.org/childart/pdf/7.pdf" target="_blank">
+                        <img src="/resource/image/mission/childart-magazine/back-issues-7.png">
+                    </a>
+                </div>
+                <div class="bim-8">
+                    <a href="https://www.icaf.org/childart/pdf/8.pdf" target="_blank">
+                        <img src="/resource/image/mission/childart-magazine/back-issues-8.png">
+                    </a>
+                </div>
+                <div class="bim-9">
+                    <a href="https://www.icaf.org/childart/pdf/9.pdf" target="_blank">
+                        <img src="/resource/image/mission/childart-magazine/back-issues-9.png">
+                    </a>
+                </div>
+                <div class="bim-10">
+                    <a href="https://www.icaf.org/childart/pdf/10.pdf" target="_blank">
+                        <img src="/resource/image/mission/childart-magazine/back-issues-10.png">
+                    </a>
+                </div>
+                <div class="bim-11">
+                    <a href="https://www.icaf.org/childart/pdf/11.pdf" target="_blank">
+                        <img src="/resource/image/mission/childart-magazine/back-issues-11.png">
+                    </a>
+                </div>
+                <div class="bim-12">
+                    <a href="https://www.icaf.org/childart/pdf/12.pdf" target="_blank">
+                        <img src="/resource/image/mission/childart-magazine/back-issues-12.png">
+                    </a>
+                </div>
+                <div class="bim-13">
+                    <a href="https://www.icaf.org/childart/pdf/13.pdf" target="_blank">
+                        <img src="/resource/image/mission/childart-magazine/back-issues-13.png">
+                    </a>
+                </div>
+                <div class="bim-14">
+                    <a href="https://www.icaf.org/childart/pdf/14.pdf" target="_blank">
+                        <img src="/resource/image/mission/childart-magazine/back-issues-14.png">
+                    </a>
+                </div>
+                <div class="bim-15">
+                    <a href="https://www.icaf.org/childart/pdf/15.pdf" target="_blank">
+                        <img src="/resource/image/mission/childart-magazine/back-issues-15.png">
+                    </a>
+                </div>
+              </section>
+              <div class="bim-text">
+                Complimentary issue.<br>
+                Click on the cover
+              </div>
+        </div>
+
+        <!-- Bottom Wave Background -->
+        <div class="back-issues-magazine back-issues-magazine-bottom">
+            <img src="/resource/image/mission/bottom-wave-background-2.svg" alt="Bottom Background">
+        </div>
+
+        <div class="testimonials">
+            <ul>
+                <li>Testimonials</li>
+                <li>"Filled with brief, energetic articles on art in the cultures, schools
+                    and minds of today’s children, this ad-free magazine will quickly become
+                    a favorite youth-services periodical…ChildArt is a truly multicultural
+                    periodical to enrich every public library.” -- Today’s Librarian.
+                </li>
+                <li>“The International Child Art Foundation publishes ChildArt … that fosters
+                    learning, self-discovery, and global education for children through all
+                    types of art and design projects and activities. Vibrant color illustrations
+                    and photographs show art created by children and illustrate step-by-step
+                    craft projects from around the world that can be done in the classroom.
+                    Teacher-librarians will find ChildArt to be an excellent source for 
+                    creative multi-cultural projects to recommend to teachers and students.
+                    ”-- Teacher Librarian: The Journal for School Library Professionals.
+                </li>
+                <li>"This unique periodical inspires children of all ages to be artistic,
+                    cooperative, creative and imaginative. The reader is taken around the
+                    world to a variety of cultural settings, then back to the old masters
+                    for historical perspectives and on into a future of cooperation and
+                    creativity.”-- Arts and Activities, Editorial Review
+                </li>
+                <li>“I found the articles to be consistently well-written, respectful of
+                    the young artists they profile and illustrated with works or craft that
+                    are memorable and stimulating. Not only is this professionally-produced
+                    magazine both visually and intellectually engaging in content and design,
+                    but in these days of steady cutbacks in U.S. arts education programs, it
+                    offers a cogent reminder of art’s central role in linking world cultures…For
+                    its poly-cultural outlook and special focus, ChildArt is unique among
+                    magazines for children…readers of any age will find it a rewarding way
+                    to broaden their cultural horizons.”-- Supervising Librarian, Central
+                    Children’s Room, The New York Public Library.
+                </li>
+            </ul>
+        </div>
+        
 
         <!-- Footer -->
         <div use-snippet="/snippets/footer.snip.html"></div>

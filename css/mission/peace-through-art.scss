@@ -13,15 +13,18 @@
   font-size: 36px;
   margin-left: 190px;
   color: $ICAF_BLUE;
-  &-mg { // Mahatma Gandhi
+  &-mg {
+    // Mahatma Gandhi
     margin-top: 50px;
     margin-left: 717px;
   }
-    &-about-program { // About the Program
-    margin-top: 60px
+  &-about-program {
+    // About the Program
+    margin-top: 60px;
   }
-    &-research { //Research and Resources
-    margin-top: 60px
+  &-research {
+    //Research and Resources
+    margin-top: 60px;
   }
 }
 .mg-quote {
@@ -48,8 +51,8 @@
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   grid-template-areas:
-  "a"
-  "a";
+    "a"
+    "a";
   margin: 40px auto 60px;
   gap: 107px;
   .program1 {
@@ -65,9 +68,10 @@
     line-height: 33px;
     margin-top: 5px;
     color: #000000;
+  }
 }
-}
-.section-line { // cross two div so put here not under .about-program
+.section-line {
+  // cross two div so put here not under .about-program
   height: 5px;
   width: 27px;
   background-color: $ICAF_YELLOW;
@@ -76,7 +80,8 @@
     margin: 0 auto;
   }
 }
-.program-section-title {  // cross two div so put here not under .about-program
+.program-section-title {
+  // cross two div so put here not under .about-program
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
@@ -88,7 +93,6 @@
     text-align: center;
   }
 }
-
 
 .program-gallery {
   &-top {
@@ -177,9 +181,12 @@
   font-size: 24px;
   line-height: 33px;
   color: #000000;
-  a {
-    font-size: 18px;
-    line-height: 24.55px;
-    color: $ICAF_BLUE;
+  ul {
+    padding-left: 2rem;
+    a {
+      font-size: 18px;
+      line-height: 24.55px;
+      color: $ICAF_BLUE;
+    }
   }
 }

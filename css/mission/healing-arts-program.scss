@@ -41,6 +41,9 @@
     line-height: 33px;
     margin-top: 40px;
     color: #000000;
+    ul {
+      padding-left: 2rem;
+    }
   }
   .imgs {
     display: grid;
@@ -188,9 +191,12 @@
   font-size: 24px;
   line-height: 33px;
   color: #000000;
-  a {
-    font-size: 18px;
-    line-height: 24.55px;
-    color: $ICAF_BLUE;
+  ul {
+    padding-left: 2rem;
+    a {
+      font-size: 18px;
+      line-height: 24.55px;
+      color: $ICAF_BLUE;
+    }
   }
 }

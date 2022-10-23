@@ -5,11 +5,8 @@
 @use "../icaf-footer";
 
 .description {
-  margin-top: 90px;
-  margin-left: 260px;
-  margin-bottom: 125px;
   width: 920px;
-  height: 513.33px;
+  margin: 90px auto 125px;
   display: flex;
 
   img {
@@ -26,7 +23,6 @@
     width: 507.26px;
     height: 296.55px;
     margin-top: 145.54px;
-    margin-bottom: 82px;
     background: $ICAF_YELLOW;
     opacity: 0.8;
     display: flex;
@@ -48,12 +44,12 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 33px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 
 .sections {
-  margin-left: 190px;
+  margin: 0 auto;
   max-width: 1060px;
   font-weight: 400;
   font-size: 24px;
@@ -61,13 +57,10 @@
 }
 
 .imgs {
-  display: grid;
-  grid-template-columns: 387.43px 384.86px 234.86px;
-  grid-gap: 24.86px 24px;
-  grid-template-rows: 264.86px;
-  margin-top: 40px;
-  margin-left: 190px;
-  margin-bottom: 60px;
+  display: flex;
+  column-gap: 24px;
+  width: fit-content;
+  margin: 40px auto 60px;
 
   .img1 {
     width: 387.43px;
@@ -86,15 +79,12 @@
 }
 
 .videos {
-  margin-top: 59.82px;
-  margin-left: 190px;
-  margin-bottom: 125px;
+  width: fit-content;
+  margin: 60px auto 125px;
+  display: flex;
+  column-gap: 50px;
 
   iframe {
-    &:not(:last-child) {
-      margin-right: 50px;
-    }
-
     width: 505px;
     height: 284px;
     border-radius: 20px;

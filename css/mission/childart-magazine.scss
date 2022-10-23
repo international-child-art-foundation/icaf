@@ -15,7 +15,6 @@
 .quote-from {
   width: 1055px;
   margin: 5px auto;
-  font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   text-align: right;
@@ -24,7 +23,7 @@
 .latest-issues-container {
   margin-top: 104px;
   padding-bottom: 61px;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   .latest-issues {
     font-weight: 600;
     font-size: 32px;
@@ -121,7 +120,10 @@
       color: #575756;
     }
   }
-  a {
+  .sub-button {
+    display: block;
+    width: fit-content;
+    margin: 49px auto 0;
     text-decoration: none;
     .subscribe {
       width: 441px;
@@ -129,14 +131,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 49px auto 0;
       background-color: $ICAF_YELLOW;
       border-radius: 37px;
       span {
         font-weight: 800;
         font-size: 32px;
         line-height: 44px;
-        color:  #000000;
+        color: #000000;
       }
     }
   }
@@ -163,8 +164,8 @@
 }
 .back-issues-magazine {
   &-top {
-    height: 58px;
     margin-top: 60px;
+    margin-bottom: -1px;
   }
   &-main {
     background-color: rgba(19, 67, 128, 0.1);
@@ -175,24 +176,20 @@
   }
   .bim-container {
     display: grid;
-    grid-template-columns: 315px 315px 315px;
-    grid-template-rows: 427.22px;
-    grid-auto-flow: row;
-    column-gap: 57px;
-    row-gap: 57.78px;
+    grid-template-columns: repeat(3, 315px);
+    grid-template-rows: repeat(5, 428px);
+    grid-gap: 58px 57px;
   }
   .bim-text {
-    max-width: 1094px;
     margin: 29.36px auto 0;
     padding-bottom: 26px;
     text-align: center;
-    font-weight: 400;
     font-size: 24px;
     line-height: 33px;
   }
 }
 .testimonials {
-  max-width: 1090px;
+  max-width: 1060px;
   margin: 60px auto 220px;
   ul {
     font-size: 24px;

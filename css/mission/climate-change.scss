@@ -5,6 +5,7 @@
 @use "../icaf-footer";
 
 .description {
+  margin: 90px auto 0px;
   width: 920px;
   margin: 90px auto 125px;
   display: flex;
@@ -48,46 +49,51 @@
   }
 }
 
-.sections {
-  margin: 0 auto;
+.content {
+  margin: 125px auto 125px;
   max-width: 1060px;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 33px;
-}
 
-.imgs {
-  display: flex;
-  column-gap: 24px;
-  width: fit-content;
-  margin: 40px auto 60px;
-
-  .img1 {
-    width: 387.43px;
-    height: 264.86px;
+  .sections {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
   }
 
-  .img2 {
-    width: 384.86px;
-    height: 264.86px;
+  .imgs {
+    display: grid;
+    grid-template-columns: 387.43px 384.86px 234.86px;
+    grid-gap: 24.86px 24px;
+    grid-template-rows: 264.86px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+
+    .img1 {
+      width: 387.43px;
+      height: 264.86px;
+    }
+
+    .img2 {
+      width: 384.86px;
+      height: 264.86px;
+    }
+
+    .img3 {
+      width: 234.86px;
+      height: 264.86px;
+    }
   }
 
-  .img3 {
-    width: 234.86px;
-    height: 264.86px;
-  }
-}
+  .videos {
+    margin-top: 59.82px;
+    display: grid;
+    grid-template-columns: 505px 505px;
+    column-gap: 50px;
 
-.videos {
-  width: fit-content;
-  margin: 60px auto 125px;
-  display: flex;
-  column-gap: 50px;
-
-  iframe {
-    width: 505px;
-    height: 284px;
-    border-radius: 20px;
+    iframe {
+      width: 505px;
+      height: 284px;
+      border-radius: 20px;
+    }
   }
 }
 

@@ -54,8 +54,8 @@
             }
         }
     }
-  }
 }
+
 
 .help-businesses {
     margin: 125px auto 0px;
@@ -83,8 +83,8 @@
             }
         }
     }
-  }
 }
+
 
 .our-main-assets {
     .our-main-assets-title {
@@ -155,33 +155,17 @@
     }
 
     .logos {
-        margin: 32px auto 278.86px;
-        max-width: fit-content;
-        display: grid;
-        grid-template-rows: 120px 151px 128px;
-        row-gap: 44px;
+        margin: 70px auto 100px;
+        max-width: 1048px;
 
-        .logo-line1 {
-            display: grid;
-            grid-template-columns: 107px 187px 123.4px 192px 139px 118.47px;
-            column-gap: 36px;
-        }
-
-        .logo-line2 {
-            display: grid;
-            grid-template-columns: 177.22px 159px 101px 133.88px 150.72px 159px;
-            column-gap: 36px;
-        }
-
-        .logo-line3 {
-            display: grid;
-            grid-template-columns: 127.14px 166px 157.23px 145.13px 136px;
-            column-gap: 84px;
-        }
-
-        .logo-container {
+        .logo-line {
             display: flex;
-            align-items: center;
+            justify-content: space-between;
+
+            .logo-container {
+                display: flex;
+                align-items: center;
+            }
         }
     }
 }

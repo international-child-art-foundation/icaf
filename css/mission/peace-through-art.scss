@@ -5,8 +5,8 @@
 @use "../icaf-footer";
 
 .first-image {
-  margin-top: 60px;
-  margin-left: 260px;
+  width: fit-content;
+  margin: 60px auto 0;
 }
 .section-title-and-name {
   font-weight: 700;
@@ -28,13 +28,12 @@
   }
 }
 .mg-quote {
-  max-width: 1060.25px;
+  max-width: 1060px;
   margin: 0 auto;
   .upper-quote {
     margin-top: 125px;
   }
   .quote-text {
-    font-weight: 400;
     font-size: 40px;
     line-height: 55px;
     margin-top: 24px;
@@ -47,23 +46,24 @@
 }
 .about-program {
   max-width: 1060px;
+  margin: 40px auto 60px;
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: 473px 480px;
   grid-template-rows: repeat(2, auto);
   grid-template-areas:
-    "a"
-    "a";
-  margin: 40px auto 60px;
-  gap: 107px;
+    "a b"
+    "a c";
+  gap: 176px 107px;
   .program1 {
-    width: 473px;
     grid-area: a;
   }
-  .program3 {
-    margin-top: 69px;
+  .program2 {
+    grid-area: b;
   }
-  .program-scetion-content {
-    font-weight: 400;
+  .program3 {
+    grid-area: c;
+  }
+  .program-section-content {
     font-size: 24px;
     line-height: 33px;
     margin-top: 5px;
@@ -88,7 +88,7 @@
   margin-top: 23px;
   color: $ICAF_BLUE;
   &-gallery {
-    margin-top: 0px;
+    margin-top: 0;
     padding-top: 31.78px;
     text-align: center;
   }
@@ -174,7 +174,7 @@
   }
 }
 
-.rnr-content {
+.hm-content {
   width: 1056px;
   height: 81px;
   margin: 19px auto 220px;

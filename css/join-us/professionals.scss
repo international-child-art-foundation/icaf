@@ -5,19 +5,19 @@
 @use "../icaf-footer";
 
 .illustion_text {
-    margin: 90px auto 0px;
-    max-width: 751px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 49px;
-    text-align: center;
-    color: $ICAF_BLUE;
+  margin: 90px auto 0px;
+  max-width: 751px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: $ICAF_BLUE;
 }
 
 .photo {
-    margin-top: 104px;
-    display: flex;
-    justify-content: center;
+  margin-top: 104px;
+  display: flex;
+  justify-content: center;
 
   img {
     width: 920px;
@@ -26,33 +26,35 @@
 }
 
 .how-to-contribute {
-    margin: 125px auto 220px;
-    max-width: 1056px;
+  margin: 125px auto 220px;
+  max-width: 1056px;
 
-    .children-are-creators {
-        max-width: 1060px;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 33px;
-    }
+  .children-are-creators {
+    max-width: 1060px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+  }
 
-    .how-to-contribute-title {
-        margin-top: 61px;
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 44px;
-        color: $ICAF_BLUE;
-    }
-    
-    .how-to-contribute-list {
-        margin-top: 40px;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 33px;
-    
-        a {
-            color: #000;
-        }
+  .how-to-contribute-title {
+    margin-top: 61px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: $ICAF_BLUE;
+  }
+
+  .how-to-contribute-list {
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+
+    ul {
+      padding-left: 2rem;
+      a {
+        color: #000;
+      }
     }
   }
 }

@@ -13,33 +13,42 @@
     margin-left: 109px;
 }
 
+.hope {
+    margin: 90px auto 0px;
+    max-width: 1060px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    color: $ICAF_BLUE;
+}
+
 .child-img {
-    margin-top: 39px;
-    margin-left: 111px;
+    margin: 104px auto 0px;
+    max-width: 920px;
 
     img {
-        width: 1221px;
-        height: 698px;
+        width: 920px;
+        height: 563.22px;
+        border-radius: 20px;
     }
 }
 
-.section1 {
-    margin-top: 62px;
-    margin-left: 112px;
-    max-width: 1220px;
+.our-efforts {
+    margin: 125px auto 0px;
+    max-width: 1060px;
     font-weight: 400;
     font-size: 24px;
     line-height: 33px;
 }
 
 .impact-imgs {
-    margin-top: 121px;
-    margin-left: 108px;
-    margin-bottom: 121px;
+    margin: 87px auto 0px;
+    max-width: 1060px;
 
     display: grid;
     grid-template-columns: 154px 154px 154px 154px 154px 154px;
-    column-gap: 60px;
+    column-gap: 27px;
     grid-template-rows: 84px 69px;
     row-gap: 25px;
 
@@ -88,12 +97,16 @@
     }
 }
 
-.section2 {
-    margin-left: 110px;
-    max-width: 1220px;
+.since-1997 {
+    margin: 130px auto 0px;
+    max-width: 1060px;
     font-weight: 400;
     font-size: 24px;
     line-height: 33px;
+
+    ul {
+        padding-left: 2rem;
+    }
 }
 
 .wave1 {
@@ -102,8 +115,7 @@
 }
 
 .measurable-impact {
-    width: 1452px;
-    height: 895px;
+    height: 992px;
     background: rgba(19, 67, 128, 0.1);
     display: flex;
     flex-direction: column;
@@ -113,32 +125,29 @@
         font-size: 36px;
         line-height: 49px;
         color: $ICAF_BLUE;
-        margin-top: 23px;
-        margin-left: 116px;
+        margin-top: 38px;
+        margin-left: 190px;
     }
 
     .description {
-        margin-top: 53px;
-        margin-left: 114px;
+        margin: 53px auto 0px;
         font-weight: 400;
         font-size: 24px;
         line-height: 33px;
-        max-width: 1224px;
+        max-width: 1060px;
     }
 
     .numbers {
-        margin-top: 73px;
-        margin-left: 114px;
-        width: 1228px;
-        height: 368px;
+        margin: 32px auto 0px;
+        width: 1054px;
+        height: 388px;
         border: 2px solid $ICAF_BLUE;
         border-radius: 15px;
         display: flex;
         flex-direction: column;
 
         .subtitle {
-            margin-top: 27px;
-            margin-bottom: 27px;
+            margin-top: 23px;
             display: flex;
             justify-content: center;
             margin-left: 3px;
@@ -149,14 +158,11 @@
                 line-height: 44px;
                 color: $ICAF_BLUE;
             }
+        }
 
-            ul {
-                display: grid;
-                grid-template-columns: 366px 366px 366px;
-                grid-gap: 31px 17px;
-                grid-template-rows: 124px 115px;
-                row-gap: 10px;
-            }
+        .images {
+            width: 984px;
+            margin: 0px auto 0px;
         }
     }
 
@@ -167,62 +173,69 @@
     margin-top: 0px;
 }
 
-.sociocultural-title {
-    margin-top: 80px;
-    margin-left: 108px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 49px;
-    color: $ICAF_BLUE;
-}
-
-.section3 {
-    margin-top: 27px;
-    margin-left: 110px;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 33px;
-    margin-bottom: 53px;
-    max-width: 1220px;
-}
-
-.yellow-underline1 {
+.yellow-underline {
     width: 31px;
-    margin-left: 108px;
 }
 
-.sociocultural-subtitle {
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 44px;
-    color: $ICAF_BLUE;
-    margin-top: 19px;
-    margin-left: 109px;
-}
+.sociocultural {
+    margin: 87px auto 0px;
+    max-width: 1060px;
 
-.section4 {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 33px;
-    margin-top: 23px;
-    margin-left: 110px;
-    margin-bottom: 45px;
-    max-width: 1222px;
-
-    i {
+    .sociocultural-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 49px;
         color: $ICAF_BLUE;
-        text-decoration-line: underline;
+    }
+
+    .changing-the-world {
+        margin-top: 63px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        margin-bottom: 53px;
+        max-width: 1054px;
+    }
+
+    .sociocultural-subtitle {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 44px;
+        color: $ICAF_BLUE;
+        margin-top: 19px;
+    }
+
+    .world-leader {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        margin-top: 23px;
+        margin-bottom: 22px;
+        max-width: 1060px;
+
+        i {
+            color: $ICAF_BLUE;
+            text-decoration-line: underline;
+        }
+    }
+
+    .unique-expertise {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        margin-top: 23px;
+        max-width: 1060px;
     }
 }
 
 .two-videos {
     display: grid;
-    grid-template-columns: 579px 555px;
-    grid-gap: 62px;
-    grid-template-rows: 316px 32px;
-    row-gap: 16px;
-    margin-left: 110px;
-    margin-bottom: 31.76px;
+    grid-template-columns: 513px 513px;
+    grid-gap: 37px;
+    grid-template-rows: 280px 28px;
+    row-gap: 15px;
+    margin: 100px auto 62px;
+    max-width: 1049px;
 
     .video-title {
         display: flex;
@@ -237,51 +250,50 @@
     }
 }
 
-.yellow-underline2 {
-    width: 31px;
-    margin-left: 112px;
-}
+.worldchildrens-award {
+    margin: 62px auto 129px;
+    max-width: 1060px;
 
-.two-images {
-    display: grid;
-    grid-template-columns: 582px 581px;
-    grid-gap: 61px;
-    grid-template-rows: 318px 32px;
-    row-gap: 15px;
-    margin-left: 111px;
-    margin-bottom: 72px;
-
-    .img1 {
-        width: 582px;
-        height: 318px;
+    .worldchildrens-award-subtitle {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 44px;
+        color: $ICAF_BLUE;
+        margin-top: 19px;
     }
 
-    .img2 {
-        width: 581px;
-        height: 318px;
+    .first-ever-award {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        margin-top: 23px;
+        max-width: 1060px;
+        margin-bottom: 100px;
     }
 
-    .image-title1 {
-        display: flex;
-        justify-content: center;
-
-        p {
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 25px;
-            color: $ICAF_GRAY;
+    .two-images {
+        display: grid;
+        grid-template-columns: 513px 513px;
+        column-gap: 35px;
+        grid-template-rows: 280px 28px;
+        row-gap: 15px;
+    
+        img {
+            width: 513px;
+            height: 280px;
+            border-radius: 20px;
         }
-    }
-
-    .image-title2 {
-        p {
-            width: 510px;
-            height: 32px;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 25px;
-            color: $ICAF_GRAY;
-            text-align: center;
+    
+        .image-title {
+            display: flex;
+            justify-content: center;
+    
+            p {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                color: $ICAF_GRAY;
+            }
         }
     }
 }

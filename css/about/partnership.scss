@@ -5,7 +5,7 @@
 @use "../icaf-footer";
 
 .partnership-description {
-  margin: 55px auto 0px;
+  margin: 55px auto 0;
   max-width: 1060px;
 
   p {
@@ -18,7 +18,7 @@
 }
 
 .img-container {
-  margin: 104px auto 0px;
+  margin: 104px auto 0;
   width: 920px;
 
   img {
@@ -28,8 +28,8 @@
 }
 
 .description {
-  margin: 125px auto 0px;
-  max-width: 891px;
+  margin: 125px auto 0;
+  width: fit-content;
 
   span {
     color: $ICAF_BLUE;
@@ -45,9 +45,9 @@
 
   ul {
     display: grid;
-    grid-template-columns: 246px 246px 246px 246px;
+    grid-template-columns: repeat(4, 246px);
     column-gap: 16px;
-    grid-template-rows: 246px 246px 246px;
+    grid-template-rows: repeat(3, 246px);
     row-gap: 16px;
 
     li {

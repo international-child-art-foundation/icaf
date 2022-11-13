@@ -10,22 +10,26 @@
     <script src="/js/icaf-main.js" type="module" defer></script>
     <script>
         let t = Date.now();
-        setTimeout(() => {
-            // console.log($('[use-snippet]'))
-            if ($('[use-snippet]').length) {
-                for (let el of $('[use-snippet]')) {
-                    // console.log($(el).attr('use-snippet'), Date.now() - t);
-                    $(el).load($(el).attr('use-snippet'));
-                    // console.log($(el).attr('use-snippet'), Date.now() - t);
-                }
-            }
-        }, 100);
-        // $(document).ready(function () {
-        //     console.log(Date.now() - t, $('[use-snippet]'));
-        //     for (let el of $('[use-snippet]')) {
-        //         $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
+        // let id = setInterval(() => {
+        //     console.log('si', Date.now() - t, $('[use-snippet]').length);
+        //     if ((Date.now() - t) > 1000) clearInterval(id)
+        // }, 50)
+        // setTimeout(() => {
+        //     // console.log($('[use-snippet]'))            
+        //     if ($('[use-snippet]').length) {
+        //         for (let el of $('[use-snippet]')) {
+        //             console.log('st', $(el).attr('use-snippet'), $(el).is(':empty'), Date.now() - t);
+        //             $(el).load($(el).attr('use-snippet'));
+        //             // console.log($(el).attr('use-snippet'), Date.now() - t);
+        //         }
         //     }
-        // });
+        // }, 100);
+        $(document).ready(function () {
+            console.log('dr', Date.now() - t, $('[use-snippet]'));
+            for (let el of $('[use-snippet]')) {
+                $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
+            }
+        });
     </script>
 </head>
 
@@ -97,37 +101,105 @@
             </ul>
         </div>
 
-        <!-- Mural Section -->
-        <div class="mural-wrapper-background">
-            <div class="mural-wrapper">
-                <div class="murals cross-fade">
-                    <img src="/resource/image/us-mural.png" alt="USA Mural" />
-                    <img src="/resource/image/world-mural.png" alt="World Mural" />
-                </div>
-
-                <div class="mural-text">
-                    <div class="mural-title">
-                        Join a children&#8217;s movement to democratize creativity
-                        for the Fourth Industrial Revolution and develop
-                        mutual empathy for &#8220;a more perfect union.&#8221;
-                    </div>
-                    <div class="main-text">
-                        <span><b>Membership Benefits:</b></span>
-                        <ul>
-                            <li>Receive a free subscription to ChildArt quarterly</li>
-                            <li>Introduce neighborhood schools to ICAF&#8217;s free programs</li>
-                            <li>Promote STEAMS education for children&#8217;s holistic development</li>
-                            <li>Get invited to the 2024 World Children&#8217;s Festival</li>
-                            <li>Become a champion for children&#8217;s creative and empathic development</li>
-                        </ul>
-                        <span>ICAF Members donate a minimum of $100 annually.</span>
-                    </div>
+        <!-- What We Do -->
+        <div class="section-title">What We Do</div>
+        <div class="section-description">
+            <span>
+                ICAF inspires students to boldly step beyond the boundaries set before them by envisioning
+                a creative-empathic world where diversity and differences enhance the fractal of human discovery.
+            </span>
+        </div>
+        <div id="whatWeDo">
+            <div class="wwd-card">
+                <img src="/resource/image/whatwedo/ArtsOlympiad.png" class="card-img" alt="Arts Olympiad">
+                <div class="card-link-wrapper">
                     <a class="icaf-button" href="#">
                         <div>
-                            <span>Apply Here</span>
+                            <span>Arts Olympiad</span>
                         </div>
                     </a>
                 </div>
+            </div>
+            <div class="wwd-card">
+                <img src="/resource/image/whatwedo/WorldChildrensFestival.png" class="card-img"
+                    alt="World Children's Festival">
+                <div class="card-link-wrapper">
+                    <a class="icaf-button" href="#">
+                        <div>
+                            <span>World Children's Festival</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="wwd-card">
+                <img src="/resource/image/whatwedo/InteractiveExhibitions.png" class="card-img"
+                    alt="Interactive Exhibition" id="InteractiveExhibitions">
+                <div class="card-link-wrapper">
+                    <a class="icaf-button" href="#">
+                        <div>
+                            <span>Interactive Exhibition</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="wwd-card">
+                <img src="/resource/image/whatwedo/ChildArtMagazine.png" class="card-img" alt="ChildArt Magazine">
+                <div class="card-link-wrapper">
+                    <a class="icaf-button" href="#">
+                        <div>
+                            <span>ChildArt Magazine</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="wwd-description">
+                An innovative school art program that fosters creativity
+                and can help end the obesity epidemic.
+            </div>
+            <div class="wwd-description">
+                A transformative experience to offset Adverse Childhood Experiences (ACEs)
+                and disrupt the intergenerational transmission of trauma and hatred.
+            </div>
+            <div class="wwd-description">
+                Curated at business headquarters to kindle the &#8220;inner child&#8221; for
+                collaborative innovation and creative teamwork.
+            </div>
+            <div class="wwd-description">
+                An ad-free quarterly to inspire learners of all ages
+                and develop global competencies.
+            </div>
+        </div>
+
+        <!-- Mural Section -->
+        <div class="section-title">Take Action</div>
+        <div class="mural-wrapper">
+            <div class="murals cross-fade">
+                <img src="/resource/image/us-mural.png" alt="USA Mural" />
+                <img src="/resource/image/world-mural.png" alt="World Mural" />
+            </div>
+
+            <div class="mural-text">
+                <div class="mural-title">
+                    Join a children&#8217;s movement to democratize creativity
+                    for the Fourth Industrial Revolution and develop
+                    mutual empathy for &#8220;a more perfect union.&#8221;
+                </div>
+                <div class="main-text">
+                    <span><b>Membership Benefits:</b></span>
+                    <ul>
+                        <li>Receive a free subscription to ChildArt quarterly</li>
+                        <li>Introduce neighborhood schools to ICAF&#8217;s free programs</li>
+                        <li>Promote STEAMS education for children&#8217;s holistic development</li>
+                        <li>Get invited to the 2024 World Children&#8217;s Festival</li>
+                        <li>Become a champion for children&#8217;s creative and empathic development</li>
+                    </ul>
+                    <span>ICAF Members donate a minimum of $100 annually.</span>
+                </div>
+                <a class="icaf-button" href="#">
+                    <div>
+                        <span>Apply Here</span>
+                    </div>
+                </a>
             </div>
         </div>
 
@@ -135,8 +207,7 @@
         <div class="section-title">Human Security</div>
         <div class="section-description">
             <span>
-                The United Nation's human security framework is as important as the environmental, social, and
-                governance (ESG) factors. See how children depict and describe their human security perspectives.
+                Sixteen students limn their perspectives about the United Nations Human Security for All Campaign.
             </span>
         </div>
         <div class="row carousel-wrapper">
@@ -247,99 +318,25 @@
         </div>
 
         <!-- WCF video -->
-        <div class="videoContainer-background">
-            <div class="section-title">World Children's Festival</div>
-            <div id="videoContainer">
-                <video loop muted autoplay playsinline>
-                    <source src="/resource/video/wcf-full-720p.mp4" type="video/mp4">
-                    <source src="/resource/video/wcf-full-360p.mp4" type="video/mp4">
-                    Something went wrong?
-                </video>
-                <div id="volumeControl">
-                    <img src="/resource/image/vol-icon.png" alt="Volume On">
-                    <img src="/resource/image/vol-muted-icon.png" alt="Volume Muted">
+        <div class="section-title">World Children's Festival</div>
+        <div id="videoContainer">
+            <video loop muted autoplay playsinline>
+                <source src="/resource/video/wcf-full-720p.mp4" type="video/mp4">
+                <source src="/resource/video/wcf-full-360p.mp4" type="video/mp4">
+                Something went wrong?
+            </video>
+            <div id="playControl">
+                <div class="play">
+                    <svg height="66" width="66" viewBox="-10 0 66 66">
+                        <path opacity="0.8" d="M56.8762 33.3195L0.788586 65.7017L0.788589 0.937276L56.8762 33.3195Z" />
+                    </svg>
+
                 </div>
             </div>
-        </div>
-
-        <!-- What We Do -->
-        <div class="section-title">What We Do</div>
-        <div class="section-description">
-            <span>
-                ICAF inspires students to boldly step beyond the boundaries set before them by envisioning
-                a creative-empathic world where diversity and differences enhance the fractal of human discovery and
-                evolution.
-            </span>
-        </div>
-        <div class="row" id="whatWeDo">
-            <ul>
-                <li>
-                    <div class="wwd-card">
-                        <img src="/resource/image/whatwedo/ArtsOlympiad.png" class="card-img" alt="Arts Olympiad">
-                        <div class="card-link-wrapper">
-                            <a class="icaf-button" href="#">
-                                <div>
-                                    <span>Arts Olympiad</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="wwd-description">
-                        An art and sports program that fosters creativity and reduces obesity.
-                    </div>
-                </li>
-                <li>
-                    <div class="wwd-card">
-                        <img src="/resource/image/whatwedo/WorldChildrenFestival.png" class="card-img"
-                            alt="World Children's Festival">
-                        <div class="card-link-wrapper">
-                            <a class="icaf-button" href="#">
-                                <div>
-                                    <span>World Children's Festival</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="wwd-description">
-                        A transformative experience that offsets Adverse Childhood Experiences
-                        and severs the intergenerational transmission of trauma and hatred.
-                    </div>
-                </li>
-                <li>
-                    <div class="wwd-card">
-                        <img src="/resource/image/whatwedo/InteractiveExhibitions.png" class="card-img"
-                            alt="Interactive Exhibition" id="InteractiveExhibitions">
-                        <div class="card-link-wrapper">
-                            <a class="icaf-button" href="#">
-                                <div>
-                                    <span>Interactive Exhibition</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="wwd-description">
-                        Creative activities to facilitate collaborative innovation by
-                        kindling the inner child of business executives.
-                    </div>
-                </li>
-                <li>
-                    <div class="wwd-card">
-                        <img src="/resource/image/whatwedo/ChildArtMagazine.png" class="card-img"
-                            alt="ChildArt Magazine">
-                        <div class="card-link-wrapper">
-                            <a class="icaf-button" href="#">
-                                <div>
-                                    <span>ChildArt Magazine</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="wwd-description">
-                        An ad-free quarterly
-                        that inspires learners of all ages and grows global competencies.
-                    </div>
-                </li>
-            </ul>
+            <div id="volumeControl">
+                <img src="/resource/image/vol-icon.png" alt="Volume On">
+                <img src="/resource/image/vol-muted-icon.png" alt="Volume Muted">
+            </div>
         </div>
 
         <!-- Footer -->

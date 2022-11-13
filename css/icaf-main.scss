@@ -60,6 +60,13 @@ $muralCrossFadeDuration: 6s;
   }
 }
 
+.section-title {
+  padding: 48px 0;
+  &:has(+ .section-description) {
+    padding-bottom: 8px;
+  }
+}
+
 /* Section Specific */
 
 /* Nav isn't fixed on main page */
@@ -181,147 +188,164 @@ body > .container {
   }
 }
 
-.mural-wrapper-background {
-  background-color: $ICAF_GRAY2;
-  height: 713px;
-  margin-top: 49px;
-  padding: 54px 44px;
-  .mural-wrapper {
-    display: flex;
-    width: 1358px;
-    .murals {
-      &,
-      img {
-        width: 825px;
-        height: 605px;
-      }
-      img {
-        border-radius: 9px 0 0 9px;
-        animation-name: mural-fade;
-        animation-duration: $muralCrossFadeDuration;
-        &:nth-child(1) {
-          animation-delay: (-1 * math.div($muralCrossFadeDuration, 2));
-        }
-      }
-    }
-    .mural-text {
-      width: 535px;
-      background-color: $ICAF_BLUE;
-      color: $ICAF_WHITE;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border-radius: 0 9px 9px 0;
-      .mural-title {
-        color: $ICAF_YELLOW;
-        margin-top: 45px;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 27px;
-        text-align: center;
-        max-width: 488px;
-      }
-      .main-text {
-        margin-top: 36px;
-        margin-left: 25px;
-        font-size: 18px;
-        line-height: 25px;
-        ul {
-          max-width: 446px;
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-          padding-left: 17px;
-          margin: 10px 0 39px;
-        }
-      }
-      a.icaf-button {
-        margin-top: 15px;
-        div {
-          width: 138px;
-          height: 50px;
-        }
-      }
-    }
-  }
-}
-
-.videoContainer-background {
-  background-color: $ICAF_GRAY2;
-  height: 830px;
-  #videoContainer {
-    background-color: $ICAF_BLUE;
-    margin: 0 41px;
-    border-radius: 9px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    video {
-      width: 1169px;
-      height: 653px;
-    }
-
-    &:hover #volumeControl {
-      opacity: 1;
-    }
-    #volumeControl {
-      z-index: 10;
-      position: absolute;
-      bottom: 47%;
-      right: 2%;
-      opacity: 0;
-      transition: opacity 200ms;
-      img {
-        width: 45px;
-        &:first-of-type {
-          display: none;
-        }
-      }
-    }
-  }
-}
-
 #whatWeDo {
   width: 1290px;
   margin: 0 auto;
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin-bottom: 47px;
-    li {
-      float: left;
-      position: relative;
-      &:not(:last-child) {
-        margin-right: 30px;
-      }
-      .wwd-card {
-        position: relative;
-        .card-img {
-          width: 300px;
-          height: 475px;
-          border-radius: 9px;
-        }
-        .card-link-wrapper {
-          position: absolute;
-          left: calc(50% - 90px);
-          top: 80%;
-          a.icaf-button {
-            div {
-              width: 180px;
-              height: 67px;
-            }
-          }
+  padding-top: 14px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 475px 125px;
+  gap: 48px 30px;
+  .wwd-card {
+    position: relative;
+    .card-img {
+      width: 300px;
+      height: 475px;
+      border-radius: 9px;
+    }
+    .card-link-wrapper {
+      position: absolute;
+      left: calc(50% - 90px);
+      top: 80%;
+      a.icaf-button {
+        div {
+          width: 180px;
+          height: 67px;
         }
       }
-      .wwd-description {
-        color: $ICAF_BLUE;
-        font-size: 18px;
-        line-height: 25px;
-        text-align: center;
-        max-width: 252px;
-        margin-left: 24px;
-        height: 146px;
-        margin-top: 56px;
+    }
+  }
+  .wwd-description {
+    color: $ICAF_BLUE;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    max-width: 295px;
+  }
+}
+
+.mural-wrapper {
+  display: flex;
+  width: 1358px;
+  margin: 0 auto;
+  .murals {
+    &,
+    img {
+      width: 825px;
+      height: 605px;
+    }
+    img {
+      border-radius: 9px 0 0 9px;
+      animation-name: mural-fade;
+      animation-duration: $muralCrossFadeDuration;
+      &:nth-child(1) {
+        animation-delay: (-1 * math.div($muralCrossFadeDuration, 2));
+      }
+    }
+  }
+  .mural-text {
+    width: 535px;
+    background-color: $ICAF_BLUE;
+    color: $ICAF_WHITE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 9px 9px 0;
+    .mural-title {
+      color: $ICAF_YELLOW;
+      margin-top: 45px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 27px;
+      text-align: center;
+      max-width: 488px;
+    }
+    .main-text {
+      margin-top: 36px;
+      margin-left: 25px;
+      font-size: 18px;
+      line-height: 25px;
+      ul {
+        max-width: 446px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 17px;
+        margin: 10px 0 39px;
+      }
+    }
+    a.icaf-button {
+      margin-top: 15px;
+      div {
+        width: 138px;
+        height: 50px;
+      }
+    }
+  }
+}
+
+#videoContainer {
+  background-color: $ICAF_BLUE;
+  margin: 0 41px;
+  margin-bottom: 96px;
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  video {
+    width: 1169px;
+    height: 653px;
+  }
+
+  &:hover {
+    #playControl {
+      opacity: 0.8;
+    }
+    #volumeControl {
+      opacity: 1;
+    }
+  }
+  #playControl {
+    z-index: 10;
+    position: absolute;
+    top: calc(50% - 62px);
+    right: calc(50% - 62px);
+    opacity: 0;
+    transition: opacity 200ms;
+    cursor: pointer;
+    > div {
+      background: #5f5f5f;
+      width: 124px;
+      height: 124px;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.8;
+      svg {
+        fill: #fff;
+      }
+      &:hover {
+        background: #fff;
+        svg {
+          fill: #5f5f5f;
+        }
+      }
+    }
+  }
+  #volumeControl {
+    z-index: 10;
+    position: absolute;
+    bottom: 47%;
+    right: 2%;
+    opacity: 0;
+    transition: opacity 200ms;
+    cursor: pointer;
+    img {
+      width: 45px;
+      &:first-of-type {
+        display: none;
       }
     }
   }

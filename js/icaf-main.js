@@ -14,6 +14,9 @@ $(document).ready(function () {
         $inputs.toggle();
         videoElm.muted = !videoElm.muted
     });
+    $('#playControl').click(() => {
+        videoElm.paused ? videoElm.play() : videoElm.pause();
+    });
 
     let carousel = new ICAFCarousel('.carousel-wrapper');
     carousel.play();

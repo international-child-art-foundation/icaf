@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="/css/impact.css" />
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/bootstrap.js" defer></script>
+    <script src="/js/ICAFTimeline.js" defer></script>
     <script>
         $(document).ready(function () {
             for (let el of $('[use-snippet]')) {
                 $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
             }
+
+            window.timeline = new ICAFTimeline('.timeline-wrapper');
         });
     </script>
 </head>
@@ -209,8 +212,26 @@
             </div>
         </div>
 
-        <!-- TimeLine -->
-
+        <!-- Timeline -->
+        <div class="timeline-wrapper"
+            style="height: 250px; margin-bottom:220px; border: 1px solid blue; overflow:hidden">
+            <div id="timeline" style="
+                    font-size: 30px;
+                    display: flex;
+                    row-gap: 10px;
+                    flex-direction: column;
+                    margin-top: 0px;
+                    ">
+                <div>Entry 1</div>
+                <div>Entry 10</div>
+                <div>Entry 11</div>
+                <div>Entry 100</div>
+                <div>Entry 101</div>
+                <div>Entry 110</div>
+                <div>Entry 111</div>
+                <div>Entry 1000</div>
+            </div>
+        </div>
         <!-- Footer -->
         <div use-snippet="/snippets/footer.snip.html"></div>
     </div>

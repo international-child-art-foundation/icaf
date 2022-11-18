@@ -4,14 +4,24 @@
 <head>
     <title>About | Why ICAF</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/mission/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/about/why-icaf.css" />
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/bootstrap.min.js" defer></script>
+    <script src="/JS/swiper-bundle.min.js"></script>
     <script>
         $(document).ready(function () {
             for (let el of $('[use-snippet]')) {
                 $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
             }
+
+            // Gallery
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: "auto",
+                centeredSlides: true,
+                spaceBetween: 80,
+                initialSlide: 3, 
+            });
         });
     </script>
 </head>
@@ -28,68 +38,118 @@
         <div class="page-title">WHY ICAF</div>
 
         <!-- Quote -->
-        <div class="image-container">
-            <img src="/resource/image/about/why-icaf/_.svg">
+        <div class="quote">A lack of creativity impedes innovation and prosperity,
+            while a lack of mutual empathy endangers peace and democracy.</div>
+
+        <!-- Image -->
+        <div class="image"><img src="/resource/image/about/why-icaf/why.png"></div>
+
+        <!-- Contents -->
+        <div class="contents">
+            <div class="section-titles">Problem Statement</div>
+            <div class="sections">Creativity researcher KH Kim found that American creativity declined from the 1990s to
+                2008, and the slide since 2008 may even be worse. Creativity guru Ken Robinson averred that children get
+                schooled out of their creativity. E. Paul Torrance, widely regarded as the “father” of creativity,
+                discovered the “4th -grade” in children&#8217;s creativity. Once this slump gains a foothold, it holds
+                back divergent and critical thinking that propels invention and innovation.
+                <br>
+                <br>
+                Though creativity is treated as something inherently positive, it is morally neutral. Malevolent or dark
+                creativity intentionally harms the perceived opponents or outgroups. What makes creativity positive for
+                the advancement of the human species and the protection of planet Earth? Empathy. Primatologist Frans de
+                Waal defines empathy as humankind “survival package”. Empathy could well be the mother of all emotions.
+                <br>
+                <br>
+                Recent neuroscientific findings portray the human brain as a creative powerhousehardwired for empathy
+                because of “mirror neurons”. Adverse childhood experiences (ACEs) or the transmission of fear, hatred,
+                or trauma passed from one generation to the next, like physical traits or melanin, can muddy the mirror
+                neurons, making activation necessary.
+            </div>
+            <div class="section-titles">Why the arts?</div>
+            <div class="sections">In its 2021 report: Art for Life&#8217;s Sake: The Case for Arts Education, the
+                American Academy of Arts & Sciences provides “evidence of the attributes, values, and skills that come
+                from arts education, including social and emotional development, improvements in school engagement, as
+                well as vital civic and social participation.” In sum, the arts can change a person. Art programs are
+                also cost effective compared to other interventions. Notably, the concepts of creativity and empathy are
+                both rooted in the arts; hence, the arts can help develop these vital human attributes.
+            </div>
+            <div class="section-titles">Theory of Change</div>
+            <div class="sections">Founded in 1997 to serve American children as their national arts organization and the
+                world&#8217;s children as their global arts organization, the International Child Art Foundation (ICAF)
+                is a 501(c)(3) nonprofit with Federal Tax ID 52-2032649.
+                <br>
+                <br>
+                Mission: To cultivate American children&#8217;s creativity and grow mutual empathy among them and their
+                peers worldwide as building blocks for a prosperous and peaceful future.
+                <br>
+                <br>
+                Vision: To democratize creativity for the Fourth Industrial Revolution and mainstream
+                mutual empathy for “a more perfect union”.
+                <br>
+                <br>
+                ICAF&#8217;s programmatic approach is based on the belief that creativity can be learned while empathy
+                can be taught. Its unique pedagogy for children&#8217;s creative and empathic development draws upon
+                over twenty-five years of experience working with youth nationwide and worldwide. By employing the arts
+                as a dynamic activity, ICAF helps children reframe their self-identity, first as “artist-athletes” for
+                self-improvement, then as “creative-empaths” for positive social change.
+            </div>
+            <div class="section-titles">The Arts Olympiad</div>
+            <div class="sections">ICAF&#8217;s Arts Olympiad has grown over the years into the world&#8217;s largest
+                school art program. The Arts Olympiad inspires students to embrace the “Artist-Athlete Ideal” of the
+                creative mind and healthy body (mente sana in corpo sano). Through structured lesson plans, ICAF awakens
+                the dormant “inner-artists” and the slumbering “inner-athletes” for students to begin thinking of
+                themselves and others as “artist-athletes” — not jocks, nerds, techies, or artsy. This revised
+                self-image solidifies when students limn themselves as artist-athletes in the artwork they produce under
+                the Arts Olympiad.
+                <br>
+                <br>
+                Blending the artistic and the athletic mindsets nurtures creativity, builds confidence, and boosts
+                resilience, enabling students to overcome fears, anxieties, or adverse childhood experiences (ACEs).
+                <br>
+                <br>
+                Creativity is a leadership skill for the privileged but a survival skill for the poor because it levels
+                the playing field and can empower disadvantaged students to break the vicious cycle of intergenerational
+                poverty.
+            </div>
+            <div class="section-titles">World Children&#8217;s Festival</div>
+            <div class="sections">ICAF brings together young artist-athletes from across America and nearly 100
+                participating countries to its festivals, traditionally held at The National Mall across the U.S.
+                Capitol. ICAF choreographs the festival&#8217;s workshops, activities, and training to produce a
+                transformative experience that infuses creativity with empathy through co-creation and collaborative
+                mural-making.
+                <br>
+                <br>
+                Once emboldened as “creative-empaths”, children can disrupt the intergenerational transmission of trauma
+                and hatred to work together with outgroups for a prosperous and peaceful future.
+            </div>
+            <div class="section-titles">Take Action</div>
+            <div class="sections">Creativity and empathy are the building blocks for a better world. Children need your
+                support.</div>
         </div>
-        <div class="quote">Such is the crisis we face today that humanity's future is at stake. Only our children can
-            save us.</div>
-        <div class="name">Dr. Ashfaq Ishaq</div>
 
-        <!-- section1 -->
-        <div class="section-titles first">Mission</div>
-        <div class="sections1">To democratize creativity for the Fourth Industrial Revolution and develop mutual empathy
-            for a &#8220;more perfect union.&#8221;
-            <br>
-            <br>
-            Incorporated in 1997 in the District of Columbia as a 501(c)(3) nonprofit, ICAF serves American children as
-            their national arts organization that cultivates their creativity and grows empathy among them and their
-            peers worldwide through the universal language of art.
-            <br>
-            <br>
-            ICAF focuses on 8- to 12-year-olds because they often suffer the consequences of the well-documented
-            "fourth-grade slump" in their creativity and are subject to surroundings (real or virtual) that can muddy
-            their "mirror neurons" responsible for empathy.
-        </div>
-
-
-        <!-- section2 -->
-        <div class="section-titles">Intervention</div>
-        <div class="sections2">
-            ICAF publishes ChildArt quarterly to grow imagination, organizes the Arts Olympiad to
-            foster creative development, and produces the World Children's Festival to develop mutual empathy.
-            <br><br>
-            ICAF arranges interactive exhibitions to kindle the inner child of professionals. But children are at the
-            heart of what ICAF does. The ICAF Healing Art Program revives faith in nature of child victims of natural
-            disasters, and the Peace through Art Program restores trust in humanity of children living in conflict
-            zones.
-            <br><br>
-            ICAF has pioneered STEAMS education to integrate the Arts (creative activities) and Sports (physical
-            activities) with STEM disciplines for children's holistic development. The United States Olympic Committee
-            has granted ICAF an exclusive license to use the "Arts Olympiad" mark.
-        </div>
-
-        <!-- section3 -->
-        <div class="section-titles">Vision</div>
-
-        <div class="sections2">
-            ICAF is in the business of producing "Creative-Empaths"—a sterling human character and
-            quality which reflects that of America's Founding Fathers. ICAF plants the seeds of freedom by preserving
-            and fostering children's innate creativity and intrinsic empathy. ICAF inspires children to boldly step
-            beyond the boundaries set before them by envisioning a brave new world where diversity and differences
-            enhance the fractal of human discovery and evolution. ICAF lays the building blocks for American cultural,
-            economic, and social prosperity by inspiring, empowering, and meaningfully connecting our children as
-            change-makers who can shape a more prosperous and peaceful future.
-            <br>
-            <br>
-        </div>
-
+        <!-- images title -->
+        <div class="materials">Helpful Materials</div>
         <!-- images -->
-        <div class="images">
-            <img src="/resource/image/about/why-icaf/Rectangle 184.png">
-            <img src="/resource/image/about/why-icaf/Rectangle 185.png">
-            <img src="/resource/image/about/why-icaf/Rectangle 186.png">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/resource/image/about/why-icaf/Rectangle 184 (1).png" class="card-img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/resource/image/about/why-icaf/Rectangle 184.png" class="card-img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/resource/image/about/why-icaf/Rectangle 185.png" class="card-img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/resource/image/about/why-icaf/Rectangle 186.png" class="card-img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/resource/image/about/why-icaf/Rectangle 184 copy.png" class="card-img">
+                </div>
+            </div>
         </div>
-
+        
         <!-- Footer -->
         <div use-snippet="/snippets/footer.snip.html"></div>
     </div>

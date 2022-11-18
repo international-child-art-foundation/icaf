@@ -291,3 +291,111 @@
     }
   }
 }
+
+.timeline-wrapper {
+  margin: 0px auto 0px;
+  width: 1185px;
+  background: #F7F7F7;
+
+  #timeline {
+
+    // inactive row
+    .row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 120px;
+
+      div {
+        position: absolute;
+      }
+
+      .year {
+        margin-left: 28px;
+        width: 173px;
+        height: 50px;
+        background: #F7F7F7;
+        text-align: center;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 44px;
+        color: $ICAF_BLUE;
+      }
+
+      .line {
+        margin-left: 181px;
+        height: 0px;
+        width: 112px;
+        border: 3px solid #134380;
+      }
+
+      .image {
+        margin-left: 330px;
+
+        img {
+          width: 93px;
+          height: 120px;
+          border-radius: 12px;
+        }
+      }
+
+      .text {
+        margin-left: 473px;
+        max-width: 535px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+      }
+    }
+
+    // active row
+    .row.active {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 214px;
+      margin-top: 128px;
+
+      div {
+        position: absolute;
+      }
+
+      .year {
+        margin-left: 28px;
+        width: 173px;
+        height: 98px;
+        background: #F7F7F7;
+        text-align: center;
+        font-weight: 800;
+        font-size: 72px;
+        line-height: 98px;
+        color: $ICAF_BLUE;
+      }
+
+      .line {
+        margin-left: 227px;
+        height: 0px;
+        width: 156px;
+        border: 8px solid #134380;
+      }
+
+      .image {
+        margin-left: 434px;
+
+        img {
+          width: 166px;
+          height: 214px;
+          border-radius: 12px;
+        }
+      }
+
+      .text {
+        margin-left: 650px;
+        max-width: 535px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+      }
+    }
+  }
+}

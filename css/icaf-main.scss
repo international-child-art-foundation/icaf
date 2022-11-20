@@ -326,11 +326,17 @@ body > .container {
       svg {
         fill: #fff;
       }
+      &.pause svg {
+        scale: 2;
+      }
       &:hover {
         background: #fff;
         svg {
           fill: #5f5f5f;
         }
+      }
+      &.hidden {
+        display: none;
       }
     }
   }
@@ -344,7 +350,7 @@ body > .container {
     cursor: pointer;
     img {
       width: 45px;
-      &:first-of-type {
+      &.hidden {
         display: none;
       }
     }

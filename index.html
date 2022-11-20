@@ -10,20 +10,6 @@
     <script src="/js/icaf-main.js" type="module" defer></script>
     <script>
         let t = Date.now();
-        // let id = setInterval(() => {
-        //     console.log('si', Date.now() - t, $('[use-snippet]').length);
-        //     if ((Date.now() - t) > 1000) clearInterval(id)
-        // }, 50)
-        // setTimeout(() => {
-        //     // console.log($('[use-snippet]'))            
-        //     if ($('[use-snippet]').length) {
-        //         for (let el of $('[use-snippet]')) {
-        //             console.log('st', $(el).attr('use-snippet'), $(el).is(':empty'), Date.now() - t);
-        //             $(el).load($(el).attr('use-snippet'));
-        //             // console.log($(el).attr('use-snippet'), Date.now() - t);
-        //         }
-        //     }
-        // }, 100);
         $(document).ready(function () {
             console.log('dr', Date.now() - t, $('[use-snippet]'));
             for (let el of $('[use-snippet]')) {
@@ -326,15 +312,19 @@
                 Something went wrong?
             </video>
             <div id="playControl">
-                <div class="play">
+                <div class="play hidden">
                     <svg height="66" width="66" viewBox="-10 0 66 66">
                         <path opacity="0.8" d="M56.8762 33.3195L0.788586 65.7017L0.788589 0.937276L56.8762 33.3195Z" />
                     </svg>
-
+                </div>
+                <div class="pause">
+                    <svg width="66" height="66" viewBox="0 0 43 43">
+                        <path d="M24.5 29.75V12.25H29.5V29.75H24.5ZM14.5 29.75V12.25H19.5V29.75H14.5Z" />
+                    </svg>
                 </div>
             </div>
             <div id="volumeControl">
-                <img src="/resource/image/vol-icon.png" alt="Volume On">
+                <img src="/resource/image/vol-icon.png" class="hidden" alt="Volume On">
                 <img src="/resource/image/vol-muted-icon.png" alt="Volume Muted">
             </div>
         </div>

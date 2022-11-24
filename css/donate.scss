@@ -263,9 +263,13 @@
     margin-top: 73px;
     height: 554px;
     display: flex;
-    background-color: black;
+
+    .image {
+        height: 554px;
+    }
 
     p {
+        position: absolute;
         margin-top: 127px;
         margin-left: 111px;
         max-width: 722px;
@@ -294,6 +298,7 @@
 
     p {
         position: absolute;
+        max-width: 636px;
         margin-top: 127px;
         margin-left: 723px;
         font-weight: 400;
@@ -325,6 +330,10 @@
     height: 554px;
     display: flex;
     background-color: rgba(213, 199, 172, 0);
+
+    .image {
+        height: 554px;
+    }
 
     p {
         position: absolute;

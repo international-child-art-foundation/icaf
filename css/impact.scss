@@ -295,9 +295,20 @@
 .timeline-wrapper {
   margin: 0px auto 0px;
   width: 1185px;
-  background: #F7F7F7;
+  background: #f7f7f7;
+  height: 761px;
+  margin-bottom: 220px;
+  border: 1px solid blue;
+  overflow: hidden;
+  position: relative;
 
   #timeline {
+    font-size: 30px;
+    display: flex;
+    row-gap: 47px;
+    flex-direction: column;
+    margin-top: 0px;
+    position: relative;
 
     // inactive row
     .row {
@@ -314,7 +325,7 @@
         margin-left: 28px;
         width: 173px;
         height: 50px;
-        background: #F7F7F7;
+        background: #f7f7f7;
         text-align: center;
         font-weight: 800;
         font-size: 32px;
@@ -354,7 +365,6 @@
       flex-direction: row;
       align-items: center;
       height: 214px;
-      margin-top: 128px;
 
       div {
         position: absolute;
@@ -364,7 +374,7 @@
         margin-left: 28px;
         width: 173px;
         height: 98px;
-        background: #F7F7F7;
+        background: #f7f7f7;
         text-align: center;
         font-weight: 800;
         font-size: 72px;

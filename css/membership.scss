@@ -46,75 +46,20 @@
       "o p"
       "q q";
 
-    .area1 {
-      grid-area: a;
-    }
-
-    .area2 {
-      grid-area: b;
-    }
-
-    .area3 {
-      grid-area: c;
-    }
-
-    .area4 {
-      grid-area: d;
-    }
-
-    .area5 {
-      grid-area: e;
-    }
-
-    .area6 {
-      grid-area: f;
-    }
-
-    .area7 {
-      grid-area: g;
-    }
-
-    .area8 {
-      grid-area: h;
-    }
-
-    .area9 {
-      grid-area: i;
+    @for $i from 1 through 16 {
+      .area#{$i} {
+        grid-area: unquote(str-slice("abcdefghijklmnop", $i, $i));
+      }
     }
 
     .area10 {
-      grid-area: j;
       margin-top: 32px;
-    }
-
-    .area11 {
-      grid-area: k;
-    }
-
-    .area12 {
-      grid-area: l;
-    }
-
-    .area13 {
-      grid-area: m;
-    }
-
-    .area14 {
-      grid-area: n;
-    }
-
-    .area15 {
-      grid-area: o;
-    }
-
-    .area16 {
-      grid-area: p;
     }
 
     .middleline {
       grid-area: z;
-      border: 1px solid #B7B7BB;
-      background-color: #B7B7BB;
+      border: 1px solid #b7b7bb;
+      background-color: #b7b7bb;
     }
 
     #area {

@@ -13,6 +13,11 @@
                 $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
             }
         });
+
+        $('.donate-main > button').click(function () {
+            $('#customAmount').val(this.dataset.amount);
+        });
+        $('.donate-main > .icaf-button').click(function () {/*TODO: implement*/ })
     </script>
 </head>
 
@@ -24,7 +29,7 @@
         <!-- Title section -->
         <div class="title-section">
             <!-- title background -->
-            <img src="/resource/image/donate/donate-draft2@3x.png">
+            <!-- <img src="/resource/image/donate/donate-draft2@3x.png"> -->
 
             <!-- title content -->
             <div class="title-content">
@@ -35,15 +40,71 @@
                 <div class="donate-title">Donate</div>
 
                 <!-- Donate Description -->
-                <div class="donate-description">Your contribution will help democratize creativity for
-                    the Fourth Industrial Revolution and grow mutual empathy for a “more perfect union.”</div>
+                <div class="donate-description">
+                    Your contribution will help democratize creativity for
+                    the Fourth Industrial Revolution and grow mutual empathy
+                    for a &#8220;more perfect union.&#8221;
+                </div>
             </div>
 
             <!-- donate forms -->
             <div class="donate-form">
-                <!-- buttons -->
+                <div class="donate-main">
+                    <button data-amount="200">$200</button>
+                    <button data-amount="100">$100</button>
+                    <button data-amount="50">$50</button>
+                    <button data-amount="25">$25</button>
 
+                    <div class="custom-amount">
+                        <div class="currency"><span>$</span></div>
+                        <input id="customAmount" type="number" placeholder="Other Amount">
+                    </div>
+                </div>
 
+                <button class="icaf-button">DONATE NOW</button>
+                <div class="mail-check">
+                    OR
+                    <br />
+                    Mail your check to ICAF
+                    <br />
+                    <span>Post Office Box 58133, Washington, D.C. 20037</span>
+                </div>
+                <div class="divider"></div>
+                <div class="odm-title">OTHER DONATION METHODS</div>
+                <div class="odm-icons">
+                    <a href="#" target="_blank" alt="Amazon Pay" disabled>
+                        <div>
+                            <img class="top" src="/resource/image/donate/amazon-logo.svg">
+                            <img class="bottom" src="/resource/image/donate/arrow-right.svg">
+                        </div>
+                    </a>
+                    <a href="https://www.paypal.com/fundraiser/charity/2737335" target="_blank" alt="Paypal">
+                        <div>
+                            <img class="top" src="/resource/image/donate/paypal-logo.svg">
+                            <img class="bottom" src="/resource/image/donate/arrow-right.svg">
+                        </div>
+                    </a>
+                    <a href="https://www.networkforgood.org/donation/MakeDonation.aspx?ORGID2=522032649&vlrStratCode=nZXb2ZdCu0mkYBGguVqwHg3Urn4pNhQPKO6LvPJDxffjfPYvs02mtIFg%2b23WunIU"
+                        target="_blank" alt="Network for Good">
+                        <div>
+                            <img class="top" src="/resource/image/donate/nfg-logo.svg">
+                            <img class="bottom" src="/resource/image/donate/arrow-right.svg">
+                        </div>
+                    </a>
+                    <a href="https://www.justgiving.com/internationalchildartfoundation" target="_blank"
+                        alt="Just Giving">
+                        <div>
+                            <img class="top" src="/resource/image/donate/just-giving-logo.svg">
+                            <img class="bottom" src="/resource/image/donate/arrow-right.svg">
+                        </div>
+                    </a>
+                    <a href="https://www.every.org/icaf#/donate" target="_blank" alt="Every">
+                        <div>
+                            <img class="top" src="/resource/image/donate/every-logo.svg">
+                            <img class="bottom" src="/resource/image/donate/arrow-right.svg">
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -55,7 +116,13 @@
             </div>
 
             <!-- art lover words -->
-            <div class="art-lover-words">You can honor an <u>Art Lover</u> or contribute in <u>Loving Memory</u> of someone special.</div>
+            <div class="art-lover-words">
+                You can honor an
+                <a href="mailto:childart@icaf.org">Art Lover</a>
+                or contribute in
+                <a href="mailto:childart@icaf.org">Loving Memory</a>
+                of someone special.
+            </div>
 
             <!-- letter image -->
             <div class="letter-image">
@@ -83,43 +150,56 @@
                     </div>
                     <div class="cards">
                         <p class="card-number">2</p>
-                        <p class="card-words">Since volunteers and interns comprise over 85% of ICAF&#8217;s staff, our overhead is the lowest of any national charity, thus nearly all of your contribution will fund our free services.</p>
+                        <p class="card-words">Since volunteers and interns comprise over 85% of ICAF&#8217;s staff, our
+                            overhead is the lowest of any national charity, thus nearly all of your contribution will
+                            fund our free services.</p>
                     </div>
                     <div class="cards">
                         <p class="card-number">4</p>
-                        <p class="card-words">ICAF is independently ranked among the <u>25 Top Children&#8217;s Charities</u> in the United States and our work advances the following UN Social Development Goals: 
+                        <p class="card-words">ICAF is independently ranked among the <u>25 Top Children&#8217;s
+                                Charities</u> in the United States and our work advances the following UN Social
+                            Development Goals:
                             <br><br>
-                            1) Promote good health; 
+                            1) Promote good health;
                             <br>
-                            2) Bring quality education; 
+                            2) Bring quality education;
                             <br>
-                            3) Ensure gender equality; 
+                            3) Ensure gender equality;
                             <br>
-                            4) Reduce inequities;  
+                            4) Reduce inequities;
                             <br>
-                            5) Build peace in communities and the world at large.</p>
+                            5) Build peace in communities and the world at large.
+                        </p>
                     </div>
                 </div>
                 <div class="right-cards">
                     <div class="cards">
                         <p class="card-number">1</p>
-                        <p class="card-words">All our programs including the Arts Olympiad are free-of-charge, our World Children&#8217;s Festival is free and open to the public, and our ChildArt magazine published since 1998 is free of commercial advertisements.</p>
+                        <p class="card-words">All our programs including the Arts Olympiad are free-of-charge, our World
+                            Children&#8217;s Festival is free and open to the public, and our ChildArt magazine
+                            published since 1998 is free of commercial advertisements.</p>
                     </div>
                     <div class="cards">
                         <p class="card-number">3</p>
-                        <p class="card-words">Since 1997, more than five million children worldwide have participated in and benefitted from our programs and nearly half a million individuals have attended our festivals, exhibitions, and events worldwide.</p>
+                        <p class="card-words">Since 1997, more than five million children worldwide have participated in
+                            and benefitted from our programs and nearly half a million individuals have attended our
+                            festivals, exhibitions, and events worldwide.</p>
                     </div>
                     <div class="cards">
                         <p class="card-number">5</p>
-                        <p class="card-words">Precious is the imagination that children limn in their artwork. But the mainstream art world ignores it. Help us harness children’s imagination and show the world that the future of art is young. </p>
+                        <p class="card-words">Precious is the imagination that children limn in their artwork. But the
+                            mainstream art world ignores it. Help us harness children&#8217;s imagination and show the
+                            world
+                            that the future of art is young. </p>
                     </div>
                 </div>
             </div>
-            
+
             <!-- candid -->
             <div class="candid">
                 <img src="/resource/image/donate/profile-PLATINUM2022-seal 1.svg">
-                <div class="designated">Designated as a 501(c)(3) nonprofit by the IRS on 11/05/1997, ICAF&#8217;s Federal Tax ID is 52-2032649</div>
+                <div class="designated">Designated as a 501(c)(3) nonprofit by the IRS on 11/05/1997, ICAF&#8217;s
+                    Federal Tax ID is 52-2032649</div>
             </div>
         </div>
 
@@ -133,20 +213,26 @@
 
         <!-- theory of change video -->
         <div class="theory-of-change-video">
-            <video src="">
+            <iframe src="https://www.youtube.com/embed/R4UsHHkbkwg" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
 
         <!-- Hillary -->
         <div class="hillary">
             <img src="/resource/image/donate/Group 257@3x.png" class="image">
-            <p>I am grateful to organizations like the International Child Art Foundation that gives us the opportunity to see the world through the eyes of our nation’s young people. I encourage you to continue to support programs that help children to discover their talents and believe in themselves.</p>
+            <p>I am grateful to organizations like the International Child Art Foundation that gives us the opportunity
+                to see the world through the eyes of our nation&#8217;s young people. I encourage you to continue to
+                support
+                programs that help children to discover their talents and believe in themselves.</p>
             <img src="/resource/image/donate/Hillary Clinton.svg" class="signature">
         </div>
 
         <!-- Gen Cosumano -->
         <div class="gen-cosumano">
             <img src="/resource/image/donate/Lt Gen Cosumano 1.png" class="image">
-            <p>The positive message of peace and hope promised by the international Child Art Foundation is commendable and worthy of great recognition</p>
+            <p>The positive message of peace and hope promised by the international Child Art Foundation is commendable
+                and worthy of great recognition</p>
             <img src="/resource/image/donate/Lt. Gen. Joseph Cosumano.svg" class="signature">
             <div class="title">Jr., Commanding General, US Army Space and Missile Defense Command</div>
         </div>
@@ -154,7 +240,8 @@
         <!-- Vice Admiral -->
         <div class="vice-admiral">
             <img src="/resource/image/donate/Group 311@3x.png" class="image">
-            <p>We can all learn from the children of the world and realize that our next generation has the passion, creativity and empathy to shape the future and build a better world</p>
+            <p>We can all learn from the children of the world and realize that our next generation has the passion,
+                creativity and empathy to shape the future and build a better world</p>
             <img src="/resource/image/donate/Vice Admiral John P. Currier.svg" class="signature">
             <div class="title">Deputy Commandant, United States Coast Guard</div>
         </div>

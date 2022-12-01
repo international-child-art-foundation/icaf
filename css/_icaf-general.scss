@@ -94,3 +94,13 @@ a.icaf-button {
     }
   }
 }
+
+button.icaf-button {
+  background-color: $ICAF_YELLOW;
+  color: $ICAF_BLUE;
+  border-radius: 37px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  border: 0;
+}

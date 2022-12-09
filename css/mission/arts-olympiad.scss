@@ -36,11 +36,11 @@
   text-align: center;
   color: $ICAF_BLUE;
 }
-.art-image{
+.art-image {
   width: 920px;
   height: 516.25px;
   margin: 104px auto 0px;
-  .image-quote{
+  .image-quote {
     font-weight: 400;
     font-size: 18px;
     margin-top: 20px;
@@ -65,15 +65,20 @@
   display: grid;
   grid-template-columns: 280px 684px;
   margin: 60px auto 0px;
-  gap: 83px;
+  column-gap: 83px;
   .arts-olympiad-7 {
-    width: 290px;
-    height: 290px;
+    display: flex;
+    align-items: center;
+    img {
+      width: 280px;
+      height: 280px;
+      margin-top: 6px;
+    }
   }
   .action-can-take {
     display: grid;
-    grid-template-rows: 132px 132px;
-    gap: 40px;
+    grid-template-rows: repeat(2, 132px);
+    row-gap: 40px;
     .action {
       font-weight: 600;
       font-size: 32px;
@@ -151,7 +156,7 @@
             line-height: 25px;
             text-align: center;
             align-items: center;
-            color: #FFFFFf;
+            color: #ffffff;
           }
         }
 

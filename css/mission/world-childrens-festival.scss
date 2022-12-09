@@ -13,7 +13,6 @@
   &-top {
     width: 1060px;
     margin: 90px auto 0px;
-    align-items: center;
     text-align: center;
   }
 
@@ -24,7 +23,6 @@
 
   &-past-WCF {
     margin-top: 17px;
-
   }
 }
 
@@ -129,7 +127,7 @@
   display: grid;
   margin: 157px auto 0px;
   grid-template-columns: 460px 445px;
-  gap: 150px;
+  column-gap: 150px;
 
   .info-title {
     font-weight: 600;
@@ -151,14 +149,13 @@
     position: absolute;
     width: 1062px;
     display: grid;
-    grid-template-columns: 320px 320px 320px;
-    gap: 51px;
+    grid-template-columns: repeat(3, 320px);
+    column-gap: 51px;
     margin: 141px 190px 0px;
 
     .day-container {
-      width: 320px;
       height: 426.67px;
-      background: #FFFFFF;
+      background: #ffffff;
       border: 1px solid rgba(88, 107, 131, 0.3);
       border-radius: 20px;
 
@@ -168,11 +165,10 @@
         line-height: 44px;
         margin-top: 45px;
         text-align: center;
-        color: #586B83;
+        color: #586b83;
       }
 
       .day-topic {
-        width: 321px;
         height: 180px;
         margin-top: 34px;
 
@@ -182,15 +178,15 @@
           line-height: 44px;
           padding-top: 31px;
           text-align: center;
-          color: #FFFFFF;
+          color: #ffffff;
         }
 
         &-1 {
-          background-color: #00A65F;
+          background-color: #00a65f;
         }
 
         &-2 {
-          background-color: #FFA943;
+          background-color: #ffa943;
         }
 
         &-3 {
@@ -232,7 +228,7 @@
   .WCF-nth-container {
     display: grid;
     grid-template-columns: 640px 300px;
-    gap: 121px;
+    column-gap: 121px;
     margin-top: 40px;
 
     .section-name {
@@ -264,7 +260,7 @@
     }
 
     .past-WCF-underline {
-      color: #586B83;
+      color: #586b83;
       border: 3px solid rgba(88, 107, 131, 0.2);
       margin-top: 8px;
 
@@ -286,13 +282,13 @@
 .design-logo {
   height: 1091px;
   margin-top: 60px;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   overflow: auto;
 
   .title-container {
     width: 1230px;
     height: 116px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     margin: 50px auto 0px;
     overflow: auto;
 

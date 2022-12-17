@@ -12,13 +12,31 @@
             for (let el of $('[use-snippet]')) {
                 $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
             }
-        });
 
-        $('.donate-main > button').click(function () {
-            $('#customAmount').val(this.dataset.amount);
+            let everyScript = document.createElement('script');
+            document.body.appendChild(everyScript);
+            everyScript.onload = function () {
+                everyDotOrgDonateButton.createButton({ selector: "#edo-donate-btn", fontSize: "18px", });
+                everyDotOrgDonateButton.createWidget({ selector: "#edo-donate-btn", options: { nonprofitSlug: "icaf", showInitialMessage: false, defaultFrequency: "once", infoPages: [{ key: "faq", name: "FAQ", source: 'klsdnklsnf', },], currencies: [{ countryCodes: ["US"], name: "USD", symbol: "$", minimumAmount: 10, },], }, });
+                $('#edo-donate-btn').trigger('click');
+                document.body.style.overflow = null;
+                $sr = $($('#shadow-wrapper').hide()[0].shadowRoot);
+                console.log('shadowRoot (sr) loaded')
+            };
+            everyScript.src = "/js/every-index.js";
+
+            $('.donate-main > button').click(function () {
+                $('#customAmount').val(this.dataset.amount);
+            });
+            $('.donate-form > .icaf-button').click(function () {
+                //TODO: show feedback error for <$10
+                $sr.find('input').eq(2).val($('#customAmount').val()).get(0).dispatchEvent(new Event('input'));
+                setTimeout(() => $sr.find('button[type=submit]').trigger('click'), 10);
+            });
         });
-        $('.donate-main > .icaf-button').click(function () {/*TODO: implement*/ })
     </script>
+
+    <!-- <script type="text/javascript" src="https://jstest.authorize.net/v3/AcceptUI.js" charset="utf-8"></script> -->
 </head>
 
 <body>
@@ -105,6 +123,8 @@
                         </div>
                     </a>
                 </div>
+
+                <div id="edo-donate-btn"><a href="https://www.every.org/icaf#donate">Donate</a></div>
             </div>
         </div>
 

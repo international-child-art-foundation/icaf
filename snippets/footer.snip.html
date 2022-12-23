@@ -16,8 +16,6 @@
                         </svg>
                         Donate
                     </span>
-
-
                 </div>
             </a>
             <a class="icaf-button alt" href="/about/contact-us">
@@ -52,13 +50,37 @@
             <span>Newsletter</span>
             <span>Subscribe to our quarterly <i>Sketches</i>.</span>
             <div class="email-input">
-                <input type="text" name="userEmail" placeholder="Email Address" />
-                <button type="button">SEND</button>
+                <form id="subscribeForm">
+                    <input type="hidden" name="type" value="subscribe" />
+                    <input type="email" class="form-control" name="userEmail" placeholder="Email Address" required />
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                    <button type="submit">SEND</button>
+                </form>
             </div>
+            <div class="success-feedback">Your request has been submitted.</div>
         </div>
     </div>
     <div class="copyright">
         <img src="/resource/image/footer/bx_copyright.svg" alt="Copyright" />
         2022 International Children Art Foundation P.O. Box 58133 Washington, DC 20037
     </div>
+    <script>
+        $(document).ready(function () {
+            $('#subscribeForm').on('submit', e => {
+                e.preventDefault();
+
+                $.post('/contact/send-mail',
+                    Object.fromEntries(new FormData($('#subscribeForm')[0])),
+                    res => {
+                        if (res === 'success') {
+                            $('.email-input').hide();
+                            $('.success-feedback').show();
+                        } else {
+                            console.error(res);
+                        }
+                    }
+                );
+            });
+        });
+    </script>
 </footer>

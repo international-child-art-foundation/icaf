@@ -12,6 +12,23 @@
             for (let el of $('[use-snippet]')) {
                 $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
             }
+
+            $('#contactUsForm').on('submit', e => {
+                e.preventDefault();
+
+                $.post('/contact/send-mail',
+                    Object.fromEntries(new FormData($('#contactUsForm')[0])),
+                    res => {
+                        if (res === 'success') {
+                            $('#contactUsForm')[0].reset();
+                            $('.success-feedback').show();
+                        } else {
+                            console.error(res)
+                            //TODO: show error
+                        }
+                    }
+                );
+            });
         });
     </script>
 </head>
@@ -29,22 +46,25 @@
 
         <div class="main-background">
             <div class="input-container">
-                <form action="action_page.php">
+                <div class="success-feedback">Thanks for contacting ICAF!</div>
+                <form id="contactUsForm">
                     <label for="name">Name*</label>
-                    <input type="text" id="name" name="name">
+                    <input type="text" id="name" name="name" required>
 
                     <label for="email">Email*</label>
-                    <input type="text" id="email" name="email">
+                    <input type="email" id="email" name="email" required>
 
-                    <label for="lname">Affiliation</label>
-                    <input type="text" id="lname" name="lastname" placeholder="(i.e., school, organization, company)">
+                    <label for="affiliation">Affiliation</label>
+                    <input type="text" id="affiliation" name="Affiliation"
+                        placeholder="(i.e., school, organization, company)">
 
                     <label for="subject">Subject*</label>
-                    <input type="text" id="subject" name="subject">
+                    <input type="text" id="subject" name="subject" required>
 
                     <label for="message">Message*</label>
-                    <textarea id="message" name="message"></textarea>
+                    <textarea id="message" name="message" required></textarea>
 
+                    <input type="hidden" name="type" value="contact-us" />
                     <input type="submit" value="Send Message">
                 </form>
             </div>

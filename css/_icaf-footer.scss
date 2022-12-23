@@ -96,33 +96,41 @@ footer {
         }
         .email-input {
           margin-top: 3px;
-          display: flex;
-          input {
-            border-radius: 9px 0px 0px 9px;
-            width: 221px;
-            height: 40px;
-            padding-left: 10px;
-            outline: 0;
-            border: 0;
 
-            &::placeholder {
+          form {
+            display: flex;
+            input {
+              border-radius: 9px 0px 0px 9px;
+              width: 221px;
+              height: 40px;
+              padding-left: 10px;
+              outline: 0;
+              border: 0;
+
+              &::placeholder {
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: 0.1em;
+                color: #b7b7bb;
+              }
+            }
+            button {
+              font-weight: 700;
               font-size: 12px;
-              line-height: 16px;
-              letter-spacing: 0.1em;
-              color: #b7b7bb;
+              color: $ICAF_BLUE;
+              background: $ICAF_YELLOW;
+              border-radius: 0px 9px 9px 0px;
+              width: 62px;
+              height: 40px;
+              border: 0;
             }
           }
-          button {
-            font-weight: 700;
-            font-size: 12px;
-            color: $ICAF_BLUE;
-            background: $ICAF_YELLOW;
-            border-radius: 0px 9px 9px 0px;
-            width: 62px;
-            height: 40px;
-            border: 0;
-          }
         }
+      }
+      .success-feedback {
+        margin-top: 3px;
+        text-align: center;
+        display: none;
       }
     }
   }

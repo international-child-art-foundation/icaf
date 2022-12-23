@@ -13,6 +13,15 @@
   color: $ICAF_BLUE;
 }
 
+.success-feedback {
+  display: none;
+  color: #117b30;
+  font-size: 23px;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
 .note {
   font-weight: 400;
   font-size: 18px;
@@ -62,7 +71,7 @@
       background-color: #b7b7bb;
     }
 
-    #area {
+    textarea {
       height: 208px;
     }
   }
@@ -75,6 +84,7 @@
   }
 
   input[type="text"],
+  input[type="email"],
   textarea {
     width: 100%;
     height: 47px;

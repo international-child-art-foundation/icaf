@@ -58,6 +58,9 @@
   font-size: 24px;
   line-height: 33px;
   color: #000000;
+  a {
+    color: #000000;
+  }
 }
 
 .bring-help {
@@ -157,6 +160,10 @@
             text-align: center;
             align-items: center;
             color: #ffffff;
+            a {
+              color: #ffffff;
+              text-decoration: none;
+            }
           }
         }
 

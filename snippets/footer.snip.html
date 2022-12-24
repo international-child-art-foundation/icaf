@@ -57,7 +57,7 @@
                     <button type="submit">SEND</button>
                 </form>
             </div>
-            <div class="success-feedback">Your request has been submitted.</div>
+            <div class="subscribe-success-feedback">Your request has been submitted.</div>
         </div>
     </div>
     <div class="copyright">
@@ -74,7 +74,7 @@
                     res => {
                         if (res === 'success') {
                             $('.email-input').hide();
-                            $('.success-feedback').show();
+                            $('.subscribe-success-feedback').show();
                         } else {
                             console.error(res);
                         }

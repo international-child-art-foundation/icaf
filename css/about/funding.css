@@ -1,0 +1,110 @@
+@use "../icaf-colors" as *;
+
+@use "../icaf-general";
+@use "../icaf-nav";
+@use "../icaf-footer";
+
+.tag {
+  width: 375px;
+  height: 19px;
+  margin-top: 112px;
+  margin-left: 190px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #939393;
+}
+
+.title {
+  width: 363px;
+  height: 55px;
+  margin-top: 4px;
+  margin-left: 185px;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 55px;
+  color: $ICAF_BLUE;
+}
+
+.description {
+  width: 1060px;
+  height: 294px;
+  margin: 90px auto 0px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: $ICAF_BLUE;
+}
+
+    .sections {
+        margin-left: 190px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        max-width: 1060px;
+    
+        &.first {
+            margin-top: 125px;
+        }
+    
+        &.last {
+            margin-bottom: 220px;
+        }
+    }
+    
+    .section-titles {
+        margin-top: 60px;
+        margin-left: 190px;
+        margin-bottom: 40px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 49px;
+        color: $ICAF_BLUE;
+    }
+    .partners {
+        max-width: 611px;
+        margin: 20px auto 0;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 30px;
+      
+      }
+      .wave1 {
+        height: 84px;
+        margin-top: 73px;
+      }
+      .wave2 {
+        height: 84px;
+        margin-top: 0px;
+      }
+      .des {
+        height: 950px;
+        background: rgba(19, 67, 128, 0.1);
+        display: flex;
+        flex-direction: column;}  
+        
+        
+
+        .members {
+            width: fit-content;
+            margin: 50px auto 0;
+            display: grid;
+            grid-template-rows: repeat(3, auto); /* Not needed, but adds clarity */
+            grid-template-columns: repeat(3, auto); /* Not needed, but adds clarity */
+            gap: 0px;}
+          
+            .img1 {
+              width: 374px;
+              height: 245px;
+            }
+            .img2 {
+                width: 187px;
+                height: 245px;
+              
+            }
+            .img3 {
+              width: 187px;
+              height: 245px;
+            }
+          }328

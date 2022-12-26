@@ -3,3 +3,111 @@
 @use "../icaf-general";
 @use "../icaf-nav";
 @use "../icaf-footer";
+
+.tag {
+  width: 375px;
+  height: 19px;
+  margin-top: 112px;
+  margin-left: 190px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #939393;
+}
+
+.title {
+  width: 363px;
+  height: 55px;
+  margin-top: 4px;
+  margin-left: 185px;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 55px;
+  color: $ICAF_BLUE;
+}
+
+.description {
+  width: 1060px;
+  height: 294px;
+  margin: 0px auto 0px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: $ICAF_BLUE;
+}
+.description2 {
+  width: 1060px;
+  height: 132px;
+  margin: 50px auto 0px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 43px;
+  text-align: center;
+  color: $ICAF_BLUE;
+}
+
+    .sections {
+        
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        max-width: 1060px;
+    
+           
+        &.last {
+            margin-bottom: 220px;
+        }
+    }
+    
+    .section-titles {
+        margin-top: 60px;
+        margin-bottom: 40px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 49px;
+        color: $ICAF_BLUE;
+    }
+    .content {
+      margin: 125px auto 0;
+
+    }
+    .partners {
+        max-width: 740px;
+        margin: 20px auto 0;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 30px;
+      
+      }
+      .wave1 {
+        width: 1443px;
+        height: 32px;
+        left: -1px;
+        top: 84px;
+        margin-top: 73px;
+      }
+      .wave2 {
+        height: 84px;
+        margin-top: 0px;
+      }
+      .des {
+        height: 850px;
+        width: 1443px;
+        background: rgba(19, 67, 128, 0.1);
+        display: flex;
+        flex-direction: column;}  
+        
+        
+
+        .images {
+            width: fit-content;
+            margin: 50px auto 0;
+            display: grid;
+            grid-template-columns: repeat(3, auto); /* Not needed, but adds clarity */
+            }
+          
+            .img1 {
+              height: 316px;
+            }
+            

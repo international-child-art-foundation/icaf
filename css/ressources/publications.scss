@@ -1,0 +1,83 @@
+@use "../icaf-colors" as *;
+
+@use "../icaf-general";
+@use "../icaf-nav";
+@use "../icaf-footer";
+
+.description {
+  width: 1060px;
+  height: 294px;
+  margin: 90px auto 0px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: $ICAF_BLUE;
+}
+.image-wrapper {
+  width: 920px;
+  height: 516.25px;
+  margin: 104px auto 0px;
+  .image-quote {
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 25px;
+    text-align: right;
+    color: #000000;
+    margin-left: 800px;
+  }
+}
+
+
+
+
+    .image-top{
+      width: 69px;
+      height: 323px;
+      margin-left: 1345px;
+      margin-right: 25%;
+      
+          }
+  
+
+
+  
+      .list-img {
+        margin: 87px auto 0px;
+        max-width: 1060px;
+      
+        display: grid;
+        grid-template-columns: 554px 554px 554px 554px;
+        column-gap: 27px;
+        grid-template-rows: 84px 69px;
+        row-gap: 25px;
+      
+      
+      .card-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+          .image1 {
+            width: 500px;
+            height: 300px;
+          }
+      
+          .image2 {
+            width: 500px;
+            height: 300px;
+          }
+      
+          .image3 {
+            width: 500px;
+            height: 300px;
+          }
+      
+          .image4 {
+            width: 500px;
+            height: 300px;
+          }
+        }
+      }
+       

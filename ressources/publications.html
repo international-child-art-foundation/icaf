@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>RESSOURCES | PUBLICATIONS</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/ressources/publications.css" />
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.min.js" defer></script>
+    <script>
+        $(document).ready(function () {
+            for (let el of $('[use-snippet]')) {
+                $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Nav -->
+        <div use-snippet="/snippets/nav.snip.html"></div>
+
+        <!-- Tag -->
+        <div class="icaf-breadcrumb">RESSOURCES > PUBLICATIONS</div>
+
+        <!-- Title -->
+        <div class="page-title">PUBLICATIONS</div>
+
+         <!-- Description -->
+         
+            <div class="description">
+                We are helping write the future </div>
+                <div class="image-top"><img src="/resource/image/Research 1.png" alt="" ></div>
+            
+                <!-- first Image -->
+            <div class="image-wrapper">
+                <img src="/resource/image/UnitedStatesSLKorth 1.png" alt="">
+            
+             <span class="image-quote">Anne Langer,age 12,Germany</span>
+            </div>
+        
+
+            <!-- images -->
+        
+            <div class="list-img">
+
+                <div class="card-img">
+
+                
+                    <img src="/resource/image/10 1.png" class="image1">
+                
+                    <img src="/resource/image/10 2.png" class="image2">
+                
+                    <img src="/resource/image/10 3.png" class="image3">
+                
+                    <img src="/resource/image/10 4.png" class="image4">
+                
+            </div>  
+            </div>
+
+            <!-- Footer -->
+        <div use-snippet="/snippets/footer.snip.html"></div>
+    </div>
+</body>
+
+</html>

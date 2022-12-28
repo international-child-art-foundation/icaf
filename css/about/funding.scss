@@ -27,43 +27,53 @@
 }
 
 .description {
-  width: 1060px;
+  max-width: 1080px;
   height: 294px;
-  margin: 90px auto 0px;
+  margin: 0px auto 0px;
   font-weight: 700;
   font-size: 36px;
   line-height: 49px;
   text-align: center;
   color: $ICAF_BLUE;
 }
+.description2 {
+  max-width: 1080px;
+  height: 132px;
+  margin: 50px auto 0px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 43px;
+  text-align: center;
+  color: $ICAF_BLUE;
+}
 
     .sections {
-        margin-left: 190px;
+        
         font-weight: 400;
         font-size: 24px;
         line-height: 33px;
-        max-width: 1060px;
+        max-width: 1440px;
     
-        &.first {
-            margin-top: 125px;
-        }
-    
+           
         &.last {
-            margin-bottom: 220px;
+            margin-bottom: 280px;
         }
     }
     
     .section-titles {
         margin-top: 60px;
-        margin-left: 190px;
         margin-bottom: 40px;
         font-weight: 700;
         font-size: 36px;
         line-height: 49px;
         color: $ICAF_BLUE;
     }
+    .content {
+      margin: 80px 125px auto 125px;
+
+    }
     .partners {
-        max-width: 611px;
+        max-width: 740px;
         margin: 20px auto 0;
         font-weight: 300;
         font-size: 22px;
@@ -71,40 +81,34 @@
       
       }
       .wave1 {
-        height: 84px;
+        
+        height: 32px;
+        left: -1px;
+        top: 84px;
         margin-top: 73px;
       }
       .wave2 {
         height: 84px;
         margin-top: 0px;
+       
       }
       .des {
-        height: 950px;
+        height: 850px;
+        
         background: rgba(19, 67, 128, 0.1);
         display: flex;
         flex-direction: column;}  
         
         
 
-        .members {
+        .images {
             width: fit-content;
             margin: 50px auto 0;
             display: grid;
-            grid-template-rows: repeat(3, auto); /* Not needed, but adds clarity */
             grid-template-columns: repeat(3, auto); /* Not needed, but adds clarity */
-            gap: 0px;}
+            }
           
             .img1 {
-              width: 374px;
-              height: 245px;
+              height: 316px;
             }
-            .img2 {
-                width: 187px;
-                height: 245px;
-              
-            }
-            .img3 {
-              width: 187px;
-              height: 245px;
-            }
-         
+            

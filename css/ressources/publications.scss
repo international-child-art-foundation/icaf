@@ -13,7 +13,7 @@
 .description {
   width: 1060px;
   height: 294px;
-  margin: 0px 80px auto 40x;
+  margin: 0px 80px 50px 160px;
   font-weight: 700;
   font-size: 36px;
   line-height: 49px;
@@ -21,10 +21,15 @@
   
   color: $ICAF_BLUE;
 }
+.image-top{
+  width: 69px;
+  height: 323px;
+  margin: 0px 80px 50px 160px;
+}
 .image-wrapper {
  
   border-radius: 20px;
-  }
+ 
 
   .image-quote {
     font-weight: 400;
@@ -35,21 +40,8 @@
     color: #858383;
 	  margin-left: 500px
     }
-
-
-
-
-    .image-top{
-      width: 69px;
-      height: 323px;
-      margin-left: 200px;
-      }
-  
-
-
-  
-      
-        
+  }
+       
           .column {
             float: left;
             width: 25%;
@@ -58,8 +50,6 @@
           .row{
             margin: 100px auto 100px;
           }
-          
-          
           .row::after {
             content: "";
             clear: both;

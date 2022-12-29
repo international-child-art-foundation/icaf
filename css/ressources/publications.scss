@@ -6,54 +6,50 @@
 @use "../icaf-nav";
 @use "../icaf-footer";
 
-.description-wrapper{
-  background-color: white;
-}
+
 
 .description {
+  position: relative;
   width: 1060px;
   height: 294px;
-  margin: 0px 80px 50px 160px;
+  margin: 0px 0px 50px 400px;
   font-weight: 700;
   font-size: 36px;
   line-height: 49px;
   text-align: center;
-  
   color: $ICAF_BLUE;
-}
+
+
 .image-top{
+  position: relative;
   width: 69px;
   height: 323px;
-  margin: 0px 80px 50px 160px;
+  margin: 0px 0px 50px 250px;
 }
+}
+
+
 .image-wrapper {
- 
-  border-radius: 20px;
- 
+  margin: 50px auto 0;
+    width: 920px;
+  border-radius: 20px; 
 
   .image-quote {
     font-weight: 400;
     font-size: 18px;
     margin-top: 20px;
     line-height: 25px;
-    
-    color: #858383;
-	  margin-left: 500px
+    color: #7c7b7b;
+	  margin: 5px 0px 50px 1000px;
     }
   }
        
-          .column {
-            float: left;
-            width: 25%;
-            padding: 5px;
+    .column {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 10px auto 50px 0px;
           }
-          .row{
-            margin: 100px auto 100px;
-          }
-          .row::after {
-            content: "";
-            clear: both;
-            display: table;
+          
            
-          }
+         
        

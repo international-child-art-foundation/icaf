@@ -1,35 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
 @use "../icaf-colors" as *;
 
 @use "../icaf-general";
 @use "../icaf-nav";
 @use "../icaf-footer";
 
+.description-wrapper{
+  background-color: white;
+}
+
 .description {
   width: 1060px;
   height: 294px;
-  margin: 90px auto 0px;
+  margin: 0px 80px auto 40x;
   font-weight: 700;
   font-size: 36px;
   line-height: 49px;
   text-align: center;
+  
   color: $ICAF_BLUE;
 }
 .image-wrapper {
-  width: 744.42px;
-height: 1058.4px;
-left: 191px;
-top: 1275.42px;
+ 
   border-radius: 20px;
+  }
+
   .image-quote {
     font-weight: 400;
     font-size: 18px;
     margin-top: 20px;
     line-height: 25px;
-    text-align: right;
+    
     color: #858383;
-    margin-left: 700px;
-  }
-}
+	  margin-left: 500px
+    }
 
 
 
@@ -37,49 +42,28 @@ top: 1275.42px;
     .image-top{
       width: 69px;
       height: 323px;
-      margin-left: 1345px;
-      margin-right: 25%;
-      
-          }
-  
-
-
-  
-      .list-img {
-        margin: 87px auto 0px;
-        max-width: 1060px;
-      
-        display: grid;
-        grid-template-columns: 254px 254px 254px 254px;
-        column-gap: 27px;
-        grid-template-rows: 84px 69px;
-        row-gap: 15px;
-      
-      
-      .card-img{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      
-          .image1 {
-            width: 500px;
-            height: 200px;
-          }
-      
-          .image2 {
-            width: 500px;
-            height: 200px;
-          }
-      
-          .image3 {
-            width: 500px;
-            height: 200px;
-          }
-      
-          .image4 {
-            width: 500px;
-            height: 200px;
-          }
-        }
+      margin-left: 200px;
       }
+  
+
+
+  
+      
+        
+          .column {
+            float: left;
+            width: 25%;
+            padding: 5px;
+          }
+          .row{
+            margin: 100px auto 100px;
+          }
+          
+          
+          .row::after {
+            content: "";
+            clear: both;
+            display: table;
+           
+          }
        

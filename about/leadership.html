@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About | Leadership XXXXX</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/about/leadership.css" />
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.min.js" defer></script>
+    <script src="/js/leadership.js"></script>
+    <script>
+        $(document).ready(function () {
+            for (let el of $('[use-snippet]')) {
+                $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
+            }
+        });
+
+        $(document).ready(function () {
+            const cardElGroup1 = [
+                ["1", "Dr. Ashfaq Ishaq", "Founder & Chairman", "../resource/image/about/leadership/1.png", "b1", "By establishing ICAF to serve American children as their national arts organization and the world's children as their global arts organization, Dr. Ishaq has changed the world for children....", "By establishing ICAF to serve American children as their national arts organization and the world's children as their global arts organization, Dr. Ishaq has changed the world for children. The Arts Olympiad he launched in 1997 has grown over the years into the world's largest school art program. In 1998, he produced a national children's art festival, the first-ever in U.S. history, and since 1999 he has produced the World Children's Festival quadrennially as the 'Olympics' of children's imagination. The ChildArt magazine he launched in 1998 has inspired hundreds of thousands of young readers, teachers, and parents. Under his direction, ICAF has become a world leader in child art exhibitions and an organizer of children's panels at major conferences. To empower children, he instituted the World Children's Award. Widely recognized as a global leader in children's art and a leading expert in children's creative and empathic development, he is a spokesperson for the world's children. A multidisciplinary thinker, his research has appeared in the Journal of Conflict Resolution, the UNESCO Observatory Journal, the National PTA's 'Our Children.' The State Education Standard, The Lancet, Cybertherapy and Rehabilitation Journal, and Dynamische Psychiatrie. He co-authored a book on small-scale enterprises published by the Oxford University Press in 1987. His 2013 book, The Creativity Revolution, is available on Amazon. Before founding ICAF, he was President of USA International, Inc., Associate Professor of Economics at George Washington University, and Researcher at the World Bank.", "https://www.linkedin.com/in/ashfaqishaq/"],
+                ["2", "Dr. Alena Ahrens", "Arts Educator", "../resource/image/about/leadership/2.jpg", "b2", "An experienced arts educator, artist, and writer, Dr. Ahrens is driven by a mission to promote the well-being of children through creative expression and mindfulness....", "An experienced arts educator, artist, and writer, Dr. Ahrens is driven by a mission to promote the well-being of children through creative expression and mindfulness. She takes pride in developing and implementing interventions that blend contemplative practices with visual art methods. As the founder of Little Sage Workshops, her goal is to create a powerful space for artistic development, cultivate the journey of the mind-body connection, and teach youth how to access their inner strengths. Dr. Ahrens is ICAF Advisory Board Member.", "https://www.linkedin.com/in/alena-ahrens-73a1b41b1/"],
+                ["3", "Professor Maria Claudia Albini", "ICAF Representative in Argentina", "../resource/image/about/leadership/3.png", "b3", "After participating in the first World Children's Festival in 1999, Professor Albini has been associated with ICAF ever since....", "After participating in the first World Children's Festival in 1999, Professor Albini has been associated with ICAF ever since. She holds a B.A. in Education, a B.A. in Arts, and is completing her doctoral studies in Art at the Universidad Nacional de las Artes in Buenos Aires. She has represented ICAF in Argentina since 2004. She has taught children, teenagers, and adults in primary and secondary schools and at a university for the past 35 years. As a lecturer and a researcher, her main interests are the interrelation between music and language and applied linguistics.", "https://artesol.org.ar/maria-claudia-albini-2-5885"],
+                ["4", "Sergey Eylanbekov", "ICAF Advisory Board Member", "../resource/image/about/leadership/4.png", "b4", "The sculptor for the National Dwight D. Eisenhower Memorial at the National Mall in Washington, D.C., Mr. Eylanbekov's works can be found....", "The sculptor for the National Dwight D. Eisenhower Memorial at the National Mall in Washington, D.C., Mr. Eylanbekov's works can be found in public spaces and private collections worldwide. Admitted to the prestigious Moscow School of Fine Arts at age 13, he entered the Moscow Surikov Academy of Fine Arts at age 17 and graduated with honors. In 1989, he immigrated to New York, speaking no English and without funds or friends, and had to start all over again. In 2004, his sculpture 'Five Continents' officially represented the United States in the International Olympic Committee's global Art and Sport Contest and was awarded first place. An ICAF Advisory Board Member, Mr. Eylanbekov divides his time between New York and his studio in Florence, Italy.", "http://elanbeck.com/"],
+                ["5", "Judy Layne-Banks", "ICAF Arts Olympiad Organizer", "../resource/image/about/leadership/5.jpg", "b5", "An art teacher in Louisville, Kentucky, for the past twenty-five years, Ms. Layne-Banks has been organizing the Arts Olympiads and participating....", "An art teacher in Louisville, Kentucky, for the past twenty-five years, Ms. Layne-Banks has been organizing the Arts Olympiads and participating in the World Children's Festival since 1999. As an artist, she specializes in tie-dye, batik, and fashion design and has held several exhibitions nationwide. She also conducts workshops and art activities at the World Children's Festival. Ms. Layne-Banks holds an M.S. degree from the University of Louisville and a B.A. from the University of West Indies in Barbados.", "https://www.facebook.com/judy.laynebanks.9"],
+                ["6", "Professor Mihai Nadin", "ICAF Advisory Board Member", "../resource/image/about/leadership/6.jpg", "b6", "A renowned scholar and researcher in electrical engineering, computer science, aesthetics, semiotics, human-computer interaction, computational design....", "A renowned scholar and researcher in electrical engineering, computer science, aesthetics, semiotics, human-computer interaction, computational design, post-industrial society, and anticipatory systems, Professor Nadin has over 200 publications and lectured worldwide. He has made it his mission to connect new science and technology with the arts, literature, and design. Widely recognized as the leading expert on anticipation and anticipatory systems, he is Ashbel Smith University Professor and Director of the Institute for Research in Anticipatory Systems at the University of Texas at Dallas. Professor Nadin is an ICAF Advisory Board Member.", "http://www.anteinstitute.org/"],
+                ["7", "Dr. Danica Radovanovic", "ICAF Advisory Board Member", "../resource/image/about/leadership/7.jpg", "b7", "An international internet tech professional and a senior advisor on digital inclusion and digital literacy, Dr. Radovanovic is an expert on the Child Online Protection....", "An international internet tech professional and a senior advisor on digital inclusion and digital literacy, Dr. Radovanovic is an expert on the Child Online Protection program for the International Telecommunication Union. She has written about online safety for ChildArt magazine. As a project associate at the University of Oslo, she works on the NURTURE project for digital social innovation in education. As a Chevening Scholar, she earned her doctorate from the University of Oxford, following her studies at the University of Novi Sad. Dr. Radovanovic is an ICAF Advisory Board Member.", "https://www.danicar.info/"],
+                ["8", "Dr. Aurora Sidney-Ando", "Counseling Psychologist", "../resource/image/about/leadership/8.jpg", "b8", "A counselor for children and adults with mental and behavioral disorders, Dr. Sidney-Ando holds a Ph.D. in Humanistic and Transpersonal Psychology....", "A counselor for children and adults with mental and behavioral disorders, Dr. Sidney-Ando holds a Ph.D. in Humanistic and Transpersonal Psychology from Saybrook University in California and M.A. in Counseling from Alaska Pacific University. Her Ph.D. dissertation included an analysis of the ICAF programs and methodologies. Born in Mexico, she travels to remote areas of the world, finding inspiration in places ranging from the jungles of Peru to the windswept cliffs of the Himalayas. She spends her evenings painting and occasionally illustrating children's books.", "https://sidneyando.com/"],
+                ["9", "Ahava Silkey-Jones", "ICAF Advisory Board Member", "../resource/image/about/leadership/9.jpg", "b9", "An EdM in Arts in Education from Harvard Graduate School of Education and an M.A. in Educational Leadership from Roosevelt University....", "An EdM in Arts in Education from Harvard Graduate School of Education and an M.A. in Educational Leadership from Roosevelt University, Ms. Silkey-Jones is a licensed school superintendent. An Executive Director of the DaVinci Academy of Arts and Science in Minneapolis, she has an extensive portfolio of experience in arts administration, school administration, and non-profit leadership and a passion and track record for building equitable access to high-quality arts programming in educational systems. She is a Policy Fellow at the Humphrey School for Public Affairs at the University of Minnesota, a Commissioner with the Minneapolis Arts Commission, a Co-Founder of Professional Theatre and Dance Youth Academy, and Board Secretary for the ROHO Collective (a non-profit that focuses on elevating voices of artists of color). Ms. Silkey-Jones is an ICAF Advisory Board Member.", "https://www.linkedin.com/in/ahavasilkeyjones/"],
+                ["10", "Narmina Veliyeva", "ICAF Representative in Azerbaijan", "../resource/image/about/leadership/10.jpg", "b10", "A prominent artist who has exhibited her works in several European cities, Mr. Veliyeva was a winner of the Second Arts Olympiad....", "A prominent artist who has exhibited her works in several European cities, Mr. Veliyeva was a winner of the Second Arts Olympiad. She participated in the Second World Children's Festival and has been involved with ICAF since. As the ICAF representative in Azerbaijan, she organizes the Arts Olympiads and leads Azerbaijan's delegation to the World Children's Festivals. She runs an art studio in Baku and teaches children and adults.", "https://www.instagram.com/nara_89a/?hl=en"],
+            ];
+            const cardElGroup2 = [
+                ["11", "Katty Guerami", "Community Relations Director", "../resource/image/about/leadership/11.jpg", "b11", "With expertise in health services marketing and strategic planning, Ms. Guerami is a founding member of ICAF and serves as Director of Community Relations....", "With expertise in health services marketing and strategic planning, Ms. Guerami is a founding member of ICAF and serves as Director of Community Relations. She guides and extends the activities of ICAF with initiatives and outreach campaigns that advance agency and organizational vision in the creative industries.  Previously, Ms. Guerami was Vice President of marketing and strategic planning at a Washington, DC-based financial advisory and investment company. She later founded the ChildArt Gallery in D.C. as a one-of-a-kind exhibition space for children's art and headed its operations as a Director.  She holds a B.S. in Biology with an Economics minor and an MHSA (Master's in Health Services Administration and Policy), both from The George Washington University. Ms. Guerami represents ICAF at high-level meetings in Washington, DC, and internationally. Among national media coverage, The Los Angeles Times interviewed her in June 2022 for an extensive article published on the Calendar section's front page featuring ICAF’s impactful work.", "https://www.linkedin.com/in/katty-guerami-74a99014/"],
+                ["12", "Dr. Ngozi Rosemary Akande", "ICAF Representative in Nigeria", "../resource/image/about/leadership/12.png", "b12", "A renowned artist who uses her creative talents for social justice advocacy, Dr. Akande has worked with ICAF since 2014....", "A renowned artist who uses her creative talents for social justice advocacy, Dr. Akande has worked with ICAF since 2014. She obtained her B.A., MA, and Ph.D. in fine arts from Ahmadu Bello University. She has represented Nigeria at several international fora and exhibitions, including those arranged by UNESCO or the U.N. Dr. Akande is the Arts and Crafts Director at the National Council for Arts and Culture in Abuja and represents ICAF in Nigeria. She also operates the Pet Art Gallery and is a member of the Knight of St. Mulumba.", "https://ngoziakandearts.com/"],
+                ["13", "Yuxuan Chen", "ICAF Representative in China", "../resource/image/about/leadership/13.png", "b13", "A Rhodes Scholar with two Masters degrees from the University of Oxford in Environmental Change & Management and Public Policy....", "A Rhodes Scholar with two Masters degrees from the University of Oxford in Environmental Change & Management and Public Policy, Ms. Chen has worked in think tanks, business consultancies, and international organizations. While studying at Tsinghua University in Beijing, she joined ICAF in Washington, D.C. as an intern for one semester in 2013. She loves child art and innovative ways to explore human creation. As ICAF Advisory Board Member, Ms. Chen represents ICAF in China and resides in Beijing.", "https://www.linkedin.com/404/"],
+                ["14", "Professor Sohail Inayatullah", "ICAF Advisory Board Member", "../resource/image/about/leadership/14.jpg", "b14", "One of the world's leading futures studies researchers, Professor Inayatullah is the inaugural UNESCO Chair in Futures Studies....", "One of the world's leading futures studies researchers, Professor Inayatullah is the inaugural UNESCO Chair in Futures Studies. He divides his time between Tamkang University in Taiwan and the University of Melbourne's Business School in Australia. In 2017, he helped put together and contributed to ChildArt's issue on Future Pathways. In 2021, he was a virtual futurist-in-residence with the Government of Abu Dhabi, Culture and Tourism. An ICAF Advisory Board Member, he teaches courses on personal futures and how one becomes a futurist.", "https://www.metafuture.org/"],
+                ["15", "Frederick Marks", "ICAF Advisory Board Member", "../resource/image/about/leadership/15.jpg", "b15", "Currently a Visiting Scholar and Research Collaborator at the Salk Institute for Biological Studies in La Jolla, California, Mr. Marks has been a licensed architect....", "Currently a Visiting Scholar and Research Collaborator at the Salk Institute for Biological Studies in La Jolla, California, Mr. Marks has been a licensed architect for over thirty years and has a planning & design specialty in healthcare and laboratory science facilities. He holds degrees in architecture and business administration with a major in real estate & urban land economics. A founding Board member and former President of the Academy of Neuroscience for Architecture in San Diego, California, Mr. Marks has served as advisor to The American Institute of Architects Board Knowledge Committee and Mental Health Incubator Group. He is a current advisor to the Johns Hopkins University Medical Center Pedersen Brain Science Institute on neuroaesthetics. He was guest editor of ChildArt magazine on architecture and a speaker at the 6th World Children's Festival. Mr. Marks is an ICAF Advisory Board Member.", "https://www.linkedin.com/in/frederick-marks-01a38b6/"],
+                ["16", "Charlie O'Shields", "ICAF Advisory Board Member", "../resource/image/about/leadership/16.jpg", "b16", "The creator of Doodlewash®, founder of World Watercolor Month, and host of the Sketching Stuff™ podcast, Mr. O'Shields is a big kid at heart....", "The creator of Doodlewash®, founder of World Watercolor Month, and host of the Sketching Stuff™ podcast, Mr. O'Shields is a big kid at heart. Currently, as Executive Creative Director at Venn49 Creative Lab, a packaging design studio, he has published several books, including activity books and interactive picture books for people of all ages. His true passion is inspiring as many people as possible to create something new and help artists of all ages reconnect with their inner child and natural creativity and have tons of fun! Mr. O'Shields is an ICAF Advisory Board Member.", "https://doodlewash.com/about/"],
+                ["17", "D Paul Schafer", "ICAF Advisory Board Member", "../resource/image/about/leadership/17.jpg", "b17", "Founder and director of the World Cultural Project, Mr. Schafer is an eminent cultural scholar and conceptualizer of the cultural age....", "Founder and director of the World Cultural Project, Mr. Schafer is an eminent cultural scholar and conceptualizer of the cultural age that will dawn following the collapse of the extant economic age. In his over fifty years of work in the cultural field, Mr. Schafer has undertaken several projects and missions for UNESCO. An author, advisor, educator, and administrator, he was the Assistant Director of the Ontario Arts Council from 1967 to 1970. He has taught arts administration and cultural policy at York University and the University of Toronto. His books include Culture: Beacon of the Future, Revolution or Renaissance: Making the Transition from an Economic Age to a Cultural Age, The Age of Culture, THE ARTS: Gateway to a Fulfilling Life and Cultural Age, and, most recently, THE WORLD AS CULTURE: Cultivation of the Soul to the Cosmic Whole, published in 2022. Mr. Schafer is an ICAF Advisory Board Member.", "http://www3.sympatico.ca/dpaulschafer/"],
+                ["18", "Dr. Christopher M. Schulte", "ICAF Advisory Board Member", "../resource/image/about/leadership/18.png", "b18", "Endowed Associate Professor of Art Education and Assistant Director of the School of Art at the University of Arkansas, Dr. Schulte is also the founder of the Center for the Study of Childhood Art....", "Endowed Associate Professor of Art Education and Assistant Director of the School of Art at the University of Arkansas, Dr. Schulte is also the founder of the Center for the Study of Childhood Art.  CSCA is an interdisciplinary research, teaching, and community engagement center focused on reconceptualizing the study of art in children's lives. His research explores young children's artistic, play-based, and aesthetic practices, with particular attention given to the study of drawing and its relationship to historical and contemporary childhoods. His written scholarship has appeared in handbooks, edited anthologies, and a wide range of national and international research journals. Professor Schulte is co-editor with Laura Trafi-Prats of New Images of Thought in the Study of Childhood Drawing (2022, Springer), co-editor with Hayon Park of Visual Art with Young Children: Practices, Pedagogies and Learning (2021, Routledge), editor of Ethics and Research with Young Children: New Perspectives (2019, Bloomsbury), and co-editor with Christine Marmé Thompson of Communities of Practice: Art, Play and Aesthetics in Early Childhood (2018, Springer). Dr. Schulte is an ICAF Advisory Board Member.", "https://CenterfortheStudyofChildhoodArt.com/"],
+                ["19", "Mike Ssembiro", "ICAF Representative in Uganda", "../resource/image/about/leadership/19.jpg", "b19", "A Senior Inspector of Schools for Art and Crafts at the Uganda Ministry of Education and Sports, Mr. Ssembiro is an art educator and a muralist....", "A Senior Inspector of Schools for Art and Crafts at the Uganda Ministry of Education and Sports, Mr. Ssembiro is an art educator and a muralist. He is the founder of African Peace Murals Uganda. Since 2010, he has represented ICAF in Uganda. Twenty-four Ugandan students accompanied him to participate in the 2011 and 2015 World Children's Festival. In 2015, he received the World Children's Award for devoting his life to children and their art, thus uplifting the children and making a critical difference in their lives.", "https://www.facebook.com/africanpeacemurals/"],
+                ["20", "Professor Manika Walia", "ICAF Advisory Board Member", "../resource/image/about/leadership/20.png", "b20", "Professor Manika Walia is Founding Dean of the School of Creativity at Rishihood University in Delhi, Manika mentors students toward innovative design and creative solutions that a....", "Professor Manika Walia is Founding Dean of the School of Creativity at Rishihood University in Delhi, Manika mentors students toward innovative design and creative solutions that are useful, sustainable, and meaningful. As a researcher, she specializes in design thinking. She has trained local K–12 teachers through seminars on how to nurture their students’ creativity. She is certain that creativity aids in children's mental growth by allowing them the opportunity to experiment with novel ideas, modes of reasoning, and problem-solving techniques. She is an ICAF Advisory Board Member.", "https://www.linkedin.com/in/manika-walia-77628a107/"],
+            ];
+
+            for (let i = 0; i < cardElGroup1.length; i++) {
+                let el = cardElGroup1[i];
+                $('[card-group][id="card-container-1"]').append(`<div leadership-card=\"/snippets/leadership-card.html\" cardId=\"${el[0]}\" title=\"${el[1]}\" position=\"${el[2]}\" img=\"${el[3]}\" buttonId=\"${el[4]}\" shortCont=\"${el[5]}\" longCont=\"${el[6]}\" linkedin=\"${el[7]}\">
+            </div>`);
+            }
+            for (let i = 0; i < cardElGroup2.length; i++) {
+                let el = cardElGroup2[i];
+                $('[card-group][id="card-container-2"]').append(`<div leadership-card=\"/snippets/leadership-card.html\" cardId=\"${el[0]}\" title=\"${el[1]}\" position=\"${el[2]}\" img=\"${el[3]}\" buttonId=\"${el[4]}\" shortCont=\"${el[5]}\" longCont=\"${el[6]}\" linkedin=\"${el[7]}\">
+            </div>`);
+            }
+        })
+
+
+
+        $(document).ready(function () {
+            for (let el of $('[leadership-card]')) {
+                $.get(
+                    $(el).attr('leadership-card')
+                ).then(
+                    sHtml => {
+                        // get all attr needed
+                        let title = $(el).attr('title');
+                        let position = $(el).attr('position');
+                        let img = $(el).attr('img');
+                        let id = $(el).attr('cardId');
+                        let buttonId = $(el).attr('buttonId');
+                        let shortCont = $(el).attr('shortCont');
+                        let longCont = $(el).attr('longCont');
+                        let linkedin = $(el).attr('linkedin');
+
+                        // preprocess, replace el and generate unique div to wrap Card
+                        const div = document.createElement("div");
+                        div.id = id;
+                        const tmpChild = document.createElement("div");
+                        div.appendChild(tmpChild);
+                        $(tmpChild).replaceWith(sHtml);
+                        // el will be replaced here, so get all el's attr before this line
+                        $(el).replaceWith(div);
+                        // change attr
+                        $(`#${id} .card h4`).text(title);
+                        $(`#${id} .card h5`).text(position);
+                        $(`#${id} .card .rounded-circle`).attr("src", img);
+                        $(`#${id} .card .contTab`).attr("id", buttonId);
+                        $(`#${id} .card label`).attr("for", buttonId);
+                        $(`#${id} .card .short-cont`).text(shortCont);
+                        $(`#${id} .card .content-more`).html(longCont + `
+                        <p class="linkedin">
+                            <img src="/resource/image/about/leadership/linkedin.png">
+                            <a href="https://www.linkedin.com/in/ashfaqishaq/">Linkedin</a>
+                        </p>`);
+                        $(`#${id} .card .linkedin a`).attr("href", linkedin);
+
+                    }
+                );
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Nav -->
+        <div use-snippet="/snippets/nav.snip.html"></div>
+
+        <!-- Breadcrumb -->
+        <div class="icaf-breadcrumb">ABOUT > LEADERSHIP</div>
+
+        <!-- Title -->
+        <div class="page-title">BOARD OF DIRECTORS</div>
+
+        <!-- Card-group -->
+        <div class="main-container">
+            <div card-group id="card-container-1" class="card-container">
+                <div style="height: 128px;"></div>
+            </div>
+            <div card-group id="card-container-2" class="card-container">
+                <div style="height: 210px;"></div>
+            </div>
+        </div>
+
+
+
+        <!-- Footer -->
+        <div use-snippet="/snippets/footer.snip.html"></div>
+    </div>
+</body>
+
+</html>

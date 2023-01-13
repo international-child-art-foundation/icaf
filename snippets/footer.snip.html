@@ -69,7 +69,7 @@
             $('#subscribeForm').on('submit', e => {
                 e.preventDefault();
 
-                $.post('/contact/send-mail',
+                $.post('/api/send-mail',
                     Object.fromEntries(new FormData($('#subscribeForm')[0])),
                     res => {
                         if (res === 'success') {

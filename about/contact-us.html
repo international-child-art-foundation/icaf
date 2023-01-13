@@ -16,7 +16,7 @@
             $('#contactUsForm').on('submit', e => {
                 e.preventDefault();
 
-                $.post('/contact/send-mail',
+                $.post('/api/send-mail',
                     Object.fromEntries(new FormData($('#contactUsForm')[0])),
                     res => {
                         if (res === 'success') {

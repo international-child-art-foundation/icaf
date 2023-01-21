@@ -6,35 +6,35 @@
 .main-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-
-  #card-container-1 {
-    margin-top: 128px;
-  }
+  justify-content: center;
+  column-gap: 30px;
+  margin: 128px 0 220px;
 
   #card-container-2 {
-    margin-top: 210px;
+    margin-top: 82px;
   }
 
   .card-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
+    row-gap: 45px;
     flex-direction: column;
 
     .card {
       width: 634px;
-      margin-bottom: 45px;
-      background: #FFFFFF;
-      border: 1px solid #D1D1D1;
+      background: #ffffff;
+      border: 1px solid #d1d1d1;
       box-shadow: 0px 1px 20px 8px rgba(198, 198, 198, 0.2);
       border-radius: 10px;
-      padding: 0;
+      align-items: center;
+
+      .cont-tab {
+        display: none;
+      }
 
       .card-avt {
         height: 276px;
         width: 276px;
-        margin: 35px auto 28px auto;
+        margin: 35px 0 28px;
       }
 
       .card-title {
@@ -55,21 +55,20 @@
 
       .content {
         color: #575756;
-        width: 528px;
+        max-width: 528px;
         font-size: 18px;
-        font-weight: 400;
         line-height: 33px;
-        letter-spacing: 0em;
         text-align: center;
-        margin: 0 53px;
         margin-bottom: 43px;
       }
 
       .content-more {
-        text-align: center;
-
         .linkedin {
           margin-bottom: 43px;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          column-gap: 5px;
 
           img {
             width: 26px;
@@ -79,16 +78,16 @@
           a {
             font-weight: 600;
             font-size: 20px;
-            text-decoration-line: underline;
-            color: #000000;
+            line-height: 19px;
+            color: #000;
           }
         }
       }
 
       .readmore {
         width: 44px;
-        height: 21px;
-        margin: 0 auto 53px auto;
+        height: 22px;
+        margin-bottom: 36px;
 
         img {
           width: 100%;
@@ -97,34 +96,26 @@
       }
 
       // style changed due to checkbox not checked
-      .contTab:not(:checked) {
-
-        &~#avt1,
-        &~.short-cont {
+      .cont-tab:not(:checked) {
+        & ~ .avt1,
+        & ~ .short-cont {
           display: none;
         }
 
-        &~#avt2,
-        &~.readmore {
-          display: block;
-        }
-
-        &~.readmore img {
-          -webkit-transform: scaleY(-1);
-          transform: scaleY(-1);
+        & ~ .readmore img {
+          rotate: 180deg;
         }
       }
 
       // style changed due to checkbox checked
-      .contTab:checked {
-
-        &~#avt1,
-        &~.short-cont {
+      .cont-tab:checked {
+        & ~ .avt1,
+        & ~ .short-cont {
           display: block;
         }
 
-        &~#avt2,
-        &~.content-more {
+        & ~ .avt2,
+        & ~ .content-more {
           display: none;
         }
       }

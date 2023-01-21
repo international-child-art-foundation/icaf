@@ -1,44 +1,48 @@
 
 $(document).ready(function () {
-    // get JSON data
-    $.ajax({
-        type: "GET",
-        url: "../js/leadershipData.json",
-        dataType: "json",
-        success: function (jsonData) {
-            // when JSON data ready, get snippet HTML
-            console.log(jsonData);
-            $.get("/snippets/leadership-card.html").then(
-                sHtml => {
-                    // when snippt HTML ready, append card
-                    jsonData.map((el) => {
-                        let containerNum = el.id <= 10 ? 1 : 2;
-                        // append each card using info from JSON
-                        appendCard($(`#card-container-${containerNum}`)[0], el, sHtml);
-                    })
-                }
-            )
-        }
+    /*
+    // Alternative way
+    Promise.all([$.get("/js/leadershipData.json"), $.get("/snippets/leadership-card.html")])
+        // when JSON data and snippetHTML ready
+        .then(([jsonData, sHtml]) => {
+            jsonData.forEach((el, idx) => {
+                el.buttonId = `button${idx}`;
+                // append each card using info from JSON
+                appendCard($(`#card-container-${el.container}`), el, sHtml);
+            });
+        })
+    */
+    // get JSON data    
+    $.get("/js/leadershipData.json").then(jsonData => {
+        // when JSON data ready, get snippet HTML
+        console.log(jsonData);
+        $.get("/snippets/leadership-card.html").then(
+            sHtml => {
+                // when snippet HTML ready, append card
+                jsonData.forEach((cardInfo, idx) => {
+                    cardInfo.buttonId = `button${idx}`;
+                    // append each card using info from JSON
+                    appendCard(cardInfo, sHtml);
+                });
+            }
+        )
     })
-})
+});
 
-const appendCard = function (parent, info, sHtml) {
-    const { title, position, img1, img2, buttonId, shortCont, longCont, linkedin } = info;
-    // record parent info
-    const parentId = parent.id;
-    // append sHTML
-    const tmpChild = document.createElement("div");
-    parent.appendChild(tmpChild);
-    $(tmpChild).replaceWith(sHtml);
-    // change attr in sHTML
-    const indexSelector = `#${parentId} .card:last-of-type`;
-    $(`${indexSelector} h4`).text(title);
-    $(`${indexSelector} h5`).text(position);
-    $(`${indexSelector} #avt1`).attr("src", img1);
-    $(`${indexSelector} #avt2`).attr("src", img2);
-    $(`${indexSelector} .contTab`).attr("id", buttonId);
-    $(`${indexSelector} label`).attr("for", buttonId);
-    $(`${indexSelector} .short-cont`).text(shortCont);
-    $(`${indexSelector} .long-cont`).text(longCont);
-    $(`${indexSelector} .linkedin a`).attr("href", linkedin);
-}
+const appendCard = function (cardInfo, sHtml) {
+    const { title, position, img1, img2, buttonId, shortCont, longCont, linkedin, container } = cardInfo;
+
+    let $newCard = $(sHtml);
+    // update attrs
+    $newCard.find('h4').text(title);
+    $newCard.find('h5').text(position);
+    $newCard.find('.avt1').attr("src", img1);
+    $newCard.find('.avt2').attr("src", img2);
+    $newCard.find('.cont-tab').attr("id", buttonId);
+    $newCard.find('label').attr("for", buttonId);
+    $newCard.find('.short-cont').text(shortCont);
+    $newCard.find('.long-cont').text(longCont);
+    $newCard.find('.linkedin a').attr("href", linkedin);
+
+    $(`#card-container-${container}`).append($newCard);
+};

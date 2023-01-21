@@ -1,0 +1,2348 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="36"><page Index="1"><![CDATA[Children United
+
+
+
+
+
+
+
+
+                                      The Magazine of the International Child Art Foundation
+                                                   October-December 2018
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                              1]]></page><page Index="2"><![CDATA[editor’s note                        introduction
+
+
+        Dear reader,                         Virtual and augmented reality are exciting new ways to learn and engage
+                                             in the world around us, but technology is only meaningful if it is used for
+        The idea for this issue on Virtual   the betterment of humankind. How might we tell each other stories, heal
+        Reality and Education sprung         those who are hurt, and find ways to help move closer to one another?
+        from a conversation I had with       In other words, let’s use these new virtual worlds we create to lift each
+        Marie Graham who teaches VR at       other up and move our society forward. Our cultures and geography
+        the Mount Vernon Presbyterian        may be quite different, but so much of the human experience is shared:
+        School in Atlanta, Georgia. We       friendship, loss, family, and love.
+        thank Ms. Graham for taking
+        the lead in producing this issue     This issue is a special one because it is written and edited by a team of
+        and are grateful to her brilliant    students just like you! Eleven 14 and 15-year-old students were given
+        students for serving as editors      the amazing opportunity to be guest editors of this magazine, and
+        and interviewers. We thank           what a journey it has been! We have spoken to many interesting people,
+        her devoted colleagues for           interviewed, listened, researched, written, and edited. We all learned so
+        embracing the idea and Ms. Rikki     much from this process, and my students and I, along with the support of
+        Hagerty for designing this issue.    our school, Mount Vernon, in Atlanta, Georgia, USA, are beyond grateful
+                                             for this opportunity.
+        It is the notion that your sense
+        of ‘presence’ is highest in VR       We are reminded and would like to remind you that learning is best done
+        than in any screen media like        by doing, by being unafraid of failure, in fact, of expecting and welcoming
+        YouTube, movies or television        it. This magazine is the result of an opportunity, the students' willingness
+        that makes VR the future of          to risk, and of our supportive and enthusiastic community coming
+        education and intervention.          together.
+        While the prospects for VR,
+        Augmented Reality or Mixed           Virtual and augmented reality is about the experience, and so I encourage
+        Reality are manifold as you will     you to jump right in wherever you can. Also, remember that creating is
+        discover in this magazine, we        most important. If you have an idea, make it come to life! The field of
+        also need to be careful that         creating VR and AR is new, and you do not have to be a professional to
+        these new technologies are used      start; most of the software is free. My hope is that you feel emboldened
+        sparingly so as not to misshape      by our taking the risk to edit this magazine, and that you will take risks of
+        the brain and are not misused for    your own.
+        brainwashing or indoctrination.
+        Bearing this is mind, you can        Sending best wishes from all of us at Mount Vernon School to you from
+        evaluate how you can best            Atlanta, Georgia! Happy Reading!
+        utilize VR to enhance your
+        creative potential and freedom of    Marie Graham
+        expression.
+
+        Happy reading,
+
+
+
+
+                                             Published since 1998, ChildArt is a commercial-free arts learning, self-discovery, and global
+                                             education periodical expressly written for 10- to 14-year-old creatives, but useful as a teaching
+                                             tool for educators and inspirational for creative individuals of all ages. Subscribe to ChildArt
+                                             online at www.icaf.org or mail your check to: ICAF, P. O. Box 58133, Washington, DC 20037.
+        Ashfaq Ishaq Ph. D.                  All rights reserved. Reproduction of the whole or any part of the contents without written
+        Chairman                             permission is prohibited. ChildArt (ISSN 1096- 9020). Copyright 2018 International Child Art
+                                             Foundation (ICAF), a 501(c)(3) nonprofit.
+                                             ChildArt is published quarterly by ICAF. Submissions may be edited even when accepted.
+                                             Submissions of artwork and other material to ChildArt are made at the risk of the sender.
+                                             You can also make a donation to ICAF by sending a check to:
+                                             International Child Art Foundation
+                                             P.O. Box 58133
+                                             Washington, DC 20037, USA
+                                             Tel: (202) 530-1000
+                                             E-mail: childart@icaf.org
+                                                              2]]></page><page Index="3"><![CDATA[childart october-december 2018 vol. 18, issue 4, number 56
+
+                        virtual reality and education
+
+
+
+                        CON                        2    introduction
+
+
+
+
+
+                                                   4
+                                                        basics of vr/ar
+                         TEN                       6    how to create vr/ar content
+
+
+
+                                                   8
+                                                        current vr research around learning
+
+                                                  10
+
+
+
+                                                        school vr lab: technology for good
+                                                  12    designing a vr museum
+
+                                 TS 16                  take-pause mindfulness for teens
+
+
+                                                  18    nick savo: alienware genius
+
+
+
+                                                  20    virtual reality artist: kevin mack
+
+
+                                                  22    dr. scott satkin: limbix, phobia, and other
+
+                                                        medical work
+
+
+                                                  24    walter greenleaf: neuroscientist and head
+
+                                                        of stanford vr lab
+
+
+
+                                                  26    john buzzell: you are here vr lab
+
+
+                                                  28    aaron walsh on immersive education and
+
+                                                        immersive reality
+
+
+                                                  30    tom furness: i am the grandfather of vr
+
+
+
+                                                  32    let’s build a vr heaven
+
+
+                                                  34    contributors
+
+
+
+
+                                                              3]]></page><page Index="4"><![CDATA[THE BASICS OF VR/AR
+
+
+
+
+
+
+
+
+                                                                                                  Rediet Yonas
+
+
+
+
+
+        What is Virtual Reality?
+
+
+        You are standing on the edge of a cliff. You can hear the wind whistling
+        in your ears and can see trees swaying around you. You look straight
+        down. It is a steep, even deadly drop; your heart rate speeds up, your
+        breath becomes shallow, your mouth is suddenly dry. You feel you may
+        fall at any moment and as if by instinct reach out to grasp at something,
+        anything, to steady yourself. Your friend screams, you yank off the virtual
+        reality headset. Both of you look amazed.
+
+        Virtual reality, commonly known as VR, immerses one into a virtual world using a headset placed over the eyes
+        - similar to oversized glasses. The person in the new world becomes removed from his or her real environment,
+        which is now blocked out, becoming present in the new one. The illusion is strong, and emotions and reactions
+        often arise as they would in real life. The effect is strong because VR is 360 degrees and often allows for a
+        great deal of interactivity. While you have the headset on, you can look around and see an environment around
+        you that was not there before. There can be trees with leaves falling all around you, you can bend down and
+        see a worm crawling through an apple. Depending on the creator of the world you are observing, there can be
+        great detail in the smallest things.
+
+
+        Getting Started
+
+        There are many different headsets    For the more advanced VR user,      All and all, you can get a basic
+        and other methods of experiencing  the HTC Vive ($500) or the Oculus     headset that works with your
+        virtual reality. New products are    Rift ($400) are great options. It is   phone for $20, and you will have an
+        flooding the market as VR becomes  important to note, though, that in    amazing experience. Malls and VR
+        more popular.  Google Cardboard      order to use either one of the more   gaming facilities are great places
+        is an inexpensive option, which      advanced devices, you need to       to try out the more expensive
+        runs around $7. A smartphone         have a gaming computer, which is    headsets.
+        is required to use it, along with a   quite expensive, around $1000, to
+        couple of apps that are usually free.  run the actual device. This is due to
+        There are medium-priced headsets,  the high quality graphics that these
+        such as the Oculus Go, that do       VR headsets are able to display.
+        not require you to insert your
+        phone, with better quality graphics.
+        Currently, the price for this device is
+        approximately $175.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                              4]]></page><page Index="5"><![CDATA[what is ar?
+
+
+        A lot of people don’t know the       Doctors also use augmented
+        difference between augmented         reality glasses. Imagine you are a
+        reality (AR) and virtual reality (VR).   physician, and you have to move
+        Augmented reality isn’t a whole      or laser something inside of a
+        new world; it is an addition to the   person’s body. If you were wearing
+        world you already live in. A good    AR glasses, you could more
+        example would be Pokemon GO.         accurately visualize and then more
+        In this game, characters called      accurately interact with the patient
+        Pokemon appear in the real           in the procedure.
+        world on your screen. Another
+        interesting example of AR is the
+        hugely popular social media app
+        called Snapchat. There are lenses
+        like the dancing hotdog, where a
+        dancing hotdog appears in your
+        own environment, exactly where
+        you place it. Also, filters that add                      HOTEL  50-55M
+        to your own face or hair are also
+        examples of AR.                                                  COFFEE SHOP  50-55M
+                                                               RESTAURANT  50-55M
+
+
+                                                              5]]></page><page Index="6"><![CDATA[HOW TO CREATE
+
+
+
+
+
+
+
+
+       VR/AR CONTENT
+
+
+
+
+
+
+
+
+
+        Jack Mette & Brenden Wicker                                              mirra
+
+
+        how do i learn to                                                        Mirra is a specialized website
+                                                                                 that can create a massive and
+        create content?                                                          interesting world without having to
+
+        Has the creation bug bitten you? Are you ready to try your hand at       worry about learning to code. By
+        creating VR/AR content? You don’t have to be a professional, and most    using drag and drop, Mirra makes it
+        of the content creation software is free and available to you. These are   simple to create VR. You can even
+        the times of online learning. There are YouTube and website tutorials    upload 360 videos and photos into
+                                                                                 the scene itself. The scenes are
+        galore. Don't be scared; ride this brand new wave of technology and add   easy to create and to view. Most
+        your own personal contribution to content. With little knowledge, you can
+        create an amazing VR experience to show off to your family and friends.   people could produce content after
+        Or aim higher-- careers in these fields jumped up 800% in 2017!          reading only one or two tutorials.
+                                                                                 Some people just jumped in and
+                                                                                 created without any instruction at
+        unity and unreal                     briovr                              all! There is a fourteen-day trial,
+
+        The two most powerful VR/AR          BRIOVR is another example of a      then you choose a plan that works
+        content-creation tools are Unity     website that requires no experience   for you.
+        and Unreal Game Engine. Both of      in the programming field to create   zapworks
+        them are free but cost money to      a fulfilling VR experience. One of
+        buy additional assets (anything you  the cons of this website is that you  An alternate website for making AR
+        add to your game or experience,      can’t be as creative because all    content is ZapWorks. ZapWorks
+        such as sounds or objects). Neither  of the objects that you can drop    is one of the best websites for
+        of them require a lot of coding      into the template are already pre-  creating AR, mostly because of
+        experience but it depends on         made by someone else. For many      how advanced it is. This can be
+        what you're making. These tools      students, it only took 5 minutes    either a good thing or a bad thing
+        are extremely powerful and can       or so to make a really cool VR      for some people because this
+        create professional VR and AR        experience. They have all kinds of   website does require programming
+        experiences. In fact, most of the    different backgrounds and scenes    experience in order to make the
+        games that are sold on STEAM (an  that you can add to a blank canvas.  best looking AR. Luckily, there is
+        online gaming platform) are made     One student decided to add a        a beginner’s option. Also, it does
+        using Unity or Unreal Engine. Some  cartoon battle scene and make it     cost a little bit of money after 30
+        people say that Unreal Engine is     giant. Next, they have these things   days. Many students love this
+        easier to learn if you do not have   called waypoints. You create a path  content-creation platform because
+        a coding background. By the way,     so once you are finished and ready   of how creative you can be: almost
+        if you do want to learn to code to   to experience it in VR you will be   anything can come to life with
+        make more complicated AR/VR          taken along that path at a steady   sound and movement. Also, the
+        experiences, then for Unity, you     pace, almost like a roller coaster   possibilities are endless. People
+        need to know C#, and for Unreal      taking you through the scene. So,   can make all sorts of things, from
+        Engine, you need to know C++.        again, if you are a beginner in the   interactive birthday or business
+                                             VR world this would be one of the   cards to actual AR mini-games or
+                                             best options for you.               3D art masterpieces.
+
+                                                              6]]></page><page Index="7"><![CDATA[don’t be scared to
+
+
+
+
+        learn to code!                                                                VR and AR are
+                                                                                      exciting and fun
+
+                                                                                      to experience,
+                                                                                      but they are even
+ mirra  Coding is just like learning a       Codecademy is a good website
+        language for computers, and          for starting to learn how to code.       better to create!
+        anyone can do it, even small         Codecademy teaches you how
+        children. There are many online      to code on Python and other              Don’t hesitate or
+        tutorials and camps that teach       languages, as well. Even though          second-guess
+        coding. If you have Unity or Unreal   Codecademy isn’t free, you can get
+        Engine, there are many tutorials     a seven-day free trial to begin to       yourself. Anyone
+        built right into the website, and    learn to code.
+        on YouTube, there are hundreds                                                is capable of
+        of tutorials that are updated        Other online websites are                joining in this next
+        constantly.                          freeCodeCamp, Coursera, edX,
+                                             Codewars, and Khan academy,              exciting phase of
+                                             which has free coding tutorials and
+                                             lessons.                                 technology!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                              7]]></page><page Index="8"><![CDATA[CURRENT VR RESEARCH
+
+
+
+
+
+
+
+
+        AROUND LEARNING
+
+
+
+
+
+
+
+
+
+        Tucker Ramsey
+
+        an INTERVIEW WITH
+        LISA CASTANEDA
+
+
+        Lisa Castaneda is the CEO and
+        founder of Foundry10. This
+        organization develops research to
+        investigate non-traditional learning
+        and ideas of what learning can
+        look like both inside and outside of
+        school environments. One of these
+        initiatives is virtual and augmented
+        reality in education.
+
+        how did you get started
+
+        in this field and what               Then, we moved to older students,   What is your favorite
+                                             all the way up to college level.
+        motivated you to be a vr             The older kids used HTC Vives       vr app for fun and for
+        educator?                            which is a more advanced piece of   education?
+                                             technology.
+
+                                             I’ve learned that playing, using, and  My favorite non-educational VR
+        A teacher in the Seattle area was                                        application is called Superhot. I
+        teaching Computer Science and        learning virtual reality is fun, but at
+        he reached out to me. He asked if    the same time can be complicated.  enjoy this because it is a human
+        his school’s educators could get     People are extremely passionate     simulation that allows you to lose
+        a few virtual reality headsets for   about VR and believe it will        track of what is real and engage
+                                             revolutionize the field of education.
+                                                                                 in crime and serious danger.  My
+        their classrooms. Before agreeing,                                       favorite school-related VR is
+        we asked if we could come to the
+        classrooms to see if the students    have you ever had any               Nature Treks. This application is
+        would be interested. The kids were                                       excellent not only because the
+        really excited about using VR,       jobs outside of vr?                 mechanics are exquisite and clever,
+                                                                                 but because it allows a person to
+        which inspired us to put VR in more                                      experience complete relaxation in
+        classrooms, not just in computer
+        science, but in other subject areas,   I used to be a teacher. I taught   order to meditate.
+        too. It sparked a passion for VR.    math, but I also taught hip-hop
+                                             dance. This was like a fourth job
+        I started by letting grade-school    to me, and in my organization, we
+        children use basic VR headsets       sometimes do activities related to
+        like Google Cardboard so they        hip-hop and sometimes have jobs
+        could have their first experience.   outside of VR, as well.
+
+                                                              8]]></page><page Index="9"><![CDATA[CURRENT VR RESEARCH                         what do you think the               what are some of your
+
+
+                                             future holds for vr?
+                                                                                 hobbies?
+                                                                                 Outside of VR, I am into martial
+                                             We’ve seen some really cool stuff,
+ AROUND LEARNING                             and we are doing some work with     arts. I think martial arts is very
+                                                                                 important. Currently I am not
+                                             Oculus in Seattle. All sorts of
+                                                                                 taking classes, but I’ve studied
+                                             industries are using VR, ranging
+                                                                                 taekwondo, karate, and kickboxing.
+                                             from the healthcare industry all the
+                                                                                 I do a lot of sports, and I am also
+                                             way to construction companies.
+                                             For example, construction workers
+                                             are talking about how they can      an avid reader.
+                                             look at pipes through walls, as well   In addition, I recently got two
+                                             as move and transfer structures     rescue dogs, so I’ve been spending
+                                             virtually.                          time with them and am very excited
+        What do young readers                                                    about that. Although I am a dog
+        such as pre-teens need               There are a numerous amount of      and cat lover, I truly have to say
+                                             intriguing applications that allow
+                                                                                 that I absolutely LOVE dogs! Cats
+        to know or understand                people to practice movement         always seem to be in their own
+        about VR?                            through learning. Virtual reality   world, but dogs are always thrilled
+                                             truly has so much potential, but it
+                                                                                 to see you and love unconditionally!
+                                             is very important to make sure the
+        Occasionally when middle school      quality of the content is up to par.   In conclusion, there are many
+        aged students use VR we will         You don’t ever want to feel like you   types of learners. Some are fast,
+        hear one of them say, “I am afraid                                       some are slow, some are auditory
+        of heights” or “I am terrified of    wasted your money on something      learners, some are visual learners,
+                                             that is not the best it could be.
+        roller coasters.” Virtual reality                                        some are great at memorizing, and
+        gives people like this a chance      There is also so much opportunity   some aren’t. But one thing we all
+        to conquer their fears and try       in the field of visual art and music.   can attempt to do, is try learning
+        something out of their comfort                                           with virtual reality. You can’t knock
+        zone. On the other hand, there have   In addition, there are applications   it until you try it.
+                                             in VR that help patients in hospitals
+        been some cases where a student      who are bedridden feel like they are
+        believes they have no fear of        walking, or being outside.
+        heights, but to their surprise, when
+        they use VR they become extremely
+        anxious and scared. One thing is
+        for sure, VR truly does feel real. The
+        fear that these people experience
+        is real. Another common fear we                 “Learning is something all humans do. It can
+        see often is being underwater. It is
+        recommended to not go into the                  be flexible and can fit any individual. In order
+        Blue experience if this fear applies           to maximize our potential to learn, we need to
+        to you, because you are put in a
+        virtual reality that takes place while    understand the process and how it happens, even
+        submerged. People have this idea               outside of traditional settings and structures.
+        in their mind that VR does not feel          We work directly with the people who are most
+        real. That could not be further from
+        the truth. It is important to consider              impacted by education research: students
+        fears you have in real life before            and teachers. By reaching outside of standard
+        getting involved with VR.
+                                                 institutions and with a philanthropic approach, we
+
+                                                     uncover new ideas, methods, and tools to bring
+                                                          greater value to learners all over the world.”
+
+
+
+                                                              9]]></page><page Index="10"><![CDATA[DESIGNING A VR MUSEUM
+
+
+
+
+
+
+
+
+                                        THE FUTURE OF THE ART EXPERIENCE
+
+
+
+
+                                an interview with johan van lierop, international architect
+
+
+
+        Johan van Lierop, a Brooklyn-based  personal with the paintings. The
+        Dutch architect, was asked to        Museum space itself is suspended
+        design a museum for the Kremer       in the universe and is inspired by
+        Collection, a private curation of    the astronomical and scientific
+        17th century Dutch Masters, such     instruments of the Golden Age.
+        as Rembrandt and Frans Hals.         The center stage of the museum
+                                             is a dramatic celestial sphere
+        A museum is expensive to build,      featuring a vaulted ceiling with a
+        could take years to construct,       painted Dutch sky, a trademark of
+        and can be costly to operate and     the Dutch Masters. The innovative
+        maintain once it is open. That is    aspect of the museum, apart
+        when a Virtual Reality museum        from the architectural space,
+        came into play.                      is the technique with which the
+                                             paintings themselves have been
+        For an architect to design a space   photographed. They have such a
+        that is not bound by budget, gravity,  high resolution that when you stand  The museum used
+        technical requirements (such as      in front of a painting and you move  “photogrammetry” to capture the
+        plumbing and electrical, or even     around, the light changes how it    paintings. This is a technique
+        building codes), it becomes a        hits the painting. It reveals every   where every pixel has a depth, so
+        completely different challenge.      brush stroke and you can come       it’s like a survey of the painting’s
+                                             up very close to the painting and   surface in 3D.  Every painting is not
+        Johan describes his design, “one     study it in great detail which is very  just one photograph, but is built
+        is really emerged in the gallery     unique.”                            from three to four thousand photos
+        and can be very up-close and                                             per painting. Johan adds, “So,
+                                                                                  you are basically capturing the
+                                                                                  painting from all different angles
+                                                                                  in very high resolution, so you can
+                                                                                  view it from all angles.”
+
+                                                                                  Johan thinks that VR museums
+                                                                                  are the future for viewing famous
+                                                                                  artwork; it is easily available for
+                                                                                  people around the world, providing
+                                                                                  a unique experience. “If I go to the
+                                                                                  Louvre in Paris to see the Mona
+                                                                                  Lisa, first I have to wait in line,
+                                                                                  then once in the gallery there are
+                                                                                  hundreds of people gathered in
+                                                                                  front of the painting and everyone
+                                                                                  is trying to take a selfie. The
+                                                                                  painting itself is kept at a distance
+                                                                                  for safety purposes, and there
+
+
+                                                             10]]></page><page Index="11"><![CDATA[is a thick glass plate in front of it.
+        So, I am not really getting personal
+        with the painting and don’t have the
+        opportunity to study it closely. I see
+        the image, but it is only the notion
+        that this is the original masterpiece
+        that makes it exciting. However, at
+        the Kremer Museum you are right
+        in front of the painting; there is
+        nobody around you, just you and
+        the Masterpiece. You can even go
+        behind the painting to see if the
+        artist placed notes on it or if there
+        are other marks left throughout its
+        history. I see the backside of the
+        painting as its passport. Revealing   he had to bicycle seven miles to
+        this creates an intimate view of the   his high school in a nearby town.
+        painting.” Johan explains.           “In Holland, everyone bikes, rain
+                                             or shine. The bike path took me
+        When asked where his love for        through a forested area, really
+        architecture came from, Johan        beautiful with the smell of pines.
+        senses it might have started at      After school my friends and I
+        a very young age, inspired by his    would often take a break on the
+        grandfather who was a carpenter      way back and sit in the woods and
+        and a contractor who built houses,   enjoy nature. I believe it was this
+        furniture and made woodcarvings.     sense of freedom, and moments
+        “I observed him making beautiful     of clarity that allowed my thoughts
+        things out of wood, masterfully. I   and ideas to grow freely inside my
+        think this gave me a real sense of   head.”                              “Going back to see my grandfather
+        craftsmanship, respect for quality                                       making such beautiful furniture and
+        and the creative process.”           At present, Johan is a Principal at   sculptures, is the most powerful
+                                                                                 inspiration. No matter what you do,
+                                             Studio Libeskind in New York City   regardless of your profession, when
+        Johan grew up in a rural area in The   and has his own design practice,
+        Netherlands. When he was twelve,     Architales, in Brooklyn.            you do it with passion you will excel
+                                                                                 at it, because it means that you
+                                                                                 are pouring your complete soul
+                                                                                 into it and that is always the best
+                                                                                 ingredient.”
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             11]]></page><page Index="12"><![CDATA[school vr lab
+
+
+
+
+
+                                              FORGOOD
+        TECHNOLOGY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ABOUT OUR SCHOOL AND                   Sofia Wise & Ella Wagner
+        TECHNOLOGY LAB
+        How might we use the newest
+        technology for good? How might
+        we add to what is being created,
+        not just use what is already
+        there? These are questions we
+        ask ourselves at Mount Vernon
+        Presbyterian School. Since 2016,
+        our middle and high school
+        students have been hard at work,
+        partnering with Dell Alienware,
+        and other companies, to use our
+        technology to help others, to
+        generate empathy, and to make an
+        impact.
+
+        Our school in Sandy Springs,
+        Georgia, which is just north of
+        Atlanta, is currently working with
+        large companies such as Children's
+        Healthcare of Atlanta and Delta
+        Air Lines, in addition to several
+        museums and a small village
+        school in India -- all to create
+        working VR/AR labs to advance
+        their technology. A quote from the
+        Mount Vernon Students Launch
+        National Virtual Reality Lab: “Our
+        young entrepreneurs are ready
+        to face current challenges, work
+        with industry leaders, and make an
+        impact in the world right now. We
+        are helping students learn to lead
+        in the newest fields of technology,”
+        shares Marie Graham, Director of
+        Virtual and Augmented Reality at
+        Mount Vernon.
+                                                             12]]></page><page Index="13"><![CDATA[watch a video here.
+ GOOD                                                        use a camera on a phone to scan the qr code.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             13]]></page><page Index="14"><![CDATA[current school vr projects
+
+
+
+
+
+
+        team member interviews
+
+
+                                                                                  A lot of the work we are doing
+                                                                                  helps kids who have been in
+                                                                                  serious accidents, resulting in
+                                             george whissle                       injuries to their bodies and/or
+                                                                                  brains. An example of a prototype
+                                             Senior VR designer and technical leader we are working on is an interactive
+                                                                                  grocery and toy store. Once you
+                                             Please tell us about one of the      put the headset on, you are put
+                                             experiences you are making with      into a grocery store, It simulates
+                                             the Children’s Hospital Project:     someone buying ingredients for
+                                             One of our VR projects is our        some sort of recipe or toys to play
+                                             ongoing partnership with Children’s  with. It helps those who physically
+                                             Healthcare of Atlanta (CHOA),        cannot walk or move, by putting
+                                             which has been ranked among the      them straight into the VR world
+                                             ‘’Best Children’s Hospitals in the   and help them rehabilitate. These
+                                             nation’’ by U.S News and World       experiences try to make patients
+                                             Report. My team and I are working    more comfortable with their
+                                             to help disabled patients practice   situations by trying to ease them
+                                             movement and direction using VR.     back into the real world.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             14]]></page><page Index="15"><![CDATA[marie graham                         justin blumencranz
+ current school vr projects  vr lab director  Senior VR designer and
+
+                                             lab leadership team
+        How do you connect globally with
+        VR at your school?
+                                             creating a VR website! Please tell
+        This year, we have an incredible     We heard you were working on
+        opportunity to connect and           us more!
+        help students in a small Indian      We have been hard at work with
+        village called Muvalia. We, with     creating a VR/AR Directory for
+        an amazing entrepreneur named        students and educators, which is
+        Sondra Phifer and a philanthropist,   still in the process. This project is
+        are designing and creating a small   about making a single database
+        VR lab for the kids in the village   where you can find all kinds of
+        school. It is exciting to think of   VR/AR content from a number
+        how this lab might help open up      of different sources, genres,
+        the world to people, many of whom    backgrounds, and it’s going to be
+        have never left their own village.   a big search engine for VR/AR
+        VR allows people to experience       content. I am working on making
+        different places, emotions, and      this directory full of easy to find
+        objects in a way that has been       information that is honest and
+        inaccessible to many until now.      clear. I love the VR Lab teacher
+        At Mount Vernon, we hope to keep     Mrs. Graham and my whole team,
+        growing and making impact around     who are always coming up with
+        the globe. We gather ideas, we talk   new ideas to help impact the world
+        to people and find needs, we create   right now!
+        prototypes, and then we try them
+        out. If we fail, we try again and
+        again until we succeed. We want to
+        use this new technology to do the
+        best work!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             15]]></page><page Index="16"><![CDATA[TAKE-PAUSE
+
+
+
+
+
+
+
+
+        MINDFULNESS
+
+
+
+
+
+
+
+
+        FOR TEENS
+
+
+
+
+
+
+
+
+         Sara McLeod
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             16]]></page><page Index="17"><![CDATA[Dumeetha Luthra is a virtual reality  I was reporting, I would have to   techniques to help reduce stress
+        rockstar who uses her expertise in   internalize the conflict. It was    and anxiety. The company is
+        the virtual reality field to help teens  only when I learned to practice   currently testing out a demo in
+        find their inner peace hiding behind  mindfulness that I was able to     hospitals to schools.
+        all of their stress. She is the highly-  take a deep breath, and take a step
+        skilled founder and CEO of Take-     back from a situation. I wanted to   When asked if she could share
+        Pause, a virtual reality program for   help others learn that skill, too.”   some advice, Dumeetha shared,
+        teens and students. Prior to her     Approximately one in five teens     “Breathe in, breathe out and find
+        work at Take-Pause, she worked       struggle with high levels of stress   your peace inside of you. Everyone
+        as an award-winning BBC war          and anxiety. So, she decided to be   has a peaceful side. However,
+        correspondent, traveling to the      a part of the movement to change    most of the time that peaceful
+        most violent areas of the Middle     that statistic, to help those teens   side is being held back by events
+        East for her reports. During her     with high levels of stress and      happening in the real world and can
+        times as a war reporter, she began   anxiety. That is when she decided   take a toll on your happiness. Take
+        to believe that she wasn’t doing     to create Take-Pause.               some time for yourself and practice
+        enough, that she wasn’t leaving a                                        being kind to yourself.”
+        big enough legacy and impact for     The company’s mission is to create
+        herself and others.                  an environment that has an impact  For those interested, they are taking
+                                             on lives and helps kids/teens learn   applications to be a part of the pilot
+        Dumeetha decided to change           how to be calm, have resilience,    program. Please get in touch at:
+        that by using her experiences,       and focus for everyday life. The    info@take-pause.com
+        surrounded by war and violence,      target audience of Take-Pause is
+        to help those who were afflicted     teens/students with high stress,
+        by conflict and stress. She began    low focus, or for those who just
+        to meditate and reflect constantly,   need a break from the real world
+    Q
+        which helped her to feel calm and    for a little while. Take-Pause’s
+                          A
+        resilient. Dumeetha shares, “While   VR animations use mindfulness
+
+
+                                             who has helped you along your       what would you say is your
+
+                                             journey of take-pause?              biggest accomplishment with
+                                             There are so many people who        take-pause?
+                                             have been helpful and I am grateful  I love hearing about how this
+                                             to them. We were connected by       program has affected the users;
+                                             Dr. Walter Greenleaf, a medical VR   that is the most rewarding part. A
+                                             pioneer who is at Stanford, he has   pediatric ER in New York is about
+                     and                     been a fabulous mentor. The Take-   to begin a clinical trial using Take-
+                                             Pause demo was created by NYU
+                                                                                 Pause to reduce anxiety. That
+        WITH dumeetha luthra                 students who have been generous     Take-Pause is already in hospital
+                                             with time and support. There are so  settings makes me very proud.
+                                             many people!
+
+        what is the most valuable thing                                          for anyone who wanted to get
+        you have learned while being a                                           involved with take-pause, how
+        bbc correspondent and creating       what is something you  would tell  could they?
+
+        your company?                        your younger self?                  Get in touch through the Take-
+        Find peace in everything. Even       Be kind to yourself. Nothing is as   Pause website. There are a few pilot
+        when you are busy and stressed,      important as you think it is. Look   programs we are about to launch for
+        take time for yourself to meditate   after yourself always. Constantly   different uses and you can be a part
+        or do whatever works for you to      check in with yourself. Nothing is   of that. Info@take-pause.com,
+        find your inner peace.               personal. Know your triggers.       www.take-pause.com
+
+
+                                                             17]]></page><page Index="18"><![CDATA[NICK SAVO
+
+
+
+
+
+
+
+
+                      ALIENWARE GENIUS
+
+
+
+
+
+
+
+
+
+
+        Nick Savo is a University of         I graduated from the University of             Michael Barwood
+        Michigan electrical engineer         Michigan, I was hired by Intel, a
+        graduate, who works for Alienware,  company that builds processors
+        a major distributor of gaming        for computer companies like
+        computers used for virtual reality.   Apple or Dell. I worked several
+        He is the go-to-go market manager  jobs for the company and during
+        for VR, software, and non-standard   the early 2000s, I started to work
+        tech and travels around the country  with making motherboards, or
+        interacting with people, who         the principal components for a
+        regularly use virtual reality.       computer, for Dell’s gaming division
+                                             which at the time was Alienware.
+        how did you end up in a              This caused me to develop a
+                                             relationship with the gaming
+        virtual reality career?              division at Alienware. After working
+
+        When I was in school, I was kind     with intel for a total of 14 years, I
+                                             applied for a job with Dell’s gaming
+        of a good math and science kid,      division and have been working for   I love gaming and I think that drives
+        and that prompted me to look at      Dell for the past year.             a lot of the consumer VR that's out
+        engineering as an option for my                                          there. However, utilizing VR and AR
+        career. This eventually lead me into   what is alienware and             technology that actually solves a
+        becoming an electrical engineer,                                         problem or fuels human progress,
+        or someone who evaluates or          how is it Participating in          is really more exciting to me.
+        creates electrical systems. After
+                                             “technology for good?”              So, I think moving forward, AR
+                                                                                 and VR are growing by leaps and
+                                             “Most computers are very similar    bounds. What someone can do
+                                             and have the same components        with AR and VR is mind blowing.
+                                             such as the graphics card, the      The things that I've seen as I work
+                                             processor, and the memory. We can   with VR companies is that the sky's
+                                             all pick those same products to put   the limit on what you can do with it.
+                                             in our machines, so it really comes
+                                             down to what things do you do       Being able to view products in VR
+                                             outside of just putting components   and AR, and have collaborative
+                                             in a box that makes your products   sessions where people can work
+                                             unique and makes your products      together virtually, are really neat
+                                             better than the competition. An     examples. I could be in VR right
+                                             example of this would be the        now, and you could be in VR, as
+                                             thermal control on the Alienware    well. We could be looking at the
+                                             computers. This means preventing    next computer from Alienware
+                                             overheating so the computer can     and be talking about the way that
+                                             run more smoothly and use less      it looks-- the size and shape and
+                                             battery life.                       things like that.
+
+                                                             18]]></page><page Index="19"><![CDATA[where do you think vr
+
+        and ar are headed?
+
+
+        We are going to see a lot more
+        AR and VR used to help solve
+        problems, such as training.
+        Instead of looking at a PowerPoint
+        presentation on how to work at an
+        industrial plant, you'll be learning
+        how to do that through AR and
+        VR as if you were actually there.
+        Instead of sitting in a classroom
+        and having to get a book, you'll be
+        using AR and VR technology to
+        learn and educate people. I think
+        you're going to see a lot more of
+        that.
+
+
+        One of the other cool technologies
+        that's coming out is wireless VR
+        to eliminate some of those cables
+        that you have. This will give you a
+        little more freedom. We're working
+        with HTC on that. We're really
+        excited about working with them on
+        this next wave of technology.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             19]]></page><page Index="20"><![CDATA[VIRTUAL REALITY ARTIST
+
+
+
+
+
+
+                                                               KEVIN MACK
+
+
+
+
+
+
+
+
+        When immersed in a world through                                                     Kendall Slayden
+        Virtual Reality, your surroundings
+        are painted by shapes and colors     Soon after that, he began studies
+        that consume you into a state of     in the medical field where he
+        bliss as you fly freely through the   discussed the topic of perception
+        air to explore the canvas of Kevin   and visualization and was awarded
+        Mack’s art. These creations are      the title of Honorary Neuroscientist   Since VR is meant for the mind to
+        designed to put one’s mind at ease   from UCLA’s David Geffen School     escape reality, it is the perfect tool
+        and inspire creativity and curiosity   of Medicine and later received an   to use when trying to overcome
+        through therapeutic practice.        honorary Doctorate of Science       fear and anxiety. He designed
+
+                                             degree for his motion visual effects   his VR worlds for the purpose of
+        Kevin Mack is an Oscar-winning       in 2007. He continued to include    helping others in such a way that
+        pioneer in artistic virtual reality.   medical practice into his work    helps maintain a healthy mental
+        He has created an innovative         through art.                        state.
+        perspective on art, finding a way to
+        bring his masterpieces to life with
+        his Virtual Reality worlds: Anandala,
+        Blortasia, and Zen Parade. These
+        VR worlds are mainly showcased
+        through Shape Space, a company
+        he has developed to display and
+        explore the endless possibilities
+        of abstract art. His VR worlds are
+        composed of living art entities
+        called Blorts, which are three
+        dimensional, abstract, complex
+        figures that help bring his work to
+        life.
+
+        Kevin majored in Fine Art,
+        Illustration and Film at the Art
+        Center College of Design where
+        he worked in the film industry
+        and experimented with art and
+        music. He later expanded into
+        the field of digital art and design
+        where he developed his skills in
+        computer graphics and visual
+        arts. Kevin’s work is attributed to
+        many well-known films, and he was
+        recognized for one of his works on
+        What Dreams May Come in 1999,
+        when he received an Oscar for best
+        visual effects.
+
+                                                             20]]></page><page Index="21"><![CDATA[When and how did you
+
+
+        first get into VR?
+
+        I actually got into this when I was a
+        little kid and had visions and ideas
+        of virtual reality when I was four
+        years old, but there was no such                                         The fundamental innovation of
+        thing as VR back then. I also drew a  What exactly do you                virtual reality is spatial presence
+        lot as a child and got into computer                                     - the sensation of being present
+        graphics as I got older. I have      do now?                             in a different place. The ability
+        always had a passion for art and                                         to directly communicate the first
+        technology.                          I create VR and abstract
+                                             art designed to engage the          person subjective experience of
+                                             imagination, inspire awe, and       spatial presence brings an entirely
+                                             enhance well-being. I try to create   new dimension to communication.
+                                             experiences that make people        Art is particularly well suited to
+                                             happy.                              this new medium because it is
+                                                                                 experiential.
+                                             Through studying neuroscience, I
+                                             have learned that there is a great   The potential of virtual reality
+                                             deal that can be done to alter      as an art form is mind-boggling.
+                                             people’s consciousness by using     I've always dreamed of using
+                                             shapes, sound frequencies, and      technology to transport people to
+                                             color. I apply all of that to my art.  places and experiences beyond
+                                                                                 imagination. Virtual reality has
+                                                                                 made my lifelong dream an actual
+                                                                                 reality.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             21]]></page><page Index="22"><![CDATA[DR. SCOTT SATKIN
+
+
+
+
+
+
+
+
+
+                        LIMBIX, PHOBIA, AND OTHER MEDICAL WORK
+
+
+
+                                                                                                       Lexi Elias
+
+
+
+
+
+
+                                                  Dr. Scott Satkin is a virtual reality (VR) rockstar. For not having much
+                                                  experience at all in this field before he got his PhD, he has now done
+                                                   a huge amount of work with it. While currently working as the Chief
+                                                   Technology Officer of Limbix, a company that uses virtual reality to
+                                                 treat phobias, anxiety, pain, trauma, depression, and addiction-related
+                                                  disorders, he uses his expertise to lead the engineering team, which
+                                             includes designing different VR experiences and putting them into action.
+
+
+
+
+
+
+
+        What led him into                    fear of flying, they could attempt   go on the trip. Or, you can be taken
+                                                                                 back to your childhood home,
+                                             to calm their fears on a real live
+        virtual reality?                     plane, incurring expense and a      school, or even church which gives
+                                                                                 patients the opportunity to start
+                                             commitment of time. Thankfully,
+        Prior to working with Limbix, Satkin   with virtual reality, this person   opening up about their past.
+        worked for Google with the street-   could take off hundreds of times,
+        view team, capturing fascinating     right from their therapists’ office.   Limbix is partnering with
+        images to teleport people to the     Individuals can try things they are   researchers to develop protocols
+        greatest places around the world.    afraid of, taking it to the extreme.   that are meant to be used
+        Additionally, he assisted the        Therapists can control how intense   independently. Harvard conducted
+        original VR Google Cardboard team,   the treatment is, using graduated   research on adolescent depression
+        which became a concerted effort      exposure, turning up and down the   and created a PowerPoint
+        for Google.                          intensity, and customize it for each   presentation, allowing teenagers
+                                             individual patient.                 to click through to learn how
+                                                                                 their brain is changing and how
+        What is limbix?                      What has limbix                     it affects their personality. The
+
+
+        Limbix was specifically designed                                         results of this experiment were
+                                                                                 impressive. Children and parents
+        to improve mental health for a       created?                            were surveyed six to nine months
+        user. It immerses patients into      Limbix created something called     after the presentation, and what
+        exposure therapy through a VR        the teleporter, which gives patients   they found is that they were less
+        headset, outfitted with a tablet for   the ability to transport themselves   anxious, stressed, or depressed,
+        controls. As an example, if a patient   anywhere in the world using Google   and their communication skills
+        had a fear of heights, a therapist   Maps Street View. Say you are       had improved. However, the way
+        could help them work through         anxious about a trip out of the     the content was delivered was
+        their anxiety by taking them on an   country. Your therapist can take you   considered to be dry, so Limbix
+        elevator using virtual reality, and   right to where you will be, so that   wants to take that information and
+        talk to them about the feelings      you can process all of the things   translate it into VR so it is more
+        they are having. If someone had a    you are anxious about before you    interactive and relatable.
+
+                                                             22]]></page><page Index="23"><![CDATA[Who can use limbix?                  what were you like as a teenager? what did you
+
+        Limbix first launched their product   think you’d be when you grew up?
+        with private practice therapists
+        since at first, it was free and they
+        simply wanted feedback. Now, the     When I was a kid, I spent countless hours creating origami. Instead of
+        company is focused on clinics and    setting up a lemonade stand, I would go door-to-door selling origami
+        hospital settings. They are focusing   ornaments, bouquets, and jewelry to neighbors. Growing up, I thought I
+        on two different types of content.   would become a professional origamist. Although I didn't make a career
+        First, therapist-guided content,     out of origami, my passion for geometry and 3D art has lead me to
+        which is used with a therapist       the field of VR. Twenty years later, I still have a passion for 3D art and
+        present. Second, tools designed to   sculpture, in particular glassblowing.
+        be used between therapy sessions
+        by the patient him-or herself, so
+        that they get the most out of this
+        experience.
+
+
+        What would you say is
+
+        the most rewarding
+
+        part of your job?
+
+
+        This application enriches people's
+        lives with virtual reality, but most
+        VR is focused on games and things
+        that don't matter as much. What
+        is most rewarding is to be able
+        to help people who struggle with
+        depression and addiction. When
+        people overcome these problems,
+        there is nothing more rewarding.
+        Also, knowing that these methods
+        are actually proven to help mental
+        health issues around the world and
+        partnering with known researchers
+        while getting feedback from them,
+        is exactly what the company wants.
+                                                 “Here are some previews
+                                                    of our environment for
+
+                                                      people with a fear of
+                                                driving. This environment
+                                              is customizable via a tablet
+                                               interface -- therapists can
+
+                                               change different variables
+                                              such as the location you’re
+                                              driving, whether it is day or
+                                                      night, clear or rainy.”
+
+
+                                                             Dr. Scott Satkin
+
+
+                                                             23]]></page><page Index="24"><![CDATA[WALTER GREENLEAF
+
+
+
+
+
+
+
+
+
+              NEUROSCIENTIST AND HEAD OF STANFORD VR LAB
+
+
+
+
+                                                                       Kendall Slayden & Marie Graham
+
+                                                       Dr. Walter Greenleaf is an internationally known and celebrated
+                                                   research neuroscientist at Stanford University. He is also known as
+                                                     a pioneer in the field of Virtual Reality and has over three decades
+                                                     of experience. But, that is not what makes him so exceptional. He
+                                                                    is a man who spends his life trying to help others.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             24]]></page><page Index="25"><![CDATA[when you were young,                 What project makes you              what would you change?
+
+        what did you want to be  most proud?                                     Technology is developing so fast,
+                                                                                 and we are so excited about it.
+        when you grew uP?                    We worked on a project called       A new smartphone comes out
+                                             Project Brave Heart. We used a 360  every year with better computer
+        I had an aunt who was a high         camera to film the experience of    technology. Our technology
+        school science teacher, and I        a pediatric surgical heart patient’s   exceeds our ability to make ethical
+        thought I wanted to be a biologist.   experience from arriving at the    decisions. I think we need better
+        I am not even sure I knew what       parking lot to sitting in the waiting   procedures to look at the long-
+        that meant, but I knew that’s what I   room to getting prepared for the   term consequences of these
+        wanted to be.                        actual heart surgery. We gave the   developments.
+                                             VR experience with a headset to
+                                             patients to prepare them for what  What do you think the
+                                             was ahead of them. We found
+                                             that the patients that watched the  future holds for VR and
+
+                                             VR experience felt much more
+                                             prepared, more comfortable, and  AR, and what is your
+                                             less stressed the day of their
+                                             procedures.                         goal?
+                                                                                 Just like we use computers all the
+                                             Do you have any                     time now, I think these will be the
+                                                                                 powerful tools we use for work,
+                                             concerns about this                 especially with communication
+                                                                                 and interaction. It will be used in
+                                             type of technology?                 training work, mostly with VR and
+                                                                                 medicine. My main goal is to help
+                                             With Virtual Reality, you are looking   the medical establishment change
+                                             at a high definition screen that is   and embrace technology in a way
+                                             a couple of inches from your eyes.   that is cost-effective and safe.
+                                             Also, we learn to see 3D by visual
+                                             clues and this system develops      How do you feel about
+                                             over time. I do have some concerns
+                                             about problems stemming from        your career choice?
+                                             visual systems.
+                                                                                 To me, the definition of a scientist
+                                             Also, very young children           is someone who measures things
+                                             have trouble separating their       and draws conclusions from what
+                                             imaginations from reality,          they measure. Musicians, creative
+                                             and as we build better virtual      writers, artists, and philosophers
+                                             environments, that line will blur. For   are scientists, too. Professional
+                                             older children, it is not as big as an   scientists go deeper to design
+                                             issue. When we watch something      experiments and draw conclusions.
+                                             on a video screen, we know it       We begin to understand more
+                                             is not real, but I worry about the   about how the world works. To me,
+                                             distinction between imagination     it is fun to see what is going on
+                                             and reality for very young children.  beyond the surface.
+
+
+
+
+
+
+
+                                                             25]]></page><page Index="26"><![CDATA[JOHN BUZZELL
+
+
+
+
+
+
+        YOU ARE HERE VR LAB
+
+
+
+
+
+
+
+
+        Marie Graham
+
+
+
+
+
+
+        as a leader in the field             everyone has something to say, we
+                                             will need technology like AR to help
+        of augmented reality,                us make sense of it all. It’s already
+
+        what have you done that              showing up in many helpful ways,
+                                             to keep us safer in cars, become
+        you are most proud of?               more productive at work, and to
+
+        What is your greatest                help us understand tough concepts
+                                             at school. The most exciting uses
+        accomplishment?                      right now are in entertainment
+                                             where “Location-Based
+        I’m honored to be talking with you,   Entertainment" (LBE) centers are
+        thanks! I've been working with       popping up around the world to
+        computers my entire career - often   give people a high-def experience
+        one of the first people to be using   as a Ghostbuster™, living in the Star
+        new technologies for business.       Wars™ universe, and much more.
+        This happened with CD-Rom, the       AR will help us with the real world,
+        early Internet, hi-speed internet/   and VR will allow us to take part in
+        broadband, mobile phones, social     stories like never before.
+        media, and now augmented reality
+        (AR). My proudest moment in AR       When you were young what
+        was definitely launching something
+        for Porsche with the iPhone X in     did you want to do when
+        2017. It was an extremely hard       you were grown?
+        project, but the result was amazing
+        and people are still wowed by it.    I’m really lucky. I was about 8 years
+                                             old when the very first video games
+        Where is the field of VR/AR          came out, and I thought it was
+                                             the coolest thing ever. I wanted
+        heading? Where will it be            to make video games of my own -
+
+        most helpful and/or most             writing stories, drawing characters,
+                                             animating creatures, and coding
+        exciting?                            actions. In college, advertising
+
+        VR/AR is the future of “screens."    seemed like a grown-up way to do
+                                             some of the same thing. As digital
+        Humans have been looking at          technologies emerged, things got
+        these glowing rectangles for         interesting; and since then I’ve
+        over 100 years: at the movies, at    found ways to put the two together,
+        work, at home, in cars, planes and   creating games and fun digital
+        everywhere they go. In a future      experiences that people enjoy.
+        where everything is connected and
+                                                             26]]></page><page Index="27"><![CDATA[Is there anything that               How did you get into the            Tell us three surprising
+
+        should concern people                field of VR/AR?                     things about you as a
+        about this exploding                 This is actually the third time in   person.
+
+        technology?                          my career I have been involved      1) Even at almost 47 years old, I’m
+                                             with VR/AR. In the 1990s, I first
+        1) Stay balanced. Technology is      experienced VR in an arcade,        still an avid gamer. I play games
+                                                                                 on every video game system (Xbox
+        exciting, but it is important to take   shooting pterodactyls. In the mid-  One, PS4, Switch, PC, mobile).
+        time to stay grounded in physical    1990s, I experimented with making   My favorite games right now are
+        reality. As someone who has spent    my own VR experiences, creating     Spiderman on the PS4 (amazing
+        the better part of their life looking   virtual dinosaurs, dungeons and   graphics, fun, open-world) and
+        at computer screens, you must        more. In 2013, we started using VR   Warhammer: Vermintide 2 on PC
+        remember how to stay human.          at work to help people walk through   (great multiplayer).
+                                             building designs, and AR to help
+        2) Guard your privacy. Companies     people see the data of complex      2) For someone who’s not a sports
+        and brands love technology too,      networks. I think VR/AR is the best   fan, I’ve had some fantastic sports
+        not only for what they can show      way to bring your ideas to life, and   moments - walking inside the
+        you, but also what they can          it moves so fast it’s constantly    ropes with Tiger Woods at the PGA
+        learn from your watching habits.     surprising and exciting to see      Championship, standing on the
+        Everything you do on or around a     what you can do. At my company      NASCAR starting grid at Talladega
+        device is being measured to help     in Atlanta, You Are Here Labs, we   Superspeedway, being behind the
+        businesses. You can choose to        help brands and companies figure    scenes for the NBA All-Star game,
+        share all this data, but be aware    out what to do with VR and AR and   and hanging out in the Atlanta
+        that nothing is “free."              then we design and build those      Braves locker room.
+                                             experiences for them.
+
+                                                                                 3) These days, the earth takes
+                                                                                 a backseat in our daily lives.
+                                                                                 Although my life has been
+                                                                                 technology, my dream is to leave
+                                                                                 that behind a while and hike the
+                                                                                 Appalachian Trail. It’s over 2,000
+                                                                                 miles from Georgia to Maine
+                                                                                 and takes most people about six
+                                                                                 months to complete.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             27]]></page><page Index="28"><![CDATA[aaron walsh on
+
+
+
+
+                                                                                 it is very reliable technology, and &
+
+
+
+
+
+
+
+                                   IMMERSIVE EDUCATION
+
+
+
+
+
+
+
+        Though Aaron Walsh has been          There are a variety of ways to use
+        involved with virtual reality (VR)   Blockchain for education. The       very robust, and proven to be very
+        and video games from his early       Immersive Education Initiative,     secure. It revolves around security
+        years, today he leads efforts to     which Walsh founded and             and securing information, which
+        bring Blockchain and education       directs, is developing a digital    is very important to schools,” says
+        together, exploring how advances     incentivization and reward token    Walsh.
+        in technology and pedagogy can       called a Knowledge Token® or
+        benefit students and teachers.       Knowken. “The skills students       “It will take a little more time
+                                             learn are recorded permanently      before the Blockchain will be
+        Blockchain is a way of securely      and reliably on the network using   utilized enough for a university
+        protecting information, making       Blockchain technology. They get     to use it for admissions, but that
+        that information available around    Knowkens in return for the skills   is exactly what the Knowledge
+        the world. “In a simple sense,       that they have learned, and then    Token® Blockchain is for: to record
+        Blockchain is a secure, reliable,    they can spend those (to buy        all of that information so that it
+        network technology that is going to  items online). The Knowledge        cannot only be used for college
+        have a big impact on a lot of what   Token® is used to incentivize and   admissions, but also for colleges
+        we do in the future,” Walsh says.    reward learners. And the part that   to use it themselves by adding
+                                             is most important, related to the   to it. The Knowken Blockchain is
+        The concept of Blockchain started    Blockchain, has to do with the      essentially the transcript of the
+        with Bitcoin in 2008. “Blockchain is  students’ information. What they   courses, grades and even activities
+        the underlying network technology    have learned, when they learned it,   that students participate in.  The
+        that cryptocurrencies, such          and how they learned it, is stored   intention is that students can
+        as Bitcoin, use to secure their      as a certified and un-hackable      start with the Knowledge Token®
+        currencies on the network and        record that students can use like   Blockchain in preschool and
+        to allow them to be safely stored    a resume and also as credits in     they can earn these tokens and
+        online and exchanged online.”        high school or college. In this way   credits all the way through their
+                                             the Blockchain is central to the    high school career, along the way
+                                             Knowledge Token® ecosystem.         accruing Knowkens that they can
+                                                                                 redeem for products, games, iPads,
+                                             “I think that generally Blockchain   iPhones, computers, etc., and that
+                                             technology will slowly, but certainly,  they can also use to pay for college
+                                             begin to replace some of the core   tuition. When students are looking
+                                             networking infrastructure that      for jobs, a potential employer
+                                             schools rely on. Primarily because   can look at their record on the
+                                                                                 Blockchain and say ‘OK, these are
+                                                                                 the courses they completed, these
+                                                                                 are the grades they got, this is the
+                                                                                 degree they actually earned, these
+                                                                                 are the skills they have mastered’
+                                                                                 and so forth.”
+
+
+
+                                                             28]]></page><page Index="29"><![CDATA[aaron walsh on
+
+
+
+
+ &      IMMERSIVE REALITY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Walsh was born in San Francisco
+                                                                                 at black and white pictures, and
+                                             suddenly became very real to me.
+        then his family moved to La Junta,   I was studying it in high school,   class, reading textbooks, looking
+        Colorado—a town that grew when       I fell in love with the events of the   having very little interest in some
+        the Gold Rush and Westward           American Revolution, and became     of these subjects because they
+        Expansion came through. “My          very excited about them because     seemed so far away from me. And
+        father and mother were responsible  I became immersed in these           then suddenly, by being immersed
+        for my creative development.         experience in my real life. With my   in reality in Boston, by actually
+        My mother was an artist, and my      own eyes I could see these things,   being around these things, the way
+        father was a writer. He also taught   and with my own body I could       I felt changed. I became engaged,
+        creative writing at the college La   experience these things. That was   excited, and was prompted to
+        Junta, so between the two of them,   very, very powerful.                learn more about these things all
+        I believe most of my creativity                                          by myself simply because I was
+        came from the home.”                 I was working with virtual reality   able to visit these places in person.
+                                             at the time, and was one of the     Shortly after that I built one of
+        In the summer between sixth and      first people in the world to build   world’s first personal virtual reality
+        seventh grade, Walsh started         a personal virtual reality system.   systems and started thinking
+        taking college courses in computer   After I built it, which I did with my   about the ways we could apply
+        science. His father would drive      boss at Boston College in 1990, I   the concept of digital immersion
+        him, back and forth, to the college   started to think that VR could be   to education, as I felt certain that
+        in Pueblo. By the time he finished   used for education. I could make    immersive technologies could be
+        high school, he had the equivalent   it possible for people to have      used to deeply engage students no
+        of an undergraduate degree in        that same immersive, realistic      matter where they were.”
+        computer science. At the age of      experience that I had myself
+        eighteen, he was hired by Boston     when I was walking the
+        College as a professional in the     Freedom Trail when I first
+        university’s Information Technology  came to Boston.
+        department.
+                                             My vision was that in the
+        Before moving to Boston, he had      future, students would
+        read about the Boston Freedom        be able to experience
+        Trail, the Boston Massacre, Paul     fully immersive learning
+        Revere’s Ride and the Boston Tea     experiences over the
+        Party ship, but was not particularly   Internet, right from home,
+        interested in these stories. All of   allowing them to become
+        a sudden he was actually walking     truly excited about things
+        on the Freedom Trail, visiting       that may not interest them
+        Paul Revere’s House, stepping on     by just reading or watching
+        the site of the Boston Massacre,     a video. And so, Immersive
+        and boarding the Tea Party ship.     Education started because
+        “Something that I really didn’t      of my own personal
+        have much interest in at all when    experience of sitting in
+
+                                                             29]]></page><page Index="30"><![CDATA[TOM FURNESS-I AM THE
+
+
+
+
+
+
+        GRANDFATHER OF VR
+
+
+
+
+
+
+
+
+                                             first television. Most kids would   Even though I made good grades
+                                             watch Howdy Doody with Buffalo      in school, I spent a lot of time
+                                             Bob and Clarabelle the Clown.       daydreaming and staring out the
+                                             But I loved to watch Mr. Wizard’s   classroom window. I think this
+                                             Science Secrets, often trying to    showed up on my report card.
+                                             duplicate the experiments I saw on  Outside of school, one of my
+                                             TV.  My patient mother would use    favorite past times was to make
+                                             her lunch breaks to buy parts at    pretend robots out of cardboard
+                                             the electronics store for my home   boxes with toilet paper rolls for
+                                             contraptions.                       eyes and ears. To accompany the
+                                                                                 robot, I built a cardboard remote
+                                             When it came to any artistic        control panel with all kinds of
+                                             expression I thought I was a        switches, dials and indicators. I
+                                             failure. I would look with envy     would place the robot outdoors and
+                                             at sketches made by my friends      with my control panel inside the
+                                             in 4  grade class and realize       house (and under the grand piano,
+                                                th
+                                             that I had no talent, so I stopped   my favorite hiding place), I would
+                                             trying. Mind you, I could make      pretend to operate the outside
+        My mother thought that I was a       ‘engineering drawings’ and the like,   robot. I would go on all sorts of
+        strange child. While most kids       but sketching, no way. It was when   adventures in my imagination as
+        would ride their tricycles, I spent   I was in my mid-40s, that I realized   I twisted the knobs on my control
+        more time taking mine apart and      I could actually do it. Turns out I   panel and pretended to look
+        putting it back together.  Mom said  was just trying too hard -- trying to   through the eyes of my robot. My
+        I would tape or wire various objects  follow the ‘rules’ in my head instead  parents and grandparents thought I
+        to my trike. When asked, I would tell  of sketching what I saw with my   was a little wacko but this was my
+        her that this was a carburetor or    eyes.                               entertainment for countless hours.
+        that was a generator.  She said I
+        would hover over my father as he
+        did minor car repairs. I would point
+        at an engine part and ask what is
+        that…what does it do…why…oh.
+        I always wanted to know how
+        things worked. Often to the
+        consternation of my parents, I
+        would disassemble toys to see
+        what was inside, like what caused
+        the clown to pop out of the box on
+        “Pop goes the weasel!” But they
+        always supported my interests,
+        making sure to renew my Popular
+        Science and Popular Electronics
+        magazines.  When I was ten
+        years old in 1953, we got our
+
+                                                             30]]></page><page Index="31"><![CDATA[was 15. Not long after that I met   Recently, I was invited to NASA
+                                             three of the Mercury astronauts,    Houston to visit the lab where they
+                                             Alan Shepard, Gus Grissom and       were using some of my virtual
+                                             John Glenn as they were preparing   reality technology to train Space
+                                             for their first flights into space. I   Shuttle astronauts how to repair
+                                             wanted to be like them, but I failed   the Hubble Space Telescope. They
+                                             the eye test to get into the Air Force   asked if I wanted to do it. YES! And
+                                             Academy to become a pilot. So, it   there I was, suited up, in the Shuttle
+                                             looked like I wasn’t going to make it   Bay, orbiting the earth and working
+                                             into space.                         on a virtual replica of the telescope.
+                                                                                 I looked down to see the earth and
+                                             Perhaps my greatest epiphany as     up to see the stars. So, finally I
+                                             an adult was when I discovered      did make it into space….but it was
+                                             that if I put together all the stuff   a different kind of space…virtual
+        In spite of all my imaginary         I was working on for Air Force      space…where anything is possible.
+        ventures, my most favorite place     fighter cockpits (head-mounted
+        was outdoors. I loved the forest.    virtual displays, head, eye and hand
+        My childhood home bordered on        tracking and 3D binaural sound) I
+        the Pisgah National Forest. My       could create a virtual world. This
+        friends and I would play all day     meant that the things I had only
+        in the woods. We would build         imagined, could be made into a
+        log forts and fashion spears and     three dimensional world to share
+        swords out of small trees and        with others. I have never been so
+        play Knights of the Round Table. I   excited (except when I married the
+        would often go hiking and camping    love of my life, had children and
+        alone over several days with my      grandchildren). The whole virtual
+        dog Kookie. Just the two of us…      reality concept meant that we could
+        exploring, wandering, wondering.     create unlimited worlds where
+                                             people can go to be enlightened,
+        In 1957 I was in the 7  grade. My    lifted and entertained. Wow…how
+                             th
+        teacher told the class about the     cool. That was over fifty years ago.
+        International Geophysical Year and   People today can experience this
+        that the USA was planning to orbit   for themselves in ways that I never
+        an artificial satellite. But, the Soviet   imagined then.
+        Union beat us to it. While Sputnik
+        was flying over our continent
+        my parents and others were
+        terrified. I thought it was
+        cool. I even built a short-wave
+        radio so that I could tune
+        into the transmissions from
+        Sputnik. All of this excitement
+        stimulated my interest in
+        rockets. I started building
+        rockets and formulating
+        my own rocket fuel using a
+        home chemistry set. Then I
+        thought it would also be fun
+        to build some electronics
+        into my rockets to measure
+        acceleration and vibration
+        as they blasted off. I turned
+        this into a science fair project
+        and won the North Carolina
+        State Science Fair when I
+                                                             31]]></page><page Index="32"><![CDATA[LET’S BUILD A VR
+
+
+        HEAVEN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                             Recent advances in virtual reality,   The International Child Art
+                                             augmented reality, and mixed        Foundation—a nonprofit based
+                                             reality make it possible to bring   in Washington, D.C. that serves
+                                             an imagined heaven to earth, so     American children as their
+                                             you can experience what Eden or     national arts organization and
+                                             paradise looks like. But whose      the world’s children as their
+                                             idea of heaven? Schoolchildren’s!   global arts organization—
+                                             Heaven as imagined by the world’s
+                                             children.                           plans to build a VR Heaven by
+                                                                                 engaging some of the world’s
+                                             The late Harvard neuropsychiatrist   most creative and imaginative
+                                             Robert Coles—who authored           children.
+                                             more than eighty books and
+                                             1300 articles, nearly all of them   This year the ICAF is organizing
+                                             concerned with human moral,         its 6th Arts Olympiad—the
+                                             spiritual, and social sensibility   world’s largest art program for
+                                             and reasoning, relating especially   schoolchildren. Through school
+                                             to children—conducted a 30          art contests, most artistically
+                                             year project on the inner lives of   creative students in participating
+                                             children. He gathered data from     U.S. school districts and nearly 100
+                                             interviews and collected drawings   countries will be selected. These
+                                             from children initially to document   creative students will convene for
+                                             the illusionary quality of religion,   three days in July 2020 on The
+        You must have imagined what          but was surprised to witness the
+        heaven looks like, perhaps           positive and often life-changing
+        the first time when you heard        quality of children’s spirituality. In
+        about Eden or paradise.              The Spiritual Life of Children, Coles
+        The idea of heaven has               describes how his research helped
+        been around since ancient            him to see children as “young
+        Mesopotamia and it still             pilgrims” because across diverse
+        shapes the lives today of 2.4        cultural, ethnic, and religious
+        billion Christians, 1.7 billion      boundaries, children demonstrate
+        Muslims, and people of some          themselves to be spiritual beings
+                                             in their paintings and by their own
+        other faith traditions.              revelations in conversations.
+
+                                                             32]]></page><page Index="33"><![CDATA[LET’S BUILD A VR   National Mall in Washington, D.C. at
+        their 6th World Children’s Festival
+        (WCF)—the children’s “Olympics”
+        held every four years. Unlike the
+        Olympic Games, the purpose of the
+        WCF is to imbue children’s
+        creativity with empathy through
+        collaborative activities and a
+        celebration of diversity and unity.
+
+
+        Prior to the WCF, two hundred
+        of the young delegates will be
+        selected for the VR Heaven Project.
+        These young artists will be asked
+        to paint their visions of heaven and
+        bring these masterpieces along to
+        the WCF. On the first festival day,
+        they will share their depictions of
+        heaven and examine other’s works.
+        On the second day, they will explore   These ten murals will provide the basis for the construction of
+        how they can collectively be more    heaven as a VR experience. The VR Heaven will be built by the
+        creative in depicting heaven. On the   members of the Virtual World Society working under the direction
+        third day, they will collaboratively   of its founder, Professor Thomas Furness (see pages 30-31). One
+        paint ten murals that depict their   of the leading technology companies is likely to join this uniquely
+        collective visions of heaven.        important global project.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             33]]></page><page Index="34"><![CDATA[marie graham
+
+
+                                    Marie Graham is a teacher who loves brainstorming with bright sticky notes; sipping iced vanilla
+                                    lattes; traveling (minus the flying part); being at home relaxing with her family; learning anything
+                                    she can about everything (from people, books, movies, blogs, podcasts, online courses); listening/
+                                    dancing to 80’s music, and jumping into, imagining, and creating VR/AR experiences. She doesn’t
+                                    like palmetto bugs or cilantro.
+
+
+
+                                    michael barwood
+
+                                     Michael Barwood is a freshman and is an animated student. He loves acting and participating in
+                                     film club; sprinting on the cross country team; and kicking the ball in soccer.  He has lived in four
+                                     states: Illinois, Texas, California, and Georgia, and has gone to seven different schools. He doesn’t
+                                     like mushrooms or Hawaiian pizza, but will never say no to a good steak. He loves traveling and has
+                                     been more places that he can count, and loves to cheer on his favorite baseball team, the Chicago
+                                     Cubs.
+
+                                    sara mcleod
+
+                                     Sara McLeod is a student who loves cold weather, being with her friends, and spending time with
+                                     her two dogs. Some things that you may not know about her are that she loves calligraphy and has
+                                     been at Mount Vernon Presbyterian School since she was three years old. Sara’s favorite foods
+                                     include tortilla chips and chocolate. Her biggest weaknesses are dancing and painting her nails.
+                                     She loves to travel and her next big adventure will be to go to Iceland. She dislikes the cooking spice
+                                     ginger, bugs, and green tea.
+
+                                    jack mette
+
+
+                                     Jack Mette is a high school student who loves Latin the most out of all his classes; watching
+                                     football all day every Sunday unless the Cowboys lose; eating Italian food, especially pasta that
+                                     has some seafood in it; waking up at 8:30 on weekends because it’s not too late so that he loses
+                                     the whole day but not too early; going to the beach with his family and just chilling all day; watching
+                                     “Indiana Jones” because it has just the right amount of action; spending time in the fall because it’s
+                                     kind of cold but still hot enough to where it’s not uncomfortable. He dislikes a Dallas Cowboy loss,
+                                     food that’s too spicy, and Lacrosse.
+
+                                    ella wagner
+
+                                     Ella Wagner a student who loves eating cheese dip; watching romantic movies; dancing to music
+                                     when she is home alone (even though she can’t dance); loves cheering at football games; being with
+                                     her friends; training to be a nurse when she is older; thrift shopping; procrastinating; meeting new
+                                     people; making vlogs; and going to llama farms. She doesn’t like knuckle-cracking, learning math,
+                                     getting in trouble, being older than everybody, or losing in Subway Surfers.
+
+
+                                    tucker ramsey
+
+                                     Tucker Ramsey is a freshman living in Atlanta, Georgia. Some activities he enjoys are building and
+                                     constructing lego blocks; cooking and eating exquisite, worldwide foods; drawing and creating
+                                     fun, innovative ideas; playing golf and improving his golf game; learning about firearms throughout
+                                     history; watching movies, especially horror movies during the night; loves walking on the beach;
+                                     sharing his feelings; and enjoys watching hockey. Tucker dislikes repeating what he says, especially
+                                     if it is long; getting shot down by haters; and ads on short videos. Tucker is also currently single.
+        CONTRIBUTORS
+
+
+
+
+
+
+
+
+
+
+                                                             34]]></page><page Index="35"><![CDATA[rediet yonas
+
+                                    Rediet Yonas is a patient, innovative, and original kid who enjoys video games like Fortnite; TV
+                                    shows like Gotham, Arrow, Naruto, and more; and he absolutely loves music. He couldn’t go a day
+                                    without music and his various playlists. He enjoys playing basketball in his free time, usually with
+                                    friends. He was born in Georgia but the rest of his family was born in Ethiopia. The things he dislikes
+                                    most are anything that flies, buzzes, or crawls; boredom; lag when playing video games, and sticky
+                                    things.
+
+
+                                    kendall slayden
+
+                                    Kendall Slayden is a 15-year-old girl who is adventurous, athletic, social, laid back, intelligent, and
+                                    open-minded. She likes playing softball and tennis; creating anything related to art; traveling to new
+                                    places and trying new things; shopping with her friends and expressing her style; binge watching
+                                    shows on Netflix while procrastinating; eating lots of food, especially from Chick-Fil-A; wearing
+                                    fuzzy socks, pajama shorts, and big sweatshirts. She doesn’t like raw tomatoes, tree sap, buzz cuts,
+                                    or haters.
+
+                                    tyler long
+
+
+                                    Tyler Long is a student that loves all sports including football, baseball, wrestling; eating Thai
+                                    takeout; traveling to far away places; animated TV shows; all music from the late 60’s to the early
+                                    2000’s; Fridays, Saturdays, but not Sundays; Christmas; cool ranch Doritos; spicy things; holiday,
+                                    comedy, and action movies; Madden 14, The Show, Call of duty, Halo (all of them), Mario Kart, Kirby,
+                                    Legend of Zelda, and Battlefield; spending time with his friends; his family; God; Ivy (his dog); Winter,
+                                    and the Shrek movies. He doesn’t like people who lie.
+
+                                    sofia wise
+
+                                    Sofia Wise is a student who loves playing softball; eating Spanish food; creating new things;
+                                    listening to 60’s through 80’s music; competing in anything that’s not even a competition; watching
+                                    and crying to romance movies; getting into trouble with her friends; being with her favorite teacher
+                                    Mrs. Graham; making fun of her sister (but still loves her); writing; singing (even though she can’t);
+                                    getting her nails done; shopping with her mom; taking care of her pets; and acting silly when she is
+                                    alone. She doesn’t like smacking lips; knuckle-cracking; or being forced to read.
+
+
+                                    brenden wicker
+
+                                    Brenden Wicker is a ninth grade student who loves bicycle riding in the forest, filming, cooking and
+                                    eating new foods, hanging out with friends, swimming (especially at beaches), riding roller coasters
+                                    and water slides, traveling (especially on planes), sunny days, zip lines, exotic animals, road trips,
+                                    watching movies, plays and anime and drawing anything that comes to his mind. He doesn’t like
+                                    dolls or heavy metal music.
+
+
+
+                                    lexi elias
+
+
+                                    Lexi Elias is a freshman student who is optimistic, outgoing, and independent. She loves traveling,
+                                    shopping, and listening to her many playlists on Spotify. She is always busy and is always on the
+                                    go. She is a competitive dancer who dances for 15 hours a week. While she loves to go out on the
+                                    weekends with her friends, eat at cute restaurants and take pictures, she also loves a good day
+                                    relaxing at home with her family and dog. She dislikes cockroaches, tomatoes, and math.
+
+
+
+
+                        other       Rikki Hagerty- Graphic Designer, Mount Vernon Presbyterian School
+                                    Anne Katz- Head of Marketing and Communications, Mount Vernon Presbyterian School
+          contributors Julia Dakin- ChildArt Assistant Editor
+
+
+
+                                                             35]]></page><page Index="36"><![CDATA[Please adopt the ICAF as your charity this Giving Season!
+
+
+         Though many problems beset our nation and the world today, a sheer lack of creativity or empathy is too often
+         their root cause. Creativity cultivates ideation, discovery and invention, while empathy grows compromise,
+         consensus and collaborative innovation.
+
+         The International Child Art Foundation fosters schoolchildren’s creativity and develops empathy through the
+         arts—children’s universal language.
+
+         Founded in 1997 as a 501(c)(3) nonprofit, ICAF is independently ranked among the 25 Top Children’s Charities
+         in the United States.
+         Currently, students around the world are participating in the school-based 6th Arts Olympiad—a free program
+         that fosters their creative development. In July 2019, they will convene on The National Mall at their 6th World
+         Children’s Festival to develop mutual empathy.
+         Your support will help the ICAF democratize creativity and develop empathy universally as building blocks for
+         global prosperity and world peace.
+
+                                                You can donate online at
+                                                     https://ICAF.org
+                                                  or mail your check to
+                                ICAF, Post Office Box 58133, Washington, D.C. 20037
+
+
+
+
+
+
+                                                                   The International Child Art Foundation (ICAF) provides
+                                                                       unique learning opportunities that enhance global
+                                                                      competency, sharpen creativity, and build a resume
+                                                                   worthy of leading colleges and universities. For further
+                                                                               information, send email to info@icaf.org.
+
+                                                                       You can subscribe online to
+                                                                              ChildArt at ICAF.org.
+                                                                          To post comments, visit
+                                                                     www.facebook.com/ICAF.org.
+                                                                                                P. O. Box 58133
+                                                                                                Washington, DC 20037
+                                                             36]]></page></pages></Search>

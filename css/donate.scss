@@ -43,6 +43,7 @@
     padding-top: 30px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     row-gap: 24px;
 
     .donate-main {
@@ -109,8 +110,6 @@
           }
           &::-webkit-inner-spin-button,
           &::-webkit-outer-spin-button {
-            // -webkit-appearance: none;
-            // margin: 0;
             display: none;
           }
           -moz-appearance: textfield; /* Firefox */

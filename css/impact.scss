@@ -228,7 +228,8 @@
 }
 
 .two-videos {
-  display: grid;
+  display: none;
+  // display: grid;
   grid-template-columns: 513px 513px;
   grid-gap: 37px;
   grid-template-rows: 280px 28px;
@@ -293,6 +294,8 @@
 }
 
 .timeline-wrapper {
+  display: none;
+
   margin: 0px auto 0px;
   width: 1185px;
   background: #f7f7f7;

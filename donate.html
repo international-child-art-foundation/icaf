@@ -8,6 +8,19 @@
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/bootstrap.min.js" defer></script>
     <script>
+        const USE_EVERY = true;
+        window.responseHandler = function (result) {
+            let { opaqueData, messages } = result;
+            console.log(result);
+            if (messages.resultCode === 'Error') {
+                console.error(messages.message[0].text);
+                return;
+            }
+            let oData = Object.assign(opaqueData, { amount: $('#customAmount').val() });
+            $.post('/api/transactionCaller', oData).then(res => {
+                console.log(res);
+            });
+        };
         $(document).ready(function () {
             for (let el of $('[use-snippet]')) {
                 $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
@@ -29,14 +42,19 @@
                 $('#customAmount').val(this.dataset.amount);
             });
             $('.donate-form > .icaf-button').click(function () {
-                //TODO: show feedback error for <$10
-                $sr.find('input').eq(2).val($('#customAmount').val()).get(0).dispatchEvent(new Event('input'));
-                setTimeout(() => $sr.find('button[type=submit]').trigger('click'), 10);
+                if (USE_EVERY) {
+                    //TODO: show feedback error for <$10
+                    $sr.find('input').eq(2).val($('#customAmount').val()).get(0).dispatchEvent(new Event('input'));
+                    setTimeout(() => $sr.find('button[type=submit]').trigger('click'), 10);
+                } else {
+                    $('.AcceptUI').trigger('click');
+                }
             });
         });
     </script>
 
-    <!-- <script type="text/javascript" src="https://jstest.authorize.net/v3/AcceptUI.js" charset="utf-8"></script> -->
+    <!-- <script type="text/javascript" src="https://jstest.authorize.net/v3/AcceptUI.js" charset="utf-8" defer></script> -->
+    <script type="text/javascript" src="https://js.authorize.net/v3/AcceptUI.js" charset="utf-8" defer></script>
 </head>
 
 <body>
@@ -125,6 +143,15 @@
                 </div>
 
                 <div id="edo-donate-btn"><a href="https://www.every.org/icaf#donate">Donate</a></div>
+                <!-- TEST -->
+                <button type="button" class="AcceptUI" style="display:none"
+                    data-billingAddressOptions='{"show":true, "required":true}' data-apiLoginID="84STGuhg45XG"
+                    data-clientKey="9D2tCmVSXbNS7m92SUy59X64q6HbusrZCUEE7D734c66QEUQpcZarAcvBEpX5vf2"
+                    data-acceptUIFormBtnTxt="Submit" data-acceptUIFormHeaderTxt="Card Information"
+                    data-paymentOptions='{"showCreditCard": true, "showBankAccount": true}'
+                    data-responseHandler="responseHandler">Pay
+                </button>
+                <!-- END TEST -->
             </div>
         </div>
 

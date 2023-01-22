@@ -59,6 +59,11 @@
   margin-bottom: 100px;
   //   width: 2064px;
   height: 400px;
+  cursor: grab;
+
+  &.grabbing {
+    cursor: grabbing;
+  }
 
   .swiper-slide {
     width: 285px;
@@ -77,5 +82,28 @@
     &:hover {
       cursor: pointer;
     }
+  }
+
+  .swiper-navBtn {
+    height: 64px;
+    width: 64px;
+    color: $ICAF_WHITE;
+    background-color: $ICAF_BLUE;
+    border-radius: 50%;
+    transition: color 0.3s ease;
+
+    &.swiper-button-next {
+      margin-right: 7%;
+    }
+    &.swiper-button-prev {
+      margin-left: 7%;
+    }
+  }
+  .swiper-navBtn:hover {
+    color: $ICAF_WHITE;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after {
+    font-size: 30px;
   }
 }

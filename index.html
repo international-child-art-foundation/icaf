@@ -15,11 +15,38 @@
             for (let el of $('[use-snippet]')) {
                 $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
             }
+            $('.modal').on('show', function (e) {
+                var modal = $(this);
+                modal.css('margin-top', (modal.outerHeight() / 2) * -1)
+                    .css('margin-left', (modal.outerWidth() / 2) * -1);
+                return this;
+            });
+            if (window.matchMedia('(max-width: 1400px)').matches) {
+                $('.modal').find('button').on('click', () => $('.modal').modal('hide'));
+                setTimeout(() => $('.modal').modal('show'), 10);
+            }
+
         });
     </script>
 </head>
 
 <body>
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>It looks like you're viewing our new website on your phone or tablet.</p>
+                    <br>
+                    <p>We're still working on making ICAF.org responsive, so please excuse us if some sections look off
+                        and visit our site on a desktop if you
+                        can!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" data-dismiss="modal">Got it!</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <!-- Nav -->
         <div use-snippet="/snippets/nav.snip.html">

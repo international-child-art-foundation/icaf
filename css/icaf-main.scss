@@ -69,6 +69,25 @@ $muralCrossFadeDuration: 6s;
 
 /* Section Specific */
 
+.modal {
+  padding: 0 !important;
+  .modal-dialog {
+    max-width: 90%;
+    font-size: 3rem;
+    .modal-footer {
+      height: 200px;
+      justify-content: center;
+      button {
+        scale: 2;
+      }
+    }
+  }
+}
+.modal-backdrop {
+  width: 200vw;
+  height: 200vh;
+}
+
 /* Nav isn't fixed on main page */
 body > .container {
   padding-top: unset;

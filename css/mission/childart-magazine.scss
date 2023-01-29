@@ -3,3 +3,209 @@
 @use "../icaf-general";
 @use "../icaf-nav";
 @use "../icaf-footer";
+
+.quote-text {
+  width: 1060px;
+  margin: 90px auto 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: $ICAF_BLUE;
+}
+.quote-from {
+  width: 1060px;
+  margin: 5px auto;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: right;
+  color: $ICAF_GRAY;
+}
+.latest-issues-container {
+  margin-top: 104px;
+  padding-bottom: 61px;
+  background-color: #f3f3f3;
+  .latest-issues {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    padding-top: 64px;
+    text-align: center;
+    color: $ICAF_BLUE;
+  }
+  .underline {
+    height: 5px;
+    width: 234px;
+    margin: 1px auto;
+    border: 5px;
+    background-color: $ICAF_YELLOW;
+  }
+  .magazine-container {
+    margin-top: 64px;
+    .swiper {
+      margin-top: 50px;
+      width: 1440px;
+      height: 542px;
+      .swiper-slide {
+        width: 351px;
+        height: 477px;
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-navBtn {
+        height: 64px;
+        width: 64px;
+        margin-top: 40px;
+        color: $ICAF_WHITE;
+        background-color: $ICAF_BLUE;
+        border-radius: 50%;
+        transition: color 0.3s ease;
+      }
+      .swiper-navBtn:hover {
+        color: $ICAF_WHITE;
+      }
+      .swiper-navBtn::before,
+      .swiper-navBtn::after {
+        font-size: 30px;
+      }
+      .swiper-button-next {
+        margin-right: 100px;
+        align-items: center;
+      }
+      .swiper-button-prev {
+        margin-left: 100px;
+        align-items: center;
+      }
+    }
+    .swiper-pagination {
+      position: relative;
+      margin-top: 33px;
+      .swiper-pagination-bullet {
+        width: 11px;
+        height: 11px;
+        margin: 10px;
+        background-color: $ICAF_GRAY;
+        opacity: 0.2;
+      }
+      .swiper-pagination-bullet-active {
+        background-color: $ICAF_YELLOW;
+        opacity: 1;
+      }
+      @media screen and (max-width: 768px) {
+        .slide-content {
+          margin: 0 10px;
+        }
+        .swiper-navBtn {
+          display: none;
+        }
+      }
+    }
+  }
+  .subscription {
+    margin-top: 49px;
+    text-align: center;
+    &-text {
+      font-weight: 800;
+      font-size: 32px;
+      line-height: 44px;
+      color: $ICAF_BLUE;
+    }
+    &-note {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 32.7px;
+      color: #575756;
+    }
+  }
+  .sub-button {
+    display: block;
+    width: fit-content;
+    margin: 49px auto 0;
+    text-decoration: none;
+    .subscribe {
+      width: 441px;
+      height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $ICAF_YELLOW;
+      border-radius: 37px;
+      span {
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 44px;
+        color: #000000;
+      }
+    }
+  }
+}
+.back-issues {
+  max-width: 1060px;
+  margin: 60px auto 0;
+  ul {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.74px;
+    list-style-type: none;
+    li {
+      margin-top: 30px;
+    }
+    li:first-child {
+      /* Title */
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 49px;
+      color: $ICAF_BLUE;
+    }
+  }
+}
+.back-issues-magazine {
+  &-top {
+    margin-top: 60px;
+    margin-bottom: -1px;
+  }
+  &-main {
+    background-color: rgba(19, 67, 128, 0.1);
+    padding: 64px 190px 0;
+  }
+  &-bottom {
+    margin-top: -1px;
+  }
+  .bim-container {
+    display: grid;
+    grid-template-columns: repeat(3, 315px);
+    grid-template-rows: repeat(5, 428px);
+    grid-gap: 58px 57px;
+  }
+  .bim-text {
+    margin: 29.36px auto 0;
+    padding-bottom: 26px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
+.testimonials {
+  max-width: 1060px;
+  margin: 60px auto 220px;
+  ul {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.74px;
+    list-style-type: none;
+    li {
+      margin-top: 30px;
+      color: #575756;
+    }
+    li:first-child {
+      /* Title */
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 49px;
+      color: $ICAF_BLUE;
+    }
+  }
+}

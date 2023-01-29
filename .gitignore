@@ -5,3 +5,4 @@
 *.css.map
 *.iml
 .prettierignore
+resource/flipbooks

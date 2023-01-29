@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="/css/impact.css" />
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/bootstrap.js" defer></script>
+    <script src="/js/ICAFTimeline.js" defer></script>
     <script>
         $(document).ready(function () {
             for (let el of $('[use-snippet]')) {
                 $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
             }
+
+            window.timeline = new ICAFTimeline('.timeline-wrapper');
         });
     </script>
 </head>
@@ -24,23 +27,29 @@
         <!-- title -->
         <div class="title">IMPACT</div>
 
+        <!-- hope for humanity -->
+        <div class="hope">Hope for Humanity resides in Creativity that can be learned and in Empathy that can be taught.
+        </div>
+
         <!-- child-img -->
         <div class="child-img">
             <img src="resource/image/impact/11722079_10153409671258329_5166213950971486470_o 1.png">
         </div>
 
-        <!-- section1 -->
-        <div class="section1">
+        <!-- Our efforts -->
+        <div class="our-efforts">
             Our efforts to democratize creativity and develop empathy are essential because creativity fuels capitalism
             and mutual empathy makes democracy workable.
             <br><br>
-            We employ the power of the arts for children’s creative and empathic development because conceptually both
-            creativity and empathy are rooted in the arts—a universal language, native to children.
+            We employ the power of the arts for children&rsquo;s creative and empathic development because conceptually
+            both
+            creativity and empathy are rooted in the arts&ndash;a universal language, native to children.
             <br><br>
             Despite growing up in a bitterly divided world that restlessly faces the Fourth Industrial Revolution, our
             children can forge a prosperous, sustainable, and peaceful future with creative minds and empathic hearts.
             <br><br>
-            Children’s creative and empathic development fulfills the six most critical UN Social Development Goals
+            Children&rsquo;s creative and empathic development fulfills the six most critical UN Social Development
+            Goals
             (SDGs):
         </div>
 
@@ -87,18 +96,19 @@
             </div>
         </div>
 
-        <!-- section2 -->
-        <div class="section2">
+        <!-- Since 1997 -->
+        <div class="since-1997">
             Since 1997, ICAF has made the world a better place for its children.
             <ul>
                 <li>ICAF boosts their self-esteem by exhibiting their creative expressions as the world leader in
-                    children’s art exhibitions.</li>
-                <li>ICAF develops bonds of understanding and friendship by bringing together the world’s children at the
-                    World Children’s Festival.</li>
-                <li>ICAF empowers children through the institution of the World Children’s Award.</li>
+                    children&rsquo;s art exhibitions.</li>
+                <li>ICAF develops bonds of understanding and friendship by bringing together the world&rsquo;s children
+                    at the
+                    World Children&rsquo;s Festival.</li>
+                <li>ICAF empowers children through the institution of the World Children&rsquo;s Award.</li>
                 <li>ICAF engages them in global art programs such as the Arts Olympiad and the UN Human Security for All
                     campaign.</li>
-            <ul>
+                <ul>
         </div>
 
         <!-- wave1 -->
@@ -108,7 +118,262 @@
 
         <!-- Measurable Impact -->
         <div class="measurable-impact">
-            <div class=""></div>
+            <div class="impact-title">Measurable Impact</div>
+
+            <div class="description">In terms of numbers, more than five million children have befitted from the ICAF,
+                producing original works under the Arts Olympiad and other ICAF programs. An estimated 2,500,000
+                individuals have participated in or attended ICAFs festivals and exhibitions that have taken place in
+                over a dozen major cities worldwide. This number includes the audiences who have attended ICAF&rsquo;s
+                special
+                events such as conferences and symposia. Nearly one million children, parents, teachers and librarians
+                comprise the total readership since 1998 of ICAF&rsquo;s ChildArt magazine, published on a quarterly
+                basis. On
+                a daily basis, a few thousand children worldwide learn about the ICAF from their peers or online,
+                gaining confidence in themselves as creators (not merely pupils or consumers, recognizing that their
+                imagination is seedbed for discovery and innovation, and telling themselves that their art is the most
+                honest and purest form of human creative expression.</div>
+
+            <div class="numbers">
+                <div class="subtitle">
+                    <p>Global Programs and Events (1997-2022)</p>
+                </div>
+                <img class="images" src="resource/image/impact/Group 304.svg">
+            </div>
+        </div>
+
+        <!-- wave2 -->
+        <div class="wave2">
+            <img src="resource/image/impact/Vector 26.svg">
+        </div>
+
+        <!-- Sociocultural Impact -->
+        <div class="sociocultural">
+            <div class="sociocultural-title">Sociocultural Impact</div>
+            <div class="changing-the-world">ICAF is changing the world for the children by seeding their imagination,
+                boosting
+                their
+                self-esteem, and giving them a voice through innovative initiatives such as:</div>
+            <div class="yellow-underline"><img src="resource/image/impact/Line 25.svg"></div>
+            <div class="sociocultural-subtitle">CHILD ART EXHIBITIONS</div>
+            <div class="world-leader">ICAF is the world leader in curating exhibitions of children&rsquo;s art. Children
+                are
+                adept at
+                encapsulating their imagination in a work of art. Their brushstrokes can create a realm independent of
+                the
+                adult world. Their perspective is pure and honest. Their creative expressions can familiarize you with
+                the
+                nascent imagination that will shape the future.
+                <i><a>Unveiling Children&rsquo;s Imagination
+                        1998-2021</a></i>
+            </div>
+            <div class="yellow-underline"><img src="resource/image/impact/Line 25.svg"></div>
+            <div class="sociocultural-subtitle">CHILDREN&rsquo;S PANELS AT MAJOR CONFERENCES</div>
+            <div class="unique-expertise">The ICAF has developed unique expertise in conducting an international search
+                for
+                talented
+                panelists, training them, and moderating international panels on critical issues that pertain to the
+                future,
+                which rightly belong to the young.
+            </div>
+        </div>
+
+        <!-- two videos -->
+        <div class="two-videos">
+            <iframe width="513" height="280" src="https://www.youtube.com/embed/me2HARJxIXo"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="513" height="280" src="https://www.youtube.com/embed/ggb0-Z3WPsI"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div class="video-title">
+                Video: Global Economic Forum, Riyadh
+            </div>
+            <div class="video-title">
+                Video: World Cultural Economic Forum, New Orleans
+            </div>
+        </div>
+
+        <!-- WORLD CHILDREN'S AWARD -->
+        <div class="worldchildrens-award">
+            <div class="yellow-underline"><img src="resource/image/impact/Line 25.svg"></div>
+            <div class="worldchildrens-award-subtitle">WORLD CHILDREN&rsquo;S AWARD</div>
+            <div class="first-ever-award">In 2007, ICAF instituted the first-ever award that the world&rsquo;s children
+                present
+                to
+                their
+                favorite business and cultural leaders. Previous recipients were LEGO, the Swatch Group, and the W. K.
+                Kellogg Foundation of Awards designed by Karim Rashid, Sergey Eylanbekov, and Tiffany & Company.
+            </div>
+            <div class="two-images">
+                <div><img src="resource/image/impact/Screen Shot 2022-07-08 at 6.23 4.png"></div>
+                <div><img src="resource/image/impact/Screen Shot 2022-07-08 at 6.23 5.png"></div>
+                <div class="image-title">
+                    2015 World Children&rsquo;s Award
+                </div>
+                <div class="image-title">
+                    2011 World Children&rsquo;s Award
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline-wrapper">
+            <div id="timeline">
+                <div class="row active">
+                    <div class="year">2022</div>
+                    <div class="line"></div>
+                    <div class="image"></div>
+                    <div class="text">Bringing children&rsquo;s perspectives to the United Nations &ldquo;Human Security
+                        for All&rdquo; campaign</div>
+                </div>
+                <div class="row">
+                    <div class="year">2021</div>
+                    <div class="line"></div>
+                    <div class="image"></div>
+                    <div class="text">6th <a target="_blank" href="/resource/flipbooks/2021WCF/">World Children&rsquo;s
+                            Festival</a> at the National Mall</div>
+                </div>
+                <div class="row">
+                    <div class="year">2020</div>
+                    <div class="line"></div>
+                    <div class="image"></div>
+                    <div class="text">ChildArt magazine on neuroscience with the National Institutes of Art</div>
+                </div>
+                <div class="row">
+                    <div class="year">2018</div>
+                    <div class="line"></div>
+                    <div class="image"></div>
+                    <div class="text">ChildArt magazine on architecture with the American Institute for Architects</div>
+                </div>
+                <div class="row">
+                    <div class="year">2017</div>
+                    <div class="line"></div>
+                    <div class="image"></div>
+                    <div class="text">ChildArt magazine on brain and art with Johns Hopkins&rsquo; Brain Science
+                        Institute. </div>
+                </div>
+                <div class="row">
+                    <div class="year">2015</div>
+                    <div class="line"></div>
+                    <div class="image"></div>
+                    <div class="text">5th WCF at The Ellipse next to The White House </div>
+                </div>
+                <div class="row">
+                    <div class="year">2014</div>
+                    <div class="line"></div>
+                    <div class="image"></div>
+                    <div class="text">Cannes Lions international competition to design the WCF logo</div>
+                </div>
+                <div class="row">
+                    <div class="year">2013</div>
+                    <div class="line"></div>
+                    <div class="image"></div>
+                    <div class="text">Children&rsquo;s Tribute to Nelson Mandela exhibition at THEARC in Washington,
+                        D.C.</div>
+                </div>
+                <div class="row">
+                    <div class="year">2012</div>
+                    <div class="line"></div>
+                    <div class="image"></div>
+                    <div class="text">Exhibition at 21st Century Museum of Contemporary Art, Kanazawa</div>
+                </div>
+                <div class="row">
+                    <div class="year">2011</div>
+                    <div class="line"></div>
+                    <div class="image"></div>
+                    <div class="text">4th WCF on The National Mall, opened by U.S. Coast Guard and Forest Service</div>
+                </div>
+                <div class="row">
+                    <div class="year">2010</div>
+                    <div class="line"></div>
+                    <div class="image"></div>
+                    <div class="text">International children&rsquo;s panel at the Global Competitiveness Forum, Riyadh
+                        Healing Arts Programs in Haiti and Chile for earthquake victims</div>
+                </div>
+                <div class="row">
+                    <div class="year">2009</div>
+                    <div class="line"></div>
+                    <div class="image"></div>
+                    <div class="text">Education Without Borders, ICAF exhibition, Dubai</div>
+                </div>
+                <div class="row">
+                    <div class="year">2008</div>
+                    <div class="line"></div>
+                    <div class="image"></div>
+                    <div class="text">Presented at the Aspen Institute&rsquo;s Cultural Diplomacy Forum in Paris, France
+                        World Cultural Economic Forum, International children&rsquo;s panel, New Orleans Children of
+                        Katrina exhibition at Central Military Club, Sofia</div>
+                </div>
+                <div class="row">
+                    <div class="year">2007</div>
+                    <div class="line"></div>
+                    <div class="image"></div>
+                    <div class="text">U.S. Olympic Committee grants exclusive license to use &ldquo;Arts Olympiad&rdquo;
+                        mark
+                        3rd
+                        WCF on The National Mall, opened by Congresswoman Bordallo</div>
+                </div>
+                <div class="row">
+                    <div class="year">2006</div>
+                    <div class="line"></div>
+                    <div class="image"></div>
+                    <div class="text">Arts Olympiad Exhibition at Palace of Stupinigi during the Turin Winter Olympics
+                        Children of Katrina exhibition at Museu da Cidade in Lisbon, Portugal European Children&rsquo;s
+                        Festival at the Olympia Park in Munich, Germany Cultural Figurines exhibition at Galleria Kophof
+                        in Munich, Germany</div>
+                </div>
+                <div class="row">
+                    <div class="year">2005</div>
+                    <div class="line"></div>
+                    <div class="image"></div>
+                    <div class="text">Destruction, Reconstruction and Prevention program at the World Bank</div>
+                </div>
+                <div class="row">
+                    <div class="year">2004</div>
+                    <div class="line"></div>
+                    <div class="image"></div>
+                    <div class="text">Partnered with New York City in its bid to host the 2012 Olympics Exemplary
+                        Humanitarian Service Award at the World Culture Open, Seoul Utopia Exhibition &#175;
+                        Children&rsquo;s Utopia, Haus der Kunst, Munich </div>
+                </div>
+                <div class="row">
+                    <div class="year">2003</div>
+                    <div class="line"></div>
+                    <div class="image"></div>
+                    <div class="text">Children&rsquo;s art exhibition at the World Bank/IMF Annual Meetings in Dubai,
+                        UAE Innovation in Education symposium in Doha, Qatar with the Qatar Foundation 2nd WCF on The
+                        National Mall, opened by Congresswoman Louise Slaughter</div>
+                </div>
+                <div class="row">
+                    <div class="year">2002</div>
+                    <div class="line"></div>
+                    <div class="image"></div>
+                    <div class="text">Peace through Art Program for Greek-Cypriot and Turkish-Cypriot youth Washington
+                        Coalition to bid for the 2012 Olympic Games in our nation&rsquo;s capital</div>
+                </div>
+                <div class="row">
+                    <div class="year">2000</div>
+                    <div class="line"></div>
+                    <div class="image"></div>
+                    <div class="text">First Ladies Forum at the UN Millennium Development Summit in New York City</div>
+                </div>
+                <div class="row">
+                    <div class="year">1999</div>
+                    <div class="line"></div>
+                    <div class="image"></div>
+                    <div class="text">1st WCF on The National Mall, opened by the first ladies of Costa Rica, Ecuador,
+                        and Liberia
+                        -The White House New Millennium Celebration art activities and exhibition</div>
+                </div>
+                <div class="row">
+                    <div class="year">1998</div>
+                    <div class="line"></div>
+                    <div class="image"></div>
+                    <div class="text">First-ever national children&rsquo;s art festival in U.S. history</div>
+                </div>
+            </div>
         </div>
 
         <!-- Footer -->

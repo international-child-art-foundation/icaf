@@ -6,34 +6,16 @@ $(document).ready(function () {
     videoElm.volume = 0.4;
     videoElm.currentTime = videoStart;
     let $volumeDiv = $('#volumeControl');
-    // $('#videoContainer')
-    //     .mouseenter(() => $volumeDiv.fadeIn(200))
-    //     .mouseleave(() => $volumeDiv.fadeOut(200));
-    let $inputs = $volumeDiv.find('img');
     $volumeDiv.click(() => {
-        $inputs.toggle();
+        $volumeDiv.find('img').toggleClass('hidden');
         videoElm.muted = !videoElm.muted
+    });
+    let $playControl = $('#playControl');
+    $playControl.click(() => {
+        $playControl.find('> div').toggleClass('hidden');
+        videoElm.paused ? videoElm.play() : videoElm.pause();
     });
 
     let carousel = new ICAFCarousel('.carousel-wrapper');
     carousel.play();
-});
-
-//DEBUG
-const DEBUG_MODE = false;
-$(document).ready(function () {
-    if (DEBUG_MODE) $('#cfMetadata').show();
-    let startTime = Date.now();
-    const duration = 10;
-
-    let updateDisplay = function () {
-        $('#time').text((((Date.now() - startTime) / 1000) % duration).toFixed(1));
-        //console.log( Number($('#f3').css('opacity')).toFixed(2) )
-        $('#t1').text(Number($('#debug1').css('opacity')).toFixed(2));
-        $('#t2').text(Number($('#debug2').css('opacity')).toFixed(2));
-        $('#t3').text(Number($('#debug3').css('opacity')).toFixed(2));
-        $('#t4').text(Number($('#debug4').css('opacity')).toFixed(2));
-    };
-
-    setInterval(updateDisplay, 100);
 });

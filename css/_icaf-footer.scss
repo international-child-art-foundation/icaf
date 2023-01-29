@@ -1,98 +1,154 @@
 @use "icaf-colors" as *;
 
 footer {
-  background-color: $ICAF_BLUE;
-  color: $ICAF_WHITE;
-  .icaf-plug {
-    padding-top: 25px;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 27px;
-    text-align: center;
-    a {
-      color: inherit;
-      text-decoration: none;
+  border: 1px solid $ICAF_BLUE;
+  .footer {
+    background-color: $ICAF_BLUE;
+    color: $ICAF_WHITE;
+    height: 338px;
+    padding: 71px 104px;
+    display: flex;
+    column-gap: 75px;
+    > div {
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+
+      &.icaf-plug {
+        margin-top: 16px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        max-width: 413px;
+        margin-right: -37px; // Make this gap 38px
+      }
+      &.donate-contact {
+        margin-top: 26px;
+        row-gap: 35px;
+        max-width: 380px;
+        .icaf-button {
+          div {
+            width: 186px;
+            height: 54px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-weight: 900;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 9px;
+            span {
+              display: flex;
+              align-content: center;
+              column-gap: 13px;
+            }
+          }
+          &.alt {
+            div {
+              background-color: $ICAF_BLUE;
+              color: $ICAF_YELLOW;
+              border: 1px solid $ICAF_YELLOW;
+              filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+              box-shadow: unset;
+            }
+          }
+          &:hover {
+            div {
+              color: $ICAF_WHITE;
+            }
+            svg {
+              fill: #ff065bde;
+            }
+            &.alt div {
+              background-color: $ICAF_YELLOW;
+              color: $ICAF_BLUE;
+            }
+          }
+        }
+      }
+      &.follow-us {
+        width: 162px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.1px;
+        text-align: center;
+        .social-media {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          gap: 14.2px 7.9px;
+          img {
+            width: 34.8px;
+            height: 35.4px;
+          }
+        }
+      }
+      &.newsletter {
+        width: 283px;
+        font-weight: 700;
+        text-align: center;
+        span:first-of-type {
+          font-size: 24px;
+          line-height: 33px;
+        }
+        span:nth-of-type(2) {
+          font-size: 16px;
+          line-height: 19px;
+        }
+        .email-input {
+          margin-top: 3px;
+
+          form {
+            display: flex;
+            input {
+              border-radius: 9px 0px 0px 9px;
+              width: 221px;
+              height: 40px;
+              padding-left: 10px;
+              outline: 0;
+              border: 0;
+
+              &::placeholder {
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: 0.1em;
+                color: #b7b7bb;
+              }
+            }
+            button {
+              font-weight: 700;
+              font-size: 12px;
+              color: $ICAF_BLUE;
+              background: $ICAF_YELLOW;
+              border-radius: 0px 9px 9px 0px;
+              width: 62px;
+              height: 40px;
+              border: 0;
+            }
+          }
+        }
+      }
+      .subscribe-success-feedback {
+        margin-top: 3px;
+        text-align: center;
+        display: none;
+      }
     }
   }
-  .footer-middle {
-    margin-top: 30px;
-    margin-bottom: 22px;
-    padding-left: 30px;
-    padding-right: 23px;
+  .copyright {
+    height: 79px;
+    background: $ICAF_WHITE;
+    display: flex;
     align-items: center;
-    .donate-wrapper {
-      div {
-        width: 176px;
-        height: 48px;
-
-        &:hover span {
-          color: $ICAF_WHITE;
-        }
-      }
-    }
-    .newsletter {
-      padding-top: 14px;
-      text-align: end;
-      .sign-up {
-        font-size: 18px;
-        line-height: 25px;
-        margin-right: 15px;
-      }
-      .email-input {
-        margin-top: 22px;
-        input {
-          border-radius: 9px 0px 0px 9px;
-          width: 304px;
-          height: 37px;
-        }
-        button {
-          font-weight: 700;
-          font-size: 12px;
-          color: $ICAF_BLUE;
-          background: $ICAF_YELLOW;
-          border-radius: 0px 9px 9px 0px;
-          width: 56px;
-          height: 37px;
-          margin-left: -5px;
-        }
-      }
-    }
-  }
-
-  .footer-bottom {
-    height: 66px;
-    padding-left: 30px;
-    padding-right: 23px;
-    a {
-      color: inherit;
-    }
-    .deets {
-      text-align: end;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 19px;
-      margin-top: 5px;
-    }
-    .copyright {
-      text-align: end;
-      font-size: 12px;
-      line-height: 16px;
-      margin-top: 5px;
-    }
-    .social-media {
-      img {
-        width: 40px;
-        height: 40px;
-      }
-    }
-    *:not(.social-media) {
-      span ~ span::before,
-      span ~ a::before,
-      a ~ a::before {
-        content: "|";
-        margin-left: 0.5em;
-        margin-right: 0.7em;
-      }
+    justify-content: center;
+    column-gap: 7px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    img {
+      width: 24px;
+      height: 24px;
     }
   }
 }

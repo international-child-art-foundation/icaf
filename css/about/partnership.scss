@@ -5,62 +5,50 @@
 @use "../icaf-footer";
 
 .partnership-description {
-  color: #575756;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 33px;
-  margin-top: 55px;
-  margin-left: 190px;
+  margin: 55px auto 0;
   max-width: 1060px;
 
-  span {
-    max-width: 1060px;
+  p {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: $ICAF_BLUE;
+    text-align: center;
   }
 }
 
 .img-container {
-  position: relative;
-  overflow: hidden;
-  height: 584px;
-  margin-top: 90px;
-  margin-left: 0%;
+  margin: 104px auto 0;
+  width: 920px;
 
-  .img {
-    position: absolute;
-    top: -100%;
-    bottom: -100%;
-    left: -100%;
-    right: -100%;
-    margin: auto;
+  img {
+    max-width: 920px;
+    border-radius: 20px;
   }
 }
 
 .description {
-  color: $ICAF_BLUE;
-  font-weight: 800;
-  font-size: 32px;
-  line-height: 44px;
-  margin-top: 63px;
-  margin-left: 202px;
+  margin: 125px auto 0;
+  width: fit-content;
 
   span {
-    max-width: 1037px;
+    color: $ICAF_BLUE;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
   }
 }
 
 .partners {
-  margin-top: 30px;
-  margin-bottom: 156px;
+  margin: 40px auto 220px;
+  max-width: 1032px;
 
   ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    column-gap: 52px;
-
-    &:not(:last-child) {
-      margin-bottom: 29px;
-    }
+    display: grid;
+    grid-template-columns: repeat(4, 246px);
+    column-gap: 16px;
+    grid-template-rows: repeat(3, 246px);
+    row-gap: 16px;
 
     li {
       display: flex;
@@ -68,62 +56,10 @@
       justify-content: center;
       width: 246px;
       height: 246px;
-      background: $ICAF_WHITE;
-      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 9px;
 
       img {
         position: absolute;
-      }
-
-      .img1 {
-        width: 183px;
-        height: 65px;
-      }
-
-      .img2 {
-        width: 122px;
-        height: 122px;
-      }
-
-      .img3 {
-        width: 186px;
-        height: 84px;
-      }
-
-      .img4 {
-        width: 215.45px;
-        height: 30.91px;
-      }
-
-      .img5 {
-        width: 120px;
-        height: 120px;
-      }
-
-      .img6 {
-        width: 161px;
-        height: 119px;
-      }
-
-      .img7 {
-        width: 187px;
-        height: 105px;
-      }
-
-      .img8 {
-        width: 148px;
-        height: 98px;
-      }
-
-      .img9 {
-        width: 220px;
-        height: 30.53px;
-      }
-
-      .img10 {
-        width: 223px;
-        height: 68px;
       }
 
       .blue-card {
@@ -146,12 +82,12 @@
           text-align: center;
           max-width: 194px;
 
-          &.seventh {
-            max-width: 209px;
-          }
-
           a {
             color: $ICAF_WHITE;
+          }
+
+          &.wb {
+            max-width: 209px;
           }
         }
       }

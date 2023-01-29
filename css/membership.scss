@@ -3,3 +3,112 @@
 @use "icaf-general";
 @use "icaf-nav";
 @use "icaf-footer";
+
+.content {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  margin: 90px auto 0;
+  text-align: center;
+  color: $ICAF_BLUE;
+}
+
+.success-feedback {
+  display: none;
+  color: #117b30;
+  font-size: 23px;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.note {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  margin: 40px auto 0;
+  color: #000000;
+}
+
+.input-container {
+  margin: 62px 281px 0;
+
+  form {
+    display: grid;
+    grid-template-columns: 429px 429px;
+    // grid-gap: 21px;
+    grid-row-gap: 0px;
+    grid-column-gap: 21px;
+    grid-template-areas:
+      "a b"
+      "c c"
+      "d d"
+      "e f"
+      "g ."
+      "h i"
+      "z z"
+      "j j"
+      "k k"
+      "l l"
+      "m n"
+      "o p"
+      "q q";
+
+    @for $i from 1 through 16 {
+      .area#{$i} {
+        grid-area: unquote(str-slice("abcdefghijklmnop", $i, $i));
+      }
+    }
+
+    .area10 {
+      margin-top: 32px;
+    }
+
+    .middleline {
+      grid-area: z;
+      border: 1px solid #b7b7bb;
+      background-color: #b7b7bb;
+    }
+
+    textarea {
+      height: 208px;
+    }
+  }
+
+  label {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    height: 47px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    margin-bottom: 21px;
+    padding-left: 17px;
+    border: 1px solid #c4ced6;
+    background-color: rgba(198, 198, 198, 0.1);
+    border-radius: 10px;
+    resize: vertical;
+  }
+
+  input[type="submit"] {
+    grid-area: q;
+    width: 429px;
+    height: 49px;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 109px 225px 220px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    border: none;
+    border-radius: 37px;
+    background-color: $ICAF_YELLOW;
+  }
+}

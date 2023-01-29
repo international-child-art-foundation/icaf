@@ -20,13 +20,18 @@ body > .container {
   max-width: 1440px;
   padding-left: 0;
   padding-right: 0;
-  padding-top: 100px; /* For Fixed Nav */
+  padding-top: 98px; /* For Fixed Nav */
   font-family: "Nunito";
   font-style: normal;
 }
 
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
 .icaf-breadcrumb {
-  margin-top: 110px;
+  margin-top: 112px;
   margin-left: 190px;
   font-weight: 700;
   font-size: 14px;
@@ -65,7 +70,7 @@ body > .container {
   justify-content: center;
   text-align: center;
   width: 100%;
-  margin-bottom: 65px;
+  margin-bottom: 48px;
   span {
     width: 830px;
   }
@@ -88,4 +93,14 @@ a.icaf-button {
       text-align: center;
     }
   }
+}
+
+button.icaf-button {
+  background-color: $ICAF_YELLOW;
+  color: $ICAF_BLUE;
+  border-radius: 37px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  border: 0;
 }

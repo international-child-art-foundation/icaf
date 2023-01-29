@@ -12,6 +12,23 @@
             for (let el of $('[use-snippet]')) {
                 $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
             }
+
+            $('#contactUsForm').on('submit', e => {
+                e.preventDefault();
+
+                $.post('/api/send-mail',
+                    Object.fromEntries(new FormData($('#contactUsForm')[0])),
+                    res => {
+                        if (res === 'success') {
+                            $('#contactUsForm')[0].reset();
+                            $('.success-feedback').show();
+                        } else {
+                            console.error(res)
+                            //TODO: show error
+                        }
+                    }
+                );
+            });
         });
     </script>
 </head>
@@ -27,11 +44,40 @@
         <!-- Title -->
         <div class="page-title">CONTACT US</div>
 
-        <p style="margin: 100px 190px">
-            I am a new page.
-            <br>
-            Please build me.
-        </p>
+        <div class="main-background">
+            <div class="input-container">
+                <div class="success-feedback">Thanks for contacting ICAF!</div>
+                <form id="contactUsForm">
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="affiliation">Affiliation</label>
+                    <input type="text" id="affiliation" name="Affiliation"
+                        placeholder="(i.e., school, organization, company)">
+
+                    <label for="subject">Subject*</label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="message">Message*</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <input type="hidden" name="type" value="contact-us" />
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+
+            <div class="contact-us-image">
+                <img src="/resource/image/about/contact-us.png">
+                <p class="image-author">Jesse Lackey, age 10, Alabama</p>
+                <p class="address address-title">International Child Art Foundation</p>
+                <p class="address">2549 Virginia Avenue, NW Washington, DC 20037
+                    <br>USA
+                </p>
+            </div>
+        </div>
 
         <!-- Footer -->
         <div use-snippet="/snippets/footer.snip.html"></div>

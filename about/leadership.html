@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About | Leadership</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/about/leadership.css" />
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.min.js" defer></script>
+    <script src="/js/leadership.js"></script>
+    <script>
+        $(document).ready(function () {
+            for (let el of $('[use-snippet]')) {
+                $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Nav -->
+        <div use-snippet="/snippets/nav.snip.html"></div>
+
+        <!-- Breadcrumb -->
+        <div class="icaf-breadcrumb">ABOUT > LEADERSHIP</div>
+
+        <!-- Title -->
+        <div class="page-title">BOARD OF DIRECTORS</div>
+
+        <!-- Card-group -->
+        <div class="main-container">
+            <div card-group id="card-container-1" class="card-container"></div>
+            <div card-group id="card-container-2" class="card-container"></div>
+        </div>
+
+        <!-- Footer -->
+        <div use-snippet="/snippets/footer.snip.html"></div>
+    </div>
+</body>
+
+</html>

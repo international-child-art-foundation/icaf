@@ -10,26 +10,43 @@
     <script src="/js/icaf-main.js" type="module" defer></script>
     <script>
         let t = Date.now();
-        setTimeout(() => {
-            // console.log($('[use-snippet]'))
-            if ($('[use-snippet]').length) {
-                for (let el of $('[use-snippet]')) {
-                    // console.log($(el).attr('use-snippet'), Date.now() - t);
-                    $(el).load($(el).attr('use-snippet'));
-                    // console.log($(el).attr('use-snippet'), Date.now() - t);
-                }
+        $(document).ready(function () {
+            console.log('dr', Date.now() - t, $('[use-snippet]'));
+            for (let el of $('[use-snippet]')) {
+                $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
             }
-        }, 100);
-        // $(document).ready(function () {
-        //     console.log(Date.now() - t, $('[use-snippet]'));
-        //     for (let el of $('[use-snippet]')) {
-        //         $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
-        //     }
-        // });
+            $('.modal').on('show', function (e) {
+                var modal = $(this);
+                modal.css('margin-top', (modal.outerHeight() / 2) * -1)
+                    .css('margin-left', (modal.outerWidth() / 2) * -1);
+                return this;
+            });
+            if (window.matchMedia('(max-width: 1400px)').matches) {
+                $('.modal').find('button').on('click', () => $('.modal').modal('hide'));
+                setTimeout(() => $('.modal').modal('show'), 10);
+            }
+
+        });
     </script>
 </head>
 
 <body>
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>It looks like you're viewing our new website on your phone or tablet.</p>
+                    <br>
+                    <p>We're still working on making ICAF.org responsive, so please excuse us if some sections look off
+                        and visit our site on a desktop if you
+                        can!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" data-dismiss="modal">Got it!</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <!-- Nav -->
         <div use-snippet="/snippets/nav.snip.html">
@@ -62,10 +79,9 @@
                     </div>
                     <div class="alt-welcome">
                         <p>Vision</p>
-                        <p>To motivate children to
-                            become "Creative-Empaths"&#8212;a
-                            sterling human character and quality
-                            which mirrors that of the Founding Fathers.</p>
+                        <p>To democratize creativity for the Fourth Industrial Revolution and develop mutual empathy for
+                            <br />&ldquo;a more perfect union.&rdquo;
+                        </p>
                     </div>
                 </li>
                 <li class="img1 cross-fade cf-group1">
@@ -97,37 +113,105 @@
             </ul>
         </div>
 
-        <!-- Mural Section -->
-        <div class="mural-wrapper-background">
-            <div class="mural-wrapper">
-                <div class="murals cross-fade">
-                    <img src="/resource/image/us-mural.png" alt="USA Mural" />
-                    <img src="/resource/image/world-mural.png" alt="World Mural" />
-                </div>
-
-                <div class="mural-text">
-                    <div class="mural-title">
-                        Join a children&#8217;s movement to democratize creativity
-                        for the Fourth Industrial Revolution and develop
-                        mutual empathy for &#8220;a more perfect union.&#8221;
-                    </div>
-                    <div class="main-text">
-                        <span><b>Membership Benefits:</b></span>
-                        <ul>
-                            <li>Receive a free subscription to ChildArt quarterly</li>
-                            <li>Introduce neighborhood schools to ICAF&#8217;s free programs</li>
-                            <li>Promote STEAMS education for children&#8217;s holistic development</li>
-                            <li>Get invited to the 2024 World Children&#8217;s Festival</li>
-                            <li>Become a champion for children&#8217;s creative and empathic development</li>
-                        </ul>
-                        <span>ICAF Members donate a minimum of $100 annually.</span>
-                    </div>
-                    <a class="icaf-button" href="#">
+        <!-- What We Do -->
+        <div class="section-title">What We Do</div>
+        <div class="section-description">
+            <span>
+                ICAF inspires students to boldly step beyond the boundaries set before them by envisioning
+                a creative-empathic world where diversity and differences enhance the fractal of human discovery.
+            </span>
+        </div>
+        <div id="whatWeDo">
+            <div class="wwd-card">
+                <img src="/resource/image/whatwedo/ArtsOlympiad.png" class="card-img" alt="Arts Olympiad">
+                <div class="card-link-wrapper">
+                    <a class="icaf-button" href="/mission/arts-olympiad">
                         <div>
-                            <span>Apply Here</span>
+                            <span>Arts Olympiad</span>
                         </div>
                     </a>
                 </div>
+            </div>
+            <div class="wwd-card">
+                <img src="/resource/image/whatwedo/WorldChildrensFestival.png" class="card-img"
+                    alt="World Children's Festival">
+                <div class="card-link-wrapper">
+                    <a class="icaf-button" href="/mission/world-childrens-festival">
+                        <div>
+                            <span>World Children's Festival</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="wwd-card">
+                <img src="/resource/image/whatwedo/InteractiveExhibitions.png" class="card-img"
+                    alt="Interactive Exhibition" id="InteractiveExhibitions">
+                <div class="card-link-wrapper">
+                    <a class="icaf-button" href="/resource/video/The ICAF Exhibitions_1998-2022.mp4" target="_blank">
+                        <div>
+                            <span>Interactive Exhibition</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="wwd-card">
+                <img src="/resource/image/whatwedo/ChildArtMagazine.png" class="card-img" alt="ChildArt Magazine">
+                <div class="card-link-wrapper">
+                    <a class="icaf-button" href="/mission/childart-magazine">
+                        <div>
+                            <span>ChildArt Magazine</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="wwd-description">
+                An innovative school art program that fosters creativity
+                and can help end the obesity epidemic.
+            </div>
+            <div class="wwd-description">
+                A transformative experience to offset Adverse Childhood Experiences (ACEs)
+                and disrupt the intergenerational transmission of trauma and hatred.
+            </div>
+            <div class="wwd-description">
+                Curated at business headquarters to kindle the &ldquo;inner child&rdquo; for
+                collaborative innovation and creative teamwork.
+            </div>
+            <div class="wwd-description">
+                An ad-free quarterly to inspire learners of all ages
+                and develop global competencies.
+            </div>
+        </div>
+
+        <!-- Mural Section -->
+        <div class="section-title">Take Action</div>
+        <div class="mural-wrapper">
+            <div class="murals cross-fade">
+                <img src="/resource/image/us-mural.png" alt="USA Mural" />
+                <img src="/resource/image/world-mural.png" alt="World Mural" />
+            </div>
+
+            <div class="mural-text">
+                <div class="mural-title">
+                    Join a children&rsquo;s movement to democratize creativity
+                    for the Fourth Industrial Revolution and develop
+                    mutual empathy for &ldquo;a more perfect union.&rdquo;
+                </div>
+                <div class="main-text">
+                    <span><b>Membership Benefits:</b></span>
+                    <ul>
+                        <li>Receive a free subscription to ChildArt quarterly</li>
+                        <li>Introduce neighborhood schools to ICAF&rsquo;s free programs</li>
+                        <li>Promote STEAMS education for children&rsquo;s holistic development</li>
+                        <li>Get invited to the 2024 World Children&rsquo;s Festival</li>
+                        <li>Become a champion for children&rsquo;s creative and empathic development</li>
+                    </ul>
+                    <span>ICAF Members donate a minimum of $100 annually.</span>
+                </div>
+                <a class="icaf-button" href="/membership.html">
+                    <div>
+                        <span>Apply Here</span>
+                    </div>
+                </a>
             </div>
         </div>
 
@@ -135,8 +219,7 @@
         <div class="section-title">Human Security</div>
         <div class="section-description">
             <span>
-                The United Nation's human security framework is as important as the environmental, social, and
-                governance (ESG) factors. See how children depict and describe their human security perspectives.
+                Sixteen students limn their perspectives about the United Nations Human Security for All Campaign.
             </span>
         </div>
         <div class="row carousel-wrapper">
@@ -150,11 +233,11 @@
                             <img class="flag" src="/resource/image/carousel/flag1.png">
                             SHU-YEN (COCO) Yeh, 14
                         </h3>
-                        <p>&#8220;Taiwan is quite fair in gender equality, and women are able to enjoy equal
+                        <p>&ldquo;Taiwan is quite fair in gender equality, and women are able to enjoy equal
                             education and working opportunities. Long ago, our female ancestors made fine needlework to
                             help the family. Those with exquisite work would earn special
                             tattoos on their hands, which symbolize their outstanding craftsmanship and social
-                            status...&#8221;</p>
+                            status...&rdquo;</p>
                     </div>
                 </div>
                 <div class="slide full">
@@ -165,11 +248,11 @@
                             <img class="flag" src="/resource/image/carousel/flag1.png">
                             SHU-YEN (COCO) Yeh, 14
                         </h3>
-                        <p>&#8220;Taiwan is quite fair in gender equality, and women are able to enjoy equal
+                        <p>&ldquo;Taiwan is quite fair in gender equality, and women are able to enjoy equal
                             education and working opportunities. Long ago, our female ancestors made fine needlework to
                             help the family. Those with exquisite work would earn special
                             tattoos on their hands, which symbolize their outstanding craftsmanship and social
-                            status...&#8221;</p>
+                            status...&rdquo;</p>
                     </div>
                 </div>
                 <div class="slide partial">
@@ -178,11 +261,11 @@
                         <img class="artist" src="/resource/image/carousel/artist2.png">
                         <h3><img class="flag" src="/resource/image/carousel/flag2.png"> TABATHA Araneo, 12
                         </h3>
-                        <p>&#8220;My work represents the inequality of access to resources in the world. I
+                        <p>&ldquo;My work represents the inequality of access to resources in the world. I
                             sought to reflect how a few have access to much and how many have access to nothing. At the
                             same time, for those few, the fact of being privileged by an
                             unjust social system represents a latent threat, which is represented by the hands that lurk
-                            from the confines of the work.&#8221;</p>
+                            from the confines of the work.&rdquo;</p>
                     </div>
                 </div>
                 <div class="slide full">
@@ -191,11 +274,11 @@
                         <img class="artist" src="/resource/image/carousel/artist2.png">
                         <h3><img class="flag" src="/resource/image/carousel/flag2.png"> TABATHA Araneo, 12
                         </h3>
-                        <p>&#8220;My work represents the inequality of access to resources in the world. I
+                        <p>&ldquo;My work represents the inequality of access to resources in the world. I
                             sought to reflect how a few have access to much and how many have access to nothing. At the
                             same time, for those few, the fact of being privileged by an
                             unjust social system represents a latent threat, which is represented by the hands that lurk
-                            from the confines of the work.&#8221;</p>
+                            from the confines of the work.&rdquo;</p>
                     </div>
                 </div>
                 <div class="slide partial">
@@ -203,10 +286,10 @@
                     <div class="description">
                         <img class="artist" src="/resource/image/carousel/artist3.png">
                         <h3><img class="flag" src="/resource/image/carousel/flag3.png"> JACK Zhu, 16</h3>
-                        <p>&#8220;Today's world is an insecure place, especially in poverty-striken and
+                        <p>&ldquo;Today's world is an insecure place, especially in poverty-striken and
                             war-torn areas. My artwork highlights UN peacekeepers helping provide human security in the
                             Darfur region to ensure that the children grow up in a secure environment,
-                            and can as a result become education to better themselves.&#8221;</p>
+                            and can as a result become education to better themselves.&rdquo;</p>
                     </div>
                 </div>
                 <div class="slide full">
@@ -214,10 +297,10 @@
                     <div class="description">
                         <img class="artist" src="/resource/image/carousel/artist3.png">
                         <h3><img class="flag" src="/resource/image/carousel/flag3.png"> JACK Zhu, 16</h3>
-                        <p>&#8220;Today's world is an insecure place, especially in poverty-striken and
+                        <p>&ldquo;Today's world is an insecure place, especially in poverty-striken and
                             war-torn areas. My artwork highlights UN peacekeepers helping provide human security in the
                             Darfur region to ensure that the children grow up in a secure environment,
-                            and can as a result become education to better themselves.&#8221;</p>
+                            and can as a result become education to better themselves.&rdquo;</p>
                     </div>
                 </div>
                 <div class="slide partial">
@@ -226,9 +309,9 @@
                         <img class="artist" src="/resource/image/carousel/artist4.png">
                         <h3><img class="flag" src="/resource/image/carousel/flag4.png"> LEYLI Musayeva, 10
                         </h3>
-                        <p>&#8220;You can accomplish by kindness what you cannot by force. I would like to see our world
+                        <p>&ldquo;You can accomplish by kindness what you cannot by force. I would like to see our world
                             full
-                            of kindness because it can save the world&#8221;</p>
+                            of kindness because it can save the world&rdquo;</p>
                     </div>
                 </div>
                 <div class="slide full">
@@ -237,9 +320,9 @@
                         <img class="artist" src="/resource/image/carousel/artist4.png">
                         <h3><img class="flag" src="/resource/image/carousel/flag4.png"> LEYLI Musayeva, 10
                         </h3>
-                        <p>&#8220;You can accomplish by kindness what you cannot by force. I would like to see our world
+                        <p>&ldquo;You can accomplish by kindness what you cannot by force. I would like to see our world
                             full
-                            of kindness because it can save the world&#8221;</p>
+                            of kindness because it can save the world&rdquo;</p>
                     </div>
                 </div>
                 <div class="goRight"><img src="/resource/image/carousel/Right.png"></div>
@@ -247,99 +330,29 @@
         </div>
 
         <!-- WCF video -->
-        <div class="videoContainer-background">
-            <div class="section-title">World Children's Festival</div>
-            <div id="videoContainer">
-                <video loop muted autoplay playsinline>
-                    <source src="/resource/video/wcf-full-720p.mp4" type="video/mp4">
-                    <source src="/resource/video/wcf-full-360p.mp4" type="video/mp4">
-                    Something went wrong?
-                </video>
-                <div id="volumeControl">
-                    <img src="/resource/image/vol-icon.png" alt="Volume On">
-                    <img src="/resource/image/vol-muted-icon.png" alt="Volume Muted">
+        <div class="section-title">World Children's Festival</div>
+        <div id="videoContainer">
+            <video loop muted autoplay playsinline>
+                <source src="/resource/video/wcf-full-720p.mp4" type="video/mp4">
+                <source src="/resource/video/wcf-full-360p.mp4" type="video/mp4">
+                Something went wrong?
+            </video>
+            <div id="playControl">
+                <div class="play hidden">
+                    <svg height="66" width="66" viewBox="-10 0 66 66">
+                        <path opacity="0.8" d="M56.8762 33.3195L0.788586 65.7017L0.788589 0.937276L56.8762 33.3195Z" />
+                    </svg>
+                </div>
+                <div class="pause">
+                    <svg width="66" height="66" viewBox="0 0 43 43">
+                        <path d="M24.5 29.75V12.25H29.5V29.75H24.5ZM14.5 29.75V12.25H19.5V29.75H14.5Z" />
+                    </svg>
                 </div>
             </div>
-        </div>
-
-        <!-- What We Do -->
-        <div class="section-title">What We Do</div>
-        <div class="section-description">
-            <span>
-                ICAF inspires students to boldly step beyond the boundaries set before them by envisioning
-                a creative-empathic world where diversity and differences enhance the fractal of human discovery and
-                evolution.
-            </span>
-        </div>
-        <div class="row" id="whatWeDo">
-            <ul>
-                <li>
-                    <div class="wwd-card">
-                        <img src="/resource/image/whatwedo/ArtsOlympiad.png" class="card-img" alt="Arts Olympiad">
-                        <div class="card-link-wrapper">
-                            <a class="icaf-button" href="#">
-                                <div>
-                                    <span>Arts Olympiad</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="wwd-description">
-                        An art and sports program that fosters creativity and reduces obesity.
-                    </div>
-                </li>
-                <li>
-                    <div class="wwd-card">
-                        <img src="/resource/image/whatwedo/WorldChildrenFestival.png" class="card-img"
-                            alt="World Children's Festival">
-                        <div class="card-link-wrapper">
-                            <a class="icaf-button" href="#">
-                                <div>
-                                    <span>World Children's Festival</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="wwd-description">
-                        A transformative experience that offsets Adverse Childhood Experiences
-                        and severs the intergenerational transmission of trauma and hatred.
-                    </div>
-                </li>
-                <li>
-                    <div class="wwd-card">
-                        <img src="/resource/image/whatwedo/InteractiveExhibitions.png" class="card-img"
-                            alt="Interactive Exhibition" id="InteractiveExhibitions">
-                        <div class="card-link-wrapper">
-                            <a class="icaf-button" href="#">
-                                <div>
-                                    <span>Interactive Exhibition</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="wwd-description">
-                        Creative activities to facilitate collaborative innovation by
-                        kindling the inner child of business executives.
-                    </div>
-                </li>
-                <li>
-                    <div class="wwd-card">
-                        <img src="/resource/image/whatwedo/ChildArtMagazine.png" class="card-img"
-                            alt="ChildArt Magazine">
-                        <div class="card-link-wrapper">
-                            <a class="icaf-button" href="#">
-                                <div>
-                                    <span>ChildArt Magazine</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="wwd-description">
-                        An ad-free quarterly
-                        that inspires learners of all ages and grows global competencies.
-                    </div>
-                </li>
-            </ul>
+            <div id="volumeControl">
+                <img src="/resource/image/vol-icon.png" class="hidden" alt="Volume On">
+                <img src="/resource/image/vol-muted-icon.png" alt="Volume Muted">
+            </div>
         </div>
 
         <!-- Footer -->

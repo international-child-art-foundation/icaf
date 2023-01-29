@@ -4,14 +4,28 @@
 <head>
     <title>About | Why ICAF</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/mission/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/about/why-icaf.css" />
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/bootstrap.min.js" defer></script>
+    <script src="/JS/swiper-bundle.min.js"></script>
     <script>
         $(document).ready(function () {
             for (let el of $('[use-snippet]')) {
                 $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
             }
+
+            // Gallery
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: "auto",
+                centeredSlides: true,
+                spaceBetween: 80,
+                initialSlide: 2,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
         });
     </script>
 </head>
@@ -27,11 +41,134 @@
         <!-- Title -->
         <div class="page-title">WHY ICAF</div>
 
-        <p style="margin: 100px 190px">
-            I am a new page.
-            <br>
-            Please build me.
-        </p>
+        <!-- Quote -->
+        <div class="quote">A lack of creativity impedes innovation and prosperity,
+            while a lack of mutual empathy endangers peace and democracy.</div>
+
+        <!-- Image -->
+        <div class="image"><img src="/resource/image/about/why-icaf/why.png"></div>
+
+        <!-- Contents -->
+        <div class="contents">
+            <div class="section-titles">Problem Statement</div>
+            <div class="sections">Creativity researcher KH Kim found that American creativity declined from the 1990s to
+                2008, and the slide since 2008 may even be worse. Creativity guru Ken Robinson averred that children get
+                schooled out of their creativity. E. Paul Torrance, widely regarded as the &ldquo;father&rdquo; of
+                creativity, discovered the &ldquo;4th -grade&rdquo; in children&rsquo;s creativity. Once this slump
+                gains a foothold, it holds back divergent and critical thinking that propels invention and innovation.
+                <br>
+                <br>
+                Though creativity is treated as something inherently positive, it is morally neutral. Malevolent or dark
+                creativity intentionally harms the perceived opponents or outgroups. What makes creativity positive for
+                the advancement of the human species and the protection of planet Earth? Empathy. Primatologist Frans de
+                Waal defines empathy as humankind &ldquo;survival package&rdquo;. Empathy could well be the mother of
+                all emotions.
+                <br>
+                <br>
+                Recent neuroscientific findings portray the human brain as a creative powerhousehardwired for empathy
+                because of &ldquo;mirror neurons&rdquo;. Adverse childhood experiences (ACEs) or the transmission of
+                fear, hatred, or trauma passed from one generation to the next, like physical traits or melanin, can
+                muddy the mirror neurons, making activation necessary.
+            </div>
+            <div class="section-titles">Why the arts?</div>
+            <div class="sections">In its 2021 report: Art for Life&rsquo;s Sake: The Case for Arts Education, the
+                American Academy of Arts & Sciences provides &ldquo;evidence of the attributes, values, and skills that
+                come from arts education, including social and emotional development, improvements in school engagement,
+                as well as vital civic and social participation.&rdquo; In sum, the arts can change a person. Art
+                programs are also cost effective compared to other interventions. Notably, the concepts of creativity
+                and empathy are both rooted in the arts; hence, the arts can help develop these vital human attributes.
+            </div>
+            <div class="section-titles">Theory of Change</div>
+            <div class="sections">Founded in 1997 to serve American children as their national arts organization and the
+                world&rsquo;s children as their global arts organization, the International Child Art Foundation (ICAF)
+                is a 501(c)(3) nonprofit with Federal Tax ID 52-2032649.
+                <br>
+                <br>
+                Mission: To cultivate American children&rsquo;s creativity and grow mutual empathy among them and their
+                peers worldwide as building blocks for a prosperous and peaceful future.
+                <br>
+                <br>
+                Vision: To democratize creativity for the Fourth Industrial Revolution and mainstream
+                mutual empathy for &ldquo;a more perfect union&rdquo;.
+                <br>
+                <br>
+                ICAF&rsquo;s programmatic approach is based on the belief that creativity can be learned while empathy
+                can be taught. Its unique pedagogy for children&rsquo;s creative and empathic development draws upon
+                over twenty-five years of experience working with youth nationwide and worldwide. By employing the arts
+                as a dynamic activity, ICAF helps children reframe their self-identity, first as
+                &ldquo;artist-athletes&rdquo;
+                for
+                self-improvement, then as &ldquo;creative-empaths&rdquo; for positive social change.
+            </div>
+            <div class="section-titles">The Arts Olympiad</div>
+            <div class="sections">ICAF&rsquo;s Arts Olympiad has grown over the years into the world&rsquo;s largest
+                school art program. The Arts Olympiad inspires students to embrace the &ldquo;Artist-Athlete
+                Ideal&rdquo; of the creative mind and healthy body (mente sana in corpo sano). Through structured lesson
+                plans, ICAF awakens the dormant &ldquo;inner-artists&rdquo; and the slumbering
+                &ldquo;inner-athletes&rdquo; for students to begin thinking of themselves and others as
+                &ldquo;artist-athletes&rdquo; — not jocks, nerds, techies, or artsy. This revised self-image solidifies
+                when students limn themselves as artist-athletes in the artwork they produce under the Arts Olympiad.
+                <br>
+                <br>
+                Blending the artistic and the athletic mindsets nurtures creativity, builds confidence, and boosts
+                resilience, enabling students to overcome fears, anxieties, or adverse childhood experiences (ACEs).
+                <br>
+                <br>
+                Creativity is a leadership skill for the privileged but a survival skill for the poor because it levels
+                the playing field and can empower disadvantaged students to break the vicious cycle of intergenerational
+                poverty.
+            </div>
+            <div class="section-titles">World Children&rsquo;s Festival</div>
+            <div class="sections">ICAF brings together young artist-athletes from across America and nearly 100
+                participating countries to its festivals, traditionally held at The National Mall across the U.S.
+                Capitol. ICAF choreographs the festival&rsquo;s workshops, activities, and training to produce a
+                transformative experience that infuses creativity with empathy through co-creation and collaborative
+                mural-making.
+                <br>
+                <br>
+                Once emboldened as &ldquo;creative-empaths&rdquo;, children can disrupt the intergenerational
+                transmission of trauma and hatred to work together with outgroups for a prosperous and peaceful future.
+            </div>
+            <div class="section-titles">Take Action</div>
+            <div class="sections">Creativity and empathy are the building blocks for a better world. Children need your
+                support.</div>
+        </div>
+
+        <!-- images title -->
+        <div class="materials">Helpful Materials</div>
+        <!-- images -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="https://ptaourchildren.org/how-to-prepare-children-for-the-fourth-industrial-revolution/"
+                        target="_blank">
+                        <img src="/resource/image/about/why-icaf/Rectangle 184 (1).png" class="card-img">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/resource/pdfs/CreativeEmpaths.pdf" target="_blank">
+                        <img src="/resource/image/about/why-icaf/Rectangle 184.png" class="card-img">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/resource/pdfs/The Lancelet.pdf" target="_blank">
+                        <img src="/resource/image/about/why-icaf/Rectangle 185.png" class="card-img">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.amazon.com/dp/B00D7MQ2PU" target="_blank">
+                        <img src="/resource/image/about/why-icaf/Rectangle 186.png" class="card-img">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/resource/pdfs/Dr. Ishaq interview with Cybertherapy & Rehabilitation.pdf" target="_blank">
+                        <img src="/resource/image/about/why-icaf/Rectangle 184 copy.png" class="card-img">
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+        </div>
 
         <!-- Footer -->
         <div use-snippet="/snippets/footer.snip.html"></div>

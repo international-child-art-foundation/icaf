@@ -5,24 +5,25 @@
 @use "../icaf-footer";
 
 .description {
-  margin-top: 55px;
-  margin-left: 189px;
-  margin-bottom: 93px;
-  width: 1061px;
-  height: 592px;
+  margin: 90px auto 0px;
+  width: 920px;
+  margin: 90px auto 125px;
   display: flex;
 
   img {
-    width: 1061px;
-    height: 592px;
+    width: 920px;
+    height: 513.33px;
+    border-radius: 20px;
   }
 
   div {
     position: absolute;
-    width: 585px;
-    height: 342px;
-    margin-top: 168px;
-    margin-bottom: 82px;
+  }
+
+  .climate-change {
+    width: 507.26px;
+    height: 296.55px;
+    margin-top: 145.54px;
     background: $ICAF_YELLOW;
     opacity: 0.8;
     display: flex;
@@ -30,69 +31,65 @@
     justify-content: center;
 
     p {
-      max-width: 497px;
+      max-width: 430.95px;
       font-weight: 700;
-      font-size: 24px;
-      line-height: 33px;
+      font-size: 18px;
+      line-height: 25px;
       color: $ICAF_BLUE;
     }
   }
-}
 
-.section1 {
-  margin-left: 194px;
-  max-width: 1056px;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 33px;
-}
-
-.imgs {
-  display: grid;
-  grid-template-columns: 387.43px 384.86px 234.86px;
-  grid-gap: 24.86px 24px;
-  grid-template-rows: 264.86px;
-  margin-top: 70.14px;
-  margin-left: 194px;
-  margin-bottom: 44px;
-
-  .img1 {
-    width: 387.43px;
-    height: 264.86px;
-  }
-
-  .img2 {
-    width: 384.86px;
-    height: 264.86px;
-  }
-
-  .img3 {
-    width: 234.86px;
-    height: 264.86px;
+  .name {
+    margin-top: 475.18px;
+    margin-left: 502.05px;
+    font-size: 24px;
+    line-height: 33px;
+    color: #ffffff;
   }
 }
 
-.section2 {
-  margin-left: 192px;
+.content {
+  margin: 125px auto;
   max-width: 1060px;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 33px;
-}
 
-.videos {
-  margin-top: 85px;
-  margin-left: 190px;
-  margin-bottom: 150px;
+  .sections {
+    font-size: 24px;
+    line-height: 33px;
+  }
 
-  iframe {
-    &:not(:last-child) {
-      margin-right: 50px;
+  .imgs {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    display: flex;
+    column-gap: 26px;
+
+    .img1 {
+      width: 387.43px;
+      height: 264.86px;
     }
 
-    width: 505px;
-    height: 284px;
-    border-radius: 20px;
+    .img2 {
+      width: 384.86px;
+      height: 264.86px;
+    }
+
+    .img3 {
+      width: 234.86px;
+      height: 264.86px;
+    }
+  }
+
+  .videos {
+    margin-top: 59.82px;
+    display: grid;
+    grid-template-columns: repeat(2, 505px);
+    column-gap: 50px;
+
+    iframe {
+      width: 505px;
+      height: 284px;
+      border-radius: 20px;
+    }
   }
 }
 

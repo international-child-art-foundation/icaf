@@ -3,3 +3,200 @@
 @use "../icaf-general";
 @use "../icaf-nav";
 @use "../icaf-footer";
+
+.mural-making-image {
+  margin-left: 284px;
+  margin-top: 90px;
+  margin: 90px auto 0;
+  width: fit-content;
+  img {
+    width: 920px;
+    height: 517px;
+    border-radius: 20px;
+  }
+}
+
+.section-titles {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  margin-left: 191px;
+  color: $ICAF_BLUE;
+  &-about {
+    margin-top: 125px;
+  }
+  &-program-gallery {
+    margin-top: 66px;
+  }
+  &-helpful {
+    margin-top: 60px;
+  }
+}
+
+.about-container {
+  .about-text {
+    margin: 0 auto;
+    max-width: 1060px;
+    font-size: 24px;
+    line-height: 33px;
+    margin-top: 40px;
+    color: #000000;
+    ul {
+      padding-left: 2rem;
+    }
+  }
+  .imgs {
+    display: grid;
+    grid-template-columns: 344px 340px 342px;
+    grid-gap: 20px 18px;
+    width: fit-content;
+    margin: 40px auto 0;
+
+    .img1 {
+      width: 344px;
+      height: 257px;
+    }
+
+    .img2 {
+      width: 340px;
+      height: 257px;
+    }
+
+    .img3 {
+      width: 342px;
+      height: 257px;
+    }
+
+    .program-description {
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      color: $ICAF_GRAY;
+    }
+  }
+}
+
+.program-gallery-top {
+  width: 1464px;
+  height: 55px;
+  margin-top: 35px;
+}
+.program-gallery-main {
+  width: 1440px;
+  height: 1528px;
+  background-color: rgba(19, 67, 128, 0.1);
+  .first-program {
+    font-weight: 600;
+    font-size: 32px;
+    padding-top: 49px;
+    line-height: 44px;
+    text-align: center;
+    color: $ICAF_BLUE;
+  }
+  .underline {
+    height: 5px;
+    margin: 0 auto;
+    background-color: $ICAF_YELLOW;
+    &-1 {
+      width: 251px;
+    }
+    &-2 {
+      width: 190px;
+    }
+  }
+  video {
+    width: 808px;
+    height: 604px;
+    padding-top: 50px;
+    margin-left: 350px;
+  }
+  .second-program {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    padding-top: 70px;
+    text-align: center;
+    color: $ICAF_BLUE;
+  }
+  .swiper {
+    margin-top: 50px;
+    width: 1440px;
+    height: 542px;
+    .swiper-slide {
+      width: 719px;
+      &:nth-child(3) {
+        width: 392px;
+      }
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .swiper-navBtn {
+      height: 64px;
+      width: 64px;
+      margin-top: 40px;
+      color: $ICAF_WHITE;
+      background-color: $ICAF_BLUE;
+      border-radius: 50%;
+      transition: color 0.3s ease;
+    }
+    .swiper-navBtn:hover {
+      color: $ICAF_WHITE;
+    }
+    .swiper-navBtn::before,
+    .swiper-navBtn::after {
+      font-size: 30px;
+    }
+    .swiper-button-next {
+      margin-right: 100px;
+      align-items: center;
+    }
+    .swiper-button-prev {
+      margin-left: 100px;
+      align-items: center;
+    }
+  }
+  .swiper-pagination {
+    position: relative;
+    margin-top: 33px;
+    .swiper-pagination-bullet {
+      width: 11px;
+      height: 11px;
+      margin: 10px;
+      background-color: $ICAF_GRAY;
+      opacity: 0.2;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: $ICAF_YELLOW;
+      opacity: 1;
+    }
+    @media screen and (max-width: 768px) {
+      .slide-content {
+        margin: 0 10px;
+      }
+      .swiper-navBtn {
+        display: none;
+      }
+    }
+  }
+}
+
+.hm-content {
+  width: 1085px;
+  height: 165px;
+  margin: 40px 190px 220px;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+  ul {
+    padding-left: 2rem;
+    a {
+      font-size: 18px;
+      line-height: 24.55px;
+      color: $ICAF_BLUE;
+    }
+  }
+}

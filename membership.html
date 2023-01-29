@@ -2,16 +2,42 @@
 <html lang="en">
 
 <head>
-    <title>ICAF | Gallery</title>
+    <title>ICAF | Membership</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/membership.css" />
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/bootstrap.min.js" defer></script>
     <script>
+        $.fn.smoothScrollTo = function (buffer) {
+            const $this = this;
+            buffer = buffer || 0;
+            if ($this.is(':visible')) {
+                $(document.scrollingElement).animate({
+                    scrollTop: ($this.offset().top - buffer)
+                }, 500);
+            }
+        };
+
         $(document).ready(function () {
             for (let el of $('[use-snippet]')) {
                 $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
             }
+
+            $('#membershipForm').on('submit', e => {
+                e.preventDefault();
+
+                $.post('/api/send-mail',
+                    Object.fromEntries(new FormData($('#membershipForm')[0])),
+                    res => {
+                        if (res === 'success') {
+                            $('.success-feedback').show().smoothScrollTo(100);
+                        } else {
+                            console.error(res)
+                            //TODO: show error        
+                        }
+                    }
+                );
+            });
         });
     </script>
 </head>
@@ -27,11 +53,93 @@
         <!-- Title -->
         <div class="page-title">MEMBERSHIP</div>
 
-        <p style="margin: 100px 190px">
-            I am a new page.
-            <br>
-            Please build me.
-        </p>
+        <div class="content">
+            Apply to join the children&rsquo;s movement<br>
+            to democratize creativity for the Fourth Industrial Revolution<br>
+            and develop empathy for a &ldquo;more perfect union.&rdquo;
+        </div>
+
+        <div class="success-feedback">Your request has been submitted.<br />
+            An ICAF member will reach out to you shortly.</div>
+
+        <div class="note">
+            Please complete the following information to initiate your membership with ICAF!<br>
+            Our membership period is continuous until cancelled by the member or ICAF.
+        </div>
+
+        <div class="input-container">
+            <form id="membershipForm">
+                <!-- Use P so label and input can group together with display:grid -->
+                <p class="area1">
+                    <label for="firstname">First Name*</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </p>
+                <p class="area2">
+                    <label for="lastname">Last Name*</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </p>
+                <p class="area3">
+                    <label for="affiliation">Affiliation (i.e., school, organization, company)</label>
+                    <input type="text" id="affiliation" name="affiliation">
+                </p>
+                <p class="area4">
+                    <label for="address">Address</label>
+                    <input type="text" id="Address" name="Address">
+                </p>
+                <p class="area5">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city">
+                </p>
+                <p class="area6">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" name="country">
+                </p>
+                <p class="area7">
+                    <label for="zipcode">Zipcode</label>
+                    <input type="text" id="zipcode" name="zipcode">
+                </p>
+                <p class="area8">
+                    <label for="email">Email Address*</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p class="area9">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone">
+                </p>
+                <div class="middleline"></div>
+                <p class="area10">
+                    <label for="aboutMe">About Me*</label>
+                    <textarea id="aboutMe" name="aboutMe" required></textarea>
+                </p>
+                <p class="area11">
+                    <label for="whyJoin">Why do I want to join this national and global movement?*</label>
+                    <textarea id="whyJoin" name="whyJoin" required></textarea>
+                </p>
+                <p class="area12">
+                    <label for="howSupport">How will I support and help grow this movement?*</label>
+                    <textarea id="howSupport" name="howSupport" required></textarea>
+                </p>
+                <p class="area13">
+                    <label for="website">Website</label>
+                    <input type="text" id="website" name="website">
+                </p>
+                <p class="area14">
+                    <label for="twitter">Twitter</label>
+                    <input type="text" id="twitter" name="twitter">
+                </p>
+                <p class="area15">
+                    <label for="facebook">Facebook</label>
+                    <input type="text" id="facebook" name="facebook">
+                </p>
+                <p class="area16">
+                    <label for="instagram">Instagram</label>
+                    <input type="text" id="instagram" name="instagram">
+                </p>
+                <input type="hidden" name="type" value="membership" />
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
 
         <!-- Footer -->
         <div use-snippet="/snippets/footer.snip.html"></div>

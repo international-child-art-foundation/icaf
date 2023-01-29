@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+@use "../icaf-colors" as *;
+
+@use "../icaf-general";
+@use "../icaf-nav";
+@use "../icaf-footer";
+
+.top-description {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  margin-top: 90px;
+  text-align: center;
+  color: $ICAF_BLUE;
+}
+.top-right-image-wrapper {
+  position: relative;
+  width: 1060px;
+  margin: 0 auto;
+  img {
+    position: absolute;
+    right: 0;
+    bottom: -37px;
+  }
+}
+
+.main-image-wrapper {
+  margin: 104px auto 0;
+  width: fit-content;
+  border-radius: 20px;
+  .caption {
+    color: #575756;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 20px;
+    text-align: right;
+  }
+}
+
+.bottom-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 22px;
+  margin: 75px auto 220px;
+  width: fit-content;
+}

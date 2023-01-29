@@ -2,7 +2,7 @@
 .nav-wrapper {
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 21;
   .navbar {
     padding: 21px 40px 20px 47px;
     background: white;
@@ -175,6 +175,11 @@
           }
         }
       }
+    }
+    .navbar-toggler-icon {
+      width: 2.5em;
+      height: 2.5em;
+      background-image: url(/resource/image/nav/hamburger-50.png);
     }
   }
 

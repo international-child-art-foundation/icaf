@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About | Contact Us</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/art-lovers.css" />
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.min.js" defer></script>
+    <script>
+        $(document).ready(function () {
+            for (let el of $('[use-snippet]')) {
+                $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
+            }
+
+            $('#contactUsForm').on('submit', e => {
+                e.preventDefault();
+
+                $.post('/api/send-mail',
+                    Object.fromEntries(new FormData($('#contactUsForm')[0])),
+                    res => {
+                        if (res === 'success') {
+                            $('#contactUsForm')[0].reset();
+                            $('.success-feedback').show();
+                        } else {
+                            console.error(res)
+                            //TODO: show error
+                        }
+                    }
+                );
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Nav -->
+        <div use-snippet="/snippets/nav.snip.html"></div>
+
+        <!-- Breadcrumb -->
+        <div class="icaf-breadcrumb">ABOUT > CONTACT US</div>
+
+        <!-- Title -->
+        <div class="page-title">ART LOVERS</div>
+
+        <!-- Description -->
+        <div class="description">
+            For a birthday, wedding or any celebration, 
+            your donation will support our art programs for underprivileged children
+        </div>
+
+        <!-- Images -->
+        <div class="images">
+            <img class="img1" src="/resource/image/art-lover/2013 Saving Endangered Species Youth Art Contest 3.png">
+            <img class="img2" src="/resource/image/art-lover/2013 Saving Endangered Species Youth Art Contest 4.png">
+        </div>
+
+        
+
+        <div class="main-background">
+            <div class="input-container">
+                <div class="success-feedback">Thanks for submitting this form!</div>
+                <form id="Form">
+                    <label for="name">Name of the art lover:*</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">His/her/their email:*</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="ocaasion">On the occasion of:*</label>
+                    <input type="text" id="ocaasion" name="Ocassion">
+
+                    <label for="message">Your message:*</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <input type="hidden" name="type" value="contact-us" />
+                    <input type="submit" value="Send Message">
+                </form>
+                <div class="notes">"Note: All the * fields are mandatory"</div>
+            </div>
+            
+
+        </div>
+
+        
+
+        <!-- Footer -->
+        <div use-snippet="/snippets/footer.snip.html"></div>
+    </div>
+</body>
+
+</html>

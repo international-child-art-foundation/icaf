@@ -1,154 +1,151 @@
 @use "icaf-colors" as *;
 
 footer {
-  border: 1px solid $ICAF_BLUE;
-  .footer {
-    background-color: $ICAF_BLUE;
-    color: $ICAF_WHITE;
-    height: 338px;
-    padding: 71px 104px;
-    display: flex;
-    column-gap: 75px;
-    > div {
-      display: flex;
-      flex-direction: column;
-      row-gap: 24px;
+  // border: 1px solid $ICAF_BLUE;
 
-      &.icaf-plug {
-        margin-top: 16px;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 27px;
-        max-width: 413px;
-        margin-right: -37px; // Make this gap 38px
+  .footer-top {
+    display: grid;
+    grid-template-columns: 55.38% auto;
+    grid-template-rows: repeat(2, auto);
+    gap: 36px 14%;
+    padding: 118px 70px 36px;
+
+    color: $ICAF_BLUE;
+    font-size: 18px;
+    line-height: 25px;
+
+    .icaf-plug {
+      max-width: 720px;
+      // max-width: 50%;
+      font-size: 24px;
+      line-height: 33px;
+    }
+    .newsletter {
+      width: 375px;
+      .title {
+        font-size: 32px;
+        line-height: 44px;
+        font-weight: 600;
       }
-      &.donate-contact {
-        margin-top: 26px;
-        row-gap: 35px;
-        max-width: 380px;
-        .icaf-button {
-          div {
-            width: 186px;
-            height: 54px;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            font-weight: 900;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 9px;
-            span {
-              display: flex;
-              align-content: center;
-              column-gap: 13px;
-            }
-          }
-          &.alt {
-            div {
-              background-color: $ICAF_BLUE;
-              color: $ICAF_YELLOW;
-              border: 1px solid $ICAF_YELLOW;
-              filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-              box-shadow: unset;
-            }
-          }
-          &:hover {
-            div {
-              color: $ICAF_WHITE;
-            }
-            svg {
-              fill: #ff065bde;
-            }
-            &.alt div {
-              background-color: $ICAF_YELLOW;
-              color: $ICAF_BLUE;
-            }
+      p {
+        margin: 24px 0 11px;
+      }
+      #subscribeForm {
+        display: flex;
+        column-gap: 15px;
+
+        input {
+          background: #e7ecf2;
+          border-radius: 16px;
+          width: 260px;
+          height: 56px;
+          padding-left: 17px;
+          outline: 0;
+          border: 0;
+
+          &::placeholder {
+            font-size: 18px;
+            line-height: 25px;
+            // letter-spacing: 0.1em;
+            color: $ICAF_GRAY;
           }
         }
-      }
-      &.follow-us {
-        width: 162px;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 32px;
-        letter-spacing: 0.1px;
-        text-align: center;
-        .social-media {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          grid-template-rows: repeat(2, 1fr);
-          gap: 14.2px 7.9px;
-          img {
-            width: 34.8px;
-            height: 35.4px;
-          }
-        }
-      }
-      &.newsletter {
-        width: 283px;
-        font-weight: 700;
-        text-align: center;
-        span:first-of-type {
-          font-size: 24px;
-          line-height: 33px;
-        }
-        span:nth-of-type(2) {
-          font-size: 16px;
+        button {
+          width: 100px;
+          height: 56px;
+          font-weight: 900;
+          font-size: 14px;
           line-height: 19px;
-        }
-        .email-input {
-          margin-top: 3px;
-
-          form {
-            display: flex;
-            input {
-              border-radius: 9px 0px 0px 9px;
-              width: 221px;
-              height: 40px;
-              padding-left: 10px;
-              outline: 0;
-              border: 0;
-
-              &::placeholder {
-                font-size: 12px;
-                line-height: 16px;
-                letter-spacing: 0.1em;
-                color: #b7b7bb;
-              }
-            }
-            button {
-              font-weight: 700;
-              font-size: 12px;
-              color: $ICAF_BLUE;
-              background: $ICAF_YELLOW;
-              border-radius: 0px 9px 9px 0px;
-              width: 62px;
-              height: 40px;
-              border: 0;
-            }
-          }
+          letter-spacing: 0.1em;
+          color: $ICAF_BLUE;
+          background: $ICAF_YELLOW;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+            0px 8px 24px rgba(24, 39, 75, 0.08);
+          border-radius: 16px;
+          border: 0;
         }
       }
       .subscribe-success-feedback {
-        margin-top: 3px;
-        text-align: center;
+        // margin-top: 3px;
+        font-weight: 700;
         display: none;
       }
     }
+    .donate-contact {
+      display: flex;
+      column-gap: 40px;
+      margin-top: 20px;
+      row-gap: 35px;
+      .icaf-button {
+        div {
+          width: 200px;
+          height: 64px;
+          font-size: 14px;
+          font-weight: 19px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          font-weight: 900;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+            0px 8px 24px rgba(24, 39, 75, 0.08);
+          border-radius: 40px;
+          span {
+            display: flex;
+            align-content: center;
+            column-gap: 13px;
+            fill: $ICAF_YELLOW;
+          }
+        }
+        &.alt {
+          div {
+            background-color: $ICAF_BLUE;
+            color: $ICAF_YELLOW;
+          }
+        }
+        &:hover {
+          div {
+            color: $ICAF_WHITE;
+          }
+          svg {
+            fill: #ff065bde;
+          }
+          &.alt div {
+            background-color: $ICAF_YELLOW;
+            color: $ICAF_BLUE;
+          }
+        }
+      }
+    }
+    .follow-us {
+      .social-media {
+        display: flex;
+        column-gap: 8px;
+        margin-top: 24px;
+        img {
+          width: 35px;
+          height: 35px;
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+      }
+    }
   }
-  .copyright {
-    height: 79px;
-    background: $ICAF_WHITE;
+  .footer-bottom {
+    background: url("/resource/image/footer/waves.png") no-repeat bottom;
+    background-size: 100% 185px;
+    color: $ICAF_WHITE;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     column-gap: 7px;
-    font-weight: 600;
+    height: 185px;
+    padding-bottom: 14px;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.2px;
-    color: #737373;
-    img {
-      width: 24px;
-      height: 24px;
+    position: relative;
+    #scrollToTop {
+      position: absolute;
+      right: 40px;
+      bottom: 41.5px;
     }
   }
 }

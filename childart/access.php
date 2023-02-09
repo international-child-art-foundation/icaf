@@ -88,94 +88,102 @@
 		<!-- <p align="left"><strong>Annual subscription is $30 (US) and $40 (International).</strong></p> -->
 		<div id="childartthemes">
 			<div>
+				<span class="exclude">January-March 2023:</span> The Power Of Words <br> Volume 23, Issue 1, Number 69
+				<div style="text-align:center">
+					<a href="/resource/flipbooks/ThePowerOfWords" target="_blank">
+						<img src="images/childart/PowerOfWords.jpg" alt="The Power of Words" height="50%" width="50%" /></a>
+				</div>
+			</div>
+			<div>
 				<span class="exclude">October-December 2022:</span> Young Leaders <br> Volume 22, Issue 4, Number 68
 				<div style="text-align:center">
 					<a href="/YoungLeaders/" target="_blank">
-						<img src="images/childart/YoungLeaders.png" alt="Children's Voices" height="50%" width="50%" /></a>
+						<img src="images/childart/YoungLeaders.png" alt="Young Leaders" height="50%" width="50%" /></a>
 				</div>
 			</div>
 			<div>
 				<span class="exclude">July-September 2022:</span> Human Security <br> Volume 22, Issue 3, Number 67
 				<div style="text-align:center">
 					<a href="/HumanSecurity/" target="_blank">
-						<img src="images/childart/Cover_HumanSecurity.png" alt="Children's Voices" height="50%" width="50%" /></a>
+						<img src="images/childart/Cover_HumanSecurity.png" alt="Human Security" height="50%" width="50%" /></a>
 				</div>
 			</div>
 			<div>
 				<span class="exclude">April-June 2022:</span> Artpreneurs <br> Volume 22, Issue 2, Number 66
 				<div style="text-align:center">
 					<a href="/Artpreneurs/" target="_blank">
-						<img src="images/childart/Cover_Artpreneurs.png" alt="Children's Voices" height="50%" width="50%" /></a>
+						<img src="images/childart/Cover_Artpreneurs.png" alt="Artpreneurs" height="50%" width="50%" /></a>
 				</div>
 			</div>
 			<div>
 				<span class="exclude">Jan-March 2022:</span> Creativity <br> Volume 22, Issue 1, Number 65
 				<div style="text-align:center">
 					<a href="/Creativity/" target="_blank">
-						<img src="images/childart/Cover_Creativity.jpg" alt="Children's Voices" height="50%" width="50%" /></a>
+						<img src="images/childart/Cover_Creativity.jpg" alt="Creativity" height="50%" width="50%" /></a>
 				</div>
 			</div>
 			<div>
 				<span class="exclude">Oct – Dec 2021:</span> 6th World Children’s Festival <br> Volume 21, Issue 4, Number 64
 				<div style="text-align:center">
 					<a href="/childart/2021WCF/" target="_blank">
-						<img src="images/childart/6th-World-Children-Festival.png" alt="Children's Voices" height="50%" width="50%" /></a>
+						<img src="images/childart/6th-World-Children-Festival.png" alt="6th World Children’s Festival" height="50%" width="50%" /></a>
 				</div>
 			</div>
 			<div>
 				<span class="exclude">July – Sept 2021:</span> Changing Environment <br> Volume 21, Issue 3, Number 63
 				<div style="text-align:center">
 					<a href="/ChangingEnvironment" target="_blank">
-						<img src="images/childart/COVER_Changing_Environment.jpg" alt="Children's Voices" height="50%" width="50%" /></a>
+						<img src="images/childart/COVER_Changing_Environment.jpg" alt="Changing Environment" height="50%" width="50%" /></a>
 				</div>
 			</div>
 			<div>
 				<span class="exclude">Apr - Jun 2021:</span> The Moral of Your Story <br> Volume 21, Issue 2, Number 62
 				<div style="text-align:center">
 					<a href="/TheMoralOfYourStory" target="_blank">
-						<img src="images/childart/shot.png" alt="Children's Voices" height="50%" width="50%" /></a>
+						<img src="images/childart/shot.png" alt="The Moral of Your Story" height="50%" width="50%" /></a>
 				</div>
 			</div>
 			<div>
 				<span class="exclude">Jan - Mar 2021:</span> Global Creative Leaders <br> Volume 21, Issue 1, Number 61
 				<div style="text-align:center">
 					<a href="/GlobalCreativeLeaders" target="_blank">
-						<img src="images/childart/Cover_GCL.jpg" alt="Children's Voices" height="50%" width="50%" /></a>
+						<img src="images/childart/Cover_GCL.jpg" alt="Global Creative Leaders" height="50%" width="50%" /></a>
 				</div>
 			</div>
 			<div>
 				<span class="exclude">Oct - Dec 2020:</span> ABCDstudy <br> Volume 20, Issue 2, Number 60
 				<div style="text-align:center">
 					<a href="/ABCDStudy" target="_blank">
-						<img src="images/childart/ChildArt_ABCDstudy_Oct-Dec2020.jpg" alt="Children's Voices" height="50%" width="50%" /></a>
+						<img src="images/childart/ChildArt_ABCDstudy_Oct-Dec2020.jpg" alt="ABCDstudy" height="50%" width="50%" /></a>
 				</div>
 			</div>
 			<div>
 				<span class="exclude">Jul - Sep 2020:</span> Art for Health <br> Volume 20, Issue 1, Number 59
 				<div style="text-align:center">
 					<a href="/ArtforHealth" target="_blank">
-						<img src="images/childart/COVER - ChildArt_Art for Health_July-Sept2020_page-0001.jpg" alt="Children's Voices" height="50%" width="50%" /></a>
+						<img src="images/childart/COVER - ChildArt_Art for Health_July-Sept2020_page-0001.jpg" alt="Art for Health" height="50%" width="50%" /></a>
 				</div>
 			</div>
 			<div>
 				<span class="exclude">Apr - Jun 2019:</span> Growing Empathy <br> Volume 19, Issue 2, Number 58
 				<div style="text-align:center">
 					<a href="Childart_Q2_2019_Empathy.pdf" target="_blank">
-						<img src="images/childart/childart_Q2_2019_empathy.png" alt="Children's Voices" height="50%" width="50%" /></a>
+						<img src="images/childart/childart_Q2_2019_empathy.png" alt="Growing Empathy" height="50%" width="50%" /></a>
 				</div>
 			</div>
 			<div>
 				<span class="exclude">Jan - Mar 2019:</span> Online Safety Makes a Happier World <br> Volume 19, Issue 1, Number 57
 				<div style="text-align:center">
 					<a href="ChildArt_Q1_2019_InternetSafety.pdf" target="_blank">
-						<img src="images/childart/childart_Q1_2019_InternetSafety.png" alt="Children's Voices" height="50%" width="50%" /></a>
+						<img src="images/childart/childart_Q1_2019_InternetSafety.png" alt="Online Safety Makes a Happier World" height="50%" width="50%" /></a>
 				</div>
 			</div>
 			<div>
 				<span class="exclude">Oct - Dec 2018:</span> VR+Education<br>
 				Volume 18, Issue 4, Number 56
 				<div style="text-align:center">
-					<a href="https://www.icaf.org/flipbooks/VR+Education" target="_blank"><img src="images/childart/ChildArt_VR_Education_Q4_2018.jpg" alt="Children's Voices" height="50%" width="50%" /></a>
+					<a href="https://www.icaf.org/flipbooks/VR+Education" target="_blank">
+						<img src="images/childart/ChildArt_VR_Education_Q4_2018.jpg" alt="VR+Education" height="50%" width="50%" /></a>
 				</div>
 			</div>
 			<div>

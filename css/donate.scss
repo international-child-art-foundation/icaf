@@ -196,44 +196,15 @@
 }
 
 .art-lover {
-  margin: 60px auto 0;
-  width: 1224px;
-  height: 210px;
-  display: flex;
+  margin-top: 86px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: $ICAF_GRAY;
 
-  .art-lover-image {
-    margin-left: 312px;
-
-    img {
-      width: 79px;
-      height: 79px;
-    }
-  }
-
-  .art-lover-words {
-    position: absolute;
-    max-width: 1224px;
-    margin-top: 86px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 49px;
-    text-align: center;
-    color: $ICAF_GRAY;
-
-    a {
-      color: $ICAF_YELLOW;
-    }
-  }
-
-  .letter-image {
-    position: absolute;
-    margin-top: 140px;
-    margin-left: 748px;
-
-    img {
-      width: 79px;
-      height: 79px;
-    }
+  a {
+    color: $ICAF_YELLOW;
   }
 }
 

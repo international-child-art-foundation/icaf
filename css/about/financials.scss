@@ -1,0 +1,75 @@
+@use "../icaf-colors" as *;
+
+@use "../icaf-general";
+@use "../icaf-nav";
+@use "../icaf-footer";
+
+.wave1 {
+  margin-top: 23px;
+}
+
+.description-wrapper {
+  background: rgba(19, 67, 128, 0.1);
+
+  .description {
+    max-width: 1060px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: $ICAF_BLUE;
+  }
+
+  .image-wrapper {
+    margin: 50px auto 0;
+    width: 920px;
+  }
+
+  .description2 {
+    max-width: 1060px;
+    margin: 50px auto 0;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: $ICAF_BLUE;
+  }
+}
+
+.partners {
+  max-width: 740px;
+  margin: 20px auto 0;
+  font-size: 24px;
+  line-height: 33px;
+
+  .partner-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: $ICAF_BLUE;
+    text-align: center;
+  }
+
+  ul {
+    margin-top: 40px;
+    padding-left: 2rem;
+  }
+}
+
+.content {
+  max-width: 1060px;
+  margin: 60px auto 220px;
+
+  .section-titles {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: $ICAF_BLUE;
+  }
+
+  .sections {
+    font-size: 24px;
+    line-height: 33px;
+  }
+}

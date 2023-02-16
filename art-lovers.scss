@@ -5,31 +5,32 @@
 @use "icaf-footer";
 
 .description {
-    width: 1060px;
-    margin: 55px auto 0;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 49px;
-    text-align: center;
-    color: $ICAF_BLUE;
-  }
+  width: 1060px;
+  margin: 55px auto 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: $ICAF_BLUE;
+}
 
 .images {
-    display: grid;
-    grid-template-columns: 505px 505px;
-    grid-gap: 50px;
-    width: fit-content;
-    margin: 90px auto 125px;
+  display: grid;
+  grid-template-columns: 505px 505px;
+  grid-gap: 50px;
+  width: fit-content;
+  margin: 90px auto 125px;
 
-    .img1 {
-      width: 505px;
-      height: 284px;
-    }
-    .img2 {
-        width: 505px;
-        height: 284px;
-      }
+  .img1 {
+    width: 505px;
+    height: 284px;
   }
+
+  .img2 {
+    width: 505px;
+    height: 284px;
+  }
+}
 
 
 
@@ -37,7 +38,7 @@
   display: grid;
   grid-template-columns: 1060px;
   column-gap: 33px;
-  height: 1014px;
+  height: 1060px;
   margin: 55px 0 533px;
   padding: 65px 190px 142px 190px;
   background-color: #dae4ea;
@@ -58,12 +59,14 @@
       font-weight: 700;
       margin-bottom: 10px;
     }
+
     label {
       font-weight: 600;
       font-size: 24px;
       line-height: 33px;
       color: #000000;
     }
+
     input[type="text"],
     input[type="email"],
     textarea {
@@ -78,6 +81,7 @@
       border-radius: 10px;
       resize: vertical;
     }
+
     input[type="submit"] {
       width: 948px;
       height: 49px;
@@ -89,20 +93,22 @@
       border-radius: 37px;
       background-color: $ICAF_YELLOW;
     }
+
     #message {
       height: 225px;
       margin-bottom: 56px;
       padding: 10px 17px;
     }
-    
+
   }
-  .notes{
+
+  .notes {
     margin-top: 10px;
     font-weight: 700;
     font-size: 12px;
     color: #134380;
     text-align: center;
-}
+  }
 }
 
 

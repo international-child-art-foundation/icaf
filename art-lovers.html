@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ICAF | Art-Lovers</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/art-lovers.css" />
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.js" defer></script>
+    <script src="/js/ICAFTimeline.js" defer></script>
+    <script>
+        $(document).ready(function () {
+            for (let el of $('[use-snippet]')) {
+                $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
+            }
+
+            window.timeline = new ICAFTimeline('.timeline-wrapper');
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Nav -->
+        <div use-snippet="/snippets/nav.snip.html"></div>
+
+        <!-- title -->
+        <div class="title">Art Lovers</div>
+
+        <!-- donate news -->
+        <div class="birth">For a birthday, wedding or any celebration, your donation will
+            support our art programs for underprivileged children
+        </div>
+       <!-- two-images -->
+        <div class="two-images">
+            <div><img src="resource/image/art-love1.png"></div>
+            <div><img src="resource/image/art-love2.png"></div>
+        </div>
+<!-- form -->
+        <div class="main-background">
+            <div class="input-container">
+                <div class="success-feedback">Thanks!!!</div>
+                <form id="artLoInf">
+                    <label for="artname">Name of the art lover*</label>
+                    <input type="text" id="artname" name="name" required>
+
+                    <label for="artemail">His/her email</label>
+                    <input type="email" id="artemail" name="email" required>
+
+                    <label for="occasion">On the occasion of*</label>
+                    <input type="text" id="occasion" name="occasion">
+
+                    <label for="ymessage">Your Message*</label>
+                    <textarea  id="ymessage" name="message" required></textarea>
+
+                    <input type="hidden" name="type" value="contact-us" />
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+            <p class="pa">Note: All the * fields are mandatory</p>
+        </div>
+ <!-- Footer -->
+ <div use-snippet="/snippets/footer.snip.html"></div>
+</div>
+</body>
+
+</html>

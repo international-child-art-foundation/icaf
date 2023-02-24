@@ -1,89 +1,62 @@
-@use "../icaf-colors"as *;
+@use "../icaf-colors" as *;
 
 @use "../icaf-general";
 @use "../icaf-nav";
 @use "../icaf-footer";
 
-.tag {
-  width: 375px;
-  height: 19px;
-  margin-top: 112px;
-  margin-left: 190px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-  color: #939393;
-}
-
-.title {
-  width: 363px;
-  height: 55px;
-  margin-top: 4px;
-  margin-left: 185px;
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 55px;
-  color: $ICAF_BLUE;
-}
-.content{
-  
+.content {
   margin-top: 20px;
-  
-  
-  
+  max-width: 1060px;
+  margin: 90px auto 0;
 
-.sections {
-
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 33px;
-  max-width: 1440px;
-  align-items: center;
-  img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .section-titles {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: $ICAF_BLUE;
   }
 
+  .sections {
+    font-size: 24px;
+    line-height: 33px;
+    img {
+      display: block;
+      margin: 125px auto;
+    }
+  }
 
-  
+  .icons-instructions {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #575756;
+  }
 }
-
-.section-titles {
-  margin-top: 60px;
-  margin-bottom: 40px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 49px;
-  color: $ICAF_BLUE;
-}
-
-
-  
-
-
-
 
 .swiper {
   margin-top: 20px;
-  width: 1200px;
-  height: 158px;
-  background-color: E7ECF2;
+  height: 308px;
+  background-color: #e7ecf2;
   .swiper-slide {
     width: 267px;
-    
-    
-  }
-  img {
-    display: block;
-    width: 267px;
     height: 158px;
-    object-fit: fill;
-    
+
+    img {
+      width: 267px;
+      height: 158px;
+    }
   }
+
+  .swiper-wrapper {
+    align-items: center;
+  }
+
   .swiper-navBtn {
-    height: 34px;
-    width: 34px;
+    top: calc(50% - 25px);
+    height: 50px;
+    width: 50px;
     margin-top: 0px;
     color: $ICAF_WHITE;
     background-color: $ICAF_BLUE;
@@ -95,7 +68,7 @@
   }
   .swiper-navBtn::before,
   .swiper-navBtn::after {
-    font-size: 30px;
+    font-size: 25px;
   }
   .swiper-button-next {
     margin-right: 50px;
@@ -107,7 +80,7 @@
   }
 }
 .swiper-pagination {
-  position: relative;
+  // position: relative;
   margin-top: 13px;
   .swiper-pagination-bullet {
     width: 11px;
@@ -115,11 +88,11 @@
     margin: 10px;
     background-color: $ICAF_GRAY;
     opacity: 0.2;
-    
-  }
-  .swiper-pagination-bullet-active {
-    background-color: $ICAF_YELLOW;
-    opacity: 1;
+    --swiper-pagination-bullet-horizontal-gap: 10.5px;
+    &-active {
+      background-color: $ICAF_YELLOW;
+      opacity: 1;
+    }
   }
   @media screen and (max-width: 768px) {
     .slide-content {
@@ -129,5 +102,4 @@
       display: none;
     }
   }
-}
 }

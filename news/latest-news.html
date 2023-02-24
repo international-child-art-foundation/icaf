@@ -2,22 +2,20 @@
 <html lang="en">
 
 <head>
-        <title>News | Latest News</title>
-        <link rel="stylesheet" href="/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="/css/mission/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
-        <link rel="stylesheet" href="/css/news/latest-news.css" />
-        <script src="/js/jquery-3.3.1.min.js"></script>
-        <script src="/js/bootstrap.min.js" defer></script>
-        <script src="/JS/swiper-bundle.min.js"></script>
-        <script>
-                $(document).ready(function () {
-                        for (let el of $('[use-snippet]')) {
-                                $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
-                        }
-               
+    <title>News | Latest News</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/mission/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/news/latest-news.css" />
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.min.js" defer></script>
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            for (let el of $('[use-snippet]')) {
+                $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
+            }
 
-                // Icons List
+            // Icons List
             var swiper = new Swiper(".mySwiper", {
                 slidesPerView: "auto",
                 centeredSlides: true,
@@ -33,103 +31,94 @@
                 },
             });
         });
-        </script>
+    </script>
 </head>
 
 <body>
-   
-        <div class="container">
-                <!-- Nav -->
-                <div use-snippet="/snippets/nav.snip.html"></div>
+    <div class="container">
+        <!-- Nav -->
+        <div use-snippet="/snippets/nav.snip.html"></div>
 
-                <!-- Tag -->
-                <div class="icaf-breadcrumb">NEWS > LATEST NEWS</div>
+        <!-- Tag -->
+        <div class="icaf-breadcrumb">NEWS > LATEST NEWS</div>
 
-                <!-- Title -->
-                <div class="page-title">LATEST NEWS</div>
+        <!-- Title -->
+        <div class="page-title">LATEST NEWS</div>
 
-                <div class="content">
-                    <!-- January 20, 2023 -->
-                
-                    <div class="section-titles">January 20, 2023</div>
-                    <div class="sections"> 
-                        ICAF thanks the UX/UI designers and web developers who collaborated throughout 2022 to
-                         redesign the new website that children say they love.<br><br>
-
-                         <img src="/resource/image/news/Rectangle 208.png">
-                    </div>
-
-                    <!-- December 19, 2022 -->
-                
-                    <div class="section-titles">December 19, 2022</div>
-                    <div class="sections"> 
-                        The Picasso Project at the University of Berkeley supported ICAF, for which we are grateful.<br><br>
-
-                         <img src="/resource/image/news/Rectangle 209.png">
-                    </div>
-               <!-- December 13, 2022 -->
-                
-<div class="section-titles">December 13, 2022</div>
-<div class="sections"> 
-    To bring young people’s perspectives to Metaverse Safety Week, ICAF organized a <a href=" https://metaversesafetyweek.org/event/metaverse-safety-week-youth-panel/">Youth Panel</a>
- <br><br>
-
-     <img src="/resource/image/news/Rectangle 210.png">
-</div>
-
-
-<!-- Icons -->
-                
-<div class="section-titles">Icons</div>
-<div class="sections"> 
-    <center><p>Please click on the icons to download.</p></center><br><br>
-</div>
-
-
-  <!-- Icons List -->
-  <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <a href="/resource/image/carousel/Group 310.png"><img src="/resource/image/carousel/Group 310.png "
-                    alt="" class="card-img"></a>
+        <div class="content">
+            <!-- January 20, 2023 -->
+            <div class="section-titles">January 20, 2023</div>
+            <div class="sections">
+                ICAF thanks the UX/UI designers and web developers who collaborated throughout 2022 to
+                redesign the new website that children say they love.
+                <img src="/resource/image/news/Rectangle 208.png">
             </div>
-            <div class="swiper-slide">
-                <a href="/resource/image/carousel/Group 312.png"><img src="/resource/image/carousel/Group 312.png"
-                    alt="" class="card-img"></a>
+
+            <!-- December 19, 2022 -->
+            <div class="section-titles">December 19, 2022</div>
+            <div class="sections">
+                The Picasso Project at the University of Berkeley supported ICAF, for which we are grateful.<br><br>
+                <img src="/resource/image/news/Rectangle 209.png">
             </div>
-            <div class="swiper-slide">
-                <a href="/resource/image/carousel/Group 311.png"><img src="/resource/image/carousel/Group 311.png"
-                    alt="" class="card-img"></a>
+
+            <!-- December 13, 2022 -->
+            <div class="section-titles">December 13, 2022</div>
+            <div class="sections">
+                To bring young people's perspectives to Metaverse Safety Week, ICAF organized a
+                <a href="https://metaversesafetyweek.org/event/metaverse-safety-week-youth-panel/">
+                    https://metaversesafetyweek.org/event/metaverse-safety-week-youth-panel/
+                </a>
+                <img src="/resource/image/news/Rectangle 210.png">
             </div>
-            <div class="swiper-slide">
-                <a href="/resource/image/carousel/Group 314.png"><img src="/resource/image/carousel/Group 314.png"
-                    alt="" class="card-img"></a>
+
+
+            <!-- Icons -->
+            <div class="section-titles">Icons</div>
+            <div class="icons-instructions">
+                Please click on the icons to download.
             </div>
-            <div class="swiper-slide">
-                <a href="/resource/image/carousel/Group 313.png"><img src="/resource/image/carousel/Group 313.png"
-                    alt="" class="card-img"></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="/resource/image/carousel/Group 315.png"><img src="/resource/image/carousel/Group 315.png" alt="" class="card-img"></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="/resource/image/carousel/Group 315.png"><img src="/resource/image/carousel/Group 316.png"
-                    alt="" class="card-img"></a>
-            </div> 
-            
         </div>
 
-        <div class="swiper-button-next swiper-navBtn"></div>
-        <div class="swiper-button-prev swiper-navBtn"></div>
+        <!-- Icons List -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#"><img src="/resource/image/news/icon-1.png " alt="" class="card-img"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="/resource/image/news/icon-2.png " alt="" class="card-img"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="/resource/image/news/icon-3.png " alt="" class="card-img"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="/resource/image/news/icon-4.png " alt="" class="card-img"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="/resource/image/news/icon-5.png " alt="" class="card-img"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="/resource/image/news/icon-6.png " alt="" class="card-img"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="/resource/image/news/icon-7.png " alt="" class="card-img"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="/resource/image/news/icon-8.png " alt="" class="card-img"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="/resource/image/news/icon-9.png " alt="" class="card-img"></a>
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Footer -->
+        <div use-snippet="/snippets/footer.snip.html"></div>
     </div>
-    <div class="swiper-pagination"></div>
+</body>
 
-
-
-
-                <!-- Footer -->
-                <div use-snippet="/snippets/footer.snip.html"></div>
-               </div> </div>
-           </body>
-           
-           </html>
+</html>

@@ -24,6 +24,12 @@ switch ($type) {
   case "membership":
     $subject = "New membership application {$email}";
     break;
+  case "art-lovers":
+    $subject = "Art Lovers request for {$name}";
+    break;
+  case "in-loving-memory":
+    $subject = "In Loving Memory request for {$name}";
+    break;
   default:
     echo "invalid_type";
     exit();

@@ -1,126 +1,104 @@
-@use "icaf-colors"as *;
+@use "icaf-colors" as *;
 
 @use "icaf-general";
 @use "icaf-nav";
 @use "icaf-footer";
 
-.title {
-    font-weight: 800;
-    font-size: 40px;
-    line-height: 55px;
-    color: $ICAF_BLUE;
-    margin-top: 62px;
-    margin-left: 109px;
-}
-
 .birth {
-    margin: 90px auto 0px;
-    max-width: 1060px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 49px;
-    text-align: center;
-    color: $ICAF_BLUE;
+  margin: 90px auto 0px;
+  max-width: 1060px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: $ICAF_BLUE;
 }
 
 .two-images {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 35px;
-    grid-template-rows: 280px 28px;
-    row-gap: 15px;
-    margin-top: 90px;
-    margin-left: 160px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 35px;
+  column-gap: 50px;
+  margin: 90px auto 0;
+  width: fit-content;
 
-    img {
-        width: 513px;
-        height: 280px;
-        border-radius: 20px;
-
-    }
+  img {
+    width: 513px;
+    height: 280px;
+    border-radius: 20px;
+  }
 }
 
 .main-background {
-    height: 772px;
-    margin: 55px 0 120px;
-    padding: 31px 56px 0px;
-    background-color: #dae4ea;
+  margin: 135px 0 210px;
+  padding: 55px 0 103px;
+  background-color: #dae4ea;
 
+  .input-container {
+    width: 1060px;
+    border-radius: 20px;
+    padding: 36px 56px 64px;
+    // box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.25));
+    background-color: $ICAF_WHITE;
+    margin: 0 auto;
 
-
-    .input-container {
-        width: 960px;
-        height: 650px;
-        border-radius: 20px;
-        padding: 36px 50px;
-        // box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
-        filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.25));
-        background-color: $ICAF_WHITE;
-        margin-top: 20px;
-        margin-left: 160px;
-
-        .success-feedback {
-            display: none;
-            color: #117b30;
-            font-size: 23px;
-            text-align: center;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        label {
-            font-weight: 600;
-            font-size: 24px;
-            line-height: 33px;
-            color: #000000;
-        }
-
-        input[type="text"],
-        input[type="email"] {
-            width: 100%;
-            height: 37px;
-            box-sizing: border-box;
-            margin-top: 8px;
-            margin-bottom: 21px;
-            padding-left: 17px;
-            border: 1px solid #c4ced6;
-            background-color: rgba(198, 198, 198, 0.1);
-            border-radius: 10px;
-            
-        }
-        #ymessage{
-            width: 100%;
-            height: 157px;
-            box-sizing: border-box;
-            margin-top: 8px;
-            margin-bottom: 21px;
-            padding-left: 17px;
-            border: 1px solid #c4ced6;
-            background-color: rgba(198, 198, 198, 0.1);
-            border-radius: 10px;
-            
-        }
-
-        input[type="submit"] {
-            width: 840px;
-            height: 49px;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 19px;
-            letter-spacing: 0.1em;
-            border: none;
-            border-radius: 37px;
-            background-color: $ICAF_YELLOW;
-        }
-
-
+    .success-feedback {
+      display: none;
+      color: #117b30;
+      font-size: 23px;
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 10px;
     }
-    
-    .pa {
-        text-align: center;
-        font-size: 18px;
-        line-height: 25px;
-        color: $ICAF_BLUE;
-        margin-top: 15px;
+
+    label {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 33px;
+      color: #000000;
     }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      height: 37px;
+      margin-top: 8px;
+      margin-bottom: 21px;
+      padding-left: 17px;
+      border: 1px solid #c4ced6;
+      background-color: rgba(198, 198, 198, 0.1);
+      border-radius: 10px;
+    }
+    textarea {
+      width: 100%;
+      height: 225px;
+      margin-top: 8px;
+      margin-bottom: 56px;
+      padding-left: 17px;
+      border: 1px solid #c4ced6;
+      background-color: rgba(198, 198, 198, 0.1);
+      border-radius: 10px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      height: 49px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 19px;
+      letter-spacing: 0.1em;
+      border: none;
+      border-radius: 37px;
+      background-color: $ICAF_YELLOW;
+    }
+  }
+
+  .pa {
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+    color: $ICAF_BLUE;
+    margin-top: 24px;
+  }
 }

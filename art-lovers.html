@@ -14,7 +14,22 @@
                 $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
             }
 
-            window.timeline = new ICAFTimeline('.timeline-wrapper');
+            $('#artLoversForm').on('submit', e => {
+                e.preventDefault();
+
+                $.post('/api/send-mail',
+                    Object.fromEntries(new FormData($('#artLoversForm')[0])),
+                    res => {
+                        if (res === 'success') {
+                            $('#artLoversForm')[0].reset();
+                            $('.success-feedback').show();
+                        } else {
+                            console.error(res)
+                            //TODO: show error
+                        }
+                    }
+                );
+            });
         });
     </script>
 </head>
@@ -25,43 +40,43 @@
         <div use-snippet="/snippets/nav.snip.html"></div>
 
         <!-- title -->
-        <div class="title">Art Lovers</div>
+        <div class="page-title">Art Lovers</div>
 
         <!-- donate news -->
         <div class="birth">For a birthday, wedding or any celebration, your donation will
             support our art programs for underprivileged children
         </div>
-       <!-- two-images -->
+        <!-- two-images -->
         <div class="two-images">
             <div><img src="resource/image/art-love1.png"></div>
             <div><img src="resource/image/art-love2.png"></div>
         </div>
-<!-- form -->
+        <!-- form -->
         <div class="main-background">
             <div class="input-container">
-                <div class="success-feedback">Thanks!!!</div>
-                <form id="artLoInf">
+                <div class="success-feedback">Your submission has been received.</div>
+                <form id="artLoversForm">
                     <label for="artname">Name of the art lover*</label>
                     <input type="text" id="artname" name="name" required>
 
-                    <label for="artemail">His/her email</label>
+                    <label for="artemail">His/her email*</label>
                     <input type="email" id="artemail" name="email" required>
 
                     <label for="occasion">On the occasion of*</label>
-                    <input type="text" id="occasion" name="occasion">
+                    <input type="text" id="occasion" name="occasion" required>
 
                     <label for="ymessage">Your Message*</label>
-                    <textarea  id="ymessage" name="message" required></textarea>
+                    <textarea id="ymessage" name="message" required></textarea>
 
-                    <input type="hidden" name="type" value="contact-us" />
+                    <input type="hidden" name="type" value="art-lovers" />
                     <input type="submit" value="Send Message">
                 </form>
             </div>
             <p class="pa">Note: All the * fields are mandatory</p>
         </div>
- <!-- Footer -->
- <div use-snippet="/snippets/footer.snip.html"></div>
-</div>
+        <!-- Footer -->
+        <div use-snippet="/snippets/footer.snip.html"></div>
+    </div>
 </body>
 
 </html>

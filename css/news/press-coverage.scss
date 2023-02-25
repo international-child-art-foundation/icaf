@@ -26,6 +26,17 @@
   color: $ICAF_BLUE;
 }
 
+.top-right-image-wrapper {
+  position: relative;
+  width: 1060px;
+  margin: 0 auto;
+  img {
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+  }
+}
+
 .list-of-news {
   width: 1060px;
   margin: 60px auto 220px;

@@ -4,32 +4,9 @@
 @use "../icaf-nav";
 @use "../icaf-footer";
 
-.tag {
-  width: 375px;
-  height: 19px;
-  margin-top: 112px;
-  margin-left: 190px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-  color: #939393;
-}
-
-.title {
-  width: 363px;
-  height: 55px;
-  margin-top: 4px;
-  margin-left: 185px;
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 55px;
-  color: $ICAF_BLUE;
-}
-
 .goal-description {
   width: 1060px;
-  height: 294px;
-  margin: 90px auto 0px;
+  margin: 90px auto 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 49px;
@@ -38,8 +15,7 @@
 }
 .art-image {
   width: 920px;
-  height: 516.25px;
-  margin: 104px auto 0px;
+  margin: 104px auto 0;
   .image-quote {
     font-weight: 400;
     font-size: 18px;
@@ -52,7 +28,6 @@
 
 .main-description {
   width: 1060px;
-  height: 561px;
   margin: 125px auto 0px;
   font-weight: 400;
   font-size: 24px;

@@ -6,7 +6,7 @@ $body = "";
 foreach ($_POST as $label => $content) {
   $$label = $content;
   if ($label === "type") continue;
-  $body .= "<h2>{$label}</h2> <p style='margin:5px 0 0 20px'>{$content}</p>";
+  $body .= "<h2>{$label}</h2> <p style='margin:5px 0 0 20px'>" . nl2br($content) . "</p>";
 }
 $headers = "From: ICAF <no-reply@icaf.org>\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
@@ -28,7 +28,7 @@ switch ($type) {
     $subject = "Art Lovers request for {$name}";
     break;
   case "in-loving-memory":
-    $subject = "In Loving Memory request for {$name}";
+    $subject = "In Loving Memory request for {$inLovingMemoryOf}";
     break;
   default:
     echo "invalid_type";

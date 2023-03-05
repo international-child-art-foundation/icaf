@@ -368,6 +368,14 @@
     font-size: 25px;
     line-height: 34px;
     letter-spacing: 0.1em;
+    // &::before {
+    //   content: "“";
+    //   position: absolute;
+    //   left: -13px;
+    // }
+    // &::after {
+    //   content: "”";
+    // }
   }
   .signature {
     margin-top: 47px;

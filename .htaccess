@@ -15,4 +15,5 @@ Redirect 301 "/ChildArt_Q3_2018.pdf" "/resource/pdfs/ChildArt_Q3_2018.pdf
 Redirect 301 "/Childart_Q2_2019_Empathy.pdf" "/resource/pdfs/Childart_Q2_2019_Empathy.pdf
 
 RedirectMatch 301 ^/childart/(.*)\.pdf$ /resource/pdfs/$1.pdf
+RedirectMatch 301 ^/pdfs/(.*)\.pdf$ /resource/pdfs/$1.pdf
 RedirectMatch 301 ^/flipbooks/(.*)$ /resource/flipbooks/$1

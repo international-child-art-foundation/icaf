@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <title>News | Press Coverage</title>
+        <link rel="stylesheet" href="/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/css/news.css" />
+        <script src="/js/jquery-3.3.1.min.js"></script>
+        <script src="/js/bootstrap.min.js" defer></script>
+        <script>
+                $(document).ready(function () {
+                        for (let el of $('[use-snippet]')) {
+                                $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
+                        }
+                });
+        </script>
+</head>
+
+<body>
+        <div class="container">
+                <!-- Nav -->
+                <div use-snippet="/snippets/nav.snip.html"></div>
+
+                <!-- Title -->
+                <div class="page-title">NEWS</div>
+
+                <div class="top-right-image-wrapper">
+                        <img src="/resource/image/news/newspaper.svg" alt="">
+                </div>
+                <div class="list-of-news">
+                        <ul>
+                                <li>Metaverse Safety Week: &ldquo;<a
+                                                href="https://metaversesafetyweek.org/event/metaverse-safety-week-youth-panel/"
+                                                target="_blank">ICAF organizes an international youth panel</a>.&rdquo;
+                                        December 13, 2022 </li>
+                                <li>Los Angeles, California. Los Angeles Times: &rdquo;<a
+                                                href="https://www.latimes.com/entertainment-arts/story/2022-06-06/treasure-hunt-childrens-art-book"
+                                                target="_blank">Inside the $10,000 treasure hunt embedded in a
+                                                children&rsquo;s art book</a>.&rdquo; June 6, 2022 </li>
+                                <li>Washington, D.C. CBS Channel 9: <a href="/resource/video/2021WCF-CBS-Ch-9.mov"
+                                                target="_blank">6th
+                                                World Children&rsquo;s Festival</a>, July
+                                        30, 2021 (0:11-min news clip)
+                                </li>
+                                <li>Tehran, Iran. Tehran Times: &ldquo;<a
+                                                href="https://www.tehrantimes.com/news/463015/Iranian-children-honored-at-International-Child-Art-Foundation"
+                                                target="_blank">Iranian children honored at the International Child Art
+                                                Foundation
+                                                Olympiad</a>.&rdquo; July 11, 2021 </li>
+                                <li>Washington, D.C. National PTA, Our Children: &ldquo;<a
+                                                href="https://ptaourchildren.org/how-to-prepare-children-for-the-fourth-industrial-revolution/"
+                                                target="_blank">How to Prepare Children for the Fourth Industrial
+                                                Revolution</a>.&rdquo; May 7, 2021</li>
+                                <li>Los Angeles, California. The STEAM Journal: &ldquo;<a
+                                                href="https://scholarship.claremont.edu/cgi/viewcontent.cgi?article=1206&context=steam"
+                                                target="_blank">The Art of Empathy</a>.&rdquo; March 2, 2020 </li>
+                                <li>Beijing, China. Women of China (pages 56-57): <a
+                                                href="https://www.womenofchina.cn/zazhi/201811E/mobile/index.html"
+                                                target="_blank">Children
+                                                Sometimes Get It, and Adults Should Listen</a>,
+                                        February 5, 2020 </li>
+                                <li>Mattituck, New York. The Suffolk Times: <a
+                                                href="https://suffolktimes.timesreview.com/2019/01/new-suffolk-students-compete-in-art-olympics/"
+                                                target="_blank">New Suffolk Students Compete in
+                                                the Arts Olympiad</a>, January
+                                        24, 2019 </li>
+                                <li>Oakland, California. <a
+                                                href="https://leonardo.info/review/2017/11/review-of-childart-magazine-arts-and-mind-the-brain-science-of-human-experience"
+                                                target="_blank">Leonardo: Review of ChildArt Magazine: Arts and Mind
+                                                &ndash; The Brain Science of
+                                                Human Experience</a>, November 2017</li>
+                                <li>Worcester, Massachusetts. SchoolArts Magazine: <a
+                                                href="/resource/press/SchoolArts_Magazine_Jan2017_ICAF.pdf"
+                                                target="_blank">An Invitation
+                                                to
+                                                Repair the World</a>, January 2017 </li>
+                                <li>Yucatan, Mexico. The Yucatan Times: <a
+                                                href="https://www.theyucatantimes.com/2016/08/merida-student-wins-international-graphic-design-competition/"
+                                                target="_blank">Merida Student Wins International
+                                                Design Competition</a>, August 22,
+                                        2016 </li>
+                                <li>Treasure Coast, Florida. TCPalm: <a
+                                                href="https://archive.tcpalm.com/news/young-sailors-artwork-going-to-the-2016-olympics-ep-1328253448-337672541.html/"
+                                                target="_blank">Young Sailor&rsquo;s Artwork Going to the
+                                                2016 Olympics</a>, October 19, 2015
+                                </li>
+                                <li>Woodbridge, Virginia. Minneland Academy: <a
+                                                href="https://minnieland.wordpress.com/tag/world-childrens-festival/"
+                                                target="_blank">World
+                                                Children&rsquo;s Festival</a>,
+                                        July 9, 2015 </li>
+                                <li>Wellington, New Zealand. Scoop Culture: <a
+                                                href="https://www.scoop.co.nz/stories/CU1507/S00129/shona-hammond-boys-wins-world-childrens-festival-award.htm"
+                                                target="_blank">Shona Hammond Boys Wins World
+                                                Children&rsquo;s Festival Award</a>,
+                                        July 8, 2015 </li>
+                                <li>Irvine, California. University of California, Creativity Labs: <a
+                                                href="http://creativitylabs.blogspot.com/2015/07/world-childrens-festival-washington-dc.html"
+                                                target="_blank">World
+                                                Children&rsquo;s Festival</a>, July 7,
+                                        2015</li>
+                                <li>Washington, D.C. Mindful Healthy Life: <a
+                                                href="http://www.mindfulhealthylife.com/world-childrens-festival-closes-thursday/"
+                                                target="_blank">World Children's Festival
+                                                closes Thursday</a>, July 1, 2015</li>
+                                <li>Harare, Zimbabwe. The Herald, <a
+                                                href="https://www.herald.co.zw/st-giles-band-for-usa-childrens-festival/"
+                                                target="_blank">St
+                                                Giles Band for USA Children&rsquo;s
+                                                Festival</a>, July 9, 2015</li>
+                                <li>Berkeley Hall School and the 5th Arts Olympiad: <a
+                                                href="https://www.berkeleyhall.org/news-detail?pk=790834/"
+                                                target="_blank">BHS Chosen for 5th
+                                                International Art Olympiad | Berkeley
+                                                Hall School</a>, January 20, 2015</li>
+                                <li>Sewickley, Pennsylvania. Sewickley Academy: <a
+                                                href="https://www.sewickley.org/News-Detail?pk=741530&fromId=175689"
+                                                target="_blank">Student Led
+                                                Fundraiser to
+                                                Benefit the ICAF</a>, December 10,
+                                        2014</li>
+                                <li>Cannes, France. Cannes Lions: <a
+                                                href="https://www.youtube.com/watch?v=bt9M71DPQVQ&ab_channel=ICAF"
+                                                target="_blank">International Competition to Design the
+                                                World Children&rsquo;s Festival
+                                                logo</a>, June 2014 (0:47-min clip)</li>
+                                <li>Washington, D.C. ICAF: <a
+                                                href="https://www.facebook.com/media/set/?set=a.10152286087028329.1073741830.204528183328&type=1"
+                                                target="_blank">Selection of Semifinalists for the Saving
+                                                Endangered Species Youth Art
+                                                Contest</a>, April 3, 2014</li>
+                                <li>Creativity Journal. <a
+                                                href="https://www.creativityjournal.net/newsevents/item/180-dr-ashfaq-ishaq-judges-slavery-memorial-for-un#.WEiPZfkrIdU"
+                                                target="_blank">Dr. Ashfaq Ishaq judges slavery memorial for UN</a>,
+                                        September 26, 2013</li>
+                                <li>Salzburg, Austria. Visual Artbeat: <a
+                                                href="/resource/pdfs/Arts_Olympiad_preview_2.pdf" target="_blank">The
+                                                5th Arts Olympiad</a>, April 2013
+                                </li>
+                                <li>Washington, D.C. DC Public Library: <a href="https://www.dclibrary.org/node/31750"
+                                                target="_blank">The ICAF Arts Olympiad
+                                                Exhibition</a>, August 3, 2012</li>
+                                <li>Amsterdam, Netherlands. Frankdoorhof: <a
+                                                href="https://frankdoorhof.com/web/2012/03/icaf/"
+                                                target="_blank">ICAF</a>, March 23, 2012 </li>
+                                <li>Baltimore, Maryland. PRNewswire: <a
+                                                href="https://www.csrwire.com/press_releases/33059-wacom-celebrates-art-creativity-and-the-joy-of-giving-with-online-contest-a-thousand-forests-"
+                                                target="_blank">Wacom Celebrates Art, Creativity,
+                                                and the Joy of Giving with Online
+                                                Contest &ndash; A Thousand Forests</a>, October 5, 2011</li>
+                                <li>Washington, D.C. The Washington Post: <a
+                                                href="/resource/press/Washington%20Post%20.pdf" target="_blank">Drawn
+                                                Together for the World
+                                                Children&rsquo;s Festival</a>, June 14,
+                                        2011</li>
+                                <li>San Diego, California. Art and Activities Magazine: <a
+                                                href="/resource/press/Art%20&%20Activities.May%202011.pdf"
+                                                target="_blank">World
+                                                Children&rsquo;s
+                                                Festival Celebrates Diversity</a>,
+                                        May 2011</li>
+                                <li>Stockholm, Sweden. Norrtelje Tidning: <a
+                                                href="/resource/press/Stockholm%2029April11.pdf" target="_blank">Fantasi
+                                                ska ta dem till USA</a>, April
+                                        29, 2011</li>
+                                <li>San Francisco, California. WIRED: <a
+                                                href="https://www.wired.com/2011/03/world-childrens-festival-arrives-in-june/"
+                                                target="_blank">World Children&rsquo;s Festival Arrives
+                                                in June</a>, March 15, 2011</li>
+                                <li>Dubai, UAE. Canvas Magazine: <a href="/resource/press/Canvas.pdf"
+                                                target="_blank">Fixing A
+                                                Broken World</a>, August 2010
+                                        Washington, D.C.</li>
+                                <li>Radio Free Asia: <a
+                                                href="https://www.rfa.org/english/news/ChildrenArts-09022008133301.html"
+                                                target="_blank">Aid Through Art in China</a>, March 9, 2008</li>
+                                <li>Washington, D.C. The Washington Post: <a
+                                                href="https://www.washingtonpost.com/wp-dyn/content/article/2007/06/20/AR2007062002045.html"
+                                                target="_blank">Creativity Is the Name of the
+                                                Game</a>, June 21, 2007</li>
+                                <li>Newark, New Jersey. The Star-Ledger: <a
+                                                href="/resource/press/Star%20Ledger%20July%202007.pdf"
+                                                target="_blank">Girls&rsquo;
+                                                visions of
+                                                skies and
+                                                skates earn Arts Olympiad honors</a>,
+                                        July 27, 2007</li>
+                                <li>London, UK. Start Magazine: <a href="/resource/press/Start%20Magazine.ICAF.pdf"
+                                                target="_blank">All
+                                                the World&rsquo;s A Stage</a>, April 2006</li>
+                                <li>Baltimore, Maryland. Center for Talented Youth at Johns Hopkins University, Imagine
+                                        Magazine:
+                                        <a href="/resource/press/Imagine.NovDec2005.pdf" target="_blank">Spotlight on
+                                                the Arts
+                                                Olympiad</a>, November/December 2005
+                                </li>
+                                <li>Munich, Germany. Spielen und Lernen: <a href="/resource/press/Spietenondlerner.pdf"
+                                                target="_blank">zeichnet kinderfreundliche
+                                                Aktionen und Initiativen aus</a>,
+                                        December 12, 2005</li>
+                                <li>Milan, Italy. Vogue Bambini: <a href="/resource/press/Vogue%20Bambini.pdf"
+                                                target="_blank">Fra arte
+                                                e sport</a>, September/October 2005
+                                </li>
+                                <li>Munich, Germany. Abendzeitung: <a href="/resource/press/AKZ_may_2005.jpg"
+                                                target="_blank">Kinder
+                                                malen ihr M&uuml;nchen</a>, May 13, 2005
+                                </li>
+                                <li>Cincinnati, Ohio. The Artist&rsquo;s Magazine: <a
+                                                href="/resource/press/artistslifeart.pdf" target="_blank">Going
+                                                for Gold: Children
+                                                from around the world compete for
+                                                the most prestigious award of all: world peace</a>, December 2004</li>
+                                <li>Doha, Qatar. The Gulf Times: <a href="/resource/press/gulftimes.pdf"
+                                                target="_blank">Make use
+                                                of what we&rsquo;ve learnt: Sheikh
+                                                Mozah</a>, October 21, 2003</li>
+                                <li>Fredericksburg, Virginia. The Free Lance-Star: <a
+                                                href="https://news.google.com/newspapers?nid=1298&dat=20030904&id=YgUzAAAAIBAJ&sjid=0wgGAAAAIBAJ&pg=3973,613450&hl=en"
+                                                target="_blank">International Child Art Festival</a>, September 4, 2003
+                                </li>
+                                <li>Bangalore, India. The Times of India: <a
+                                                href="/resource/press/The%20Times%20of%20India.pdf" target="_blank">Girl
+                                                does Bangalore proud</a>, June 18, 2003</li>
+                        </ul>
+                </div>
+
+
+                <!-- Footer -->
+                <div use-snippet="/snippets/footer.snip.html"></div>
+        </div>
+</body>
+
+</html>

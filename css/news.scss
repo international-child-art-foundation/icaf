@@ -1,8 +1,12 @@
-@use "../icaf-colors" as *;
+@use "icaf-colors" as *;
 
-@use "../icaf-general";
-@use "../icaf-nav";
-@use "../icaf-footer";
+@use "icaf-general";
+@use "icaf-nav";
+@use "icaf-footer";
+
+.page-title {
+  margin-top: 135px;
+}
 
 .top-right-image-wrapper {
   position: relative;

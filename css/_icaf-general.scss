@@ -49,33 +49,6 @@ ul {
   color: $ICAF_BLUE;
 }
 
-.section-title {
-  color: $ICAF_BLUE;
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 55px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  // padding-top: 38px;
-  padding: 35px 0;
-}
-
-.section-description {
-  color: $ICAF_BLUE;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  margin-bottom: 48px;
-  span {
-    width: 830px;
-  }
-}
-
 a.icaf-button {
   text-decoration: none;
   div {

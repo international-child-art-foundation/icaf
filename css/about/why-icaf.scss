@@ -13,22 +13,18 @@
   color: $ICAF_BLUE;
 }
 
-.image {
-  margin: 104px auto 0px;
-  max-width: 920px;
+.content-wrapper {
+  margin: 100px auto 0;
+  max-width: 1060px;
 
-  img {
-    width: 920px;
-    height: 520.75px;
+  .single-image {
+    width: 1060px;
     border-radius: 9px;
+    display: block;
+    margin-bottom: 100px;
   }
-}
 
-.contents {
-  margin: 125px auto 0;
-  max-width: 1080px;
-
-  .section-titles {
+  .section-title {
     margin-top: 60px;
     margin-bottom: 40px;
     font-weight: 700;
@@ -37,7 +33,7 @@
     color: $ICAF_BLUE;
   }
 
-  .sections {
+  .section {
     font-weight: 400;
     font-size: 24px;
     line-height: 33px;

@@ -3,6 +3,9 @@
   position: fixed;
   top: 0;
   z-index: 21;
+  @media only screen and (min-width: 1400px) {
+    width: 1440px;
+  }
   .navbar {
     padding: 21px 40px 20px 47px;
     background: white;

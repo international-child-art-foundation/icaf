@@ -14,8 +14,12 @@
   color: $ICAF_BLUE;
 }
 .art-image {
-  width: 920px;
+  width: fit-content;
   margin: 104px auto 0;
+  img {
+    width: 920px;
+    border-radius: 20px;
+  }
   .image-quote {
     font-weight: 400;
     font-size: 18px;

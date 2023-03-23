@@ -4,12 +4,23 @@
 @use "../icaf-nav";
 @use "../icaf-footer";
 
+.page-caption {
+  margin: 55px auto 0px;
+  max-width: 1060px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: $ICAF_BLUE;
+}
+
 .wave1 {
-  margin-top: 23px;
+  margin-top: 22px;
 }
 
 .description-wrapper {
   background: rgba(19, 67, 128, 0.1);
+  padding: 35px 0 54px;
 
   .description {
     max-width: 1060px;
@@ -18,40 +29,48 @@
     font-size: 36px;
     line-height: 49px;
     color: $ICAF_BLUE;
-  }
 
-  .image-wrapper {
-    margin: 50px auto 0;
-    width: 920px;
-  }
+    .capitol-imgs {
+      margin-top: 75px;
+      display: grid;
+      gap: 26px 19px;
+      grid-template-areas:
+        "a b"
+        "c b";
+      justify-content: center;
 
-  .description2 {
-    max-width: 1060px;
-    margin: 50px auto 0;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 44px;
-    color: $ICAF_BLUE;
+      @for $i from 1 through 3 {
+        img:nth-of-type(#{$i}) {
+          grid-area: unquote(str-slice("abc", $i, $i));
+        }
+      }
+    }
   }
 }
 
-.partners {
-  max-width: 740px;
-  margin: 20px auto 0;
-  font-size: 24px;
-  line-height: 33px;
-
-  .partner-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 49px;
+.content-wrapper {
+  margin: 95px auto 0px;
+  max-width: 1060px;
+  .section-title {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
     color: $ICAF_BLUE;
     text-align: center;
+    margin: 80px 0 40px;
   }
+  .list-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    justify-content: space-evenly;
 
-  ul {
-    margin-top: 40px;
-    padding-left: 2rem;
+    ul {
+      font-size: 24px;
+      line-height: 33px;
+      // width: fit-content;
+      list-style: none;
+    }
   }
 }
 

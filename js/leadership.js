@@ -2,7 +2,7 @@
 $(document).ready(function () {
     /*
     // Alternative way
-    Promise.all([$.get("/js/leadershipData.json"), $.get("/snippets/leadership-card.html")])
+    Promise.all([$.get("/js/json/leadershipData.json"), $.get("/snippets/leadership-card.html")])
         // when JSON data and snippetHTML ready
         .then(([jsonData, sHtml]) => {
             jsonData.forEach((el, idx) => {
@@ -13,7 +13,7 @@ $(document).ready(function () {
         })
     */
     // get JSON data    
-    $.get("/js/leadershipData.json").then(jsonData => {
+    $.get("/js/json/leadershipData.json").then(jsonData => {
         // when JSON data ready, get snippet HTML
         console.log(jsonData);
         $.get("/snippets/leadership-card.html").then(

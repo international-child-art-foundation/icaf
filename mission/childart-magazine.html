@@ -15,21 +15,37 @@
                 $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
             }
 
-            // Latest Issues Magazine Gallery
-            let swiper = new Swiper(".mySwiper", {
-                slidesPerView: "auto",
-                centeredSlides: true,
-                spaceBetween: 30,
-                initialSlide: 0,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-            });
+            function initSwiperFn() {
+                new Swiper(".mySwiper", {
+                    slidesPerView: "auto",
+                    centeredSlides: true,
+                    spaceBetween: 30,
+                    initialSlide: 0,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            }
+
+            $.get("/js/json/childArtMagazineData.json").then(jsonData => {
+                let $wrapper = $('.swiper-wrapper');
+                // when JSON data ready, get snippet HTML
+                console.log(jsonData);
+                jsonData.forEach(data => {
+                    $wrapper.append(`
+                        <div class="swiper-slide">
+                            <img src="${data.coverImg}" alt="${data.name}"
+                                class="card-img">
+                        </div>
+                    `);
+                });
+                initSwiperFn();
+            })
         });
     </script>
 </head>
@@ -64,53 +80,7 @@
             <!-- Magazine Gallery List -->
             <div class="magazine-container">
                 <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="/resource/image/mission/childart-magazine/2023_q1.jpg" alt="2023-q1"
-                                class="card-img">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/resource/image/mission/childart-magazine/2022_q4.png" alt="2022-q4"
-                                class="card-img">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/resource/image/mission/childart-magazine/2022_q3.png" alt="2022-q3"
-                                class="card-img">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/resource/image/mission/childart-magazine/2022_q2.png" alt="2022_q2"
-                                class="card-img">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/resource/image/mission/childart-magazine/2022_q1.jpg" alt="2022_q1"
-                                class="card-img">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/resource/image/mission/childart-magazine/2021_q4.jpg" alt="2021-q4"
-                                class="card-img">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/resource/image/mission/childart-magazine/2021-q3.jpg" alt="2021-q3"
-                                class="card-img">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/resource/image/mission/childart-magazine/2021-q2.jpg" alt="2021-q2"
-                                class="card-img">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/resource/image/mission/childart-magazine/2021-q1_.jpg" alt="2021-q1"
-                                class="card-img">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/resource/image/mission/childart-magazine/2020-q3.jpg" alt="2020-q3"
-                                class="card-img">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/resource/image/mission/childart-magazine/2020-q2.jpeg" alt="2020-q2"
-                                class="card-img">
-                        </div>
-                    </div>
-
+                    <div class="swiper-wrapper"></div>
                     <div class="swiper-button-next swiper-navBtn"></div>
                     <div class="swiper-button-prev swiper-navBtn"></div>
                 </div>

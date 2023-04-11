@@ -4,24 +4,15 @@
 @use "../icaf-nav";
 @use "../icaf-footer";
 
-.quote {
-  margin: 55px auto 0px;
-  max-width: 920px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 49px;
-  color: $ICAF_BLUE;
-}
-
 .content-wrapper {
-  margin: 100px auto 0;
+  margin: 40px auto 0;
   max-width: 1060px;
 
   .single-image {
     width: 1060px;
     border-radius: 9px;
     display: block;
-    margin-bottom: 100px;
+    margin-top: 40px;
   }
 
   .section-title {
@@ -33,8 +24,19 @@
     color: $ICAF_BLUE;
   }
 
+  .section-quote {
+    margin: 40px auto;
+    width: fit-content;
+    font-size: 24px;
+    line-height: 33px;
+    font-style: italic;
+    text-align: end;
+    .signature {
+      font-style: normal;
+    }
+  }
+
   .section {
-    font-weight: 400;
     font-size: 24px;
     line-height: 33px;
   }

@@ -4,13 +4,8 @@
 @use "icaf-nav";
 @use "icaf-footer";
 
-.title {
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 55px;
-  color: $ICAF_BLUE;
+.page-title {
   margin-top: 62px;
-  margin-left: 109px;
 }
 
 .hope {
@@ -291,121 +286,150 @@
   }
 }
 
-.timeline-wrapper {
-  display: none;
-
-  margin: 0px auto 0px;
-  width: 1185px;
+.timeline-container {
+  padding: 95px 0 215px;
   background: #f7f7f7;
-  height: 761px;
-  margin-bottom: 220px;
-  border: 1px solid blue;
-  overflow: hidden;
-  position: relative;
+  $transDuration: 200ms;
 
-  #timeline {
-    font-size: 30px;
-    display: flex;
-    row-gap: 47px;
-    flex-direction: column;
-    margin-top: 0px;
+  .timeline-title {
+    margin-left: 190px;
+    margin-bottom: 85px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: $ICAF_BLUE;
+  }
+
+  .arrow-wrapper {
+    margin: 0 auto;
+    width: 1185px;
     position: relative;
+    fill: $ICAF_YELLOW;
+    color: $ICAF_YELLOW;
 
-    // inactive row
-    .row {
+    .timeline-arrow {
+      position: absolute;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
-      height: 120px;
+      left: 43px;
+      top: -43px;
 
-      div {
-        position: absolute;
+      svg:hover {
+        cursor: pointer;
+        fill: url(#arrowGradient);
       }
 
       .year {
-        margin-left: 28px;
-        width: 173px;
-        height: 50px;
-        background: #f7f7f7;
-        text-align: center;
-        font-weight: 800;
+        font-weight: 700;
         font-size: 32px;
         line-height: 44px;
-        color: $ICAF_BLUE;
+        transition: opacity $transDuration ease;
       }
 
-      .line {
-        margin-left: 181px;
-        height: 0px;
-        width: 112px;
-        border: 3px solid #134380;
-      }
-
-      .image {
-        margin-left: 330px;
-
-        img {
-          width: 93px;
-          height: 120px;
-          border-radius: 12px;
-        }
-      }
-
-      .text {
-        margin-left: 473px;
-        max-width: 535px;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 25px;
+      .arrow-body {
+        height: 710px;
+        width: 20px;
+        background: $ICAF_YELLOW;
       }
     }
+  }
 
-    // active row
-    .row.active {
+  .timeline-wrapper {
+    margin: 0 auto;
+    width: 1185px;
+    height: 710px;
+    overflow: hidden;
+    position: relative;
+    top: 84px;
+    cursor: url("/resource/image/impact/timeline/vscroll.png"), n-resize;
+
+    #timeline {
+      --entry-height: 120px;
+      --active-entry-height: 214px;
+      font-size: 30px;
       display: flex;
-      flex-direction: row;
-      align-items: center;
-      height: 214px;
+      row-gap: 47px;
+      flex-direction: column;
+      position: relative;
+      transition: transform $transDuration;
 
-      div {
-        position: absolute;
-      }
-
-      .year {
-        margin-left: 28px;
-        width: 173px;
-        height: 98px;
-        background: #f7f7f7;
-        text-align: center;
-        font-weight: 800;
-        font-size: 72px;
-        line-height: 98px;
-        color: $ICAF_BLUE;
-      }
-
-      .line {
-        margin-left: 227px;
-        height: 0px;
-        width: 156px;
-        border: 8px solid #134380;
-      }
-
-      .image {
-        margin-left: 434px;
-
-        img {
-          width: 166px;
-          height: 214px;
-          border-radius: 12px;
+      &.smushed {
+        .entry .image img {
+          width: 165px;
+        }
+        .entry.active .image img {
+          width: 120px;
         }
       }
+      // inactive entry
+      .entry {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        // height: var(--entry-height);
 
-      .text {
-        margin-left: 650px;
-        max-width: 535px;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 33px;
+        .year {
+          margin-left: 48px;
+          width: 134px;
+          text-align: center;
+          font-weight: 800;
+          font-size: 32px;
+          line-height: 44px;
+          color: $ICAF_BLUE;
+          background: #f7f7f7;
+          transition: font-weight $transDuration, font-size $transDuration;
+        }
+
+        .line {
+          width: 112px;
+          border: 3px solid $ICAF_BLUE;
+          transition: width $transDuration, border $transDuration;
+        }
+
+        .image {
+          margin-left: 37px;
+          img {
+            height: var(--entry-height);
+            border-radius: 12px;
+            transition: width $transDuration, height $transDuration;
+          }
+        }
+
+        .text {
+          margin-left: 50px;
+          max-width: 535px;
+          font-size: 18px;
+          line-height: 25px;
+          transition: font-size $transDuration;
+        }
+
+        // active entry
+        &.active {
+          // height: var(--active-entry-height);
+          .year {
+            margin: 0 28px;
+            width: 173px;
+            font-weight: 800;
+            font-size: 72px;
+            line-height: 98px;
+          }
+          .line {
+            width: 156px;
+            border: 8px solid $ICAF_BLUE;
+          }
+          .image {
+            margin-left: 51px;
+            img {
+              height: var(--active-entry-height);
+            }
+          }
+          .text {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33px;
+          }
+        }
       }
     }
   }

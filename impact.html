@@ -15,18 +15,37 @@
                 $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
             }
 
-            window.timeline = new ICAFTimeline('.timeline-wrapper');
+            window.timeline = new ICAFTimeline('.timeline-wrapper', {
+                onInit: timeline => {
+                    $('.year.latest').text(timeline.jsonData.at(0).year);
+                    $('.year.earliest').text(timeline.jsonData.at(-1).year);
+                    $('.arrow-top').click(() => timeline.moveActiveIdx(-1));
+                    $('.arrow-bottom').click(() => timeline.moveActiveIdx(1));
+                },
+                onUpdate: timeline => {
+                    $('.year.latest').css('opacity', (timeline.activeIdx === 0) ? 0 : 1);
+                    $('.year.earliest').css('opacity', (timeline.activeIdx + 2 + 1 >= timeline.$rows.length) ? 0 : 1);
+                },
+                dataJson: '/js/json/timelineData.json',
+                buildEntry: ICAFTimeline.buildEntry,
+                offset: 82
+            });
         });
     </script>
 </head>
 
 <body>
     <div class="container">
+        <!-- <img src="/resource/image/impact/timeline/2023/The Power of Words.jpg" />
+        <img src="/resource/image/impact/timeline/2022/LA Times.png" />
+        <img src="/resource/image/impact/timeline/2022/ChildArt.png" />
+        <img src="/resource/image/impact/timeline/2022/MSW-logo.png" /> -->
+
         <!-- Nav -->
         <div use-snippet="/snippets/nav.snip.html"></div>
 
         <!-- title -->
-        <div class="title">IMPACT</div>
+        <div class="page-title">IMPACT</div>
 
         <!-- hope for humanity -->
         <div class="hope">Hope for Humanity resides in Creativity that can be learned and in Empathy that can be taught.
@@ -220,159 +239,45 @@
         </div>
 
         <!-- Timeline -->
-        <div class="timeline-wrapper">
-            <div id="timeline">
-                <div class="row active">
-                    <div class="year">2022</div>
-                    <div class="line"></div>
-                    <div class="image"></div>
-                    <div class="text">Bringing children&rsquo;s perspectives to the United Nations &ldquo;Human Security
-                        for All&rdquo; campaign</div>
+        <div class="timeline-container">
+            <div style="position: relative;top: 43px;left: 67%;"> <input type="checkbox"
+                    onclick="$('#timeline').toggleClass('smushed');">
+                Smushed</div>
+            <div class="timeline-title">History of Achievements</div>
+            <div class="arrow-wrapper">
+                <div class="timeline-arrow">
+                    <div class="year latest">2022</div>
+                    <svg class="arrow-top" width="148" height="84" viewBox="0 0 148 84">
+                        <path
+                            d="M81.0711 2.92893C77.1658 -0.976311 70.8342 -0.976311 66.9289 2.92893L3.28932 66.5685C-0.615921 70.4738 -0.615921 76.8054 3.28932 80.7107C7.19456 84.6159 13.5262 84.6159 17.4315 80.7107L74 24.1421L130.569 80.7107C134.474 84.6159 140.805 84.6159 144.711 80.7107C148.616 76.8054 148.616 70.4738 144.711 66.5685L81.0711 2.92893ZM64 10V85H84V10H64Z" />
+                        <defs>
+                            <linearGradient id="arrowGradient" x1="0" x2="0" y1="1" y2="0">
+                                <stop offset="0%" stop-color="#ffd743"></stop>
+                                <stop offset="100%" stop-color="#dfb723"></stop>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <div class="arrow-body">
+
+                    </div>
+                    <!-- <img class="timeline-arrow" src="resource/image/impact/timeline/timeline-arrow.png"> -->
+                    <svg class="arrow-bottom" width="148" height="84" viewBox="0 0 148 84">
+                        <path
+                            d="M81.0711 2.92893C77.1658 -0.976311 70.8342 -0.976311 66.9289 2.92893L3.28932 66.5685C-0.615921 70.4738 -0.615921 76.8054 3.28932 80.7107C7.19456 84.6159 13.5262 84.6159 17.4315 80.7107L74 24.1421L130.569 80.7107C134.474 84.6159 140.805 84.6159 144.711 80.7107C148.616 76.8054 148.616 70.4738 144.711 66.5685L81.0711 2.92893ZM64 10V85H84V10H64Z"
+                            transform="rotate(180,74,42)"></path>
+                        <defs>
+                            <linearGradient id="arrowBottomGradient" x1="0" x2="0" y1="0" y2="1">
+                                <stop offset="0%" stop-color="#ffd743"></stop>
+                                <stop offset="100%" stop-color="#dfb723"></stop>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <div class="year earliest">1998</div>
                 </div>
-                <div class="row">
-                    <div class="year">2021</div>
-                    <div class="line"></div>
-                    <div class="image"></div>
-                    <div class="text">6th <a target="_blank" href="/resource/flipbooks/2021WCF/">World Children&rsquo;s
-                            Festival</a> at the National Mall</div>
-                </div>
-                <div class="row">
-                    <div class="year">2020</div>
-                    <div class="line"></div>
-                    <div class="image"></div>
-                    <div class="text">ChildArt magazine on neuroscience with the National Institutes of Art</div>
-                </div>
-                <div class="row">
-                    <div class="year">2018</div>
-                    <div class="line"></div>
-                    <div class="image"></div>
-                    <div class="text">ChildArt magazine on architecture with the American Institute for Architects</div>
-                </div>
-                <div class="row">
-                    <div class="year">2017</div>
-                    <div class="line"></div>
-                    <div class="image"></div>
-                    <div class="text">ChildArt magazine on brain and art with Johns Hopkins&rsquo; Brain Science
-                        Institute. </div>
-                </div>
-                <div class="row">
-                    <div class="year">2015</div>
-                    <div class="line"></div>
-                    <div class="image"></div>
-                    <div class="text">5th WCF at The Ellipse next to The White House </div>
-                </div>
-                <div class="row">
-                    <div class="year">2014</div>
-                    <div class="line"></div>
-                    <div class="image"></div>
-                    <div class="text">Cannes Lions international competition to design the WCF logo</div>
-                </div>
-                <div class="row">
-                    <div class="year">2013</div>
-                    <div class="line"></div>
-                    <div class="image"></div>
-                    <div class="text">Children&rsquo;s Tribute to Nelson Mandela exhibition at THEARC in Washington,
-                        D.C.</div>
-                </div>
-                <div class="row">
-                    <div class="year">2012</div>
-                    <div class="line"></div>
-                    <div class="image"></div>
-                    <div class="text">Exhibition at 21st Century Museum of Contemporary Art, Kanazawa</div>
-                </div>
-                <div class="row">
-                    <div class="year">2011</div>
-                    <div class="line"></div>
-                    <div class="image"></div>
-                    <div class="text">4th WCF on The National Mall, opened by U.S. Coast Guard and Forest Service</div>
-                </div>
-                <div class="row">
-                    <div class="year">2010</div>
-                    <div class="line"></div>
-                    <div class="image"></div>
-                    <div class="text">International children&rsquo;s panel at the Global Competitiveness Forum, Riyadh
-                        Healing Arts Programs in Haiti and Chile for earthquake victims</div>
-                </div>
-                <div class="row">
-                    <div class="year">2009</div>
-                    <div class="line"></div>
-                    <div class="image"></div>
-                    <div class="text">Education Without Borders, ICAF exhibition, Dubai</div>
-                </div>
-                <div class="row">
-                    <div class="year">2008</div>
-                    <div class="line"></div>
-                    <div class="image"></div>
-                    <div class="text">Presented at the Aspen Institute&rsquo;s Cultural Diplomacy Forum in Paris, France
-                        World Cultural Economic Forum, International children&rsquo;s panel, New Orleans Children of
-                        Katrina exhibition at Central Military Club, Sofia</div>
-                </div>
-                <div class="row">
-                    <div class="year">2007</div>
-                    <div class="line"></div>
-                    <div class="image"></div>
-                    <div class="text">U.S. Olympic Committee grants exclusive license to use &ldquo;Arts Olympiad&rdquo;
-                        mark
-                        3rd
-                        WCF on The National Mall, opened by Congresswoman Bordallo</div>
-                </div>
-                <div class="row">
-                    <div class="year">2006</div>
-                    <div class="line"></div>
-                    <div class="image"></div>
-                    <div class="text">Arts Olympiad Exhibition at Palace of Stupinigi during the Turin Winter Olympics
-                        Children of Katrina exhibition at Museu da Cidade in Lisbon, Portugal European Children&rsquo;s
-                        Festival at the Olympia Park in Munich, Germany Cultural Figurines exhibition at Galleria Kophof
-                        in Munich, Germany</div>
-                </div>
-                <div class="row">
-                    <div class="year">2005</div>
-                    <div class="line"></div>
-                    <div class="image"></div>
-                    <div class="text">Destruction, Reconstruction and Prevention program at the World Bank</div>
-                </div>
-                <div class="row">
-                    <div class="year">2004</div>
-                    <div class="line"></div>
-                    <div class="image"></div>
-                    <div class="text">Partnered with New York City in its bid to host the 2012 Olympics Exemplary
-                        Humanitarian Service Award at the World Culture Open, Seoul Utopia Exhibition &#175;
-                        Children&rsquo;s Utopia, Haus der Kunst, Munich </div>
-                </div>
-                <div class="row">
-                    <div class="year">2003</div>
-                    <div class="line"></div>
-                    <div class="image"></div>
-                    <div class="text">Children&rsquo;s art exhibition at the World Bank/IMF Annual Meetings in Dubai,
-                        UAE Innovation in Education symposium in Doha, Qatar with the Qatar Foundation 2nd WCF on The
-                        National Mall, opened by Congresswoman Louise Slaughter</div>
-                </div>
-                <div class="row">
-                    <div class="year">2002</div>
-                    <div class="line"></div>
-                    <div class="image"></div>
-                    <div class="text">Peace through Art Program for Greek-Cypriot and Turkish-Cypriot youth Washington
-                        Coalition to bid for the 2012 Olympic Games in our nation&rsquo;s capital</div>
-                </div>
-                <div class="row">
-                    <div class="year">2000</div>
-                    <div class="line"></div>
-                    <div class="image"></div>
-                    <div class="text">First Ladies Forum at the UN Millennium Development Summit in New York City</div>
-                </div>
-                <div class="row">
-                    <div class="year">1999</div>
-                    <div class="line"></div>
-                    <div class="image"></div>
-                    <div class="text">1st WCF on The National Mall, opened by the first ladies of Costa Rica, Ecuador,
-                        and Liberia
-                        -The White House New Millennium Celebration art activities and exhibition</div>
-                </div>
-                <div class="row">
-                    <div class="year">1998</div>
-                    <div class="line"></div>
-                    <div class="image"></div>
-                    <div class="text">First-ever national children&rsquo;s art festival in U.S. history</div>
+            </div>
+            <div class="timeline-wrapper">
+                <div id="timeline">
+
                 </div>
             </div>
         </div>

@@ -325,7 +325,7 @@ body > .container {
   }
 }
 
-#videoContainer {
+.video-container {
   background-color: $ICAF_BLUE;
   margin: 0 41px;
   margin-bottom: 96px;
@@ -339,14 +339,14 @@ body > .container {
   }
 
   &:hover {
-    #playControl {
+    .play-control {
       opacity: 0.8;
     }
-    #volumeControl {
+    .volume-control {
       opacity: 1;
     }
   }
-  #playControl {
+  .play-control {
     z-index: 10;
     position: absolute;
     top: calc(50% - 62px);
@@ -380,7 +380,7 @@ body > .container {
       }
     }
   }
-  #volumeControl {
+  .volume-control {
     z-index: 10;
     position: absolute;
     bottom: 47%;

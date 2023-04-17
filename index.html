@@ -184,8 +184,8 @@
         </div>
 
         <!-- Mural Section -->
-        <div class="section-title">Take Action</div>
-        <div class="mural-wrapper">
+        <div class="section-title" style="display: none;">Take Action</div>
+        <div class="mural-wrapper" style="display: none;">
             <div class="murals cross-fade">
                 <img src="/resource/image/us-mural.png" alt="USA Mural" />
                 <img src="/resource/image/world-mural.png" alt="World Mural" />
@@ -212,6 +212,30 @@
                         <span>Apply Here</span>
                     </div>
                 </a>
+            </div>
+        </div>
+
+        <div class="section-title">International Child Art Foundation Overview</div>
+        <div class="video-container" id="overview">
+            <video loop muted autoplay playsinline>
+                <source src="/resource/video/ICAF Overview.mp4" type="video/mp4">
+                Something went wrong?
+            </video>
+            <div class="play-control">
+                <div class="play hidden">
+                    <svg height="66" width="66" viewBox="-10 0 66 66">
+                        <path opacity="0.8" d="M56.8762 33.3195L0.788586 65.7017L0.788589 0.937276L56.8762 33.3195Z" />
+                    </svg>
+                </div>
+                <div class="pause">
+                    <svg width="66" height="66" viewBox="0 0 43 43">
+                        <path d="M24.5 29.75V12.25H29.5V29.75H24.5ZM14.5 29.75V12.25H19.5V29.75H14.5Z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="volume-control">
+                <img src="/resource/image/vol-icon.png" class="hidden" alt="Volume On">
+                <img src="/resource/image/vol-muted-icon.png" alt="Volume Muted">
             </div>
         </div>
 
@@ -331,13 +355,13 @@
 
         <!-- WCF video -->
         <div class="section-title">World Children's Festival</div>
-        <div id="videoContainer">
-            <video loop muted autoplay playsinline>
+        <div class="video-container">
+            <video loop muted autoplay playsinline data-start="10.5">
                 <source src="/resource/video/wcf-full-720p.mp4" type="video/mp4">
                 <source src="/resource/video/wcf-full-360p.mp4" type="video/mp4">
                 Something went wrong?
             </video>
-            <div id="playControl">
+            <div class="play-control">
                 <div class="play hidden">
                     <svg height="66" width="66" viewBox="-10 0 66 66">
                         <path opacity="0.8" d="M56.8762 33.3195L0.788586 65.7017L0.788589 0.937276L56.8762 33.3195Z" />
@@ -349,7 +373,7 @@
                     </svg>
                 </div>
             </div>
-            <div id="volumeControl">
+            <div class="volume-control">
                 <img src="/resource/image/vol-icon.png" class="hidden" alt="Volume On">
                 <img src="/resource/image/vol-muted-icon.png" alt="Volume Muted">
             </div>

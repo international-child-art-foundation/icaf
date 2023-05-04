@@ -1,9 +1,10 @@
 class ICAFTimeline {
 
     static buildEntry($timeline, entryData) {
-        let { year, imgSrc, imgLink, description } = entryData;
-        let imgAlt = (imgSrc.match(/\/(\w+)?\.\w+$/) || [, ''])[1];
+        let { year, imgSrc, imgLink, aspectRatio, description } = entryData;
+        let imgAlt = (imgSrc.match(/\/(\w+)?\.\w+$/) || [,''])[1];
         let imgHtml = `<img src="${imgSrc}" alt="${imgAlt}" >`;
+        if (aspectRatio) imgHtml = imgHtml.replace(/>$/,` style="aspect-ratio: ${aspectRatio}">`);
         if (imgLink) imgHtml = `<a target="_blank" href="${imgLink}">${imgHtml}</a>`;
 
         $timeline.append(`

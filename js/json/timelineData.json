@@ -52,6 +52,7 @@
     "year": 2020,
     "imgSrc": "/resource/image/impact/timeline/2020/anthro.jpg",
     "imgLink": "/resource/pdfs/Anthropoligie.pdf",
+    "aspectRatio": "42/25",
     "description": "Anthropologie stores across the U.S. support ICAF"
   },
 
@@ -80,6 +81,7 @@
     "year": 2017,
     "imgSrc": "/resource/image/impact/timeline/2017/johns hopkins.jpg",
     "imgLink": "https://icaf.org/resource/flipbooks/YourBrainonArt/",
+    "aspectRatio": "42/25",
     "description": "ICAF partners with Johns Hopkins Brain Science Institute for ChildArt magazine on neuroscience"
   },
 
@@ -127,7 +129,7 @@
 
   {
     "year": 2012,
-    "imgSrc": "/resource/image/impact/timeline/2012/Japan.webp",
+    "imgSrc": "/resource/image/impact/timeline/2012/Japan.jpg",
     "imgLink": null,
     "description": "ICAF exhibition in Kanazawa, Japan"
   },
@@ -136,6 +138,7 @@
     "year": 2012,
     "imgSrc": "/resource/image/impact/timeline/2012/madewell-logo.png",
     "imgLink": null,
+    "aspectRatio": "42/25",
     "description": "Madewell stores support ICAF"
   },
 

@@ -3,3 +3,66 @@
 @use "icaf-general";
 @use "icaf-nav";
 @use "icaf-footer";
+
+.title-section {
+  background: url(/resource/image/gallery/Title\ Art.png);
+  background-size: 100%;
+  height: 710px;
+  padding-top: 112px;
+  padding-left: 190px;
+
+  .gallery-breadcrumb {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    color: $ICAF_WHITE;
+  }
+
+  .gallery-title {
+    margin-top: 4px;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 55px;
+    color: $ICAF_YELLOW;
+  }
+
+  .ai-quote {
+    position: relative;
+    max-width: 652px;
+    margin-top: 90px;
+    fill: $ICAF_YELLOW;
+    color: $ICAF_YELLOW;
+    .quote-text {
+      font-size: 40px;
+      line-height: 55px;
+      margin-top: 20px;
+      font-style: italic;
+    }
+    .lower-right {
+      position: absolute;
+      right: 0;
+      text-align: right;
+      .quote-name {
+        margin-top: 24px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 49px;
+      }
+    }
+  }
+}
+
+.imagination {
+  margin-top: 125px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: $ICAF_BLUE;
+}
+
+.search-section {
+  margin-top: 60px;
+  width: 1224px;
+}

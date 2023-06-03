@@ -333,66 +333,9 @@ body > .container {
   display: flex;
   justify-content: center;
   position: relative;
+  
   video {
     width: 1169px;
     height: 653px;
-  }
-
-  &:hover {
-    .play-control {
-      opacity: 0.8;
-    }
-    .volume-control {
-      opacity: 1;
-    }
-  }
-  .play-control {
-    z-index: 10;
-    position: absolute;
-    top: calc(50% - 62px);
-    right: calc(50% - 62px);
-    opacity: 0;
-    transition: opacity 200ms;
-    cursor: pointer;
-    > div {
-      background: #5f5f5f;
-      width: 124px;
-      height: 124px;
-      border-radius: 9px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0.8;
-      svg {
-        fill: #fff;
-      }
-      &.pause svg {
-        scale: 2;
-      }
-      &:hover {
-        background: #fff;
-        svg {
-          fill: #5f5f5f;
-        }
-      }
-      &.hidden {
-        display: none;
-      }
-    }
-  }
-  .volume-control {
-    z-index: 10;
-    position: absolute;
-    bottom: 47%;
-    right: 2%;
-    opacity: 0;
-    transition: opacity 200ms;
-    cursor: pointer;
-    img {
-      width: 45px;
-      &.hidden {
-        display: none;
-      }
-    }
   }
 }

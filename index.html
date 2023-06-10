@@ -9,6 +9,7 @@
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/bootstrap.min.js" defer></script>
     <script src="/js/icaf-main.js" type="module" defer></script>
+    <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
     <script>
         let t = Date.now();
         $(document).ready(function () {
@@ -216,27 +217,11 @@
         </div>
 
         <div class="section-title">International Child Art Foundation Overview</div>
-        <div class="video-container" id="overview">
-            <video loop muted autoplay playsinline>
-                <source src="/resource/video/ICAF Overview.mp4" type="video/mp4">
+        <div class="video-container">
+            <video loop muted autoplay playsinline controls>
+                <source src="/resource/video/icaf-overview.mp4" type="video/mp4">
                 Something went wrong?
             </video>
-            <div class="play-control">
-                <div class="play hidden">
-                    <svg height="66" width="66" viewBox="-10 0 66 66">
-                        <path opacity="0.8" d="M56.8762 33.3195L0.788586 65.7017L0.788589 0.937276L56.8762 33.3195Z" />
-                    </svg>
-                </div>
-                <div class="pause">
-                    <svg width="66" height="66" viewBox="0 0 43 43">
-                        <path d="M24.5 29.75V12.25H29.5V29.75H24.5ZM14.5 29.75V12.25H19.5V29.75H14.5Z" />
-                    </svg>
-                </div>
-            </div>
-            <div class="volume-control">
-                <img src="/resource/image/vol-icon.png" class="hidden" alt="Volume On">
-                <img src="/resource/image/vol-muted-icon.png" alt="Volume Muted">
-            </div>
         </div>
 
         <!-- Carousel -->
@@ -356,27 +341,11 @@
         <!-- WCF video -->
         <div class="section-title">World Children's Festival</div>
         <div class="video-container">
-            <video loop muted autoplay playsinline data-start="10.5">
+            <video loop muted autoplay playsinline controls>
                 <source src="/resource/video/wcf-full-720p.mp4" type="video/mp4">
                 <source src="/resource/video/wcf-full-360p.mp4" type="video/mp4">
                 Something went wrong?
             </video>
-            <div class="play-control">
-                <div class="play hidden">
-                    <svg height="66" width="66" viewBox="-10 0 66 66">
-                        <path opacity="0.8" d="M56.8762 33.3195L0.788586 65.7017L0.788589 0.937276L56.8762 33.3195Z" />
-                    </svg>
-                </div>
-                <div class="pause">
-                    <svg width="66" height="66" viewBox="0 0 43 43">
-                        <path d="M24.5 29.75V12.25H29.5V29.75H24.5ZM14.5 29.75V12.25H19.5V29.75H14.5Z" />
-                    </svg>
-                </div>
-            </div>
-            <div class="volume-control">
-                <img src="/resource/image/vol-icon.png" class="hidden" alt="Volume On">
-                <img src="/resource/image/vol-muted-icon.png" alt="Volume Muted">
-            </div>
         </div>
 
         <!-- Footer -->

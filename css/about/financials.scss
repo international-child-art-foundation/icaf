@@ -59,51 +59,51 @@
     text-align: center;
     margin: 80px 0 40px;
   }
-      .list-wrapper {
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 30px;
-        justify-content: space-evenly;
+  .section {
+    font-size: 24px;
+    line-height: 100px;
+  }
+  .list-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    justify-content: space-evenly;
 
-        ul {
-          font-size: 24px;
-          line-height: 33px;
-          // width: fit-content;
-          list-style: none;
-        }
-      }
+    ul {
+      font-size: 24px;
+      line-height: 33px;
+      // width: fit-content;
+      list-style: none;
+    }
+  }
 }
 
 .content {
   max-width: 1060px;
   margin: 60px auto 220px;
-
-  .section-titles {
-    margin-top: 60px;
-    margin-bottom: 40px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 49px;
+  .section-title {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
     color: $ICAF_BLUE;
+    text-align: center;
+    margin: 80px 0 40px;
   }
-
-  .sections {
-    font-size: 22px;
+  .section {
+    font-size: 24px;
+    line-height: 100px;
   }
+  .list-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    justify-content: space-evenly;
 
-  .image-text-container {
-    overflow: auto; // Clear the float
-
-    img {
-      float: right; // Float the image to the left
-      margin-right: 10px; // Add space between the image and text
-    }
-
-    p {
-      margin: 0; // Remove default margins to avoid extra spacing
+    ul {
+      font-size: 24px;
+      line-height: 33px;
+      // width: fit-content;
+      list-style: none;
     }
   }
 }
-
-
-

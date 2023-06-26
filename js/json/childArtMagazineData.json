@@ -1,14 +1,14 @@
 [
-	{"name":"2023_q2", "coverImg":"/resource/image/mission/childart-magazine/2023_q2.jpg"},
-	{"name":"2023_q1", "coverImg":"/resource/image/mission/childart-magazine/2023_q1.jpg"},
-	{"name":"2022-q4", "coverImg":"/resource/image/mission/childart-magazine/2022_q4.png"},
-	{"name":"2022_q3", "coverImg":"/resource/image/mission/childart-magazine/2022_q3.png"},
-	{"name":"2022_q2", "coverImg":"/resource/image/mission/childart-magazine/2022_q2.png"},
-	{"name":"2022_q1", "coverImg":"/resource/image/mission/childart-magazine/2022_q1.jpg"},
-	{"name":"2021_q4", "coverImg":"/resource/image/mission/childart-magazine/2021_q4.jpg"},
-	{"name":"2021_q3", "coverImg":"/resource/image/mission/childart-magazine/2021_q3.jpg"},
-	{"name":"2021_q2", "coverImg":"/resource/image/mission/childart-magazine/2021_q2.jpg"},
-	{"name":"2021_q1", "coverImg":"/resource/image/mission/childart-magazine/2021_q1.jpg"},
-	{"name":"2020_q3", "coverImg":"/resource/image/mission/childart-magazine/2020_q3.jpg"},
-	{"name":"2020_q2", "coverImg":"/resource/image/mission/childart-magazine/2020_q2.jpg"}
+	{"name":"2023-q2", "coverImg":"/resource/image/mission/childart-magazine/2023-q2.jpg"},
+	{"name":"2023-q1", "coverImg":"/resource/image/mission/childart-magazine/2023-q1.jpg"},
+	{"name":"2022-q4", "coverImg":"/resource/image/mission/childart-magazine/2022-q4.png"},
+	{"name":"2022-q3", "coverImg":"/resource/image/mission/childart-magazine/2022-q3.png"},
+	{"name":"2022-q2", "coverImg":"/resource/image/mission/childart-magazine/2022-q2.png"},
+	{"name":"2022-q1", "coverImg":"/resource/image/mission/childart-magazine/2022-q1.jpg"},
+	{"name":"2021-q4", "coverImg":"/resource/image/mission/childart-magazine/2021-q4.jpg"},
+	{"name":"2021-q3", "coverImg":"/resource/image/mission/childart-magazine/2021-q3.jpg"},
+	{"name":"2021-q2", "coverImg":"/resource/image/mission/childart-magazine/2021-q2.jpg"},
+	{"name":"2021-q1", "coverImg":"/resource/image/mission/childart-magazine/2021-q1.jpg"},
+	{"name":"2020-q3", "coverImg":"/resource/image/mission/childart-magazine/2020-q3.jpg"},
+	{"name":"2020-q2", "coverImg":"/resource/image/mission/childart-magazine/2020-q2.jpg"}
 ]

@@ -2,7 +2,7 @@
   {
     "year": 2023,
     "imgSrc": "/resource/image/impact/timeline/2023/The Power of Words.jpg",
-    "imgLink": "/resource/flipbooks/ThePowerOfWords/",
+    "imgLink": "https://icaf.org/resource/flipbooks/ThePowerOfWords/",
     "description": "ChildArt magazine on ChatGPT and authentic prose"
   },
 
@@ -16,14 +16,14 @@
   {
     "year": 2022,
     "imgSrc": "/resource/image/impact/timeline/2022/ChildArt.png",
-    "imgLink": "/resource/flipbooks/HumanSecurity/",
+    "imgLink": "https://icaf.org/resource/flipbooks/HumanSecurity/",
     "description": "Children’s perspectives on the UN Human Security for all Campaign"
   },
 
   {
     "year": 2022,
     "imgSrc": "/resource/image/impact/timeline/2022/MSW-logo.png",
-    "imgLink": null,
+    "imgLink": "/resource/image/impact/timeline/2022/Metaverse safety week.jpg",
     "description": "ICAF Youth Panel at the Metaverse Safety Week"
   },
 
@@ -44,14 +44,14 @@
   {
     "year": 2020,
     "imgSrc": "/resource/image/impact/timeline/2020/NIH.png",
-    "imgLink": "/resource/flipbooks/ABCDStudy/",
+    "imgLink": "https://icaf.org/resource/flipbooks/ABCDStudy/",
     "description": "ICAF collaborates with NIH to present the ABCD Study in ChildArt quarterly"
   },
 
   {
     "year": 2020,
     "imgSrc": "/resource/image/impact/timeline/2020/anthro.jpg",
-    "imgLink": "/resource/pdfs/Anthropoligie.pdf",
+    "imgLink": "https://icaf.org/resource/pdfs/Anthropologie.pdf",
     "aspectRatio": "42/25",
     "description": "Anthropologie stores across the U.S. support ICAF"
   },
@@ -66,14 +66,14 @@
   {
     "year": 2018,
     "imgSrc": "/resource/image/impact/timeline/2018/AIA-logo.jpg",
-    "imgLink": "/resource/flipbooks/DimensionsOfArchitecture/",
+    "imgLink": "https://icaf.org/resource/flipbooks/DimensionsOfArchitecture/",
     "description": "ICAF partners with AIA for ChildArt issue on architecture"
   },
 
   {
     "year": 2018,
     "imgSrc": "/resource/image/impact/timeline/2018/andover.jpg",
-    "imgLink": null,
+    "imgLink": "/resource/image/impact/timeline/2018/Phillips Academy Andover_2018.jpg",
     "description": "ICAF exhibition at the Phillips Academy Andover"
   },
 
@@ -88,7 +88,7 @@
   {
     "year": 2017,
     "imgSrc": "/resource/image/impact/timeline/2017/karim_rashid.png",
-    "imgLink": null,
+    "imgLink": "/resource/image/impact/timeline/2017/award.jpg",
     "description": "Karim Rashid designs the World Children’s Award"
   },
 
@@ -123,21 +123,21 @@
   {
     "year": 2013,
     "imgSrc": "/resource/image/impact/timeline/2013/US fish.jpg",
-    "imgLink": null,
+    "imgLink": "/resource/image/impact/timeline/2013/US Fish & Wildlife Service and ICAF announce Youth Art Contest winners.jpg",
     "description": "US Fish & Wildlife Service and ICAF announce Youth Art Contest winners"
   },
 
   {
     "year": 2012,
     "imgSrc": "/resource/image/impact/timeline/2012/Japan.jpg",
-    "imgLink": null,
+    "imgLink": "/resource/image/impact/timeline/2012/ICAF exhibition in Kanazawa.jpg",
     "description": "ICAF exhibition in Kanazawa, Japan"
   },
 
   {
     "year": 2012,
     "imgSrc": "/resource/image/impact/timeline/2012/madewell-logo.png",
-    "imgLink": null,
+    "imgLink": "/resource/pdfs/Madewell.pdf",
     "aspectRatio": "42/25",
     "description": "Madewell stores support ICAF"
   },
@@ -152,8 +152,8 @@
   {
     "year": 2011,
     "imgSrc": "/resource/image/impact/timeline/2011/cover.png",
-    "imgLink": "/resuorce/pdfs/ChildArt.pdf",
-    "description": "3rd World Children’s Festival at the National Mall across the U.S. Capitol"
+    "imgLink": "/resource/pdfs/ChildArt July-Sept 2011 4thWCF.pdf",
+    "description": "4th World Children’s Festival at the National Mall across the U.S. Capitol"
   },
 
   {
@@ -193,7 +193,7 @@
   {
     "year": 2007,
     "imgSrc": "/resource/image/impact/timeline/2007/WCF2007.png",
-    "imgLink": null,
+    "imgLink": "/resource/image/impact/timeline/2007/ChildArt magazine on the 3rd WCF.pdf",
     "description": "ChildArt magazine on the 3rd World Children’s Festival"
   },
 
@@ -214,21 +214,21 @@
   {
     "year": 2006,
     "imgSrc": "/resource/image/impact/timeline/2006/Portugal.png",
-    "imgLink": null,
+    "imgLink": "/resource/image/impact/timeline/2006/ICAF Children of Katrina exhibition at Museu da Cidade, Lisbon, Portugal.jpg",
     "description": "ICAF “Children of Katrina” exhibition at Museu da Cidade, Lisbon, Portugal"
   },
 
   {
     "year": 2006,
     "imgSrc": "/resource/image/impact/timeline/2006/galeria-kaufhof-logo.png",
-    "imgLink": null,
+    "imgLink": "/resource/image/impact/timeline/2006/ICAF organized an extraordinary exhibition at Galleria Kaufhof, Munich, Germany.pdf",
     "description": "ICAF organized an extraordinary exhibition at Galleria Kaufhof, Munich, Germany"
   },
 
   {
     "year": 2005,
     "imgSrc": "/resource/image/impact/timeline/2005/world bank.png",
-    "imgLink": null,
+    "imgLink": "/resource/image/impact/timeline/2005/ICAF and the World Bank organized a forum on Destruction, Reconstruction and Prevention.jpg",
     "description": "ICAF and the World Bank organized a forum on Destruction, Reconstruction and Prevention in  Washington, D.C."
   },
 
@@ -242,7 +242,7 @@
   {
     "year": 2004,
     "imgSrc": "/resource/image/impact/timeline/2004/cover.png",
-    "imgLink": null,
+    "imgLink": "/resource/image/impact/timeline/2004/ICAF joined NYC bid to host the 2012 Olympics.pdf",
     "description": "ICAF joined New York City’s bid to host the 2012 Olympics"
   },
 
@@ -263,35 +263,35 @@
   {
     "year": 2003,
     "imgSrc": "/resource/image/impact/timeline/2003/qatar foundation.jpg",
-    "imgLink": "Gulf Times.jpg",
+    "imgLink": "/resource/image/impact/timeline/2003/Gulf Times.png",
     "description": "ICAF and Qatar Foundation hosted “Innovations in Education” symposium in Doha."
   },
 
   {
     "year": 2003,
     "imgSrc": "/resource/image/impact/timeline/2003/2003 Dubai.jpg",
-    "imgLink": null,
+    "imgLink": "/resource/pdfs/dubai.pdf",
     "description": "“Children’s World Mural” as part of ICAF exhibition at the World Bank/IMF Annual Meetings in Dubai, UAE"
   },
 
   {
     "year": 2003,
     "imgSrc": "/resource/image/impact/timeline/2003/2003WCF.jpg",
-    "imgLink": "https://youtu.be/D4Z5gKH429I",
+    "imgLink": "https://www.youtube.com/watch?v=aci03P5Jknc",
     "description": "2nd World Children’s Festival at the National Mall across the U.S. Capitol"
   },
 
   {
     "year": 2003,
     "imgSrc": "/resource/image/impact/timeline/2003/DC gov.jpg",
-    "imgLink": null,
+    "imgLink": "/resource/image/impact/timeline/2003/DC Mayor proclaims 911 as Children's Peace Day.jpg",
     "description": "DC Mayor proclaims 9/11 as \"Children's Peace Day\""
   },
 
   {
     "year": 2002,
     "imgSrc": "/resource/image/impact/timeline/2002/DC2012.jpg",
-    "imgLink": null,
+    "imgLink": "/resource/image/impact/timeline/2002/ICAF partnered with DC2012.jpg",
     "description": "ICAF partnered with DC2012 to bring the Olympics to the nation’s capital"
   },
 
@@ -305,28 +305,28 @@
   {
     "year": 2001,
     "imgSrc": "/resource/image/impact/timeline/2001/pentagon.png",
-    "imgLink": null,
+    "imgLink": "/resource/image/impact/timeline/2001/Pentagon.PattyShinseki.JPG",
     "description": "ICAF invited by Mrs. Patty Shinseki to evaluate children’s 9/11 artworks at the Pentagon"
   },
 
   {
     "year": 2000,
     "imgSrc": "/resource/image/impact/timeline/2000/Jordan.png",
-    "imgLink": null,
+    "imgLink": "/resource/image/impact/timeline/2000/Queen Rania.bmp",
     "description": "Jordan’s Queen Rania visits ICAF"
   },
 
   {
     "year": 1999,
     "imgSrc": "/resource/image/impact/timeline/1999/kazakhstan.png",
-    "imgLink": null,
+    "imgLink": "/resource/image/impact/timeline/1999/First Lady of Kazakhstan.jpg",
     "description": "Kazakhstan’s First Lady Sara Nazarbayeva visits ICAF"
   },
 
   {
     "year": 1999,
     "imgSrc": "/resource/image/impact/timeline/1999/white house.jfif",
-    "imgLink": null,
+    "imgLink": "/resource/image/impact/timeline/1999/White House Millennium Celebration.jpg",
     "description": "ICAF exhibition at the White House Millennium Celebration"
   },
 
@@ -354,7 +354,7 @@
   {
     "year": 1998,
     "imgSrc": "/resource/image/impact/timeline/1998/Lithuania.png",
-    "imgLink": null,
+    "imgLink": "/resource/image/impact/timeline/1998/1998 First Lady Adamkiene.jpg",
     "description": "First Lady of Lithuania Alma Adamkienė visits ICAF"
   }
 ]

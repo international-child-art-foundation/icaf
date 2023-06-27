@@ -59,10 +59,6 @@
     text-align: center;
     margin: 80px 0 40px;
   }
-  .section {
-    font-size: 24px;
-    line-height: 100px;
-  }
   .list-wrapper {
     display: grid;
     grid-template-columns: auto auto;
@@ -91,19 +87,6 @@
   }
   .section {
     font-size: 24px;
-    line-height: 100px;
-  }
-  .list-wrapper {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 30px;
-    justify-content: space-evenly;
-
-    ul {
-      font-size: 24px;
-      line-height: 33px;
-      // width: fit-content;
-      list-style: none;
-    }
+    line-height: 33px;
   }
 }

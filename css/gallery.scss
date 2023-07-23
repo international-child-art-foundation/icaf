@@ -66,3 +66,24 @@
   margin-top: 60px;
   width: 1224px;
 }
+
+.gallery-grid {
+  margin: 48px 106px 81px 106px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 58px;
+  .card {
+      width: 370px;
+      height: 485px;
+    img {
+      width: 370px;
+      height: 370px;
+    }
+    .card-info {
+      font-size: 18px;
+      font-weight: 400;
+      margin: auto;
+      color: #586B83;
+    }
+  }
+}

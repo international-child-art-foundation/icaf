@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/gallery.css" />
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/bootstrap.min.js" defer></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script>
         $(document).ready(function () {
             for (let el of $('[use-snippet]')) {
@@ -63,7 +64,173 @@
                     <p>Program Name</p>
                 </div>
             </div>
+            <div class="card">
+                <div class="card-image"><img src="/resource/image/artwork/Texas (April Heaney, 14).png" alt=""></div>
+                <div class="card-info">
+                    <p>Artist Name (age), Location</p>
+                    <p>Program Name</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image"><img src="/resource/image/artwork/Texas (April Heaney, 14).png" alt=""></div>
+                <div class="card-info">
+                    <p>Artist Name (age), Location</p>
+                    <p>Program Name</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image"><img src="/resource/image/artwork/New Zealand (Ella Gordon-Latty, 12).png" alt=""></div>
+                <div class="card-info">
+                    <p>Artist Name (age), Location</p>
+                    <p>Program Name</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image"><img src="/resource/image/artwork/Texas (April Heaney, 14).png" alt=""></div>
+                <div class="card-info">
+                    <p>Artist Name (age), Location</p>
+                    <p>Program Name</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image"><img src="/resource/image/artwork/Texas (April Heaney, 14).png" alt=""></div>
+                <div class="card-info">
+                    <p>Artist Name (age), Location</p>
+                    <p>Program Name</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image"><img src="/resource/image/artwork/Texas (April Heaney, 14).png" alt=""></div>
+                <div class="card-info">
+                    <p>Artist Name (age), Location</p>
+                    <p>Program Name</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image"><img src="/resource/image/artwork/Texas (April Heaney, 14).png" alt=""></div>
+                <div class="card-info">
+                    <p>Artist Name (age), Location</p>
+                    <p>Program Name</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image"><img src="/resource/image/artwork/Texas (April Heaney, 14).png" alt=""></div>
+                <div class="card-info">
+                    <p>Artist Name (age), Location</p>
+                    <p>Program Name</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image"><img src="/resource/image/artwork/Texas (April Heaney, 14).png" alt=""></div>
+                <div class="card-info">
+                    <p>Artist Name (age), Location</p>
+                    <p>Program Name</p>
+                </div>
+            </div>
         </div>
+        <div class="pagination">
+        </div>
+        <script type="text/javascript">
+            function getPageList(totalPages, page, maxLength) {
+                function range(start, end) {
+                    return Array.from(Array(end-start+1), (_,i) => i+start);
+                }
+
+                var sideWidth = 1;
+                var leftWidth = (maxLength - sideWidth * 2 - 3) >> 1;
+                var rightWidth = (maxLength - sideWidth * 2 - 3) >> 1;
+
+                if(totalPages <= maxLength){
+                    return range(1, totalPages)
+                }
+
+                if(page <= maxLength - sideWidth - 1 - rightWidth){
+                    return range(1, maxLength - sideWidth - 1).concat(0, range(totalPages - sideWidth + 1, totalPages));
+                }
+
+                if(page >= totalPages - sideWidth - 1 - rightWidth){
+                    return range(1, sideWidth).concat(0, range(totalPages - sideWidth - 1 - rightWidth - leftWidth, totalPages))
+                }
+                
+                return range(1, sideWidth).concat(0, range(page - leftWidth, page + rightWidth), 0, range(totalPages - sideWidth + 1, totalPages))
+            }
+            $(function() {
+                var numberOfItems = $(".gallery-grid .card").length;
+                var limitPerPage = 9;
+                var totalPages = Math.ceil(numberOfItems / limitPerPage);
+                var paginationSize = 9;
+                var currentPage;
+                
+                function showPage(whichPage){
+                    if(whichPage < 1 || whichPage > totalPages) return false;
+
+                    currentPage = whichPage;
+
+                    $(".gallery-grid .card").hide().slice((currentPage - 1) * limitPerPage, currentPage * limitPerPage).show();
+
+                    $(".pagination li").slice(2, -2).remove();
+
+                    getPageList(totalPages, currentPage, paginationSize).forEach(item => {
+                        $("<li>").addClass("pagination-element").addClass(item ? "current-page" : "dots").toggleClass("active", item === currentPage).append($("<a>").addClass("pagination-link")
+                            .attr({href: "javascript:void(0)"}).text(item || "...")).insertBefore(".next-page"); 
+                    });
+
+                    if(currentPage === 1) {
+                        $(".previous-page button").prop("disabled", true);
+                        $(".first-page button").prop("disabled", true);
+                    } else {
+                        $(".previous-page button").prop("disabled", false);
+                        $(".first-page button").prop("disabled", false);
+                    }
+                    if(currentPage === totalPages) {
+                        $(".next-page button").prop("disabled", true);
+                        $(".last-page button").prop("disabled", true);
+                    } else {
+                        $(".next-page button").prop("disabled", false);
+                        $(".last-page button").prop("disabled", false);
+                    }
+                    return true;
+                }
+                
+                // add previous, next, first, and last page buttons
+                $(".pagination").append(
+                    $("<li>").addClass("pagination-element").addClass("first-page").append($("<button>").addClass("pagination-link").html("<span><iconify-icon icon=\"ic:outline-expand-more\" width=\"51px\" rotate=\"90deg\"></iconify-icon><iconify-icon icon=\"ic:outline-expand-more\" width=\"51px\" rotate=\"90deg\"></iconify-icon></span>")),
+                    $("<li>").addClass("pagination-element").addClass("previous-page").append($("<button>").addClass("pagination-link").html("<iconify-icon icon=\"ic:outline-expand-more\" width=\"51px\" rotate=\"90deg\"></iconify-icon>")),
+                    $("<li>").addClass("pagination-element").addClass("next-page").append($("<button>").addClass("pagination-link").html("<iconify-icon icon=\"ic:outline-expand-more\" width=\"51px\" rotate=\"270deg\"></iconify-icon>")),
+                    $("<li>").addClass("pagination-element").addClass("last-page").append($("<button>").addClass("pagination-link").html("<span><iconify-icon icon=\"ic:outline-expand-more\" width=\"51px\" rotate=\"270deg\"></iconify-icon><iconify-icon icon=\"ic:outline-expand-more\" width=\"51px\" rotate=\"270deg\"></iconify-icon></span>")),
+                );
+                
+                // show first page
+                $(".gallery-grid").show();
+                showPage(1);
+
+                $(document).on("click", ".pagination li.current-page:not(active)", function(){
+                    $(".imagination").get(0).scrollIntoView();
+                    return showPage(+$(this).text());
+                });
+                
+                // next page button functionality
+                $(".next-page button").on("click", function(){
+                    $(".imagination").get(0).scrollIntoView();
+                    return showPage(currentPage + 1);
+                })
+                // prev page button functionality
+                $(".previous-page button").on("click", function(){
+                    $(".imagination").get(0).scrollIntoView();
+                    return showPage(currentPage - 1);
+                })
+                // first page button functionality
+                $(".first-page button").on("click", function(){
+                    $(".imagination").get(0).scrollIntoView();
+                    return showPage(1);
+                })
+                // last page button functionality
+                $(".last-page button").on("click", function(){
+                    $(".imagination").get(0).scrollIntoView();
+                    return showPage(totalPages);
+                })
+            })
+        </script>
         <!-- Footer -->
         <div use-snippet="/snippets/footer.snip.html"></div>
     </div>

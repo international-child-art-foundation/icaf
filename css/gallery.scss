@@ -83,7 +83,50 @@
       font-size: 18px;
       font-weight: 400;
       margin: auto;
-      color: #586B83;
+      color: $ICAF_BLUE;
     }
   }
+}
+
+.pagination {
+  margin: 81px 230px 220px 230px;
+  justify-content: center;
+  li {
+    margin: 30px;
+  }
+  .pagination-link {
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 600;
+    color: $ICAF_GRAY;
+  }
+  .current-page .pagination-link{
+    width: 45px;
+    display: inline-block;
+    text-align: center;
+  }
+  .active .pagination-link{
+    background-color: $ICAF_YELLOW;
+    color: #000000;
+  }
+  .previous-page button, .next-page button {
+    background: none;
+    border: none;
+  }
+  .previous-page {
+    margin-right: 183px;
+  }
+  .next-page {
+    margin-left: 183px;
+  }
+  .first-page > button, .last-page > button {
+    background: none;
+    border: none;
+    span{
+      display:flex;
+      padding-right: 40px;
+      & > iconify-icon{
+        width: 15px;
+      }
+  }}
 }

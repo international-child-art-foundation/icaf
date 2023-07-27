@@ -57,6 +57,8 @@
             future.</div>
 
         <div class="gallery-grid">
+            <div class="gallery-info">
+            </div>
             <div class="card">
                 <div class="card-image"><img src="/resource/image/artwork/Texas (April Heaney, 14).png" alt=""></div>
                 <div class="card-info">
@@ -160,6 +162,16 @@
                 var totalPages = Math.ceil(numberOfItems / limitPerPage);
                 var paginationSize = 9;
                 var currentPage;
+
+                function resultInfo(){
+                    var lowerLimit = ((currentPage - 1) * limitPerPage)+1
+                    var upperLimit = currentPage * limitPerPage
+
+                    $(".gallery-info").append(
+                        $("<h3>").addClass("result-info").addClass("result-count").text(`${lowerLimit}-${upperLimit} of ${numberOfItems} Results`),
+                        $("<h3>").addClass("result-info").addClass("item-count").html(`<span>${limitPerPage}</span> Per Page`),
+                    )
+                }
                 
                 function showPage(whichPage){
                     if(whichPage < 1 || whichPage > totalPages) return false;
@@ -203,6 +215,7 @@
                 // show first page
                 $(".gallery-grid").show();
                 showPage(1);
+                resultInfo();
 
                 $(document).on("click", ".pagination li.current-page:not(active)", function(){
                     $(".imagination").get(0).scrollIntoView();

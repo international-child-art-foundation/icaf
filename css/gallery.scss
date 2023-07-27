@@ -72,6 +72,23 @@
   display: flex;
   flex-wrap: wrap;
   gap: 58px;
+  .gallery-info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .result-info{
+      color: $ICAF_GRAY;
+      font-size: 32px;
+      font-weight: 600;
+    }
+    .item-count {
+      text-align: right;
+      span {
+        color: $ICAF_BLUE;
+        text-decoration: underline;
+      }
+    }
+  }
   .card {
       width: 370px;
       height: 485px;

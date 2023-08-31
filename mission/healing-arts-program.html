@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Programs | Healing Arts Program</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/mission/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/mission/healing-arts-program.css" />
@@ -30,7 +31,40 @@
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
                 },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                        initialSlide: 0,
+                    },
+                    768: {
+                        slidesPerView: "auto",
+                        spaceBetween: 30,
+                        initialSlide: 0,
+                    },
+                }
             });
+            console.log('js')
+            const videoContainers = document.querySelectorAll('.video-container');
+
+            videoContainers.forEach(function(videoContainer) {
+                videoContainer.addEventListener('click', loadVideo);
+            });
+
+            function loadVideo(event) {
+                console.log('load')
+                const videoContainer = event.currentTarget;
+                const videoSrc = videoContainer.getAttribute('data-video-src');
+                
+                videoContainer.innerHTML = `
+                    <video controls autoplay>
+                        <source src="${videoSrc}" type="video/mp4">
+                        Something went wrong?
+                    </video>
+                `;
+                
+                // Remove the event listener
+                videoContainer.removeEventListener('click', loadVideo);
+            }
         });
     </script>
 </head>
@@ -81,12 +115,18 @@
 
             <!-- Program Images List  -->
             <div class="imgs">
-                <img class="img1" src="/resource/image/mission/healing-arts-program/Asian-Tsunami-INDIA.png">
-                <img class="img2" src="/resource/image/mission/healing-arts-program/Asian-Tsunami-SRI.png">
-                <img class="img3" src="/resource/image/mission/healing-arts-program/Chilean-Earthquake.png">
-                <div class="program-description">Asian Tsunami INDIA</div>
-                <div class="program-description">Asian Tsunami SRI LANKA</div>
-                <div class="program-description">Chilean Earthquake</div>
+                <div class="img-container">
+                    <img class="img1" src="/resource/image/mission/healing-arts-program/Asian-Tsunami-INDIA.png">
+                    <div class="program-description">Asian Tsunami INDIA</div>
+                </div>
+                <div class="img-container">
+                    <img class="img2" src="/resource/image/mission/healing-arts-program/Asian-Tsunami-SRI.png">
+                    <div class="program-description">Asian Tsunami SRI LANKA</div>
+                </div>
+                <div class="img-container">
+                    <img class="img3" src="/resource/image/mission/healing-arts-program/Chilean-Earthquake.png">
+                    <div class="program-description">Chilean Earthquake</div>
+                </div>
             </div>
         </div>
 
@@ -94,10 +134,8 @@
         <div class="section-titles section-titles-program-gallery">Program Gallery</div>
 
         <!-- Program Gallery Top Background -->
-        <div class="program-gallery-top">
-            <div class="background-image">
-                <img src="/resource/image/mission/healing-middle-top-background.svg" alt="Top Background">
-            </div>
+        <div class="program-gallery-top wave-container">
+            <img class="wave wave-top" src="/resource/image/mission/healing-middle-top-background.svg" alt="Top Background">
         </div>
 
         <!-- Program Gallery Main Content -->
@@ -107,16 +145,17 @@
             <div class="underline underline-1"></div>
 
             <!-- Video -->
-            <video controls>
-                <source src="/resource/video/building-resilience.mp4" type="video/mp4">
-            </video>
+            <div class="video-container" data-video-src="/resource/video/building-resilience.mp4">
+                <img src="/resource/image/mission/healing-arts-program/building-resilience-thumb.webp" alt="Video Thumbnail" class="video-thumbnail">
+                <button class="video-play-button"></button>    
+            </div>
 
             <!-- Second Program -->
             <div class="second-program">ASIAN TSUNAMI</div>
             <div class="underline underline-2"></div>
 
             <!-- Image Gallery -->
-            <div class="swiper mySwiper">
+            <div class="swiper mySwiper prevent-select">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="/resource/image/mission/healing-arts-program/2004_Asian_Tsunami_SRI_LANKA_6.jpg"
@@ -173,8 +212,8 @@
         </div>
 
         <!-- Program Gallery Bottom Gackground -->
-        <div class="program-gallery-bottom">
-            <img src="/resource/image/mission/healing-middle-bottom-background.svg" alt="Bottom Background">
+        <div class="program-gallery-bottom wave-container">
+            <img class="wave" src="/resource/image/mission/healing-middle-bottom-background.svg" alt="Bottom Background">
         </div>
 
         <!-- Helpful Materials -->

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Mission | ChildArt Magazine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/mission/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/mission/childart-magazine.css" />
@@ -15,13 +16,11 @@
             for (let el of $('[use-snippet]')) {
                 $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
             }
-
             function initSwiperFn() {
                 new Swiper(".mySwiper", {
                     slidesPerView: "auto",
-                    centeredSlides: false,
+                    centeredSlides: true,
                     spaceBetween: 30,
-                    initialSlide: 0,
                     pagination: {
                         el: ".swiper-pagination",
                         clickable: true,
@@ -30,9 +29,19 @@
                         nextEl: ".swiper-button-next",
                         prevEl: ".swiper-button-prev",
                     },
+                    breakpoints: {
+                        0: {
+                            slidesPerView: 1,
+                            initialSlide: 0,
+                        },
+                        768: {
+                            slidesPerView: "auto",
+                            spaceBetween: 30,
+                            initialSlide: 1,
+                        },
+                    }
                 });
             }
-
             $.get("/js/json/childArtMagazineData.json").then(jsonData => {
                 let $wrapper = $('.swiper-wrapper');
                 // when JSON data ready, get snippet HTML
@@ -50,7 +59,6 @@
         });
     </script>
 </head>
-
 <body>
     <div class="container">
         <!-- Nav -->
@@ -76,7 +84,7 @@
             <div class="underline"></div>
 
             <!-- Magazine Gallery List -->
-            <div class="magazine-container">
+            <div class="magazine-container prevent-select">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper"></div>
                     <div class="swiper-button-next swiper-navBtn"></div>
@@ -117,96 +125,98 @@
         <!-- Upper Wave Background -->
         <div class="back-issues-magazine back-issues-magazine-top">
             <div class="background-image">
-                <img src="/resource/image/mission/top-wave-background.svg" alt="Top Background">
+                <img class="wave" src="/resource/image/mission/top-wave-background.svg" alt="Top Background">
             </div>
         </div>
 
         <div class="back-issues-magazine back-issues-magazine-main">
             <section class="bim-container">
-                <div class="bim-1">
+                <div class="bim-img-container">
                     <a href="/resource/pdfs/childart/1.pdf" target="_blank">
-                        <img src="/resource/image/mission/childart-magazine/back-issues-1.png">
+                        <img class="magazine-cover" src="/resource/image/mission/childart-magazine/back-issues-1.png">
                     </a>
                 </div>
-                <div class="bim-2">
+                <div class="bim-img-container">
                     <a href="/resource/pdfs/childart/2.pdf" target="_blank">
-                        <img src="/resource/image/mission/childart-magazine/back-issues-2.png">
+                        <img class="magazine-cover" src="/resource/image/mission/childart-magazine/back-issues-2.png">
                     </a>
                 </div>
-                <div class="bim-3">
+                <div class="bim-img-container">
                     <a href="/resource/pdfs/childart/3.pdf" target="_blank">
-                        <img src="/resource/image/mission/childart-magazine/back-issues-3.png">
+                        <img class="magazine-cover" src="/resource/image/mission/childart-magazine/back-issues-3.png">
                     </a>
                 </div>
-                <div class="bim-4">
+                <div class="bim-img-container">
                     <a href="/resource/pdfs/childart/4.pdf" target="_blank">
-                        <img src="/resource/image/mission/childart-magazine/back-issues-4.png">
+                        <img class="magazine-cover" src="/resource/image/mission/childart-magazine/back-issues-4.png">
                     </a>
                 </div>
-                <div class="bim-5">
+                <div class="bim-img-container">
                     <a href="/resource/pdfs/childart/5.pdf" target="_blank">
-                        <img src="/resource/image/mission/childart-magazine/back-issues-5.png">
+                        <img class="magazine-cover" src="/resource/image/mission/childart-magazine/back-issues-5.png">
                     </a>
                 </div>
-                <div class="bim-6">
+                <div class="bim-img-container">
                     <a href="/resource/pdfs/childart/6.pdf" target="_blank">
-                        <img src="/resource/image/mission/childart-magazine/back-issues-6.png">
+                        <img class="magazine-cover" src="/resource/image/mission/childart-magazine/back-issues-6.png">
                     </a>
                 </div>
-                <div class="bim-7">
+                <div class="bim-img-container">
                     <a href="/resource/pdfs/childart/7.pdf" target="_blank">
-                        <img src="/resource/image/mission/childart-magazine/back-issues-7.png">
+                        <img class="magazine-cover" src="/resource/image/mission/childart-magazine/back-issues-7.png">
                     </a>
                 </div>
-                <div class="bim-8">
+                <div class="bim-img-container">
                     <a href="/resource/pdfs/childart/8.pdf" target="_blank">
-                        <img src="/resource/image/mission/childart-magazine/back-issues-8.png">
+                        <img class="magazine-cover" src="/resource/image/mission/childart-magazine/back-issues-8.png">
                     </a>
                 </div>
-                <div class="bim-9">
+                <div class="bim-img-container">
                     <a href="/resource/pdfs/childart/9.pdf" target="_blank">
-                        <img src="/resource/image/mission/childart-magazine/back-issues-9.png">
+                        <img class="magazine-cover" src="/resource/image/mission/childart-magazine/back-issues-9.png">
                     </a>
                 </div>
-                <div class="bim-10">
+                <div class="bim-img-container">
                     <a href="/resource/pdfs/childart/10.pdf" target="_blank">
-                        <img src="/resource/image/mission/childart-magazine/back-issues-10.png">
+                        <img class="magazine-cover" src="/resource/image/mission/childart-magazine/back-issues-10.png">
                     </a>
                 </div>
-                <div class="bim-11">
+                <div class="bim-img-container">
                     <a href="/resource/pdfs/childart/11.pdf" target="_blank">
-                        <img src="/resource/image/mission/childart-magazine/back-issues-11.png">
+                        <img class="magazine-cover" src="/resource/image/mission/childart-magazine/back-issues-11.png">
                     </a>
                 </div>
-                <div class="bim-12">
+                <div class="bim-img-container">
                     <a href="/resource/pdfs/childart/12.pdf" target="_blank">
-                        <img src="/resource/image/mission/childart-magazine/back-issues-12.png">
+                        <img class="magazine-cover" src="/resource/image/mission/childart-magazine/back-issues-12.png">
                     </a>
                 </div>
-                <div class="bim-13">
+                <div class="bim-img-container">
                     <a href="/resource/pdfs/childart/13.pdf" target="_blank">
-                        <img src="/resource/image/mission/childart-magazine/back-issues-13.png">
+                        <img class="magazine-cover" src="/resource/image/mission/childart-magazine/back-issues-13.png">
                     </a>
                 </div>
-                <div class="bim-14">
+                <div class="bim-img-container">
                     <a href="/resource/pdfs/childart/14.pdf" target="_blank">
-                        <img src="/resource/image/mission/childart-magazine/back-issues-14.png">
+                        <img class="magazine-cover" src="/resource/image/mission/childart-magazine/back-issues-14.png">
                     </a>
                 </div>
-                <div class="bim-15">
+                <div class="bim-img-container">
                     <a href="/resource/pdfs/childart/15.pdf" target="_blank">
-                        <img src="/resource/image/mission/childart-magazine/back-issues-15.png">
+                        <img class="magazine-cover" src="/resource/image/mission/childart-magazine/back-issues-15.png">
                     </a>
                 </div>
             </section>
             <div class="bim-text">
-                Click on the cover
+                Click on a cover to see more!
             </div>
         </div>
 
         <!-- Bottom Wave Background -->
         <div class="back-issues-magazine back-issues-magazine-bottom">
-            <img src="/resource/image/mission/bottom-wave-background-2.svg" alt="Bottom Background">
+            <div class="background-image">
+                <img class="wave" src="/resource/image/mission/bottom-wave-background-2.svg" alt="Bottom Background">
+            </div>
         </div>
 
         <div class="testimonials">

@@ -7,7 +7,6 @@
 .page-title {
   margin-top: 135px;
 }
-
 .page-caption {
   margin: 90px auto 0px;
   max-width: 1060px;
@@ -17,26 +16,22 @@
   text-align: center;
   color: $ICAF_BLUE;
 }
-
 .two-images {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 50px;
   margin: 90px auto 0;
   width: fit-content;
-
   img {
     width: 505px;
     height: 284px;
     border-radius: 20px;
   }
 }
-
 .main-background {
   margin: 135px 0 220px;
   padding: 55px 0 103px;
   background-color: #dae4ea;
-
   .input-container {
     width: 1060px;
     border-radius: 20px;
@@ -44,7 +39,6 @@
     filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.25));
     background-color: $ICAF_WHITE;
     margin: 0 auto;
-
     .success-feedback {
       display: none;
       color: #117b30;
@@ -53,14 +47,12 @@
       font-weight: 700;
       margin-bottom: 10px;
     }
-
     label {
       font-weight: 600;
       font-size: 24px;
       line-height: 33px;
       color: #000000;
     }
-
     input[type="text"],
     input[type="email"] {
       width: 100%;
@@ -82,7 +74,6 @@
       background-color: rgba(198, 198, 198, 0.1);
       border-radius: 10px;
     }
-
     input[type="submit"] {
       width: 100%;
       height: 49px;
@@ -95,7 +86,6 @@
       background-color: $ICAF_YELLOW;
     }
   }
-
   .pa {
     text-align: center;
     font-size: 18px;

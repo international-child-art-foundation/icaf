@@ -7,7 +7,7 @@
 .illustration {
   margin: 90px auto 0px;
   width: 921px;
-
+  max-width:100%;
   .illustration-text {
     font-weight: 700;
     font-size: 36px;
@@ -15,66 +15,50 @@
     text-align: center;
     color: $ICAF_BLUE;
   }
-
   .images {
     margin-top: 104px;
     display: grid;
-    grid-template-columns: 327px 574px;
+    grid-template-columns: 1fr 1.8fr;
     column-gap: 19px;
-    grid-template-rows: 253px 327px;
-    row-gap: 26px;
-
-    .image1 {
+    max-width:100%;
+    margin:5% auto 0;
+    img {
+      width:100%;
+      height: 100%;
+      object-fit:cover;
+      border-radius:12px;
+    }
+    .image-container-1 {
       grid-column: 1;
       grid-row: 1;
-
-      img {
-        width: 327px;
-        height: 253px;
-      }
     }
-
-    .image2 {
+    .image-container-2 {
       grid-column: 1;
       grid-row: 2;
-
-      img {
-        width: 327px;
-        height: 327px;
-      }
     }
-
-    .image3 {
+    .image-container-3 {
       grid-column: 2;
       grid-row: 1 / 3;
-
-      img {
-        width: 574px;
-        height: 606px;
-      }
     }
   }
 }
 
 .help-businesses {
-  margin: 125px auto 0px;
+  margin: 50px auto 0px;
   max-width: 1057px;
-
+  padding:5%;
   .explaination {
     font-weight: 400;
     font-size: 24px;
     line-height: 33px;
   }
-
   .details {
     margin-top: 55px;
     font-weight: 400;
     font-size: 24px;
     line-height: 33px;
-
     ul {
       padding-left: 2rem;
-
       li {
         a {
           color: #000;
@@ -86,14 +70,13 @@
 
 .our-main-assets {
   .our-main-assets-title {
-    margin: 188px auto 0px;
+    margin: 100px auto 0px;
     max-width: fit-content;
     font-weight: 600;
     font-size: 32px;
     line-height: 44px;
     color: $ICAF_BLUE;
   }
-
   .blue-buttons {
     margin: 114px auto 0px;
     max-width: fit-content;
@@ -102,10 +85,8 @@
     grid-template-rows: repeat(2, 81px);
     column-gap: 20px;
     row-gap: 84px;
-
     a {
       text-decoration: none;
-
       .blue-button {
         width: 431px;
         height: 81px;
@@ -122,7 +103,8 @@
         flex: none;
         order: 0;
         flex-grow: 0;
-
+        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+        border: 1px solid #FFF;
         &:hover {
           background: $ICAF_YELLOW;
           color: $ICAF_BLUE;
@@ -131,17 +113,15 @@
     }
   }
 }
-
 .our-partners {
   .our-partners-title {
-    margin: 188px auto 0px;
+    margin: 150px auto 0px;
     max-width: fit-content;
     font-weight: 600;
     font-size: 32px;
     line-height: 44px;
     color: $ICAF_BLUE;
   }
-
   .subtitle {
     margin: 51px auto 0px;
     max-width: fit-content;
@@ -151,19 +131,79 @@
     text-align: center;
     color: #575756;
   }
-
   .logos {
-    margin: 70px auto 100px;
-    max-width: 1248px;
-
+    margin: 0 auto 100px;
+    max-width: 100%;
+    padding:5%;
     .logo-line {
       display: flex;
-      justify-content: space-between;
-
+      flex-wrap:wrap;
+      justify-content: space-around;
       .logo-container {
         display: flex;
         align-items: center;
+        justify-content:center;
+        min-width:180px;
+        min-height:30px;
       }
+    }
+  }
+}
+
+@media (max-width:1358px) {
+  .illustration {
+    margin-top:5%;
+    padding:5%;
+  }
+  .help-businesses {
+    margin-top:5%;
+  }
+  .our-main-assets {
+    padding:5%;
+    .our-main-assets-title {
+      max-width:unset;
+      margin: 5% auto 0;
+      text-align:center;
+    }
+      .blue-buttons {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 5%;
+        column-gap:5%;
+        max-width: 100%;
+        margin-top:5%;
+        a {
+          .blue-button {
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            padding: 10%;
+          }
+        }
+    }
+  }
+  .our-partners {
+    .our-partners-title {
+      text-align:left;
+      max-width:100%;
+      padding:5% 5% 0;
+      margin:5% 0 0;
+    }
+    .subtitle {
+      text-align:left;
+      max-width:100%;
+      padding:2% 5% 5%;
+      margin:unset;
+    }
+    .logos {
+      margin: unset;
+    }
+  }
+}
+@media (max-width:768px) {
+  .our-main-assets {
+    .our-main-assets-title {
+      text-align:left;
     }
   }
 }

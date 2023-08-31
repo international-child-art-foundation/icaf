@@ -7,23 +7,20 @@
 .content-wrapper {
   margin: 40px auto 0;
   max-width: 1060px;
-
   .single-image {
     width: 1060px;
     border-radius: 9px;
     display: block;
     margin-top: 40px;
   }
-
   .section-title {
-    margin-top: 60px;
-    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
     font-weight: 700;
     font-size: 36px;
     line-height: 49px;
     color: $ICAF_BLUE;
   }
-
   .section-quote {
     margin: 40px auto;
     width: fit-content;
@@ -35,34 +32,25 @@
       font-style: normal;
     }
   }
-
   .section {
     font-size: 24px;
     line-height: 33px;
   }
 }
-
 .materials {
   margin: 80px 175px;
-  //   margin-top: 60px;
-  //   margin-left: 175px;
-  //   margin-bottom: 80px;
   font-weight: 700;
   font-size: 36px;
   line-height: 49px;
   color: $ICAF_BLUE;
 }
-
 .swiper {
   margin-bottom: 100px;
-  //   width: 2064px;
   height: 400px;
   cursor: grab;
-
   &.grabbing {
     cursor: grabbing;
   }
-
   .swiper-slide {
     width: 285px;
     height: 400px;
@@ -71,17 +59,14 @@
       width: 600px;
     }
   }
-
   img {
     display: block;
     object-fit: cover;
     height: 400px;
-
     &:hover {
       cursor: pointer;
     }
   }
-
   .swiper-navBtn {
     height: 64px;
     width: 64px;
@@ -89,7 +74,6 @@
     background-color: $ICAF_BLUE;
     border-radius: 50%;
     transition: color 0.3s ease;
-
     &.swiper-button-next {
       margin-right: 7%;
     }
@@ -103,5 +87,65 @@
   .swiper-navBtn::before,
   .swiper-navBtn::after {
     font-size: 30px;
+  }
+}
+
+@media (max-width:1358px) {
+  .content-wrapper {
+    padding:0% 5% 0%;
+    margin-top:0%;
+    .section {
+      font-size:20px;
+      line-height:unset;
+    }
+    .single-image {
+      width:100%;
+      margin:0px;
+    }
+    .section-title {
+      margin:auto;
+      margin-top:3vh;
+      margin-bottom:0%;
+      text-align:center;
+    }
+    .section-quote {
+      margin: 20px 0px 20px;
+      padding:0% 5% 0%;
+      width:unset;
+      p {
+        text-align:left;
+      }
+    }
+  }
+  .swiper {
+    overflow:hidden;
+  }
+  .image-container {
+    position:relative;
+    width:95%;
+    margin:auto;
+    margin-top:3%;
+    height:auto;
+    padding-bottom:30%;
+    display:block;
+    img {
+      position:absolute;
+      top: 0;
+      left: 0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+  }
+  .section {
+    margin:auto;
+    margin-top:0%;
+    padding:calc(30px + 2%) 0px 30px;
+    &.first {
+      margin-top:0%;
+    }
+    &.last {
+      margin-bottom:0px;
+    }
   }
 }

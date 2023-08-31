@@ -7,82 +7,72 @@
 .page-title {
   margin-top: 62px;
 }
-
 .hope {
   margin: 90px auto 0px;
-  max-width: 1060px;
+  width:1060px;
+  max-width: 100%;
   font-weight: 700;
   font-size: 36px;
   line-height: 49px;
   text-align: center;
   color: $ICAF_BLUE;
 }
-
 .child-img {
   margin: 104px auto 0px;
-  max-width: 920px;
-
+  width:920px;
+  max-width: 90%;
   img {
-    width: 920px;
-    height: 563.22px;
+    width: 100%;
     border-radius: 20px;
   }
 }
-
 .our-efforts {
   margin: 125px auto 0px;
-  max-width: 1060px;
+  width:1060px;
+  max-width:100%;
   font-weight: 400;
   font-size: 24px;
   line-height: 33px;
 }
-
 .impact-imgs {
   margin: 87px auto 0px;
-  max-width: 1060px;
-
+  width:1060px;
+  max-width:100%;
   display: grid;
   grid-template-columns: 154px 154px 154px 154px 154px 154px;
   column-gap: 27px;
   grid-template-rows: 84px 69px;
   row-gap: 25px;
-
   .impact-img {
     display: flex;
     align-items: center;
+    flex-direction:column;
     justify-content: center;
-
     .impact1 {
       width: 81.48px;
       height: 80px;
     }
-
     .impact2 {
       width: 80px;
       height: 85.87px;
     }
-
     .impact3 {
       width: 85.78px;
       height: 80px;
     }
-
     .impact4 {
       width: 80px;
       height: 80px;
     }
-
     .impact5 {
       width: 93.37px;
       height: 75px;
     }
-
     .impact6 {
       width: 79.15px;
       height: 80px;
     }
   }
-
   .impact-txt {
     font-weight: 700;
     font-size: 18px;
@@ -91,30 +81,26 @@
     color: $ICAF_BLUE;
   }
 }
-
 .since-1997 {
   margin: 130px auto 0px;
-  max-width: 1060px;
+  width:1060px;
+  max-width: 100%;
   font-weight: 400;
   font-size: 24px;
   line-height: 33px;
-
   ul {
     padding-left: 2rem;
   }
 }
-
 .wave1 {
   height: 84px;
   margin-top: 73px;
+  overflow:hidden;
 }
-
 .measurable-impact {
-  height: 992px;
   background: rgba(19, 67, 128, 0.1);
   display: flex;
   flex-direction: column;
-
   .impact-title {
     font-weight: 700;
     font-size: 36px;
@@ -123,65 +109,60 @@
     margin-top: 38px;
     margin-left: 190px;
   }
-
   .description {
     margin: 53px auto 0px;
     font-weight: 400;
     font-size: 24px;
     line-height: 33px;
-    max-width: 1060px;
+    width: 1060px;
+    max-width:100%;
   }
-
   .numbers {
     margin: 32px auto 0px;
+    padding:2rem;
     width: 1054px;
-    height: 388px;
+    max-width:90%;
     border: 2px solid $ICAF_BLUE;
     border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-
-    .subtitle {
-      margin-top: 23px;
+    .numbers-flex {
       display: flex;
-      justify-content: center;
-      margin-left: 3px;
-
+      flex-direction: row;
+      flex-wrap:wrap;  
+      .images {
+        width: auto;
+        margin: 0px auto 0px;
+        max-width:100%;
+      }  
+    }
+    .subtitle {
+      text-align:center;
       p {
         font-weight: 600;
         font-size: 32px;
         line-height: 44px;
         color: $ICAF_BLUE;
+        margin-bottom:2rem;
       }
-    }
-
-    .images {
-      width: 984px;
-      margin: 0px auto 0px;
     }
   }
 }
-
 .wave2 {
   height: 84px;
   margin-top: 0px;
+  overflow:hidden;
 }
-
 .yellow-underline {
   width: 31px;
 }
-
 .sociocultural {
   margin: 87px auto 0px;
   max-width: 1060px;
-
   .sociocultural-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 49px;
     color: $ICAF_BLUE;
   }
-
   .changing-the-world {
     margin-top: 63px;
     font-weight: 400;
@@ -190,7 +171,6 @@
     margin-bottom: 53px;
     max-width: 1054px;
   }
-
   .sociocultural-subtitle {
     font-weight: 600;
     font-size: 32px;
@@ -198,7 +178,6 @@
     color: $ICAF_BLUE;
     margin-top: 19px;
   }
-
   .world-leader {
     font-weight: 400;
     font-size: 24px;
@@ -206,13 +185,11 @@
     margin-top: 23px;
     margin-bottom: 22px;
     max-width: 1060px;
-
     i {
       color: $ICAF_BLUE;
       text-decoration-line: underline;
     }
   }
-
   .unique-expertise {
     font-weight: 400;
     font-size: 24px;
@@ -221,32 +198,30 @@
     max-width: 1060px;
   }
 }
-
 .two-videos {
-  display: grid;
-  grid-template-columns: 513px 513px;
-  grid-template-rows: 280px 28px;
-  grid-gap: 15px 37px;
+  display: flex;
+  flex-wrap:wrap;
   align-items: center;
   justify-items: center;
   margin: 100px auto 62px;
-  max-width: 1049px;
-
+  width:1049px;
+  max-width: 90%;
+  justify-content:space-evenly;
   iframe {
     border-radius: 15px;
   }
-
   .video-title {
     font-size: 18px;
     line-height: 25px;
     color: $ICAF_GRAY;
+    text-align:center;
+    margin:0.7rem auto 0.7rem;
   }
 }
-
 .worldchildrens-award {
   margin: 62px auto 129px;
-  max-width: 1060px;
-
+  width:1060px;
+  max-width: 100%;
   .worldchildrens-award-subtitle {
     font-weight: 600;
     font-size: 32px;
@@ -254,7 +229,6 @@
     color: $ICAF_BLUE;
     margin-top: 19px;
   }
-
   .first-ever-award {
     font-weight: 400;
     font-size: 24px;
@@ -263,34 +237,34 @@
     max-width: 1060px;
     margin-bottom: 100px;
   }
-
   .two-images {
-    display: grid;
-    grid-template-columns: repeat(2, 513px);
-    column-gap: 35px;
-    grid-template-rows: 280px 28px;
-    row-gap: 15px;
-
-    img {
-      width: 513px;
-      height: 280px;
-      border-radius: 20px;
-    }
-
-    .image-title {
-      text-align: center;
-      font-size: 18px;
-      line-height: 25px;
-      color: $ICAF_GRAY;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    max-width: 100%;
+    justify-content:space-evenly;
+    .one-image-container {
+      width:45%;
+      img {
+        border-radius: 20px;
+        width:100%;
+        height:auto;
+      }  
+      .image-title {
+        margin:0.7rem auto 0.7rem;
+        text-align: center;
+        font-size: 18px;
+        line-height: 25px;
+        color: $ICAF_GRAY;
+      }  
     }
   }
 }
-
 .timeline-container {
   padding: 95px 0 215px;
   background: #f7f7f7;
   $transDuration: 200ms;
-
+  overflow-x: hidden;
   .timeline-title {
     margin-left: 190px;
     margin-bottom: 85px;
@@ -299,14 +273,12 @@
     line-height: 49px;
     color: $ICAF_BLUE;
   }
-
   .arrow-wrapper {
     margin: 0 auto;
     width: 1185px;
     position: relative;
     fill: $ICAF_YELLOW;
     color: $ICAF_YELLOW;
-
     .timeline-arrow {
       position: absolute;
       display: flex;
@@ -314,19 +286,16 @@
       align-items: center;
       left: 43px;
       top: -43px;
-
       svg:hover {
         cursor: pointer;
         fill: url(#arrowGradient);
       }
-
       .year {
         font-weight: 700;
         font-size: 32px;
         line-height: 44px;
         transition: opacity $transDuration ease;
       }
-
       .arrow-body {
         height: 710px;
         width: 20px;
@@ -334,17 +303,16 @@
       }
     }
   }
-
   .timeline-wrapper {
     margin: 0 auto;
     width: 1185px;
     height: 710px;
-    overflow: hidden;
+    overflow: scroll;
     position: relative;
     top: 84px;
     cursor: url("/resource/image/impact/timeline/vscroll.png"), n-resize;
-
     #timeline {
+      height: 710px;
       --entry-height: 120px;
       --active-entry-height: 214px;
       font-size: 30px;
@@ -353,7 +321,6 @@
       flex-direction: column;
       position: relative;
       transition: transform $transDuration;
-
       &.smushed {
         .entry .image img {
           width: 165px;
@@ -367,8 +334,6 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        // height: var(--entry-height);
-
         .year {
           margin-left: 48px;
           width: 134px;
@@ -380,13 +345,12 @@
           background: #f7f7f7;
           transition: font-weight $transDuration, font-size $transDuration;
         }
-
         .line {
           width: 112px;
           border: 3px solid $ICAF_BLUE;
           transition: width $transDuration, border $transDuration;
+          background-color: $ICAF_BLUE;
         }
-
         .image {
           margin-left: 37px;
           img {
@@ -395,7 +359,6 @@
             transition: width $transDuration, height $transDuration;
           }
         }
-
         .text {
           margin-left: 50px;
           max-width: 535px;
@@ -403,10 +366,8 @@
           line-height: 25px;
           transition: font-size $transDuration;
         }
-
         // active entry
         &.active {
-          // height: var(--active-entry-height);
           .year {
             margin: 0 28px;
             width: 173px;
@@ -417,6 +378,7 @@
           .line {
             width: 156px;
             border: 8px solid $ICAF_BLUE;
+            background-color: $ICAF_BLUE;
           }
           .image {
             margin-left: 51px;
@@ -428,6 +390,290 @@
             font-weight: 700;
             font-size: 24px;
             line-height: 33px;
+          }
+        }
+      }
+    }
+  }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .timeline-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .timeline-wrapper {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+@media (max-width:1358px) {
+  .measurable-impact {
+    .impact-title {
+      margin:0;
+      padding: 5%;
+    }
+    .description {
+      padding: 5%;
+      margin: 0;
+    }
+    .numbers-flex {
+      width: auto;
+      height: auto;
+      gap:3rem;
+      .images {
+        height:auto;
+        width:auto;
+      }
+    }  
+  }
+  .sociocultural {
+    .sociocultural-title {
+      margin-bottom:2rem;
+    }
+    .changing-the-world {
+      margin-bottom: 1rem;
+      margin-top:1rem;
+    }  
+  }
+  .worldchildrens-award {
+    padding:0 5% 5%;
+    margin:unset;
+    .first-ever-award {
+      margin-bottom:3rem;
+    }
+  }
+  .sociocultural {
+    padding:5%;
+  }
+  .hope {
+    margin-top:2rem;
+  }
+  .child-img {
+    margin-top:2rem;
+  }
+  .page-title {
+    margin: 2rem 5% 0;
+  }
+  .our-efforts {
+    padding: 5%;
+    margin-top:2rem;
+  }
+  .impact-imgs {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: unset;
+    margin-top:2rem;
+  }
+  .since-1997 {
+    margin-top:2rem;
+    padding:5%;
+    li {
+      margin: 5% 0 5%;
+    }
+  }
+  .two-videos {
+    padding:5%;
+    max-width:100%;
+    .yt-video {
+      max-width:100%;
+      iframe {
+        max-width:100%;
+      }
+    }
+  }
+  .wave {
+    margin: unset;
+  }
+}
+
+@media (max-width:1190px) {
+  .timeline-container {
+    .timeline-title {
+      margin: unset;
+      padding:5%;
+    }
+    .arrow-wrapper {
+      .timeline-arrow {
+        left: 0;
+        padding-top:2%;
+        .arrow-top, .arrow-bottom {
+          width:70px;
+          height: 40px;
+        }
+        .arrow-top {
+          transform:translateY(30%);
+        }
+        .arrow-bottom {
+          transform: translateY(-35%);
+        }
+        .arrow-body {
+          width:10px;
+          height: 750px;
+        }
+      }
+    }
+    .timeline-wrapper {
+      max-width: 100%;
+      #timeline {
+        .entry {
+          flex-wrap: wrap;
+          transition: transform 200ms;
+          .year {
+            margin: 0;
+            flex-basis: 10%;
+          }
+          .text {
+            display:none;
+          }
+          .line {
+            flex-basis: 5%;
+          }
+          .image {
+            margin-left:2%;
+            max-width:80%;
+            img {
+              height: var(--entry-height);
+              border-radius: 12px;
+              transition: width 200ms, height 200ms;
+              max-height:200px;
+              max-width:100%;
+            }
+          }
+          &.active {
+            align-content:start;
+            height:50%;
+            justify-content: space-between;
+            margin: 2%;
+            row-gap: 2rem;
+            transition: width 200ms, height 200ms;
+            .year {
+              margin: unset;
+              width: unset;
+              font-size: 2.5rem;
+              line-height: unset;
+              flex-basis: 10%; 
+            }
+            .line {
+              flex-basis: 10%;
+              border: 3px solid #134380;
+            }
+            .image {
+              margin-left: unset;
+              max-width:65%;
+              height: unset;
+              text-align:right;
+              img {
+                height: auto;
+                transition: width 200ms, height 200ms;
+                max-width:100%;
+              }
+            }
+            .text {
+              width:35%;
+              margin-left:unset;
+              order: 4;
+              font-size: 1.5rem;
+              line-height:auto;
+              text-align:end;
+              display:block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-height:900px) {
+  .timeline-container {
+    .timeline-wrapper {
+      .skip-arrow {
+        width: 24px;
+        height: 24px;
+        margin:auto;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        box-sizing: border-box;
+        display:block;
+      }
+      .skip-arrow-wrapper {
+        width:100%;
+        height:100%;
+        margin-top:5%;
+        top:0;
+        position:absolute;
+      }
+      .skip-arrow-wrapper-1 {
+        height:20%;
+        position:absolute;
+        top: 1rem;
+        left:50%;
+      }
+      .skip-arrow-wrapper-2 {
+        height:20%;
+        position:absolute;
+        bottom:1rem;
+        left:50%;
+        display:grid;
+        align-content:end;
+      }
+      .skip-upward {
+        top:1rem;
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+      }
+      .skip-downward {
+        top:unset;
+        bottom:1rem;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+      }  
+    }
+  }
+}
+@media (max-width:768px) {
+  .worldchildrens-award {
+    .two-images {
+      .one-image-container {
+        width:100%;
+      }
+    }  
+  }
+  .timeline-container {
+    .timeline-wrapper {
+      #timeline {
+        .entry {
+          &.active {
+            .text {
+              margin-left:auto;
+              width:unset;
+              flex-basis:90%;
+            }  
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width:400px) {
+  .timeline-container {
+    .timeline-wrapper {
+      #timeline {
+        .entry {
+          .image {
+            img {
+              max-width:160px;
+            }
+          }
+          &.active {
+            .image {
+              img {
+                max-height:100px;
+                max-width:160px;
+                object-fit:cover;
+              }  
+            }
+          }
+          .line {
+            display:none;
           }
         }
       }

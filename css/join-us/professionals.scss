@@ -13,29 +13,24 @@
   text-align: center;
   color: $ICAF_BLUE;
 }
-
-.photo {
+.image-container {
   margin-top: 104px;
   display: flex;
   justify-content: center;
-
   img {
     width: 920px;
     border-radius: 20px;
   }
 }
-
 .how-to-contribute {
   margin: 125px auto 220px;
   max-width: 1056px;
-
   .children-are-creators {
     max-width: 1060px;
     font-weight: 400;
     font-size: 24px;
     line-height: 33px;
   }
-
   .how-to-contribute-title {
     margin-top: 61px;
     font-weight: 600;
@@ -43,7 +38,6 @@
     line-height: 44px;
     color: $ICAF_BLUE;
   }
-
   .how-to-contribute-list {
     margin-top: 40px;
     font-weight: 400;
@@ -56,5 +50,36 @@
         color: #000;
       }
     }
+  }
+}
+
+@media (max-width: 1358px) {
+  .illustion_text {
+    text-align:left;
+    margin:unset;
+    padding:5% 5% 0%;
+  }
+  .image-container {
+    max-width:100%;
+    padding:5%;
+    margin:unset;
+    img {
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+  }
+  .how-to-contribute {
+    max-width:100%;
+    padding:5%;
+    margin-top:unset;
+    margin-bottom:10%;
+  }
+  .section-slogan {
+    width:unset;
+    max-width:100%;
+    padding:5%;
+    margin:unset;
+    margin-top:2%;
   }
 }

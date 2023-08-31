@@ -25,23 +25,16 @@ class ICAFCarousel {
         this.$sliderImages.eq(this.slideIdx)
             .addClass('active');
     }
-
-    // restartAutoSlide() {
-    //     return this.pause().play();
-    // }
-
     pause() {
         this.paused = true;
         this.intervalId = clearInterval(this.intervalId);
         return this;    // For Chaining
     }
-
     play() {
         this.paused = false;
         this.intervalId = setInterval(this.slideRight.bind(this), this.autoSlideInterval);
         return this;    // For Chaining
     }
-
     slide(dx) {
         if (this.sliding) return this;
         this.slideIdx = (this.slideIdx + dx) % this.$sliderImages.length;

@@ -6,3 +6,6 @@
 *.iml
 .prettierignore
 resource/flipbooks
+node_modules
+package.json
+package-lock.json

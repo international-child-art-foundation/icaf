@@ -1,22 +1,17 @@
 @use "icaf-colors" as *;
 
 footer {
-  // border: 1px solid $ICAF_BLUE;
-
   .footer-top {
     display: grid;
     grid-template-columns: 55.38% auto;
     grid-template-rows: repeat(2, auto);
     gap: 36px 14%;
     padding: 118px 70px 36px;
-
     color: $ICAF_BLUE;
     font-size: 18px;
     line-height: 25px;
-
     .icaf-plug {
       max-width: 720px;
-      // max-width: 50%;
       font-size: 24px;
       line-height: 33px;
     }
@@ -66,7 +61,6 @@ footer {
         }
       }
       .subscribe-success-feedback {
-        // margin-top: 3px;
         font-weight: 700;
         display: none;
       }
@@ -130,7 +124,7 @@ footer {
   }
   .footer-bottom {
     background: url("/resource/image/footer/waves.png") no-repeat bottom;
-    background-size: 100% 185px;
+    background-size: cover;
     color: $ICAF_WHITE;
     display: flex;
     align-items: flex-end;
@@ -142,10 +136,111 @@ footer {
     line-height: 24px;
     letter-spacing: 0.2px;
     position: relative;
+    p {
+      margin: 0px;
+    }
     #scrollToTop {
-      position: absolute;
-      right: 40px;
-      bottom: 41.5px;
+      cursor:pointer;
+    }
+  }
+}
+
+@media (max-width:1358px) {
+  footer {
+    .footer-top {
+      gap: 15px 5%;
+      padding:6% 5%;
+      grid-template-columns: 50% auto;
+      .donate-contact {
+        column-gap:8px;
+        row-gap:30px;
+        margin-top: 0px;
+        justify-content:center;
+        flex-wrap:wrap;
+        .icaf-button {
+          div {
+            width: 160px;
+          }  
+        }
+      }
+      .newsletter {
+        width: unset;
+        p {
+          margin: 10px 0 11px;
+        }
+        #subscribeForm {
+          flex-direction:column;
+          row-gap:10px;
+        }
+      }  
+    }
+    .footer-bottom {
+      align-items:center;
+      justify-content:center;
+      padding-top:12%;
+      margin-bottom:0;
+      p {
+        margin: 0px;
+        max-width:70%;
+      }
+    }
+  }
+}
+@media (max-width:768px) {
+  footer {
+    .footer-top {
+      grid-template-columns: unset;
+      padding:10% 5%;
+      gap: 50px 10%;
+      .newsletter {
+        display:unset;
+        align-items:center;
+        margin:auto;
+        h3, p {
+          text-align:center;
+        }
+        #subscribeForm {
+          align-items:center;
+          column-gap:10px;
+          flex-direction:row;
+          flex-wrap: wrap;
+        }
+      }
+      .follow-us {
+        text-align:center;
+        margin:auto;
+        .social-media {
+          flex-wrap: wrap;
+        }
+      }  
+    }
+    .footer-bottom {
+      #scrollToTop {
+        scale:1.5;
+      }
+    }
+  }
+}
+@media (max-width:400px) {
+  footer {
+    .footer-top {
+      .newsletter {
+        #subscribeForm {
+          flex-direction:column;
+        }
+      }
+      .donate-contact {
+        flex-direction:column;
+        .icaf-button {
+          margin:auto;
+        }
+      }
+      .follow-us {
+        .social-media {
+          flex-direction:row;
+          flex-wrap: wrap;
+        }
+      }
     }
   }
 }

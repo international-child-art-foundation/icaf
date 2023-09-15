@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Program | World Children's Festival</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/mission/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/mission/world-childrens-festival.css" />
@@ -30,6 +31,17 @@
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
                 },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                        initialSlide: 2,
+                    },
+                    768: {
+                        slidesPerView: "auto",
+                        spaceBetween: 30,
+                        initialSlide: 2,
+                    },
+                }
             });
         });
     </script>
@@ -97,8 +109,9 @@
 
         <div class="schedule-main">
             <!-- Background -->
-            <img src="/resource/image/mission/world-childrens-festival/schedule-background.svg" alt="">
-
+            <div class="wave-container">
+                <img class="wave top-wave" src="/resource/image/mission/top-wave-background-grey.svg" alt="Top Background">
+            </div>
             <div class="schedule-section">
                 <!-- Day 1 -->
                 <div class="day-container">
@@ -140,6 +153,9 @@
                     </div>
                 </div>
             </div>
+            <div class="wave-container">
+                <img class="wave bottom-wave" src="/resource/image/mission/bottom-wave-background-2-grey.svg" alt="Bottom Background">
+            </div>
         </div>
 
         <div class="WCF-7th">
@@ -158,57 +174,70 @@
 
             <div class="nth-WCF nth-WCF-6">6th WCF</div>
             <div class="WCF-nth-container">
-                <div class="WCF-6th-video">
+                <div class="WCF-6th-video WCF-nth-video">
                     <iframe src="https://www.youtube.com/embed/kgRGgE4AHq0" title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
-                    <div class="section-name">Video</div>
-                    <div class="past-WCF-underline past-WCF-underline-v"></div>
                 </div>
-                <div class="WCF-6th-magazine">
+                <div class="WCF-6th-magazine WCF-nth-magazine">
                     <a href="/resource/flipbooks/2021WCF/" target="_blank">
                         <img src="/resource/image/mission/world-childrens-festival/past-6th-magazine.png" alt="">
                     </a>
+                </div>
+                <div class="label-underline">
+                    <div class="section-name">Video</div>
+                    <div class="past-WCF-underline past-WCF-underline-v"></div>
+                </div>
+                <div class="label-underline">
                     <div class="section-name section-name-m">Magazine</div>
-                    <div class="past-WCF-underline past-WCF-underline-m"></div>
+                    <div class="past-WCF-underline past-WCF-underline-m"></div>    
                 </div>
             </div>
 
             <div class="nth-WCF">5th WCF</div>
             <div class="WCF-nth-container">
-                <div class="WCF-5th-video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Jig1jfiokWY"
+                <div class="WCF-5th-video WCF-nth-video">
+                    <iframe src="https://www.youtube.com/embed/Jig1jfiokWY"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
-                    <div class="section-name">Video</div>
-                    <div class="past-WCF-underline past-WCF-underline-v"></div>
                 </div>
-                <div class="WCF-5th-magazine">
+                <div class="WCF-5th-magazine WCF-nth-magazine">
                     <a href="/resource/flipbooks/Creativity,DiversityandUnity/" target="_blank">
                         <img src="/resource/image/mission/world-childrens-festival/past-5th-magazine.png" alt="">
                     </a>
+                </div>
+
+                <div class="label-underline">
+                    <div class="section-name">Video</div>
+                    <div class="past-WCF-underline past-WCF-underline-v"></div>
+                </div>
+                <div class="label-underline">
                     <div class="section-name section-name-m">Magazine</div>
-                    <div class="past-WCF-underline past-WCF-underline-m"></div>
+                    <div class="past-WCF-underline past-WCF-underline-m"></div>    
                 </div>
             </div>
 
             <div class="nth-WCF">4th WCF</div>
             <div class="WCF-nth-container WCF-nth-container-4th">
-                <div class="WCF-4th-video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sL6xaXqE6wU"
+                <div class="WCF-4th-video WCF-nth-video">
+                    <iframe src="https://www.youtube.com/embed/sL6xaXqE6wU"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
-                    <div class="section-name">Video</div>
-                    <div class="past-WCF-underline past-WCF-underline-v2"></div>
                 </div>
-                <div class="WCF-4th-magazine">
+                <div class="WCF-4th-magazine WCF-nth-magazine">
                     <a href="/resource/pdfs/ChildArt%20July-Sept%202011%204thWCF.pdf" target="_blank">
                         <img src="/resource/image/mission/world-childrens-festival/past-4th-magazine.png" alt="">
                     </a>
+                </div>
+                <div class="label-underline">
+                    <div class="section-name">Video</div>
+                    <div class="past-WCF-underline past-WCF-underline-v"></div>
+                </div>
+                <div class="label-underline">
                     <div class="section-name section-name-m">Magazine</div>
-                    <div class="past-WCF-underline past-WCF-underline-m"></div>
+                    <div class="past-WCF-underline past-WCF-underline-m"></div>    
                 </div>
             </div>
 
@@ -219,8 +248,10 @@
             <div class="title-container">
                 <p>Designing the WCF logo at the Cannes Lions International Festival of Creativity</p>
             </div>
-            <div class="press-footage-img">
-                <img src="/resource/image/mission/world-childrens-festival/press-footage.png" alt="">
+            <div class="press-footage">
+                <iframe src="https://www.youtube.com/embed/bt9M71DPQVQ" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             </div>
         </div>
 

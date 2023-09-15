@@ -7,7 +7,6 @@
 .page-title {
   margin-top: 135px;
 }
-
 .top-right-image-wrapper {
   position: relative;
   width: 1060px;
@@ -18,10 +17,10 @@
     bottom: -5px;
   }
 }
-
 .list-of-news {
   width: 1060px;
   margin: 60px auto 220px;
+  max-width:100%;
   font-size: 24px;
   line-height: 33px;
   ul {
@@ -32,5 +31,14 @@
     a {
       color: #000000;
     }
+  }
+}
+@media (max-width:1358px) {
+  .top-right-image-wrapper {
+    bottom:unset;
+    width:unset;
+  }
+  .list-of-news {
+    margin-bottom:7rem;
   }
 }

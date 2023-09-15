@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>About | Team Members</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/about/team-members.css" />
     <script src="/js/jquery-3.3.1.min.js"></script>
-    <script src="/js/bootstrap.js" defer></script>
+    <script src="/js/bootstrap.min.js" defer></script>
     <script>
         $(document).ready(function () {
             for (let el of $('[use-snippet]')) {
@@ -30,15 +31,22 @@
 
         <!-- Description -->
         <div class="description">
-            ICAF dedicated team of officers, volunteers, and interns organize the Arts Olympiad, plan and stage the
+            Dedicated teams of ICAF officers, volunteers, and interns organize the Arts Olympiad, plan and stage the
             World Children’s Festival, and produce the ChildArt magazine:
         </div>
 
         <!-- Members Image -->
         <div class="members-imgs">
-            <img class="img1" src="/resource/image/about/members-img-top.png" alt="">
-            <img class="img2" src="/resource/image/about/members-img-right.png" alt="">
-            <img class="img3" src="/resource/image/about/members-img-bottom.png" alt="">
+            <div class="image-container image-container-1">
+                <img class="img1" src="/resource/image/about/members-img-top.png" alt="">
+            </div>
+            <div class="image-container image-container-2">
+                <img class="img2" src="/resource/image/about/members-img-right.png" alt="">
+            </div>
+            <div class="image-container image-container-3">
+                <img class="img3" src="/resource/image/about/members-img-bottom.png" alt="">
+            </div>
+
         </div>
 
         <!-- Team Members -->

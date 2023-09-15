@@ -5,20 +5,20 @@
 @use "../icaf-footer";
 
 .img-container {
-  width: fit-content;
+  width:900px;
+  height:auto;
+  max-width:100%;
   margin: 90px auto 0;
-
   img {
-    width: 920px;
-    height: 504.78px;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
   }
 }
-
 .description {
   max-width: 1060px;
-  margin: 125px auto 220px;
-
+  margin: 60px auto 5%;
+  padding:5%;
   p {
     color: #000000;
     font-size: 24px;
@@ -27,5 +27,21 @@
     &:last-of-type {
       margin-bottom: 0;
     }
+  }
+}
+
+@media (max-width:1358px) {
+  .description {
+    margin-top:2%;
+  }
+  .img-container {
+    max-width:90%;
+    margin-top:5%;
+  }
+}
+
+@media (max-width:768px) {
+  .description {
+    margin-top:5%;
   }
 }

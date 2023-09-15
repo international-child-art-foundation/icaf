@@ -12,7 +12,6 @@
   text-align: center;
   color: $ICAF_BLUE;
 }
-
 .success-feedback {
   display: none;
   color: #117b30;
@@ -21,7 +20,6 @@
   font-weight: 700;
   margin-top: 15px;
 }
-
 .note {
   font-weight: 400;
   font-size: 18px;
@@ -30,10 +28,8 @@
   margin: 40px auto 0;
   color: #000000;
 }
-
 .input-container {
   margin: 62px 281px 0;
-
   form {
     display: grid;
     grid-template-columns: 429px 429px;
@@ -54,35 +50,29 @@
       "m n"
       "o p"
       "q q";
-
     @for $i from 1 through 16 {
       .area#{$i} {
         grid-area: unquote(str-slice("abcdefghijklmnop", $i, $i));
       }
     }
-
     .area10 {
       margin-top: 32px;
     }
-
     .middleline {
       grid-area: z;
       border: 1px solid #b7b7bb;
       background-color: #b7b7bb;
     }
-
     textarea {
       height: 208px;
     }
   }
-
   label {
     font-weight: 600;
     font-size: 24px;
     line-height: 33px;
     color: #000000;
   }
-
   input[type="text"],
   input[type="email"],
   textarea {
@@ -97,7 +87,6 @@
     border-radius: 10px;
     resize: vertical;
   }
-
   input[type="submit"] {
     grid-area: q;
     width: 429px;

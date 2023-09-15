@@ -6,6 +6,7 @@
 
 .goal-description {
   width: 1060px;
+  max-width:100%;
   margin: 90px auto 0;
   font-weight: 700;
   font-size: 36px;
@@ -14,10 +15,13 @@
   color: $ICAF_BLUE;
 }
 .art-image {
-  width: fit-content;
+  width: 1000px;
+  max-width:90%;
   margin: 104px auto 0;
   img {
-    width: 920px;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
     border-radius: 20px;
   }
   .image-quote {
@@ -29,9 +33,10 @@
     color: #000000;
   }
 }
-
 .main-description {
   width: 1060px;
+  max-width:100%;
+  padding:5%;
   margin: 125px auto 0px;
   font-weight: 400;
   font-size: 24px;
@@ -41,9 +46,9 @@
     color: #000000;
   }
 }
-
 .bring-help {
   width: 1047px;
+  max-width:100%;
   display: grid;
   grid-template-columns: 280px 684px;
   margin: 60px auto 0px;
@@ -54,6 +59,7 @@
     img {
       width: 280px;
       height: 280px;
+      max-width:90%;
       margin-top: 6px;
     }
   }
@@ -75,15 +81,18 @@
 }
 
 .top-wave-img {
-  width: 1440px;
+  max-width:100%;
+  overflow:clip;
   height: 59px;
   margin-top: 60.25px;
 }
-
 .helpful-links {
+  padding:5% 5% 0;
   width: 1440px;
-  height: 800px;
-  padding-top: 5.57px;
+  max-width:100%;
+  display:grid;
+  justify-items:center;
+  gap:3rem;
   background: rgba(19, 67, 128, 0.1);
 
   .hl-title {
@@ -93,49 +102,40 @@
     text-align: center;
     color: $ICAF_BLUE;
   }
-
-  #helpful-links-imgs {
-    width: 1440px;
-    margin: 109px auto 0px;
-
-    ul {
-      list-style-type: none;
-      padding: 0;
-
+  .link-card-container {
+    padding:3rem 0 3rem;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 30px;
+    margin: auto;
+    list-style-type: none;
       li {
-        float: left;
         position: relative;
-        margin-top: 48px;
-        margin-left: 121px;
-
-        &:not(:first-child) {
-          margin-left: 20px;
-        }
-
+        margin: auto;
         .hl-links {
           position: relative;
-
           .link-img {
             width: 223px;
             height: 326px;
             border-radius: 9px;
           }
         }
-
         .hl-img-description {
-          width: 223px;
           height: 179px;
+          width:100%;
           background-color: #134380;
           position: absolute;
-
           top: 45%;
           border-radius: 0px 0px 9px 9px;
           opacity: 90%;
-
+          display:flex;
+          align-items:center;
+          padding:1.3rem;
           p {
-            font-size: 18px;
+            width:100%;
+            font-size: 1.1rem;
             font-weight: 400;
-            line-height: 25px;
             text-align: center;
             align-items: center;
             color: #ffffff;
@@ -145,39 +145,67 @@
             }
           }
         }
-
-        .description1 {
-          padding: 48px 12px 56px 12px;
-        }
-
-        .description2 {
-          padding: 48px 17px 56px 18px;
-        }
-
-        .description3 {
-          padding: 22px 17px 32px 18px;
-        }
-
-        .description4 {
-          padding: 22px 18px 32px 17px;
-        }
-
-        .description5 {
-          padding: 35px 18px 44px 17px;
-        }
+      }
+    }
+  .helpful-links-button {
+    padding: 5% 0 5%;
+    justify-self:center;
+    .social-media {
+      display:flex;
+      gap:3rem;
+      img {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        height: 52.5px;
+        width: 54px;
       }
     }
   }
+}
 
-  .helpful-links-button {
-    margin-top: 157px;
-
-    .social-midia {
-      margin-left: 625px;
-
-      a {
-        margin-left: 25px;
+@media (max-width:1358px) {
+  .helpful-links {
+    gap: 0;
+    justify-items:start;
+    .link-card-container {
+      display:grid;
+      overflow-x: auto;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(5, 1fr);
+      max-width:100%;
+      li {
+        .hl-img-description {
+          height: 219.6px;
+        }
+        .hl-links {
+          .link-img {
+            height: 400px;
+            width: auto;
+            object-fit:cover;
+          }
+        }
+        .description{
+          padding: 60px 30px 18px;
+          font-size:2rem;
+        }
       }
+    }
+    .link-card-container::-webkit-scrollbar {
+      width: 1em;
+    }
+    .link-card-container::-webkit-scrollbar-thumb {
+      background-color: rgb(190, 190, 190);
+      border-radius: 5px;
+    }
+  }
+  .bring-help {
+    padding: 5%;
+    grid-template-columns: unset;
+    gap: 3rem;
+    .arts-olympiad-7 {
+      margin: auto;
+    }
+    .action-can-take {
+      grid-template-rows: unset;
     }
   }
 }

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>About | Partnership</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/about/partnership.css" />
     <script src="/js/jquery-3.3.1.min.js"></script>
@@ -13,6 +14,29 @@
             for (let el of $('[use-snippet]')) {
                 $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
             }
+            // Prevents a single click from following the <a> link before the <li> has been hovered.
+            // Important for mobile experience.
+            $('li').each(function() {
+                let timeout;
+                let li = $(this);
+                li.mouseenter(function() {
+                    // Clear the timeout if it's already set. 
+                    // This prevents the function from executing if 'mouseenter' is quickly followed by 'mouseleave'.
+                    clearTimeout(timeout);
+                    // Set the timeout
+                    timeout = setTimeout(function() {
+                        // When mouse enters <li>, after a delay, set href to placeholder value
+                        var link = li.find('div > p > a');
+                        link.attr('href', link.attr('placeholder'));
+                    }, 100); // 100 milliseconds delay
+                });
+                li.mouseleave(function() {
+                    // When mouse leaves <li>, clear the timeout and remove href attribute
+                    clearTimeout(timeout);
+                    var link = li.find('div > p > a');
+                    link.removeAttr('href');
+                });
+            });
         });
     </script>
 </head>
@@ -53,7 +77,7 @@
                     <img src="/resource/image/about/partners/AIA.svg" alt="AIA">
                     <div class="blue-card">
                         <p>Collaboration on
-                            <a target="_blank" href="/resource/flipbooks/DimensionsOfArchitecture/">ChildArt
+                            <a target="_blank" placeholder="/resource/flipbooks/DimensionsOfArchitecture/">ChildArt
                                 magazine
                             </a>
                             to inspire a new generation of architects.
@@ -63,7 +87,7 @@
                 <li>
                     <img src="/resource/image/about/partners/endangeredspecies.svg" alt="endangeredspecies">
                     <div class="blue-card">
-                        <p><a target="_blank" href="https://www.youtube.com/watch?v=lyHxHWJ-92w">ICAF judged the
+                        <p><a target="_blank" placeholder="https://www.youtube.com/watch?v=lyHxHWJ-92w">ICAF judged the
                                 Endangered Species
                                 School Art Contest
                                 entries.</a></p>
@@ -72,7 +96,7 @@
                 <li>
                     <img src="/resource/image/about/partners/Insea.svg" alt="Insea">
                     <div class="blue-card">
-                        <p><a target="_blank" href="https://www.youtube.com/watch?v=lyHxHWJ-92w">Keynote address at the
+                        <p><a target="_blank" placeholder="https://www.youtube.com/watch?v=lyHxHWJ-92w">Keynote address at the
                                 World Congress and
                                 Award to ICAF</a></p>
                     </div>
@@ -81,7 +105,7 @@
                     <img src="/resource/image/about/partners/NASBE.svg" alt="NASBE">
                     <div class="blue-card">
                         <p><a target="_blank"
-                                href="/resource/pdfs/InternationalEducationandGlobalLeadership.pdf">The State
+                                placeholder="/resource/pdfs/InternationalEducationandGlobalLeadership.pdf">The State
                                 Education Standard</a></p>
                     </div>
                 </li>
@@ -89,14 +113,14 @@
                     <img src="/resource/image/about/partners/NEA.svg" alt="NEA">
                     <div class="blue-card">
                         <p>Financial support and
-                            collaboration on <a target="_blank" href="/resource/flipbooks/ArtForHealth/">Art for
+                            collaboration on <a target="_blank" placeholder="/resource/flipbooks/ArtForHealth/">Art for
                                 Health.</a></p>
                     </div>
                 </li>
                 <li>
                     <img src="/resource/image/about/partners/NIH.svg" alt="NIH">
                     <div class="blue-card">
-                        <p><a target="_blank" href="/resource/flipbooks/ABCDStudy/">Partnership to publish
+                        <p><a target="_blank" placeholder="/resource/flipbooks/ABCDStudy/">Partnership to publish
                                 and promote initial
                                 findings of the seminal
                                 ABCD Study.</a></p>
@@ -111,7 +135,7 @@
                 <li>
                     <img src="/resource/image/about/partners/unesco 1.svg" alt="unesco">
                     <div class="blue-card">
-                        <p><a target="_blank" href="https://www.unescoejournal.com/volume1_issue1/">World Conference on
+                        <p><a target="_blank" placeholder="https://www.unescoejournal.com/volume1_issue1/">World Conference on
                                 Arts Education and UNESCO Observatory</a>
                             publication of ICAF research.</p>
                     </div>
@@ -120,7 +144,7 @@
                     <img src="/resource/image/about/partners/WAPD.svg" alt="WAPD">
                     <div class="blue-card">
                         <p>World Congress and
-                            <a target="_blank" href="/resource/pdfs/CreativeEmpaths.pdf">publication of research.</a>
+                            <a target="_blank" placeholder="/resource/pdfs/CreativeEmpaths.pdf">publication of research.</a>
                         </p>
                     </div>
                 </li>
@@ -134,7 +158,7 @@
                     <img src="/resource/image/about/partners/world bank.svg" alt="world bank">
                     <div class="blue-card">
                         <p class="wb"><a target="_blank"
-                                href="/resource/pdfs/Destruction,%20Reconstruction%20&%20Prevention.pdf">Partnership
+                            placeholder="/resource/pdfs/Destruction,%20Reconstruction%20&%20Prevention.pdf">Partnership
                                 on a program
                                 titled “Destruction,
                                 Reconstruction, and
@@ -145,7 +169,7 @@
                     <img src="/resource/image/about/partners/WHO.svg" alt="WHO">
                     <div class="blue-card">
                         <p><a target="_blank"
-                                href="/resource/pdfs/Expanding%20Awareness%20of%20Mental%20Health%20in%20Childhood%20and%20Adolescence.pdf">Collaboration
+                            placeholder="/resource/pdfs/Expanding%20Awareness%20of%20Mental%20Health%20in%20Childhood%20and%20Adolescence.pdf">Collaboration
                                 on
                                 Expanding Awareness
                                 of Mental Health in

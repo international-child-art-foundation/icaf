@@ -127,9 +127,10 @@ footer {
     background-size: cover;
     color: $ICAF_WHITE;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
     justify-content: center;
-    column-gap: 7px;
     height: 185px;
     padding-bottom: 14px;
     font-size: 14px;
@@ -139,11 +140,37 @@ footer {
     p {
       margin: 0px;
     }
-    #scrollToTop {
-      cursor:pointer;
+
+
+    .Policy {
+      display: flex;
+      flex-grow: 0;
+      column-gap: 7px;
+      position: absolute;
+      bottom: 60px;
+      a {
+        color: $ICAF_WHITE;
+      }
+    }
+
+    .Copyright {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      column-gap: 7px;
+      position: absolute;
+      bottom: 10px;
+
+      #scrollToTop {
+        cursor:pointer;
+        transform: scale(0.75);
+      }
     }
   }
 }
+
 
 @media (max-width:1358px) {
   footer {
@@ -214,11 +241,11 @@ footer {
         }
       }  
     }
-    .footer-bottom {
-      #scrollToTop {
-        scale:1.5;
-      }
-    }
+    // .footer-bottom {
+    //   #scrollToTop {
+    //     scale: 1.5;
+    //   }
+    // }
   }
 }
 @media (max-width:400px) {

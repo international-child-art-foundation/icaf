@@ -6,11 +6,11 @@
 
 .image-container {
     margin-top: 90px;
-    margin-left: 260px;
     img {
         border-radius: 9px;
-        width: 920px;
-        height: 608px;
+        width: 1546px;
+        height: 701px;
+        max-width: 100%;
     }
 }
 
@@ -45,8 +45,8 @@
         margin:auto;
         margin-bottom:5%;
         margin-top:5%;
+        margin-left: 5%;
         position:relative;
-        width:80%;
         height:auto;
         padding-bottom:66%;
         display:block;
@@ -54,9 +54,8 @@
             position:absolute;
             top: 0;
             left: 0;
-            width:100%;
-            height:100%;
-            object-fit:cover;
+            max-width: 95%;
+            object-fit:contain;
         }
     }
     .section-titles {
@@ -81,5 +80,24 @@
 @media (max-width:768px) {
     .sections {
         padding: 20px calc(30px + 1%) 20px;
+    }
+
+    .image-container {
+        margin:auto;
+        margin-bottom:5%;
+        margin-top:5%;
+        margin-left: 5%;
+        position:relative;
+        height:auto;
+        padding-bottom:66%;
+        display:block;
+        img {
+            position:absolute;
+            top: 0;
+            left: 0;
+            max-width: 95%;
+            max-height: 70%;
+            object-fit:contain;
+        }
     }
 }

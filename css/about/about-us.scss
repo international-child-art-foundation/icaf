@@ -5,11 +5,11 @@
 @use "../icaf-footer";
 
 .image-container {
-    margin-top: 90px;
+    margin-top: 3%;
+    text-align:center;
     img {
         border-radius: 9px;
-        width: 1546px;
-        height: 701px;
+        width: 1200px;
         max-width: 100%;
     }
 }
@@ -43,18 +43,12 @@
 @media (max-width:1358px) {
     .image-container {
         margin:auto;
-        margin-bottom:5%;
         margin-top:5%;
-        margin-left: 5%;
         position:relative;
         height:auto;
-        padding-bottom:66%;
         display:block;
         img {
-            position:absolute;
-            top: 0;
-            left: 0;
-            max-width: 95%;
+            max-width: 90%;
             object-fit:contain;
         }
     }
@@ -86,18 +80,13 @@
         margin:auto;
         margin-bottom:5%;
         margin-top:5%;
-        margin-left: 5%;
         position:relative;
         height:auto;
-        padding-bottom:66%;
         display:block;
         img {
-            position:absolute;
-            top: 0;
-            left: 0;
-            max-width: 95%;
-            max-height: 70%;
-            object-fit:contain;
+            min-height:350px;
+            max-height: 100%;
+            object-fit:cover;
         }
     }
 }

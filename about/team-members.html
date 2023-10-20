@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>About | Team Members</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/about/team-members.css" />
     <script src="/js/jquery-3.3.1.min.js"></script>
-    <script src="/js/bootstrap.js" defer></script>
+    <script src="/js/bootstrap.min.js" defer></script>
     <script>
         $(document).ready(function () {
             for (let el of $('[use-snippet]')) {
@@ -23,22 +24,29 @@
         <div use-snippet="/snippets/nav.snip.html"></div>
 
         <!-- Tag -->
-        <div class="icaf-breadcrumb">ABOUT > TEAM MEMBERS</div>
+        <div class="icaf-breadcrumb">About > Team Members</div>
 
         <!-- Title -->
         <div class="page-title">Team Members</div>
 
         <!-- Description -->
         <div class="description">
-            ICAF dedicated team of officers, volunteers, and interns organize the Arts Olympiad, plan and stage the
+            Dedicated teams of ICAF officers, volunteers, and interns organize the Arts Olympiad, plan and stage the
             World Children’s Festival, and produce the ChildArt magazine:
         </div>
 
         <!-- Members Image -->
         <div class="members-imgs">
-            <img class="img1" src="/resource/image/about/members-img-top.png" alt="">
-            <img class="img2" src="/resource/image/about/members-img-right.png" alt="">
-            <img class="img3" src="/resource/image/about/members-img-bottom.png" alt="">
+            <div class="image-container image-container-1">
+                <img class="img1" src="/resource/image/about/members/members-img-top.webp" alt="">
+            </div>
+            <div class="image-container image-container-2">
+                <img class="img2" src="/resource/image/about/members/members-img-right.webp" alt="">
+            </div>
+            <div class="image-container image-container-3">
+                <img class="img3" src="/resource/image/about/members/members-img-bottom.webp" alt="">
+            </div>
+
         </div>
 
         <!-- Team Members -->
@@ -82,7 +90,7 @@
 
         <!-- Loving Memory -->
         <div class="loving-memory">In Loving Memory: Patricia “Shisha” McKee</div>
-        <div class="shisha-mcKee-img"><img src="/resource/image/about/Shisha-McKee.png" alt="Shisha McKee"></div>
+        <div class="shisha-mcKee-img"><img src="/resource/image/about/members/Shisha-McKee.webp" alt="Shisha McKee"></div>
         <div class="shisha-mcKee-description">
             Patricia “Shisha” McKee worked at ICAF for nearly twenty years
             and passed away in March 2022. We will always miss her dearly.

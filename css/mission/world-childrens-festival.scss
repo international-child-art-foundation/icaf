@@ -4,6 +4,10 @@
 @use "../icaf-nav";
 @use "../icaf-footer";
 
+a {
+  max-width:100%;
+  word-wrap: break-word;
+}
 .goal-description {
   font-weight: 700;
   font-size: 36px;
@@ -12,8 +16,9 @@
 
   &-top {
     width: 1060px;
+    max-width:100%;
     margin: 90px auto 0px;
-    text-align: center;
+    text-align: left;
   }
 
   &-WCF {
@@ -25,7 +30,6 @@
     margin-top: 17px;
   }
 }
-
 // multiple sections have same style as underline and content, so put here
 .info-underline {
   height: 5px;
@@ -36,7 +40,6 @@
     margin: 60px auto 0px;
   }
 }
-
 .info-content {
   font-weight: 400;
   font-size: 24px;
@@ -58,7 +61,6 @@
     }
   }
 }
-
 .swiper {
   margin-top: 104px;
   width: 1440px;
@@ -121,9 +123,12 @@
     }
   }
 }
-
+.WCF-7th {
+  padding:3%;
+}
 .schedule-info {
   width: 1055px;
+  max-width:100%;
   display: grid;
   margin: 157px auto 0px;
   grid-template-columns: 460px 445px;
@@ -137,21 +142,25 @@
     color: $ICAF_BLUE;
   }
 }
-
 .schedule-main {
   margin-top: 60px;
-
-  img {
-    position: absolute;
+  .wave-container {
+    overflow:hidden;
   }
-
+  .top-wave {
+    margin-bottom:-1%;
+  }
+  .bottom-wave {
+    margin-top: -1%;
+  }
   .schedule-section {
-    position: absolute;
-    width: 1062px;
+    margin: auto;
+    padding: 5%;
     display: grid;
-    grid-template-columns: repeat(3, 320px);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 51px;
-    margin: 141px 190px 0px;
+    background-color: #f1f1f1;
+    justify-content:center;
 
     .day-container {
       height: 426.67px;
@@ -167,11 +176,9 @@
         text-align: center;
         color: #586b83;
       }
-
       .day-topic {
         height: 180px;
         margin-top: 34px;
-
         p {
           font-weight: 600;
           font-size: 32px;
@@ -180,118 +187,89 @@
           text-align: center;
           color: #ffffff;
         }
-
         &-1 {
           background-color: #00a65f;
         }
-
         &-2 {
           background-color: #ffa943;
         }
-
         &-3 {
           background-color: #134380;
         }
       }
-
       .day-detail {
         font-weight: 400;
         font-size: 18px;
         line-height: 25px;
         margin-top: 32px;
+        padding:2%;
         text-align: center;
         color: #000000;
       }
     }
   }
 }
-
-.WCF-7th {
-  margin-top: 846px;
-}
-
 .past-WCF {
-  margin: 60px 190px 0px;
-
+  display:grid;
+  justify-content:center;
   .nth-WCF {
     font-weight: 800;
     font-size: 32px;
     line-height: 44px;
     margin-top: 60px;
     color: $ICAF_BLUE;
-
+    padding:2%;
     &-6 {
       margin-top: 40px;
     }
   }
-
   .WCF-nth-container {
     display: grid;
-    grid-template-columns: 640px 300px;
-    column-gap: 121px;
+    grid-template-columns: 2.5fr 1fr;
+    column-gap: 2rem;
+    row-gap:1rem;
     margin-top: 40px;
-
+    overflow-x:auto;
+    padding:2%;
+    .WCF-nth-video {
+      width:100%;
+      height:100%;
+      iframe {
+        width:100%;
+        height:100%;
+        border-radius:12px;
+      }
+    }
     .section-name {
       font-weight: 400;
       font-size: 18px;
       line-height: 25px;
-      margin-top: 40px;
       color: $ICAF_GRAY;
-
-      &-m {
-        margin-top: 48px;
-      }
     }
-
     img {
-      width: 300px;
-      height: 390px;
+      height: 450px;
       border-radius: 10px;
     }
-
     iframe {
-      width: 640px;
-      height: 390px;
+      width: 100%;
+      min-width:220px;
     }
-
     .ifram2 {
       width: 505px;
       height: 308px;
     }
-
     .past-WCF-underline {
       color: #586b83;
       border: 3px solid rgba(88, 107, 131, 0.2);
       margin-top: 8px;
-
-      &-v {
-        width: 640px;
-      }
-
-      &-m {
-        width: 300px;
-      }
-
-      &-v2 {
-        width: 505px;
-      }
     }
   }
 }
-
 .design-logo {
-  height: 1091px;
   margin-top: 60px;
-  background-color: #f3f3f3;
-  overflow: auto;
-
   .title-container {
-    width: 1230px;
-    height: 116px;
     background-color: #ffffff;
-    margin: 50px auto 0px;
     overflow: auto;
-
     p {
       font-weight: 600;
       font-size: 32px;
@@ -300,9 +278,165 @@
       color: $ICAF_BLUE;
     }
   }
+  .press-footage {
+    padding: 0% 5% 0%;
+    border-radius:12px;
+    width:100%;
+    max-width:1300px;
+    height:731.25px;
+    margin:auto;
+    iframe {
+      width:100%;
+      height:100%;
+      border-radius: 12px;
+    }
+  }
+}
 
-  .press-footage-img {
-    width: 1230px;
-    margin: 0px auto;
+@media (max-width:1358px) {
+  .design-logo {
+    .press-footage {
+      padding: 0% 5% 0%;
+      border-radius:12px;
+      width:100%;
+      height:48.3vw;
+      iframe {
+        width:100%;
+        height:100%;
+        border-radius: 12px;
+      }
+    }  
+  }
+  .goal-description {
+    padding:1rem;
+    &-top {
+      margin: 5% auto 0px;
+    }  
+  }
+  .schedule-info {
+    padding: 5%;
+    .second-grid {
+      margin-top:7%;
+    }  
+  }
+  .schedule-info {
+    margin-top:1rem;
+    grid-template-columns: unset;
+  }
+  .swiper {
+    height: unset;
+    margin-top:5%;
+    width: 90%;
+    max-width: 1440px;
+    .swiper-navBtn {
+      display:none;
+    }
+    .swiper-slide {
+      width: 100%;
+      max-width: none;
+      height: auto; 
+        }
+    img {
+      object-fit: cover;
+    }
+  }
+}
+@media (max-width:1200px) {
+  .past-WCF {
+    .info-underline {
+      display:none;
+    }  
+    .label-underline {
+      .past-WCF-underline-m {
+        // The grid's contents don't increase in size when the grid overflows horizontally,
+        // so we must hardcode the right-side underline.
+        width:155%;
+        overflow:hidden;
+      }
+    }
+    .WCF-nth-container {
+      grid-template-columns: minmax(0, 2.5fr) minmax(0, 0.8fr);
+      .WCF-nth-magazine {
+        height: 45vw;
+      }
+      .WCF-nth-video {
+        height: 45vw;
+
+      }
+      img {
+        height:100%;
+        width:auto;
+      }
+    }
+    .WCF-nth-container::-webkit-scrollbar {
+      width: 0.7em;
+    }
+    .WCF-nth-container::-webkit-scrollbar-thumb {
+      background-color: rgb(190, 190, 190);
+      border-radius: 5px;
+    }
+  }
+  .schedule-main {
+    .schedule-section {
+      .day-container {
+        .day-detail {
+          margin-top:10%;
+        }
+      }
+    }
+  }
+}
+@media (max-width:1000px) {
+  .schedule-main {
+    .schedule-section {
+      padding:0%;
+    }
+  }
+}
+@media (max-width:768px) {
+  .past-WCF {
+    .WCF-nth-container {
+      grid-template-columns: minmax(0, 2.5fr) minmax(0, 0.8fr);
+      .WCF-nth-magazine {
+        height: 45vw;
+      }
+      .WCF-nth-video {
+        height: 45vw;
+
+      }
+      img {
+        height:100%;
+        width:auto;
+      }
+    }  
+  }
+  .schedule-main {
+    margin-top:2%;
+    background-image: url("/resource/image/mission/world-childrens-festival/schedule-background.svg");
+    background-size: inherit;
+    background-repeat: no-repeat;
+    width:100%;
+    padding-top:4rem;
+    img {
+      position:relative;
+    }
+    .schedule-section {
+      background-color: #f1f1f1;
+      z-index:1;
+      position:relative;
+      margin: 0;
+      padding: 2rem;
+      max-width:100%;
+      grid-template-columns: unset;
+    }  
+  }
+  .schedule-main {
+    .schedule-section {
+      .day-container {
+        .day-detail {
+          margin-top:4%;
+        }
+      }
+    }
   }
 }

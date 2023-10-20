@@ -16,7 +16,6 @@
     animation-iteration-count: infinite;
   }
 }
-
 /* These animations, each meant for two elements, will fade-in after half the time (1s for the fade) */
 $welcomeCrossFadeDuration: 10s;
 @keyframes welcome-fade {
@@ -38,7 +37,6 @@ $welcomeCrossFadeDuration: 10s;
     opacity: 0;
   }
 }
-
 $muralCrossFadeDuration: 6s;
 @keyframes mural-fade {
   0% {
@@ -59,7 +57,6 @@ $muralCrossFadeDuration: 6s;
     opacity: 0;
   }
 }
-
 .section-title {
   color: $ICAF_BLUE;
   font-weight: 800;
@@ -73,7 +70,6 @@ $muralCrossFadeDuration: 6s;
     padding-bottom: 8px;
   }
 }
-
 .section-description {
   color: $ICAF_BLUE;
   font-size: 18px;
@@ -87,28 +83,6 @@ $muralCrossFadeDuration: 6s;
     width: 830px;
   }
 }
-
-/* Section Specific */
-
-.modal {
-  padding: 0 !important;
-  .modal-dialog {
-    max-width: 90%;
-    font-size: 3rem;
-    .modal-footer {
-      height: 200px;
-      justify-content: center;
-      button {
-        scale: 2;
-      }
-    }
-  }
-}
-.modal-backdrop {
-  width: 200vw;
-  height: 200vh;
-}
-
 /* Nav isn't fixed on main page */
 body > .container {
   padding-top: unset;
@@ -120,23 +94,16 @@ body > .container {
   // This is needed because of the .navbar filter.
   position: relative;
 }
-
 .welcome {
-  width: 1358px;
+  width:100%;
+  max-width: 1358px;
   margin: 0 auto;
   margin-top: 47px;
-
   ul {
     list-style-type: none;
     padding: 0;
-    li:not(:last-child) {
-      margin-right: 20px;
-    }
     li {
       float: left;
-      &:not(:last-child) {
-        margin-right: 20px;
-      }
       img {
         border-radius: 9px;
       }
@@ -176,60 +143,74 @@ body > .container {
     }
   }
   .upper {
-    margin-bottom: 30px;
+    margin-bottom:30px;
+    display:flex;
+    row-gap: 18px;
+    column-gap:1.5%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-content:flex-start;
     .welcome-box {
-      width: 341px;
-      height: 285px;
+      width: 25.11%;
+      min-height: 285px;
+      flex:1;
       background: $ICAF_BLUE;
       border-radius: 9px;
       > div {
-        padding: 38px;
+        padding: clamp(10px, 10%, 38px);
         p:first-of-type {
+          margin-bottom:clamp(0px, 0.5vw, 1rem);
           font-weight: 800;
-          font-size: 24px;
+          font-size: clamp(20px, 2vw, 24px);
           line-height: 33px;
           color: $ICAF_YELLOW;
           text-transform: uppercase;
         }
         p:last-of-type {
           font-weight: 400;
-          font-size: 18px;
+          font-size: clamp(15px, 2vw, 18px);
           line-height: 25px;
           color: $ICAF_WHITE;
         }
       }
     }
-    .img1 {
-      width: 351px;
-      height: 285px;
+    .img1-container {
+      width: 25.84%;
+      height: auto;
     }
-    .img2 {
-      width: 339px;
-      height: 285px;
+    .img2-container {
+      width: 24.96%;
+      height: auto;
     }
-    .img3 {
-      width: 267px;
-      height: 285px;
+    .img3-container{
+      width: 19.66%;
+      height: auto;
     }
-  }
-  .lower {
-    .img4 {
-      width: 341px;
-      height: 405px;
+    .img4-container {
+      width: 25.11%;
+      height: auto;
+      padding-bottom:405px;
     }
-    .img5 {
-      width: 563px;
-      height: 405px;
+    .img5-container {
+      width: 41.4%;
+      height: auto;
     }
-    .img6 {
-      width: 414px;
-      height: 405px;
+    .img6-container {
+      width: 30.48%;
+      height: auto;
+    }
+    .img1, .img2, .img3, .img4, .img5, .img6 {
+      position:absolute;
+      top: 0;
+      left: 0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
     }
   }
 }
-
 #whatWeDo {
-  width: 1290px;
   margin: 0 auto;
   padding-top: 14px;
   display: grid;
@@ -237,6 +218,15 @@ body > .container {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 475px 125px;
   gap: 48px 30px;
+  overflow-x: auto;
+  /* For Webkit browsers like Chrome, Safari */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  /* For Internet Explorer and Edge */
+  -ms-overflow-style: none; 
+  /* For Firefox */
+  scrollbar-width: none;
   .wwd-card {
     position: relative;
     .card-img {
@@ -262,6 +252,7 @@ body > .container {
     line-height: 25px;
     text-align: center;
     max-width: 295px;
+    margin-top:20px;
   }
 }
 
@@ -325,17 +316,241 @@ body > .container {
   }
 }
 
-.video-container {
-  background-color: $ICAF_BLUE;
-  margin: 0 41px;
-  margin-bottom: 96px;
-  border-radius: 9px;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  
+@media (max-width: 1358px) {
+  .section-title {
+    padding: 20px 0px 0px;
+  }
+  .wwd-title {
+    padding-top:10px;
+  }
+  .video-container {
+    margin-top:30px;
+  }
+  .welcome {
+    .upper {
+      .img4 {
+        object-position:right;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .welcome {
+    width:unset;
+    display:flex;
+    align-items:center;
+    position:relative;
+    flex-direction:column;
+    align-content:center;
+    column-gap:20px;
+    row-gap:10px;
+    margin:20px;
+    margin-top:15px;
+    ul {
+      li:not(:last-child) {
+        margin-right: 0px;
+      }
+      li {
+        float: left;
+        &:not(:last-child) {
+          margin-right: 0px;
+        }
+      }
+      li {
+        margin-bottom:10px;
+      }
+    }
+    .upper {
+      margin-bottom:0px;
+      display:flex;
+      row-gap: 2px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content:space-between;
+      align-content:flex-start;
+      .welcome-box {
+        width:100%;
+        height:260px;
+        min-height:unset;
+        > div {
+          padding:30px;
+          height:auto;
+          p:first-of-type {
+            font-weight: 800;
+            font-size: clamp(15px, 10vw, 30px);
+            line-height:unset;
+            color: $ICAF_YELLOW;
+            text-transform: uppercase;
+          }
+          p:last-of-type {
+            font-weight: 400;
+            font-size: clamp(15px, 4vw, 25px);
+            line-height: unset;
+            color: $ICAF_WHITE;
+          }
+        }
+      }
+      .img1 {
+        width:100%;
+        height:auto;
+      }    
+      .img2 {
+        width:100%;
+        height:auto;
+      }    
+      .img3 {
+        width:100%;
+        height:auto;
+      }    
+      .img1-container {
+        width:100%;
+        padding-bottom:81.4%;
+        height:0px;
+      }
+      .img2-container {
+        width:48%;
+        height:0px;
+        padding-bottom:40.32%;
+      }
+      .img3-container {
+        width:48%;
+        height:0px;
+        padding-bottom:51.1%;
+      }
+      .img4 {
+        width:100%;
+        height:auto;
+      }    
+      .img5 {
+        width:100%;
+        height:auto;
+      }    
+      .img6 {
+        width:100%;
+        height:auto;
+      }        
+      .img4-container {
+        width:48%;
+        height:0px;
+        padding-bottom:57%;
+        margin-top:-10%;
+      }
+      .img5-container {
+        width:100%;
+        height:0px;
+        padding-bottom:72%;
+      }
+      .img6-container {
+        width:48%;
+        height:0px;
+        padding-bottom:47%;
+      }
+    }
+    .upper :nth-child(1) { order: 1; }
+    .upper :nth-child(2) { order: 2; }
+    .upper :nth-child(3) { order: 3; }
+    .upper :nth-child(4) { order: 4; }
+    .upper :nth-child(5) { order: 5; }
+    .upper :nth-child(6) { order: 7; }
+    .upper :nth-child(7) { order: 6; }
+
+  }
+  .section-description span {
+    margin:15px;
+  }
+  .section-description {
+    margin-bottom:0px;
+  }
+
+  .wwd-title {
+      padding-top:10px;
+
+  }
+  #whatWeDo {
+    max-width: 2000px;
+    width: 100%;
+    margin: 0px;
+    overflow-y: hidden;
+    grid-template-rows: 90%;
+    display: grid;
+    gap: 10px;
+    overflow-x: scroll;
+    white-space: nowrap;  
+    scrollbar-width: none; 
+    position: relative;
+    .wwd-card {
+      width: 100vw;
+      white-space: normal;
+      position:relative;
+      .img-wrapper {
+        position: relative;
+        .card-img {
+          height:unset;
+          max-height:70vh;
+          width:80%;
+          object-fit: contain;
+          margin: 0 auto;
+          display: block;
+        }
+        .card-link-wrapper {
+          top: 85%;
+          position:absolute;
+          left:50%;
+          transform: translateX(-50%);
+          a.icaf-button div {
+            width:230px;
+            height:70px;
+            font-size:18px;
+          }
+        }
+      }
+      .wwd-description {
+        width: 90%;
+        margin: 20px auto 0 auto;
+        max-width: 330px;
+      }
+    }
+  }
+  #whatWeDo::-webkit-scrollbar {
+    display:none;
+  }
   video {
-    width: 1169px;
-    height: 653px;
+    max-width:100%;
+  }
+  footer {
+    max-width:100%;
+  }
+  #pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .dot {
+    cursor:pointer;
+    width: 40px;
+    height: 20px;
+    background-color: #d3d3d3;
+    margin-right: 10px;
+    display: inline-block;
+    transform: skew(-30deg);
+    transform-origin: top;
+    transition: background-color 0.3s ease;
+  }
+  .dot.active {
+      background-color: yellow;
+  }
+  .video-container {
+    margin:auto;
+    margin-top:30px;
+    margin-bottom:0px;
+  }
+  .video-container video {
+    height:auto;
+    width:auto;
+  }
+  .video-container:empty {
+    height:700px;
+    width:90vw;
   }
 }

@@ -5,12 +5,11 @@
 @use "icaf-footer";
 
 .title-section {
-  background: url(/resource/image/gallery/Title\ Art.png);
+  background: url(/resource/image/gallery/Title\ Art.webp);
   background-size: 100%;
   height: 710px;
   padding-top: 112px;
   padding-left: 190px;
-
   .gallery-breadcrumb {
     font-weight: 700;
     font-size: 14px;
@@ -18,7 +17,6 @@
     letter-spacing: 0.1em;
     color: $ICAF_WHITE;
   }
-
   .gallery-title {
     margin-top: 4px;
     font-weight: 800;
@@ -26,7 +24,6 @@
     line-height: 55px;
     color: $ICAF_YELLOW;
   }
-
   .ai-quote {
     position: relative;
     max-width: 652px;
@@ -52,7 +49,6 @@
     }
   }
 }
-
 .imagination {
   margin-top: 125px;
   font-weight: 700;
@@ -61,10 +57,26 @@
   text-align: center;
   color: $ICAF_BLUE;
 }
-
 .search-section {
   margin-top: 60px;
   width: 1224px;
+}
+
+@media (max-width:1358px) {
+  .title-section {
+    padding: 3rem;
+    height:unset;
+    .ai-quote {
+      font-size:2rem;
+      .quote-text {
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+      .lower-right {
+        position:relative;
+      }
+    }
+  }
 }
 
 .gallery-grid {

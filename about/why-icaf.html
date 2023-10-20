@@ -10,12 +10,12 @@
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/bootstrap.min.js" defer></script>
     <script src="/JS/swiper-bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
         $(document).ready(function () {
             for (let el of $('[use-snippet]')) {
                 $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
             }
-
             // Gallery
             var swiper = new Swiper(".mySwiper", {
                 slidesPerView: "auto",
@@ -37,21 +37,25 @@
         <div use-snippet="/snippets/nav.snip.html"></div>
 
         <!-- Breadcrumb -->
-        <div class="icaf-breadcrumb">ABOUT > WHY ICAF</div>
+        <div class="icaf-breadcrumb">About > Why ICAF</div>
 
         <!-- Title -->
-        <div class="page-title">WHY ICAF</div>
+        <div class="page-title">Why ICAF</div>
 
         <!-- Contents -->
         <div class="content-wrapper">
             <div class="section">Creativity and arts deliver the empathy needed for diversity and differences to expand
                 the fractal of human discovery and evolution.</div>
-            <img class="single-image" src="/resource/image/about/why-icaf/Rectangle 245.png">
+            <div class="image-container">
+                <img class="single-image" src="/resource/image/about/why-icaf/Rectangle 245.webp">
+            </div>
             <div class="section-title">Why Creativity?</div>
+            <div class="divider-top"></div>
             <div class="section-quote">
-                "Creativity is seeing what others see and thinking what no one else ever thought."
+                <p>"Creativity is seeing what others see and thinking what no one else ever thought."</p>
                 <div class="signature">—Albert Einstein</div>
             </div>
+            <div class="divider-bottom"></div>
             <div class="section">
                 Creativity sparks inventions, shifts paradigms, and brings disruptive innovations. Creativity is and
                 has always been a survival skill. For those underprivileged, creativity boosts their confidence to
@@ -73,10 +77,12 @@
                 grow in number, the school transforms into a more integrated, creative, healthy community.
             </div>
             <div class="section-title">Why Empathy?</div>
+            <div class="divider-top"></div>
             <div class="section-quote">
-                "Through art alone are we able to emerge from ourselves to know what another person sees."
+                <p>"Through art alone are we able to emerge from ourselves to know what another person sees."</p>
                 <div class="signature">—Marcel Proust</div>
             </div>
+            <div class="divider-bottom"></div>
             <div class="section">
                 The word "empathy" is derived from einfühlung (literally "feeling into" something), which can
                 describe what a beholder feels when facing a painting. Empathy is a vicarious, embodied
@@ -106,11 +112,13 @@
                 hatred, and retribution—so they fight not for their tribe's history but for "a more perfect union." By
                 infusing creativity with empathy, the WCF inspires children to become <i>creative-empaths</i>.
             </div>
-            <div class="section-title">Why Creatve-Empaths?</div>
+            <div class="section-title">Why Creative-Empaths?</div>
+            <div class="divider-top"></div>
             <div class="section-quote">
-                "Hope for humanity rises from creativity (that can be learned) and empathy (that can be taught)."
+                <p>"Hope for humanity rises from creativity (that can be learned) and empathy (that can be taught)."</p>
                 <div class="signature">—Ashfaq Ishaq</div>
             </div>
+            <div class="divider-bottom"></div>
             <div class="section">
                 Creativity is a salient human attribute, but it is morally neutral. Malevolent creativity abounds with
                 intentionality to harm other people or society as a whole. What makes creativity positive to
@@ -121,10 +129,12 @@
                 Only <i>creative-empaths</i> can create a more peaceful, sustainable, and prosperous future.
             </div>
             <div class="section-title">Why the Arts?</div>
+            <div class="divider-top"></div>
             <div class="section-quote">
-                "The task of art is enormous."
+                <p>"The task of art is enormous."</p>
                 <div class="signature">—Leo Tolstoy</div>
             </div>
+            <div class="divider-bottom"></div>
             <div class="section">
                 The 2021 report <i>Art for Life's Sake: The Case for Arts Education</i> of the American Academy of Arts
                 & Sciences provides "evidence of the attributes, values, and skills that come from arts education,
@@ -139,10 +149,12 @@
                 Olympiad, then as <i>creative-empaths</i> at the WCF.
             </div>
             <div class="section-title">Why Take Action?</div>
+            <div class="divider-top"></div>
             <div class="section-quote">
-                "If you want real peace in the world, start with children."
+                <p>"If you want real peace in the world, start with children."</p>
                 <div class="signature">—Mahatma Gandhi</div>
             </div>
+            <div class="divider-bottom"></div>
             <div class="section">
                 With school programs that are free of charge, educational festivals that are free and open to the
                 public, and <i>ChildArt</i> magazine that is free of commercial advertisements, ICAF relies on
@@ -160,27 +172,27 @@
                 <div class="swiper-slide">
                     <a href="https://ptaourchildren.org/how-to-prepare-children-for-the-fourth-industrial-revolution/"
                         target="_blank">
-                        <img src="/resource/image/about/why-icaf/Rectangle 184 (1).png" class="card-img">
+                        <img src="/resource/image/about/why-icaf/Rectangle 184 (1).webp" class="card-img">
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="/resource/pdfs/CreativeEmpaths.pdf" target="_blank">
-                        <img src="/resource/image/about/why-icaf/Rectangle 184.png" class="card-img">
+                        <img src="/resource/image/about/why-icaf/Rectangle 184.webp" class="card-img">
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="/resource/pdfs/The Lancet.pdf" target="_blank">
-                        <img src="/resource/image/about/why-icaf/Rectangle 185.png" class="card-img">
+                        <img src="/resource/image/about/why-icaf/Rectangle 185.webp" class="card-img">
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="https://www.amazon.com/dp/B00D7MQ2PU" target="_blank">
-                        <img src="/resource/image/about/why-icaf/Rectangle 186.png" class="card-img">
+                        <img src="/resource/image/about/why-icaf/Rectangle 186.webp" class="card-img">
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="/resource/pdfs/Dr. Ishaq interview with Cybertherapy & Rehabilitation.pdf" target="_blank">
-                        <img src="/resource/image/about/why-icaf/Rectangle 184 copy.png" class="card-img">
+                        <img src="/resource/image/about/why-icaf/Rectangle 184 copy.webp" class="card-img">
                     </a>
                 </div>
             </div>

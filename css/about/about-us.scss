@@ -5,13 +5,12 @@
 @use "../icaf-footer";
 
 .image-container {
-    margin-top: 90px;
-    margin-left: 260px;
-
+    margin-top: 3%;
+    text-align:center;
     img {
         border-radius: 9px;
-        width: 920px;
-        height: 608px;
+        width: 1200px;
+        max-width: 100%;
     }
 }
 
@@ -21,16 +20,13 @@
     font-size: 24px;
     line-height: 33px;
     max-width: 1060px;
-
     &.first {
         margin-top: 125px;
     }
-
     &.last {
         margin-bottom: 220px;
     }
 }
-
 .section-titles {
     margin-top: 60px;
     margin-left: 190px;
@@ -39,4 +35,58 @@
     font-size: 36px;
     line-height: 49px;
     color: $ICAF_BLUE;
+}
+.todo-list {
+    padding: 0% 5% 0%;
+}
+
+@media (max-width:1358px) {
+    .image-container {
+        margin:auto;
+        margin-top:5%;
+        position:relative;
+        height:auto;
+        display:block;
+        img {
+            max-width: 90%;
+            object-fit:contain;
+        }
+    }
+    .section-titles {
+        margin:auto;
+        margin-top:0%;
+        padding-left: calc(30px + 4%);
+    }
+    .sections {
+        font-size:20px;
+        line-height: unset;
+        margin:auto;
+        margin-top:0%;
+        padding: calc(30px + 4%);
+        &.first {
+            margin-top:0%;
+        }
+        &.last {
+            margin-bottom:0px;
+        }
+    }
+}
+@media (max-width:768px) {
+    .sections {
+        padding: 20px calc(30px + 1%) 20px;
+    }
+
+    .image-container {
+        margin:auto;
+        margin-bottom:5%;
+        margin-top:5%;
+        position:relative;
+        height:auto;
+        display:block;
+        img {
+            min-height:350px;
+            max-height: 100%;
+            object-fit:cover;
+        }
+    }
 }

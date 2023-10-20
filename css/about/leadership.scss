@@ -8,35 +8,32 @@
   flex-wrap: wrap;
   justify-content: center;
   column-gap: 30px;
-  margin: 128px 0 220px;
-
+  margin: 128px 0 120px;
   #card-container-2 {
     margin-top: 82px;
   }
-
   .card-container {
     display: flex;
     row-gap: 45px;
     flex-direction: column;
-
     .card {
       width: 634px;
       background: #ffffff;
-      border: 1px solid #d1d1d1;
-      box-shadow: 0px 1px 20px 8px rgba(198, 198, 198, 0.2);
+      border: 0px;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
       border-radius: 10px;
+      background-color: #ffffff;
       align-items: center;
-
       .cont-tab {
         display: none;
       }
-
       .card-avt {
         height: 276px;
         width: 276px;
         margin: 35px 0 28px;
+        max-width:90%;
+        height:auto;
       }
-
       .card-title {
         text-align: center;
         margin-bottom: 2px;
@@ -44,7 +41,6 @@
         font-weight: 700;
         line-height: 49px;
       }
-
       .card-title-2 {
         text-align: center;
         margin-bottom: 17px;
@@ -52,7 +48,6 @@
         font-weight: 600;
         line-height: 41px;
       }
-
       .content {
         color: #575756;
         max-width: 528px;
@@ -61,7 +56,6 @@
         text-align: center;
         margin-bottom: 43px;
       }
-
       .content-more {
         .linkedin {
           margin-bottom: 43px;
@@ -69,12 +63,10 @@
           justify-content: center;
           align-items: flex-end;
           column-gap: 5px;
-
           img {
             width: 26px;
             height: 22px;
           }
-
           a {
             font-weight: 600;
             font-size: 20px;
@@ -83,7 +75,6 @@
           }
         }
       }
-
       .readmore {
         width: 44px;
         height: 22px;
@@ -94,29 +85,73 @@
           height: 100%;
         }
       }
-
-      // style changed due to checkbox not checked
-      .cont-tab:not(:checked) {
+      // Container for the absolutely positioned elements
+      .image-container {
+        position: relative;
+      }
+      // Default state (similar to the :not(:checked) state)
+      .cont-tab {
         & ~ .avt1,
         & ~ .short-cont {
-          display: none;
+          opacity: 0;
+          visibility: hidden;
+          position: absolute;
+          transition: opacity 0.3s ease;
         }
 
         & ~ .readmore img {
-          rotate: 180deg;
+          transition: transform 0.3s ease;
         }
       }
-
-      // style changed due to checkbox checked
+      // Style changed due to checkbox not checked
+      .cont-tab:not(:checked) {
+        & ~ .readmore img {
+          transform: rotate(180deg);
+        }
+      }
+      // Style changed due to checkbox checked
       .cont-tab:checked {
         & ~ .avt1,
         & ~ .short-cont {
-          display: block;
+          opacity: 1;
+          visibility: visible;
+          position: static; // back to normal flow when visible
         }
-
         & ~ .avt2,
         & ~ .content-more {
-          display: none;
+          opacity: 0;
+          visibility: hidden;
+          position: absolute;
+          transition: opacity 0.3s ease;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:1358px) {
+  .container {
+    .main-container {
+      margin-top:5%;
+      .card-container {
+        .card {
+          width:90%;
+          margin:auto;
+          .content {
+            max-width: 90%;
+          }
+          .content-more {
+            .linkedin {
+              margin-top:20px;
+            }
+          }
+          .short-cont {
+            padding:2% 4% 0%;
+          }
+          .long-cont {
+            padding:2% 4% 0%;
+            margin:auto;
+          }
         }
       }
     }

@@ -111,6 +111,11 @@
     line-height: 33px;
   }
 }
+.wave {
+  img {
+    max-width:100%;
+  }
+}
 
 @media (max-width:1358px) {
   .wave {

@@ -17,10 +17,12 @@
 }
 .wave1 {
   margin-top: 22px;
+  max-width: 100%;
 }
 .description-wrapper {
   background: rgba(19, 67, 128, 0.1);
   padding: 35px 0 54px;
+  max-width: 100%;
   .description {
     max-width: 1060px;
     margin: 0 auto;
@@ -62,6 +64,9 @@
       grid-row: 1 / span 2;
     }
   }
+}
+.wave2 {
+  max-width: 100%;
 }
 .content-wrapper {
   margin: 95px auto 0px;
@@ -110,7 +115,7 @@
 @media (max-width:1358px) {
   .wave {
     max-width:100%;
-    overflow-x:clip;
+    overflow-x:hidden;
   }
   .content-wrapper {
     padding:0px 2rem 0px;
@@ -128,6 +133,10 @@
 }
 
 @media (max-width:768px) {
+  .wave {
+    max-width:100%;
+    overflow-x:hidden;
+  }
   .description-wrapper {
     .description {
       .capitol-imgs {

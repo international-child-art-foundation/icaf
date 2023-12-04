@@ -73,7 +73,7 @@
   max-width: 1060px;
   .section-title {
     font-weight: 800;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 44px;
     color: $ICAF_BLUE;
     text-align: center;
@@ -85,7 +85,7 @@
     gap: 30px;
     justify-content: space-evenly;
     ul {
-      font-size: 24px;
+      font-size: 22px;
       line-height: 33px;
       // width: fit-content;
       list-style: none;
@@ -94,13 +94,32 @@
       max-width:100%;
     }
   }
+  .list-wrapper-image {
+    display: flex;
+    .four-seasons {
+      flex: 1.4;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .four-image {
+      flex: 1;
+      img {
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
 }
 .content {
   max-width: 1060px;
   margin: 60px auto 220px;
   .section-title {
     font-weight: 800;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 44px;
     color: $ICAF_BLUE;
     text-align: center;
@@ -109,11 +128,6 @@
   .section {
     font-size: 24px;
     line-height: 33px;
-  }
-}
-.wave {
-  img {
-    max-width:100%;
   }
 }
 

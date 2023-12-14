@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) --> 
+    <script async src=https://www.googletagmanager.com/gtag/js?id=G-DJTC9P33TF></script> 
+    <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-DJTC9P33TF'); </script>
+    
     <meta charset="UTF-8">
     <title>ICAF | In Loving Memory</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,21 +59,22 @@
         <!-- form -->
         <div class="main-background">
             <div class="input-container">
-                <div class="success-feedback">Thank you for supporting our work that creates joy and restores hope for children.</div>
+                <div class="success-feedback">Your submission has been received.</div>
                 <form id="inLovingMemoryForm">
                     <label for="inLovingMemoryOf">In loving memory of*</label>
                     <input type="text" id="inLovingMemoryOf" name="inLovingMemoryOf" required>
 
-                    <label for="email">Email of Family Member*</label>
+                    <label for="acknowlegmentName">The family member to receive acknowledgment of your
+                        donation*</label>
+                    <input type="text" id="acknowlegmentName" name="acknowlegmentName" required>
+
+                    <label for="email">His/her email*</label>
                     <input type="email" id="email" name="email" required>
 
-                    <label for="relationship">Relationship of Family Member to the Deceased*</label>
-                    <input type="text" id="relationship" name="relationship" required>
+                    <label for="address">Mailing Address*</label>
+                    <input type="text" id="address" name="address">
 
-                    <!-- <label for="address">Mailing Address*</label>
-                    <input type="text" id="address" name="address"> -->
-
-                    <label for="ilm-message">Your Message to the Family Member*</label>
+                    <label for="ilm-message">Your Message*</label>
                     <textarea id="ilm-message" name="message" required></textarea>
 
                     <input type="hidden" name="type" value="in-loving-memory" />

@@ -241,11 +241,11 @@ footer {
         }
       }  
     }
-    // .footer-bottom {
-    //   #scrollToTop {
-    //     scale: 1.5;
-    //   }
-    // }
+    .footer-bottom {
+      .Policy{
+        margin-bottom: 5%;
+      }
+    }
   }
 }
 @media (max-width:400px) {

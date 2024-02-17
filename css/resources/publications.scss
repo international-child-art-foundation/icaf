@@ -44,10 +44,21 @@
 
 .bottom-links {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
   column-gap: 22px;
+  row-gap: 22px;
   margin: 75px auto 220px;
+  margin-bottom: 1%;
   width: fit-content;
+  
+}
+
+.book-description {
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+  color: $ICAF_BLUE;
 }
 
 @media (max-width:1358px) {

@@ -42,13 +42,27 @@
   }
 }
 
+.book-description {
+  margin-top: 5%;
+  margin-bottom: 1%;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+  color: $ICAF_BLUE;
+}
+
 .bottom-links {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
   column-gap: 22px;
+  row-gap: 22px;
   margin: 75px auto 220px;
   width: fit-content;
+  margin-bottom: 1%;
 }
+
+
 
 @media (max-width:1358px) {
   .top-right-image-wrapper {

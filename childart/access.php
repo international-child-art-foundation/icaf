@@ -88,6 +88,36 @@
 		<!-- <p align="left"><strong>Annual subscription is $30 (US) and $40 (International).</strong></p> -->
 		<div id="childartthemes">
 			<div>
+				<span class="exclude">January-March 2024:</span> Dance <br> Volume 24, Issue 1, Number 73
+				<div style="text-align:center">
+					<a href="/resource/flipbooks/Dance" target="_blank">
+						<img src="images/childart/Dance.jpg" alt="Dance" height="50%" width="50%" /></a>
+				</div>
+			</div>
+
+			<div>
+				<span class="exclude">October-December 2023:</span> Animal Art <br> Volume 23, Issue 4, Number 72
+				<div style="text-align:center">
+					<a href="/resource/flipbooks/AnimalArt" target="_blank">
+						<img src="images/childart/AnimalArt.jpg" alt="Animal Art" height="50%" width="50%" /></a>
+				</div>
+			</div>
+
+		    <div>
+				<span class="exclude">July-September 2023:</span> Metaverse <br> Volume 23, Issue 3, Number 71
+				<div style="text-align:center">
+					<a href="/resource/flipbooks/Metaverse" target="_blank">
+						<img src="images/childart/Metaverse.jpg" alt="Metaverse" height="50%" width="50%" /></a>
+				</div>
+			</div>
+			<div>
+				<span class="exclude">April-June 2023:</span> Mindfulness <br> Volume 23, Issue 2, Number 70
+				<div style="text-align:center">
+					<a href="/resource/flipbooks/Mindfulness" target="_blank">
+						<img src="images/childart/Mindfulness.jpg" alt="Mindfulness" height="50%" width="50%" /></a>
+				</div>
+			</div>
+			<div>
 				<span class="exclude">January-March 2023:</span> The Power Of Words <br> Volume 23, Issue 1, Number 69
 				<div style="text-align:center">
 					<a href="/resource/flipbooks/ThePowerOfWords" target="_blank">

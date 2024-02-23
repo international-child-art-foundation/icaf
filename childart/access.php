@@ -90,7 +90,7 @@
 			<div>
 				<span class="exclude">January-March 2024:</span> Dance <br> Volume 24, Issue 1, Number 73
 				<div style="text-align:center">
-					<a href="/resource/flipbooks/AnimalArt" target="_blank">
+					<a href="/resource/flipbooks/Dance" target="_blank">
 						<img src="images/childart/Dance.jpg" alt="Dance" height="50%" width="50%" /></a>
 				</div>
 			</div>

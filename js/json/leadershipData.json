@@ -9,15 +9,6 @@
     "img2": "/resource/image/about/leadership/c1.webp"},
 {
     "container": 1,
-    "title":"Dr. Alena Ahrens",
-    "position": "Arts Educator",
-    "img1": "/resource/image/about/leadership/2.webp",
-    "shortCont": "An experienced arts educator, artist, and writer, Dr. Ahrens is driven by a mission to promote the well-being of children through creative expression and mindfulness....",
-    "longCont": "An experienced arts educator, artist, and writer, Dr. Ahrens is driven by a mission to promote the well-being of children through creative expression and mindfulness. She takes pride in developing and implementing interventions that blend contemplative practices with visual art methods. As the founder of Little Sage Workshops, her goal is to create a powerful space for artistic development, cultivate the journey of the mind-body connection, and teach youth how to access their inner strengths. Dr. Ahrens is ICAF Advisory Board Member.",
-    "linkedin":"https://www.linkedin.com/in/alena-ahrens-73a1b41b1/",
-    "img2": "/resource/image/about/leadership/c2.webp"},
-{
-    "container": 1,
     "title":"Professor Maria Claudia Albini",
     "position": "ICAF Representative in Argentina",
     "img1": "/resource/image/about/leadership/3.webp",
@@ -25,6 +16,15 @@
     "longCont": "After participating in the first World Children's Festival in 1999, Professor Albini has been associated with ICAF ever since. She holds a B.A. in Education, a B.A. in Arts, and is completing her doctoral studies in Art at the Universidad Nacional de las Artes in Buenos Aires. She has represented ICAF in Argentina since 2004. She has taught children, teenagers, and adults in primary and secondary schools and at a university for the past 35 years. As a lecturer and a researcher, her main interests are the interrelation between music and language and applied linguistics.",
     "linkedin":"https://artesol.org.ar/maria-claudia-albini-2-5885",
     "img2": "/resource/image/about/leadership/c3.webp"},
+{
+    "container": 1,
+    "title":"Sorasicha Nithikasem",
+    "position": "ICAF Advisory Board Member",
+    "img1": "/resource/image/about/leadership/Sora_Headshot.jpg",    
+    "shortCont": "After participating in the 3rd World Children’s Festival in June 2007 as the Arts Olympiad winner from New Jersey, Sora continued to be involved in the International Child Art Foundation....",
+    "longCont": "After participating in the 3rd World Children’s Festival in June 2007 as the Arts Olympiad winner from New Jersey, Sora continued to be involved in the International Child Art Foundation, initially as a Youth Board Member. She emceed the 4th and 5th World Children’s Festivals, presented the World Children’s Award to dignitaries, and served as the ICAF representative who visited Japan following the 2011 Tsunami and Earthquake as part of ICAF’s Healing Arts Program. Sora received a Bachelor of Science from New York University with a Major in Neural Science and Minor in the Studio Arts. As a student doctor, she pursues her passion in the intersection between the arts and sciences through the study of humanistic medicine. She will receive her M.D. degree from the Rutgers Robert Wood Johnson Medical School in 2025.",
+    "linkedin":"https://www.linkedin.com/in/sorasicha-nithikasem-5a214642/",
+    "img2": "/resource/image/about/leadership/sora_childhood.jpg"},
 {
     "container": 1,
     "title":"Sergey Eylanbekov",
@@ -70,15 +70,6 @@
     "longCont": "A counselor for children and adults with mental and behavioral disorders, Dr. Sidney-Ando holds a Ph.D. in Humanistic and Transpersonal Psychology from Saybrook University in California and M.A. in Counseling from Alaska Pacific University. Her Ph.D. dissertation included an analysis of the ICAF programs and methodologies. Born in Mexico, she travels to remote areas of the world, finding inspiration in places ranging from the jungles of Peru to the windswept cliffs of the Himalayas. She spends her evenings painting and occasionally illustrating children's books.",
     "linkedin":"https://sidneyando.com/",
     "img2": "/resource/image/about/leadership/c8.webp"},
-{
-    "container": 1,
-    "title":"Ahava Silkey-Jones",
-    "position": "ICAF Advisory Board Member",
-    "img1": "/resource/image/about/leadership/9.webp",
-    "shortCont": "An EdM in Arts in Education from Harvard Graduate School of Education and an M.A. in Educational Leadership from Roosevelt University....",
-    "longCont": "An EdM in Arts in Education from Harvard Graduate School of Education and an M.A. in Educational Leadership from Roosevelt University, Ms. Silkey-Jones is a licensed school superintendent. An Executive Director of the DaVinci Academy of Arts and Science in Minneapolis, she has an extensive portfolio of experience in arts administration, school administration, and non-profit leadership and a passion and track record for building equitable access to high-quality arts programming in educational systems. She is a Policy Fellow at the Humphrey School for Public Affairs at the University of Minnesota, a Commissioner with the Minneapolis Arts Commission, a Co-Founder of Professional Theatre and Dance Youth Academy, and Board Secretary for the ROHO Collective (a non-profit that focuses on elevating voices of artists of color). Ms. Silkey-Jones is an ICAF Advisory Board Member.",
-    "linkedin":"https://www.linkedin.com/in/ahavasilkeyjones/",
-    "img2": "/resource/image/about/leadership/c9.webp"},
 {
     "container": 1,
     "title":"Narmina Veliyeva",
@@ -168,14 +159,5 @@
     "shortCont": "A Senior Inspector of Schools for Art and Crafts at the Uganda Ministry of Education and Sports, Mr. Ssembiro is an art educator and a muralist....",
     "longCont": "A Senior Inspector of Schools for Art and Crafts at the Uganda Ministry of Education and Sports, Mr. Ssembiro is an art educator and a muralist. He is the founder of African Peace Murals Uganda. Since 2010, he has represented ICAF in Uganda. Twenty-four Ugandan students accompanied him to participate in the 2011 and 2015 World Children's Festival. In 2015, he received the World Children's Award for devoting his life to children and their art, thus uplifting the children and making a critical difference in their lives.",
     "linkedin":"https://www.facebook.com/africanpeacemurals/",
-    "img2": "/resource/image/about/leadership/c19.webp"},
-{
-    "container": 2,
-    "title":"Professor Manika Walia",
-    "position": "ICAF Advisory Board Member",
-    "img1": "/resource/image/about/leadership/20.webp",
-    "shortCont": "Professor Manika Walia is Founding Dean of the School of Creativity at Rishihood University in Delhi, Manika mentors students toward innovative design and creative solutions that a....",
-    "longCont": "Professor Manika Walia is Founding Dean of the School of Creativity at Rishihood University in Delhi, Manika mentors students toward innovative design and creative solutions that are useful, sustainable, and meaningful. As a researcher, she specializes in design thinking. She has trained local K–12 teachers through seminars on how to nurture their students’ creativity. She is certain that creativity aids in children's mental growth by allowing them the opportunity to experiment with novel ideas, modes of reasoning, and problem-solving techniques. She is an ICAF Advisory Board Member.",
-    "linkedin":"https://www.linkedin.com/in/manika-walia-77628a107/",
-    "img2": "/resource/image/about/leadership/c20.webp"}
+    "img2": "/resource/image/about/leadership/c19.webp"}
 ]

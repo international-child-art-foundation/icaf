@@ -1,0 +1,32 @@
+@use "../icaf-colors" as *;
+
+@use "../icaf-general";
+@use "../icaf-nav";
+@use "../icaf-footer";
+
+.top-right-image-wrapper {
+  position: relative;
+  width: 1060px;
+  margin: 0 auto;
+  img {
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+  }
+}
+
+.list-of-news {
+  width: 1060px;
+  margin: 60px auto 220px;
+  font-size: 24px;
+  line-height: 33px;
+  ul {
+    padding-left: 2rem;
+    li {
+      margin-top: 20px;
+    }
+    a {
+      color: #000000;
+    }
+  }
+}

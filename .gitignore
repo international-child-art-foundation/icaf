@@ -9,3 +9,4 @@ resource/flipbooks
 node_modules
 package.json
 package-lock.json
+api/config.php

@@ -87,6 +87,29 @@
 	<div id="contents" class="twocolumn">
 		<!-- <p align="left"><strong>Annual subscription is $30 (US) and $40 (International).</strong></p> -->
 		<div id="childartthemes">
+
+			<div>
+				<span class="exclude">October-December 2024:</span>  AI & Art <br> Volume 24, Issue 4, Number 76
+				<div style="text-align:center">
+					<a href="/resource/flipbooks/AI&Art" target="_blank">
+						<img src="images/childart/AI&Art.jpg" alt="AI&Art" height="50%" width="50%" /></a>
+				</div>
+			</div>
+
+			<div>
+				<span class="exclude">July-September 2024:</span> Art & Sports <br> Volume 24, Issue 3, Number 75
+				<div style="text-align:center">
+					<a href="/resource/flipbooks/Art&Sports" target="_blank">
+						<img src="images/childart/Art & Sports.jpg" alt="Plurality" height="50%" width="50%" /></a>
+				</div>
+			</div>
+			<div>
+				<span class="exclude">April-June 2024:</span> Plurality <br> Volume 24, Issue 2, Number 74
+				<div style="text-align:center">
+					<a href="/resource/flipbooks/Plurality" target="_blank">
+						<img src="images/childart/Plurality.jpg" alt="Plurality" height="50%" width="50%" /></a>
+				</div>
+			</div>
 			<div>
 				<span class="exclude">January-March 2024:</span> Dance <br> Volume 24, Issue 1, Number 73
 				<div style="text-align:center">

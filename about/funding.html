@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About | Funding</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/about/funding.css" />
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.min.js" defer></script>
+    <script>
+        $(document).ready(function () {
+            for (let el of $('[use-snippet]')) {
+                $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Nav -->
+        <div use-snippet="/snippets/nav.snip.html"></div>
+
+        <!-- Tag -->
+        <div class="icaf-breadcrumb">ABOUT > FUNDING</div>
+
+        <!-- Title -->
+        <div class="page-title">FUNDING</div>
+
+        <!-- wave1 -->
+        <div class="wave1">
+            <img src="/resource/image/about/Vector 26.svg">
+        </div>
+
+        <!-- Description -->
+        <div class="description-wrapper">
+            <div class="description">
+                While independently ranked among the 25 Top Children's Charities in the United States, ICAF's tenous
+                financial position reflects the lack of
+                understanding of business, philanthropic, and political Leaders of the critical importance of
+                creativity and empathy, and the urgency to develop these vital human traits for a prosperous and
+                peaceful future.
+            </div>
+
+            <!-- funding Image -->
+            <div class="image-wrapper">
+                <img src="/resource/image/about/2021-WCF-ICAF-JackZhengArt.png" alt="">
+            </div>
+
+            <!-- introduction-->
+            <div class="description2">
+                <span>
+                    ICAF and the children we work with are most grateful to the following organizations for planting the
+                    seeds of
+                    freedom by helping cultivate creativity and grow empathy:
+                </span>
+            </div>
+        </div>
+
+        <!-- wave2 -->
+        <div class="wave2">
+            <img src="/resource/image/about/Vector 27.svg">
+        </div>
+
+        <!-- private foundations partners -->
+        <div class="partners">
+            <div class="partner-title">Private Foundations Partners:</div>
+            <ul>
+                <li>The Claire and Theodore Morse Foundation, Beverly Hills, CA</li>
+                <li>The Holloway Family Foundation, Post Falls, ID</li>
+                <li>The Forrest R. Lewis Family Foundation, Raleigh, NC</li>
+                <li>The Lundring Family Foundation, Thousand Oaks, CA</li>
+                <li>The Skillman Foundation, Detroit, Ml</li>
+                <li>The Susan Zirkl Memorial Charitable Foundation New York, NY</li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="section-titles">5% Overhead</div>
+            <div class="sections">
+                Because a network of volunteers nationwide and worldwide help ICAF conduct its programs and organize its
+                festivals and exhibitions, ICAF overhead expenses are traditionally less than 5%.
+                Hence, nearly all charitable contributions directly fund educational programs and events.
+            </div>
+
+            <div class="section-titles">Zero Service Revenue</div>
+            <div class="sections">
+                Unconventionally, ICAF's programs are free of charge, its magazine is free of commercial advertisements,
+                and its World Children's Festival is free and open to the public. ICAF does not earn any revenue from
+                the services it provides, which makes the charity entirely dependent
+                on donations and yet ICAF does not spend any money on fundraising.
+            </div>
+
+            <div class="section-titles">Integrity</div>
+            <div class="sections">
+                ICAF has earned a reputation for financial integrity and efficiency. ICAF has earned the 2022 GuideStar
+                Platinum Transparency ranking. ICAF takes stewardship seriously and
+                works to maximize the value of every contribution received.
+            </div>
+
+            <div class="section-titles">Rejections</div>
+            <div class="sections">
+                The private foundations that rejected ICAF's 2022 grant applications include Morris and Gwendolyn
+                Cafritz Foundation, Hirschfeld Family Foundation, The Kahlert Foundation, F.M. Kirby Foundation, Dr.
+                Robert C. and Tina Sohn Foundation, and Prince Charitable Trusts. In 2022,
+                businesses that rejected ICAF's request for support include Adobe, Epson, and Zoom.
+            </div>
+
+            <div class="section-titles">Creative-Empaths</div>
+            <div class="sections">
+                ICAF relies upon creative and empathic individuals concerned about children and their future to support
+                ICAF grow its impact on
+                school communities across America and the globe.<br><br>
+                We thank Andrea England (Victoria, BC), Scott Fares (St. Paul, MN), Nancy Hicks (Washington, DC), Mehul
+                Raval (Wilmette, IL),
+                Alexander Skarsgard (Beverly Hills, CA), and Mei Tang (Rowlnd Heights, CA).<br><br>
+                Special thanks to Children of The Arts (Coral Springs, FL), Emmanuel Episcopal Church (Bel Air, MD),
+                Lend a Hand Club, Agoura High School (Agoura Hills, CA), and Wildwood High School Seniors (Los Angeles,
+                CA).
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div use-snippet="/snippets/footer.snip.html"></div>
+    </div>
+</body>
+
+</html>

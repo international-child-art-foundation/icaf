@@ -1,0 +1,105 @@
+@use "../icaf-colors" as *;
+
+@use "../icaf-general";
+@use "../icaf-nav";
+@use "../icaf-footer";
+
+.content {
+  margin-top: 20px;
+  max-width: 1060px;
+  margin: 90px auto 0;
+
+  .section-titles {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: $ICAF_BLUE;
+  }
+
+  .sections {
+    font-size: 24px;
+    line-height: 33px;
+    img {
+      display: block;
+      margin: 125px auto;
+    }
+  }
+
+  .icons-instructions {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #575756;
+  }
+}
+
+.swiper {
+  margin-top: 20px;
+  height: 308px;
+  background-color: #e7ecf2;
+  .swiper-slide {
+    width: 267px;
+    height: 158px;
+
+    img {
+      width: 267px;
+      height: 158px;
+    }
+  }
+
+  .swiper-wrapper {
+    align-items: center;
+  }
+
+  .swiper-navBtn {
+    top: calc(50% - 25px);
+    height: 50px;
+    width: 50px;
+    margin-top: 0px;
+    color: $ICAF_WHITE;
+    background-color: $ICAF_BLUE;
+    border-radius: 50%;
+    transition: color 0.3s ease;
+  }
+  .swiper-navBtn:hover {
+    color: $ICAF_WHITE;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after {
+    font-size: 25px;
+  }
+  .swiper-button-next {
+    margin-right: 50px;
+    align-items: center;
+  }
+  .swiper-button-prev {
+    margin-left: 50px;
+    align-items: center;
+  }
+}
+.swiper-pagination {
+  // position: relative;
+  margin-top: 13px;
+  .swiper-pagination-bullet {
+    width: 11px;
+    height: 11px;
+    margin: 10px;
+    background-color: $ICAF_GRAY;
+    opacity: 0.2;
+    --swiper-pagination-bullet-horizontal-gap: 10.5px;
+    &-active {
+      background-color: $ICAF_YELLOW;
+      opacity: 1;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .slide-content {
+      margin: 0 10px;
+    }
+    .swiper-navBtn {
+      display: none;
+    }
+  }
+}

@@ -143,8 +143,8 @@
         display: flex;
         align-items: center;
         justify-content:center;
-        min-width:180px;
         min-height:30px;
+        max-width:min-content;
       }
     }
   }
@@ -196,7 +196,7 @@
       margin:unset;
     }
     .logos {
-      margin: unset;
+      margin:auto;
     }
   }
 }

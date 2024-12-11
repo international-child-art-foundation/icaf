@@ -9,45 +9,53 @@ $password = $config["mail_password"];
 // GLOBALS
 $to = "childart@icaf.org";
 $body = "";
+
+// Validate POST data
+$allowedKeys = ['name', 'email', 'message', 'type', 'inLovingMemoryOf'];
 foreach ($_POST as $label => $content) {
-  $$label = $content;
-  if ($label === "type") continue;
-  $body .= "<h2>{$label}</h2> <p style='margin:5px 0 0 20px'>" . nl2br($content) . "</p>";
+  if (!in_array($label, $allowedKeys)) {
+    continue;
+  }
+  $sanitized[$label] = htmlspecialchars($content, ENT_QUOTES, 'UTF-8');
+  if ($label !== 'type') {
+    $body .= "<h2>{$label}</h2> <p style='margin:5px 0 0 20px'>" . nl2br($sanitized[$label]) . "</p>";
+  }
 }
 
-if (!in_array("type", array_keys(get_defined_vars()))) exit();
+if (!isset($sanitized['type'])) {
+    exit('invalid_request');
+}
 
-switch ($type) {
+switch ($sanitized['type']) {
   case "subscribe":
-    $subject = "{$email} would like to subscribe to the ICAF newsletter";
+    $subject = "{$sanitized['email']} would like to subscribe to the ICAF newsletter";
     $body = $subject;
     break;
   case "contact-us":
-    $subject = "Message from {$name}";
+    $subject = "Message from {$sanitized['name']}";
     break;
   case "membership":
-    $subject = "New membership application {$email}";
+    $subject = "New membership application {$sanitized['email']}";
     break;
   case "art-lovers":
-    $subject = "Art Lovers request for {$name}";
+    $subject = "Art Lovers request for {$sanitized['name']}";
     break;
   case "in-loving-memory":
-    $subject = "In Loving Memory request for {$inLovingMemoryOf}";
+    $subject = "In Loving Memory request for {$sanitized['inLovingMemoryOf']}";
     break;
   default:
-    echo "invalid_type";
-    exit();
+    exit('invalid_type');
 }
 
-$headers = array (
+$headers = [
   'From' => "ICAF <$from>",
   'To' => $to,
   'Subject' => $subject,
   'Content-Type' => 'text/html; charset=UTF-8'
-);
+];
 
 function trySendMail($host, $port, $username, $password, $to, $headers, $body) {
-    $smtp = Mail::factory('smtp', array (
+    $smtp = Mail::factory('smtp', [
         'host' => $host,
         'port' => $port,
         'auth' => true,
@@ -55,7 +63,7 @@ function trySendMail($host, $port, $username, $password, $to, $headers, $body) {
         'password' => $password,
         'timeout' => 10,
         'persist' => false
-    ));
+    ]);
     
     return $smtp->send($to, $headers, $body);
 }
@@ -65,7 +73,6 @@ $configs = [
 ];
 
 $success = false;
-$errors = [];
 
 foreach ($configs as $config) {
     $mail = trySendMail($config['host'], $config['port'], $username, $password, $to, $headers, $body);
@@ -73,28 +80,12 @@ foreach ($configs as $config) {
     if (!PEAR::isError($mail)) {
         $success = true;
         break;
-    } else {
-        $errors[] = "Error with {$config['host']}:{$config['port']} - " . $mail->getMessage();
     }
 }
 
 if ($success) {
     echo "success";
 } else {
-    // Log all errors
-    // foreach ($errors as $error) {
-    //     error_log($error);
-    // }
-    
-    // Display all errors (for debugging, remove in production)
-    // echo "<p>Failed to send email revise. Errors encountered:</p>";
-    // echo "<ul>";
-    // foreach ($errors as $error) {
-    //     echo "<li>" . htmlspecialchars($error) . "</li>";
-    // }
-    // echo "</ul>";
-    
-    // In production, use a generic error message instead:
     echo "<p>An error occurred while sending the email. Please try again later.</p>";
 }
 ?>

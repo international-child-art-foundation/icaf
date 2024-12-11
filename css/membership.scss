@@ -52,7 +52,7 @@
       "q q";
     @for $i from 1 through 16 {
       .area#{$i} {
-        grid-area: string.unquote(str-slice("abcdefghijklmnop", $i, $i));
+        grid-area: string.unquote(string.slice("abcdefghijklmnop", $i, $i));
       }
     }
     .area10 {

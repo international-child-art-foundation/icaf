@@ -67,7 +67,7 @@
         line-height: 33px;
         @for $i from 1 through 4 {
           &:nth-of-type(#{$i}) {
-            grid-area: string.unquote(str-slice("abcd", $i, $i));
+            grid-area: string.unquote(string.slice("abcd", $i, $i));
           }
         }
         &:hover {

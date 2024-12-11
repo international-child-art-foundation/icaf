@@ -1,5 +1,5 @@
 @use "icaf-colors" as *;
-
+@use "sass:string";
 @use "icaf-general";
 @use "icaf-nav";
 @use "icaf-footer";
@@ -67,7 +67,7 @@
         line-height: 33px;
         @for $i from 1 through 4 {
           &:nth-of-type(#{$i}) {
-            grid-area: unquote(str-slice("abcd", $i, $i));
+            grid-area: string.unquote(str-slice("abcd", $i, $i));
           }
         }
         &:hover {

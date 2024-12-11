@@ -1,5 +1,5 @@
 @use "icaf-colors" as *;
-
+@use "sass:string";
 @use "icaf-general";
 @use "icaf-nav";
 @use "icaf-footer";
@@ -52,7 +52,7 @@
       "q q";
     @for $i from 1 through 16 {
       .area#{$i} {
-        grid-area: unquote(str-slice("abcdefghijklmnop", $i, $i));
+        grid-area: string.unquote(str-slice("abcdefghijklmnop", $i, $i));
       }
     }
     .area10 {

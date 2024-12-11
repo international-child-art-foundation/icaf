@@ -1,6 +1,6 @@
 <?php
 require_once "Mail.php";
-require_once "config.php";
+$config = require_once "config.php";
 
 $username = "no-reply@icaf.org";
 $from = "no-reply@icaf.org";
@@ -12,6 +12,7 @@ $body = "";
 
 // Validate POST data
 $allowedKeys = ['name', 'email', 'message', 'type', 'inLovingMemoryOf'];
+$sanitized = []; // Initialize the sanitized array
 foreach ($_POST as $label => $content) {
   if (!in_array($label, $allowedKeys)) {
     continue;
@@ -74,8 +75,8 @@ $configs = [
 
 $success = false;
 
-foreach ($configs as $config) {
-    $mail = trySendMail($config['host'], $config['port'], $username, $password, $to, $headers, $body);
+foreach ($configs as $configItem) { 
+    $mail = trySendMail($configItem['host'], $configItem['port'], $username, $password, $to, $headers, $body);
     
     if (!PEAR::isError($mail)) {
         $success = true;

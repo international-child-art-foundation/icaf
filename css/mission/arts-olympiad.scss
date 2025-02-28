@@ -337,7 +337,121 @@ div.Judges {
   height: 59px;
 }
 
+.helpful-links {
+  max-width: 100%;
+  display: grid;
+  justify-items: center;
+  gap: 3rem;
+  border-radius: 9px;
+  max-width: 90%;
+  margin: auto;
+
+  .hl-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    color: $ICAF_BLUE;
+  }
+  .link-card-container {
+    padding: 3rem 0 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 30px;
+    margin: auto;
+    list-style-type: none;
+    overflow: hidden;
+    max-width: 100%;
+    li {
+      position: relative;
+      margin: auto;
+      .hl-links {
+        position: relative;
+        .link-img {
+          width: 223px;
+          height: 326px;
+          border-radius: 9px;
+        }
+      }
+      .hl-img-description {
+        height: 179px;
+        width: 100%;
+        background-color: #134380;
+        position: absolute;
+        top: 45%;
+        border-radius: 0px 0px 9px 9px;
+        opacity: 90%;
+        display: flex;
+        align-items: center;
+        padding: 1.3rem;
+        p {
+          width: 100%;
+          font-size: 1.1rem;
+          font-weight: 400;
+          text-align: center;
+          align-items: center;
+          color: #ffffff;
+          a {
+            color: #ffffff;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .helpful-links-button {
+    padding: 5% 0 5%;
+    justify-self: center;
+    .social-media {
+      display: flex;
+      gap: 3rem;
+      img {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        height: 52.5px;
+        width: 54px;
+      }
+    }
+  }
+}
+
 @media (max-width: 1358px) {
+  .helpful-links {
+    gap: 0;
+    justify-items: start;
+    .link-card-container {
+      display: grid;
+      overflow-x: auto;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(5, 1fr);
+      max-width: 100%;
+
+      li {
+        .hl-img-description {
+          height: 219.6px;
+        }
+        .hl-links {
+          .link-img {
+            height: 400px;
+            width: auto;
+            object-fit: cover;
+          }
+        }
+        .description {
+          padding: 60px 30px 18px;
+          font-size: 2rem;
+        }
+      }
+    }
+    .link-card-container::-webkit-scrollbar {
+      width: 1em;
+    }
+    .link-card-container::-webkit-scrollbar-thumb {
+      background-color: rgb(190, 190, 190);
+      border-radius: 5px;
+    }
+  }
+
   .images {
     margin: 20px;
   }

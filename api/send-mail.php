@@ -11,7 +11,7 @@ $to = "childart@icaf.org";
 $body = "";
 
 // Validate POST data
-$allowedKeys = ['name', 'email', 'message', 'type', 'inLovingMemoryOf'];
+$allowedKeys = ['name', 'email', 'senderEmail', 'recipientEmail', 'relationship', 'message', 'type', 'inLovingMemoryOf'];
 $sanitized = []; // Initialize the sanitized array
 foreach ($_POST as $label => $content) {
   if (!in_array($label, $allowedKeys)) {

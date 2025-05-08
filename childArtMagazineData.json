@@ -1,0 +1,215 @@
+[
+  {
+    "period": "April-June 2025",
+    "name": "Art & Social Justice",
+    "volume": "Volume 25, Issue 2, Number 78",
+    "link": "/resource/flipbooks/Art&SocialJustice"
+  },
+  {
+    "period": "January-March 2025",
+    "name": "Philanthropy",
+    "volume": "Volume 25, Issue 1, Number 77",
+    "link": "/resource/flipbooks/Philanthropy"
+  },
+  {
+    "period": "October-December 2024",
+    "name": "AI & Art",
+    "volume": "Volume 24, Issue 4, Number 76",
+    "link": "/resource/flipbooks/AI&Art"
+  },
+  {
+    "period": "July-September 2024",
+    "name": "Art & Sports",
+    "volume": "Volume 24, Issue 3, Number 75",
+    "link": "/resource/flipbooks/Art&Sports"
+  },
+  {
+    "period": "April-June 2024",
+    "name": "Plurality",
+    "volume": "Volume 24, Issue 2, Number 74",
+    "link": "/resource/flipbooks/Plurality"
+  },
+  {
+    "period": "January-March 2024",
+    "name": "Dance",
+    "volume": "Volume 24, Issue 1, Number 73",
+    "link": "/resource/flipbooks/Dance"
+  },
+  {
+    "period": "October-December 2023",
+    "name": "Animal Art",
+    "volume": "Volume 23, Issue 4, Number 72",
+    "link": "/resource/flipbooks/AnimalArt"
+  },
+  {
+    "period": "July-September 2023",
+    "name": "Metaverse",
+    "volume": "Volume 23, Issue 3, Number 71",
+    "link": "/resource/flipbooks/Metaverse"
+  },
+  {
+    "period": "April-June 2023",
+    "name": "Mindfulness",
+    "volume": "Volume 23, Issue 2, Number 70",
+    "link": "/resource/flipbooks/Mindfulness"
+  },
+  {
+    "period": "January-March 2023",
+    "name": "The Power Of Words",
+    "volume": "Volume 23, Issue 1, Number 69",
+    "link": "/resource/flipbooks/ThePowerOfWords"
+  },
+  {
+    "period": "October-December 2022",
+    "name": "Young Leaders",
+    "volume": "Volume 22, Issue 4, Number 68",
+    "link": "/resource/flipbooks/YoungLeaders"
+  },
+  {
+    "period": "July-September 2022",
+    "name": "Human Security",
+    "volume": "Volume 22, Issue 3, Number 67",
+    "link": "/resource/flipbooks/HumanSecurity"
+  },
+  {
+    "period": "April-June 2022",
+    "name": "Artpreneurs",
+    "volume": "Volume 22, Issue 2, Number 66",
+    "link": "/resource/flipbooks/Artpreneurs"
+  },
+  {
+    "period": "January-March 2022",
+    "name": "Creativity",
+    "volume": "Volume 22, Issue 1, Number 65",
+    "link": "/resource/flipbooks/Creativity"
+  },
+  {
+    "period": "October-December 2021",
+    "name": "6th World Children’s Festival",
+    "volume": "Volume 21, Issue 4, Number 64",
+    "link": "/resource/flipbooks/2021WCF"
+  },
+  {
+    "period": "July-September 2021",
+    "name": "Changing Environment",
+    "volume": "Volume 21, Issue 3, Number 63",
+    "link": "/resource/flipbooks/ChangingEnvironment"
+  },
+  {
+    "period": "April-June 2021",
+    "name": "The Moral of Your Story",
+    "volume": "Volume 21, Issue 2, Number 62",
+    "link": "/resource/flipbooks/TheMoralOfYourStory"
+  },
+  {
+    "period": "January-March 2021",
+    "name": "Global Creative Leaders",
+    "volume": "Volume 21, Issue 1, Number 61",
+    "link": "/resource/flipbooks/GlobalCreativeLeaders"
+  },
+  {
+    "period": "October-December 2020",
+    "name": "ABCDstudy",
+    "volume": "Volume 20, Issue 2, Number 60",
+    "link": "/resource/flipbooks/ABCDStudy"
+  },
+  {
+    "period": "July-September 2020",
+    "name": "Art for Health",
+    "volume": "Volume 20, Issue 1, Number 59",
+    "link": "/resource/flipbooks/ArtForHealth"
+  },
+  {
+    "period": "April-June 2019",
+    "name": "Growing Empathy",
+    "volume": "Volume 19, Issue 2, Number 58",
+    "link": "/resource/flipbooks/GrowingEmpathy",
+    "isPdf": true
+  },
+  {
+    "period": "January-March 2019",
+    "name": "Online Safety Makes a Happier World",
+    "volume": "Volume 19, Issue 1, Number 57",
+    "link": "/resource/flipbooks/InternetSafety",
+    "isPdf": true
+  },
+  {
+    "period": "October-December 2018",
+    "name": "VR+Education",
+    "volume": "Volume 18, Issue 4, Number 56",
+    "link": "/resource/flipbooks/VR+Education"
+  },
+  {
+    "period": "July-September 2018",
+    "name": "Children's Voices",
+    "volume": "Volume 18, Issue 3, Number 55",
+    "link": "/resource/flipbooks/ChildrensVoices",
+    "isPdf": true
+  },
+  {
+    "period": "April-June 2018",
+    "name": "Dimensions of Architecture",
+    "volume": "Volume 18, Issue 2, Number 54",
+    "link": "/resource/flipbooks/DimensionsofArchitecture"
+  },
+  {
+    "period": "January-March 2018",
+    "name": "Preserving Creativity",
+    "volume": "Volume 18, Issue 1, Number 53",
+    "link": "/resource/flipbooks/PreservingCreativity"
+  },
+  {
+    "period": "October-December 2017",
+    "name": "The Color Issue",
+    "volume": "Volume 17, Issue 4, Number 52",
+    "link": "/resource/flipbooks/TheColorIssue"
+  },
+  {
+    "period": "July-September 2017",
+    "name": "Your Brain on Art",
+    "volume": "Volume 17, Issue 3, Number 51",
+    "link": "/resource/flipbooks/YourBrainonArt"
+  },
+  {
+    "period": "April-June 2017",
+    "name": "The Road to the Future",
+    "volume": "Volume 17, Issue 2, Number 50",
+    "link": "/resource/flipbooks/TheRoadtotheFuture"
+  },
+  {
+    "period": "January-March 2017",
+    "name": "Transformative Experiences",
+    "volume": "Volume 17, Issue 1, Number 49",
+    "link": "/resource/flipbooks/TransformativeExperiences"
+  },
+  {
+    "period": "October-December 2016",
+    "name": "Learning from Design",
+    "volume": "Volume 16, Issue 4, Number 48",
+    "link": "/resource/flipbooks/LearningfromDesign"
+  },
+  {
+    "period": "July-September 2016",
+    "name": "Space Art",
+    "volume": "Volume 16, Issue 3, Number 47",
+    "link": "/resource/flipbooks/SpaceArt"
+  },
+  {
+    "period": "April-June 2016",
+    "name": "Our Thirsty Planet",
+    "volume": "Volume 16, Issue 2, Number 46",
+    "link": "/resource/flipbooks/OurThirstyPlanet"
+  },
+  {
+    "period": "January-March 2016",
+    "name": "Why Music Matters",
+    "volume": "Volume 16, Issue 1, Number 45",
+    "link": "/resource/flipbooks/WhyMusicMatters"
+  },
+  {
+    "period": "October-December 2015",
+    "name": "Creativity, Diversity, and Unity",
+    "volume": "Volume 15, Issue 1, Number 44",
+    "link": "/resource/flipbooks/Creativity,DiversityandUnity"
+  }
+]

@@ -17,49 +17,73 @@
     <script src="/JS/swiper-bundle.min.js"></script>
     <script>
         $(document).ready(function () {
-            for (let el of $('[use-snippet]')) {
-                $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
-            }
-            function initSwiperFn() {
-                new Swiper(".mySwiper", {
-                    slidesPerView: "auto",
-                    centeredSlides: true,
-                    spaceBetween: 30,
-                    pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true,
-                    },
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
-                    },
-                    breakpoints: {
-                        0: {
-                            slidesPerView: 1,
-                            initialSlide: 0,
-                        },
-                        768: {
-                            slidesPerView: "auto",
-                            spaceBetween: 30,
-                            initialSlide: 1,
-                        },
-                    }
-                });
-            }
-            $.get("/js/json/childArtMagazineData.json").then(jsonData => {
-                let $wrapper = $('.swiper-wrapper');
-                // when JSON data ready, get snippet HTML
-                console.log(jsonData);
-                jsonData.forEach(data => {
-                    $wrapper.append(`
-                        <div class="swiper-slide">
-                            <img src="${data.coverImg}" alt="${data.name}"
-                                class="card-img">
-                        </div>
-                    `);
-                });
-                initSwiperFn();
-            })
+          for (let el of $('[use-snippet]')) {
+            $.get($(el).attr("use-snippet")).then(sHtml => $(el).replaceWith(sHtml));
+          }
+      
+          function initSwiperFn() {
+            new Swiper(".mySwiper", {
+              slidesPerView: "auto",
+              centeredSlides: true,
+              spaceBetween: 30,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              breakpoints: {
+                0: {
+                  slidesPerView: 1,
+                  initialSlide: 0,
+                },
+                768: {
+                  slidesPerView: "auto",
+                  spaceBetween: 30,
+                  initialSlide: 1,
+                },
+              }
+            });
+          }
+      
+          $.get("/childArtMagazineData.json").then(jsonData => {
+            let $wrapper = $(".swiper-wrapper");
+            const extensions = ["webp", "jpg", "jpeg", "png"];
+      
+            let requests = jsonData.slice(0, 10).map(entry => {
+              let basePath = entry.link.replace(/\/$/, "");
+              let found = false;
+      
+              return new Promise(resolve => {
+                let tryNext = (i) => {
+                  if (i >= extensions.length) return resolve(null);
+                  let imgPath = `${basePath}/cover.${extensions[i]}`;
+                  $("<img>").on("load", () => {
+                    resolve({
+                      name: entry.name,
+                      imgSrc: imgPath
+                    });
+                  }).on("error", () => tryNext(i + 1))
+                  .attr("src", imgPath);
+                };
+                tryNext(0);
+              });
+            });
+      
+            Promise.all(requests).then(results => {
+              results.forEach(result => {
+                if (!result) return;
+                $wrapper.append(`
+                  <div class="swiper-slide">
+                    <img src="${result.imgSrc}" alt="${result.name}" class="card-img">
+                  </div>
+                `);
+              });
+              initSwiperFn();
+            });
+          });
         });
     </script>
 </head>

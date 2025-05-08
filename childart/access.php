@@ -146,11 +146,16 @@ function findPdf(string $link): ?string
 							}
 						} else {
 							$href = (strpos($issue['link'], 'http') === 0)
-								? $issue['link']
-								: ((strpos($issue['link'], '/') === 0)
-										? $issue['link']
-										: '/' . ltrim($issue['link'], '/'));
+							? $issue['link']
+							: '/' . ltrim($issue['link'], '/');
+						
+						// If it's a local path starting with /resource/flipbooks/, strip that prefix for display
+						if (strpos($href, '/resource/flipbooks/') === 0) {
+							$href = substr($href, strlen('/resource/flipbooks/'));
+							$href = '/' . ltrim($href, '/'); // ensure it still starts with slash
+							$href = rtrim($href, '/') . '/'; // ensure it ends with a slash
 						}
+					}
 					?>
 						<div class="magazine">
 							<span class="exclude"><?= htmlspecialchars($issue['period']) ?>:</span>

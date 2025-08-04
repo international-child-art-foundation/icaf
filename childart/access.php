@@ -50,14 +50,14 @@ function findPdf(string $link): ?string
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="description" content="ChildArt Magazine: a captivating quarterly magazine designed and written expressly for 8- to 12-year-old children to promote and nourish creativity and critical thinking." />
 		<link rel="Shortcut Icon" type="image/png" href="../favicon.png" />
-		<link href="css/style.css" rel="stylesheet" type="text/css" />
-		<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
-		<link href="css/ddsmoothmenu.css" rel="stylesheet" type="text/css" />
+		<link href="/childart/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/childart/css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+    <link href="/childart/css/ddsmoothmenu.css" rel="stylesheet" type="text/css" />
 		<!-- JQUERY Library -->
-		<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
-		<script type="text/javascript" src="js/fadeinout.js"></script>
-		<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-		<script type="text/javascript" src="js/ddsmoothmenu.js">
+    <script type="text/javascript" src="/childart/js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="/childart/js/fadeinout.js"></script>
+    <script type="text/javascript" src="/childart/js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="/childart/js/ddsmoothmenu.js">
 			/***********************************************
 			 * Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
 			 * This notice MUST stay intact for legal use
@@ -104,11 +104,11 @@ function findPdf(string $link): ?string
 			.magazine__cover img  { width:50%; height:auto; }
 		</style>
 	</head>
-	<body>
+	<body id="top">
 	<div id="pagecontainer" style="position:relative">
 		<div id="header">
 			<!-- logo -->
-			<div id="logo"><a href="/"><img src="images/international-child-art-foundation-logo-160x64.png" alt="International Child Art Foundation logo" /></a></div>
+			<div id="logo"><a href="/"><img src="/childart/images/international-child-art-foundation-logo-160x64.png" alt="International Child Art Foundation logo" /></a></div>
 		</div> <!-- /header -->
 		<div class="clear"></div>
 		<div id="page"> <!-- Open Page -->
@@ -173,7 +173,7 @@ function findPdf(string $link): ?string
 			</div>
 			<div style="float:left">
 				<br />
-				<script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
+				<script type="text/javascript" src="https://platform.linkedin.com/in.js"></script>
 				<script type="in/recommendproduct" data-company="423304" data-product="44135" data-counter="right"></script>
 				<p align="left"><strong><a href="#top">Back to top</a></strong></p>
 			</div>

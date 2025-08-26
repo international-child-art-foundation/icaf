@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C69HT08NB7"></script>
-    <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'G-C69HT08NB7'); </script>
-   
-    <meta charset="UTF-8">
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-C69HT08NB7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-C69HT08NB7");
+    </script>
+
+    <meta charset="UTF-8" />
     <title>Program | World Children's Festival</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/mission/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/mission/world-childrens-festival.css" />
@@ -16,253 +25,327 @@
     <script src="/js/bootstrap.min.js" defer></script>
     <script src="/js/swiper-bundle.min.js"></script>
     <script>
-        $(document).ready(function () {
-            for (let el of $('[use-snippet]')) {
-                $.get($(el).attr('use-snippet')).then(sHtml => $(el).replaceWith(sHtml));
-            }
+      $(document).ready(function () {
+        for (let el of $("[use-snippet]")) {
+          $.get($(el).attr("use-snippet")).then((sHtml) =>
+            $(el).replaceWith(sHtml)
+          );
+        }
 
-            // For Asian Tsunami Gallery
-            let swiper = new Swiper(".mySwiper", {
-                slidesPerView: "auto",
-                centeredSlides: true,
-                spaceBetween: 30,
-                initialSlide: 2,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                breakpoints: {
-                    0: {
-                        slidesPerView: 1,
-                        initialSlide: 2,
-                    },
-                    768: {
-                        slidesPerView: "auto",
-                        spaceBetween: 30,
-                        initialSlide: 2,
-                    },
-                }
-            });
+        // For Asian Tsunami Gallery
+        let swiper = new Swiper(".mySwiper", {
+          slidesPerView: "auto",
+          centeredSlides: true,
+          spaceBetween: 30,
+          initialSlide: 2,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            0: {
+              slidesPerView: 1,
+              initialSlide: 2,
+            },
+            768: {
+              slidesPerView: "auto",
+              spaceBetween: 30,
+              initialSlide: 2,
+            },
+          },
         });
+      });
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <!-- Nav -->
-        <div use-snippet="/snippets/nav.snip.html"></div>
+      <!-- Nav -->
+      <div use-snippet="/snippets/nav.snip.html"></div>
 
-        <!-- Breadcrumb -->
-        <div class="icaf-breadcrumb">Programs > Empathy > World Children’s Festival</div>
+      <!-- Breadcrumb -->
+      <div class="icaf-breadcrumb">
+        Programs > Empathy > World Children’s Festival
+      </div>
 
-        <!-- Title -->
-        <div class="page-title">World Children’s Festival</div>
+      <!-- Title -->
+      <div class="page-title">World Children’s Festival</div>
 
-        <div class="goal-description goal-description-top">Produced every four years as the "Olympics" of children's
-            imagination at The
-            National Mall.
+      <div class="goal-description goal-description-top">
+        Produced every four years as the "Olympics" of children's imagination at
+        The National Mall.
+      </div>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="/resource/image/mission/world-childrens-festival/gallery-1.webp"
+              alt=""
+              class="card-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="/resource/image/mission/world-childrens-festival/gallery-2.webp"
+              alt=""
+              class="card-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="/resource/image/mission/world-childrens-festival/gallery-3.webp"
+              alt=""
+              class="card-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="/resource/image/mission/world-childrens-festival/gallery-4.webp"
+              alt=""
+              class="card-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="/resource/image/mission/world-childrens-festival/gallery-5.webp"
+              alt=""
+              class="card-img"
+            />
+          </div>
         </div>
 
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="/resource/image/mission/world-childrens-festival/gallery-1.webp" alt="" class="card-img">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/resource/image/mission/world-childrens-festival/gallery-2.webp" alt="" class="card-img">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/resource/image/mission/world-childrens-festival/gallery-3.webp" alt="" class="card-img">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/resource/image/mission/world-childrens-festival/gallery-4.webp" alt="" class="card-img">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/resource/image/mission/world-childrens-festival/gallery-5.webp" alt="" class="card-img">
-                </div>
-            </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+      </div>
+      <div class="swiper-pagination"></div>
 
-            <div class="swiper-button-next swiper-navBtn"></div>
-            <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="schedule-info">
+        <div class="first-grid">
+          <div class="info-underline"></div>
+          <div class="info-title">DESCRIPTION</div>
+          <div class="info-content info-content-schedule">
+            A three-day celebration in our nation's capital of creativity,
+            diversity, and unity.
+          </div>
         </div>
-        <div class="swiper-pagination"></div>
-
-
-
-        <div class="schedule-info">
-            <div class="first-grid">
-                <div class="info-underline"></div>
-                <div class="info-title">DESCRIPTION</div>
-                <div class="info-content info-content-schedule">A three-day celebration in our nation's capital of
-                    creativity, diversity,
-                    and unity.
-                </div>
-            </div>
-            <div class="second-grid">
-                <div class="info-underline"></div>
-                <div class="info-title">OBJECTIVE</div>
-                <div class="info-content">To provide a transformative experience that infuses children's creativity
-                    with empathy so they become "creative-empaths" working together for a better world.
-                </div>
-            </div>
+        <div class="second-grid">
+          <div class="info-underline"></div>
+          <div class="info-title">OBJECTIVE</div>
+          <div class="info-content">
+            To provide a transformative experience that infuses children's
+            creativity with empathy so they become "creative-empaths" working
+            together for a better world.
+          </div>
         </div>
+      </div>
 
-        <div class="schedule-main">
-            <!-- Background -->
-            <div class="wave-container">
-                <img class="wave top-wave" src="/resource/image/mission/top-wave-background-grey.svg" alt="Top Background">
-            </div>
-            <div class="schedule-section">
-                <!-- Day 1 -->
-                <div class="day-container">
-                    <div class="day">DAY 1</div>
-                    <div class="day-topic day-topic-1">
-                        <p>Health<br>
-                            &<br>
-                            Environment
-                        </p>
-                    </div>
-                    <div class="day-detail">
-                        Sharing of common concerns to scaffold mutual empathy.
-                    </div>
-                </div>
-                <!-- Day 2 -->
-                <div class="day-container">
-                    <div class="day">DAY 2</div>
-                    <div class="day-topic day-topic-2">
-                        <p>Creativity<br>
-                            &<br>
-                            Imagination
-                        </p>
-                    </div>
-                    <div class="day-detail">
-                        Creativity training for <br> collaboration and innovation.
-                    </div>
-                </div>
-                <!-- Day 3 -->
-                <div class="day-container">
-                    <div class="day">DAY 3</div>
-                    <div class="day-topic day-topic-3">
-                        <p>Peace<br>
-                            &<br>
-                            Leadership
-                        </p>
-                    </div>
-                    <div class="day-detail">
-                        Empathy training for a more prosperous, sustainable, and peaceful future.
-                    </div>
-                </div>
-            </div>
-            <div class="wave-container">
-                <img class="wave bottom-wave" src="/resource/image/mission/bottom-wave-background-2-grey.svg" alt="Bottom Background">
-            </div>
+      <div class="schedule-main">
+        <!-- Background -->
+        <div class="wave-container">
+          <img
+            class="wave top-wave"
+            src="/resource/image/mission/top-wave-background-grey.svg"
+            alt="Top Background"
+          />
         </div>
-
-        <div class="WCF-7th">
-            <div class="info-underline info-underline-7th-WCF"></div>
-            <div class="goal-description goal-description-WCF">The 7th World Children's Festival (WCF) in June
-                2026.</div>
-            <div class="info-content info-content-WCF">Visit <a href="https://worldchildrensfestival.org/"
-                    target="_blank"> https://worldchildrensfestival.org </a> 
-            <br>Please help our efforts to reassure children that their chaotic and divided world has hope.
+        <div class="schedule-section">
+          <!-- Day 1 -->
+          <div class="day-container">
+            <div class="day">DAY 1</div>
+            <div class="day-topic day-topic-1">
+              <p>
+                Health<br />
+                &<br />
+                Environment
+              </p>
             </div>
+            <div class="day-detail">
+              Sharing of common concerns to scaffold mutual empathy.
+            </div>
+          </div>
+          <!-- Day 2 -->
+          <div class="day-container">
+            <div class="day">DAY 2</div>
+            <div class="day-topic day-topic-2">
+              <p>
+                Creativity<br />
+                &<br />
+                Imagination
+              </p>
+            </div>
+            <div class="day-detail">
+              Creativity training for <br />
+              collaboration and innovation.
+            </div>
+          </div>
+          <!-- Day 3 -->
+          <div class="day-container">
+            <div class="day">DAY 3</div>
+            <div class="day-topic day-topic-3">
+              <p>
+                Peace<br />
+                &<br />
+                Leadership
+              </p>
+            </div>
+            <div class="day-detail">
+              Empathy training for a more prosperous, sustainable, and peaceful
+              future.
+            </div>
+          </div>
         </div>
+        <div class="wave-container">
+          <img
+            class="wave bottom-wave"
+            src="/resource/image/mission/bottom-wave-background-2-grey.svg"
+            alt="Bottom Background"
+          />
+        </div>
+      </div>
 
-        <!-- Past 6th 5th 4th WCF -->
-        <div class="past-WCF">
-            <div class="info-underline"></div>
-            <div class="goal-description goal-description-past-WCF">Past World Child Festivals</div>
+      <div class="WCF-7th">
+        <div class="info-underline info-underline-7th-WCF"></div>
+        <div class="goal-description goal-description-WCF">
+          The 7th World Children's Festival (WCF) on June 30–July 2, 2026.
+        </div>
+        <div class="info-content info-content-WCF">
+          Visit
+          <a href="https://worldchildrensfestival.org/" target="_blank">
+            https://worldchildrensfestival.org
+          </a>
+          <br />Please help our efforts to reassure children that their chaotic
+          and divided world has hope.
+        </div>
+      </div>
 
-            <div class="nth-WCF nth-WCF-6">6th WCF</div>
-            <div class="WCF-nth-container">
-                <div class="WCF-6th-video WCF-nth-video">
-                    <iframe src="https://www.youtube.com/embed/kgRGgE4AHq0" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-                <div class="WCF-6th-magazine WCF-nth-magazine">
-                    <a href="/resource/flipbooks/2021WCF/" target="_blank">
-                        <img src="/resource/image/mission/world-childrens-festival/past-6th-magazine.webp" alt="">
-                    </a>
-                </div>
-                <div class="label-underline">
-                    <div class="section-name">Video</div>
-                    <div class="past-WCF-underline past-WCF-underline-v"></div>
-                </div>
-                <div class="label-underline">
-                    <div class="section-name section-name-m">Magazine</div>
-                    <div class="past-WCF-underline past-WCF-underline-m"></div>    
-                </div>
-            </div>
-
-            <div class="nth-WCF">5th WCF</div>
-            <div class="WCF-nth-container">
-                <div class="WCF-5th-video WCF-nth-video">
-                    <iframe src="https://www.youtube.com/embed/Jig1jfiokWY"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-                <div class="WCF-5th-magazine WCF-nth-magazine">
-                    <a href="/resource/flipbooks/Creativity,DiversityandUnity/" target="_blank">
-                        <img src="/resource/image/mission/world-childrens-festival/past-5th-magazine.webp" alt="">
-                    </a>
-                </div>
-
-                <div class="label-underline">
-                    <div class="section-name">Video</div>
-                    <div class="past-WCF-underline past-WCF-underline-v"></div>
-                </div>
-                <div class="label-underline">
-                    <div class="section-name section-name-m">Magazine</div>
-                    <div class="past-WCF-underline past-WCF-underline-m"></div>    
-                </div>
-            </div>
-
-            <div class="nth-WCF">4th WCF</div>
-            <div class="WCF-nth-container WCF-nth-container-4th">
-                <div class="WCF-4th-video WCF-nth-video">
-                    <iframe src="https://www.youtube.com/embed/sL6xaXqE6wU"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-                <div class="WCF-4th-magazine WCF-nth-magazine">
-                    <a href="/resource/pdfs/ChildArt%20July-Sept%202011%204thWCF.pdf" target="_blank">
-                        <img src="/resource/image/mission/world-childrens-festival/past-4th-magazine.webp" alt="">
-                    </a>
-                </div>
-                <div class="label-underline">
-                    <div class="section-name">Video</div>
-                    <div class="past-WCF-underline past-WCF-underline-v"></div>
-                </div>
-                <div class="label-underline">
-                    <div class="section-name section-name-m">Magazine</div>
-                    <div class="past-WCF-underline past-WCF-underline-m"></div>    
-                </div>
-            </div>
-
+      <!-- Past 6th 5th 4th WCF -->
+      <div class="past-WCF">
+        <div class="info-underline"></div>
+        <div class="goal-description goal-description-past-WCF">
+          Explore Past WCFs
         </div>
 
-        <!-- Design Logo -->
-        <div class="design-logo">
-            <div class="title-container">
-                <p>Designing the WCF logo at the Cannes Lions International Festival of Creativity</p>
-            </div>
-            <div class="press-footage">
-                <iframe src="https://www.youtube.com/embed/bt9M71DPQVQ" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
+        <div class="nth-WCF nth-WCF-6">6th WCF</div>
+        <div class="WCF-nth-container">
+          <div class="WCF-6th-video WCF-nth-video">
+            <iframe
+              src="https://www.youtube.com/embed/kgRGgE4AHq0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="WCF-6th-magazine WCF-nth-magazine">
+            <a href="/resource/flipbooks/2021WCF/" target="_blank">
+              <img
+                src="/resource/image/mission/world-childrens-festival/past-6th-magazine.webp"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="label-underline">
+            <div class="section-name">Video</div>
+            <div class="past-WCF-underline past-WCF-underline-v"></div>
+          </div>
+          <div class="label-underline">
+            <div class="section-name section-name-m">Magazine</div>
+            <div class="past-WCF-underline past-WCF-underline-m"></div>
+          </div>
         </div>
 
-        <!-- Footer -->
-        <div use-snippet="/snippets/footer.snip.html"></div>
+        <div class="nth-WCF">5th WCF</div>
+        <div class="WCF-nth-container">
+          <div class="WCF-5th-video WCF-nth-video">
+            <iframe
+              src="https://www.youtube.com/embed/Jig1jfiokWY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="WCF-5th-magazine WCF-nth-magazine">
+            <a
+              href="/resource/flipbooks/Creativity,DiversityandUnity/"
+              target="_blank"
+            >
+              <img
+                src="/resource/image/mission/world-childrens-festival/past-5th-magazine.webp"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <div class="label-underline">
+            <div class="section-name">Video</div>
+            <div class="past-WCF-underline past-WCF-underline-v"></div>
+          </div>
+          <div class="label-underline">
+            <div class="section-name section-name-m">Magazine</div>
+            <div class="past-WCF-underline past-WCF-underline-m"></div>
+          </div>
+        </div>
+
+        <div class="nth-WCF">4th WCF</div>
+        <div class="WCF-nth-container WCF-nth-container-4th">
+          <div class="WCF-4th-video WCF-nth-video">
+            <iframe
+              src="https://www.youtube.com/embed/sL6xaXqE6wU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="WCF-4th-magazine WCF-nth-magazine">
+            <a
+              href="/resource/pdfs/ChildArt%20July-Sept%202011%204thWCF.pdf"
+              target="_blank"
+            >
+              <img
+                src="/resource/image/mission/world-childrens-festival/past-4th-magazine.webp"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="label-underline">
+            <div class="section-name">Video</div>
+            <div class="past-WCF-underline past-WCF-underline-v"></div>
+          </div>
+          <div class="label-underline">
+            <div class="section-name section-name-m">Magazine</div>
+            <div class="past-WCF-underline past-WCF-underline-m"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Design Logo -->
+      <div class="design-logo">
+        <div class="title-container">
+          <p>
+            Designing the WCF logo at the Cannes Lions International Festival of
+            Creativity
+          </p>
+        </div>
+        <div class="press-footage">
+          <iframe
+            src="https://www.youtube.com/embed/bt9M71DPQVQ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div use-snippet="/snippets/footer.snip.html"></div>
     </div>
-</body>
-
+  </body>
 </html>
